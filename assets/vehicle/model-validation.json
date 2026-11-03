@@ -1,0 +1,32 @@
+{
+  "blender_version": "5.2.3 LTS",
+  "frame": 61,
+  "angles_radians_blender_y": {
+    "Wheel_FL": -4.71238899230957,
+    "Wheel_RL": -4.71238899230957,
+    "MotorRotor": -38.6415901184082,
+    "GearIntermediate": 14.137166976928711,
+    "Differential": -4.71238899230957,
+    "DriveShaft_L": -4.71238899230957,
+    "DriveShaft_R": -4.71238899230957
+  },
+  "checks": {
+    "motor_ratio": true,
+    "intermediate_ratio": true,
+    "differential_ratio": true,
+    "halfshaft_ratio": true,
+    "stationary_calipers": true,
+    "rotating_discs": true,
+    "no_legacy_11kW_claim": true,
+    "no_coplanar_hood_trim": true
+  },
+  "all_passed": true,
+  "rendered_this_run": [],
+  "visual_evidence": [
+    "poster.png",
+    "rear.png",
+    "interior.png",
+    "powertrain.png"
+  ],
+  "scope": "Software mesh/animation checks only; not physical engineering validation."
+}

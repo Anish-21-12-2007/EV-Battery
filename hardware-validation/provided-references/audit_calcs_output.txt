@@ -1,0 +1,31 @@
+== Battery divider ==
+orig 120k/22k V= 12.0 ratio=0.15493 node=1.859 V (1% band 1.828-1.891) ok
+orig 120k/22k V= 13.8 ratio=0.15493 node=2.138 V (1% band 2.102-2.174) ok
+orig 120k/22k V= 14.8 ratio=0.15493 node=2.293 V (1% band 2.254-2.332) ok
+orig 120k/22k V= 16.0 ratio=0.15493 node=2.479 V (1% band 2.437-2.521) >2.45 LIMIT
+orig 120k/22k V= 18.0 ratio=0.15493 node=2.789 V (1% band 2.742-2.836) >2.45 LIMIT
+  Zsource=18.59 k  I@12.6V=89 uA  P_top@16V=1.52 mW  fc(100nF)=86 Hz
+  Vbat at node=2.45V (max valid reading) = 15.81 V
+new 56k/10k V= 12.0 ratio=0.15152 node=1.818 V (1% band 1.788-1.849) ok
+new 56k/10k V= 13.8 ratio=0.15152 node=2.091 V (1% band 2.056-2.127) ok
+new 56k/10k V= 14.8 ratio=0.15152 node=2.242 V (1% band 2.205-2.281) ok
+new 56k/10k V= 16.0 ratio=0.15152 node=2.424 V (1% band 2.383-2.466) >2.45 LIMIT
+new 56k/10k V= 18.0 ratio=0.15152 node=2.727 V (1% band 2.681-2.774) >2.45 LIMIT
+  Zsource=8.48 k  I@12.6V=191 uA  P_top@16V=3.29 mW  fc(100nF)=188 Hz
+  Vbat at node=2.45V (max valid reading) = 16.17 V
+== ACS712 scaling (5.00 V supply) ==
+orig 15k/20k ratio=0.5714 zero=1.429 V sens=37.71 mV/A  at +30A=2.560 V  at -30A=0.297 V  Imax_in_range=27.1 A  Zs=8.57k fc(100nF)=186Hz
+new 10k/22k ratio=0.6875 zero=1.719 V sens=45.38 mV/A  at +30A=3.080 V  at -30A=0.358 V  Imax_in_range=16.1 A  Zs=6.88k fc(100nF)=231Hz
+new 4.7k/10k ratio=0.6803 zero=1.701 V sens=44.90 mV/A  at +30A=3.048 V  at -30A=0.354 V  Imax_in_range=16.7 A  Zs=3.20k fc(100nF)=498Hz
+orig: Vout limit 2.45 reached at I = 27.1 A (ACS side 4.29 V)
+ACS noise 7 mV p-p (2 kHz BW, CF=47nF) -> 106 mA p-p at ACS output; at 12-bit ADC 0.8 mV/LSB, node sens 37.7 mV/A -> 21 mA/LSB ideal
+== Peukert example (k assumed 1.2, C20=7.6Ah, NOT a datasheet value) ==
+I= 0.38 A capacity=7.60 Ah (100%) runtime=20.00 h
+I= 1.00 A capacity=6.26 Ah (82%) runtime=6.26 h
+I= 2.00 A capacity=5.45 Ah (72%) runtime=2.73 h
+I= 5.00 A capacity=4.54 Ah (60%) runtime=0.91 h
+I=10.00 A capacity=3.95 Ah (52%) runtime=0.40 h
+== Power / energy ==
+P = 12.2 V*5 A = 61.0 W ; 7.6Ah*12V nominal = 91.19999999999999 Wh (nominal, not usable)
+== Buck budget ==  ESP32 WiFi peak ~0.5 A + ACS 13 mA + OLED 30 mA @5V -> P5= 2.75 W; Iin@12V,80% eff = 0.286 A
+== Relay SRD-05VDC coil ~ 70-72 mA @5V (datasheet-class value; verify module) ==

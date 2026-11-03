@@ -1,0 +1,25 @@
+{
+  "name": "ev-ems-engineering-dashboard",
+  "private": true,
+  "version": "2.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:scenarios": "node scripts/run-driving-scenarios.mjs",
+    "test:browser": "node tests/browser-validation.mjs",
+    "test:engineering": "node tests/engineering-browser.mjs",
+    "test:phase2": "node tests/phase2-browser-validation.mjs",
+    "test:circuit": "node tests/circuit-browser.mjs",
+    "test:energy": "node tests/energy-display-browser.mjs",
+    "test:camera": "node tests/vehicle-camera-browser.mjs",
+    "vendor": "node scripts/vendor.mjs",
+    "package": "python3 scripts/package_project.py"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  }
+}

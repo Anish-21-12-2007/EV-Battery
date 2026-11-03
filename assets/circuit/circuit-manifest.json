@@ -1,0 +1,7961 @@
+{
+  "name": "EV-EMS proposed 12 V circuit assembly",
+  "revision": "2026-11-03",
+  "sourceBlend": "assets/circuit/circuit-lab.blend",
+  "webAsset": "assets/circuit/circuit-lab.glb",
+  "sourceCsv": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/wiring_connections.csv",
+  "sourceCsvSha256": "17573a8bd105298573659feda8d5f175948eb8d598ccd1dea2aa894e9d4247c3",
+  "sourceBomSha256": "d1949d277a9c7c289f0e2867c65d7ea0c329308475c61544d3d9232cf4a9f4fe",
+  "coordinateSystem": "glTF +Y up; Blender (x,y,z) => glTF (x,z,-y). Root scale and rotation identity.",
+  "scaleStatus": "Normalized presentation scale; NOT measured physical dimensions or conductor gauges",
+  "geometryStatus": "Illustrative candidate forms only; all installed component identities and pin positions unresolved",
+  "bounds": {
+    "min": [
+      -4.65,
+      -0.16,
+      -3.48
+    ],
+    "max": [
+      4.65,
+      0.98,
+      4.15
+    ]
+  },
+  "components": [
+    {
+      "id": "BAT1",
+      "node": "component_BAT1",
+      "position": [
+        -3.55,
+        0,
+        -2.2
+      ],
+      "terminals": [
+        {
+          "name": "BAT+",
+          "node": "terminal_BAT1_BAT_POS",
+          "position": [
+            -0.29,
+            0.925,
+            -0.25
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "BAT-",
+          "node": "terminal_BAT1_BAT_NEG",
+          "position": [
+            0.29,
+            0.925,
+            -0.25
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Battery / 12 V candidate",
+      "kind": "battery",
+      "bounds": {
+        "min": [
+          -0.585,
+          0,
+          -0.505
+        ],
+        "max": [
+          0.585,
+          0.96,
+          0.5950000000000001
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "VERIFIED BY MANUFACTURER SOURCE / installed identity unverified",
+      "sourceSpecification": "Amptek product-table model 12 V, 7.6 Ah, 2050 g (91.2 Wh nominal)",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.284,
+        0.4,
+        -0.176
+      ]
+    },
+    {
+      "id": "F1",
+      "node": "component_F1",
+      "position": [
+        -2.24,
+        0,
+        -2.42
+      ],
+      "terminals": [
+        {
+          "name": "IN",
+          "node": "terminal_F1_IN",
+          "position": [
+            -0.24,
+            0.219,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT",
+          "node": "terminal_F1_OUT",
+          "position": [
+            0.24,
+            0.219,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Main fuse / rating TBD",
+      "kind": "fuse",
+      "bounds": {
+        "min": [
+          -0.39,
+          0,
+          -0.305
+        ],
+        "max": [
+          0.39,
+          0.48,
+          0.39499999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES ADDITIONAL INFORMATION",
+      "sourceSpecification": "Rating, DC voltage (>=32 V DC), interrupting capacity (>I_sc) and time-current curve TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.1792,
+        0.3,
+        -0.1936
+      ]
+    },
+    {
+      "id": "SW1",
+      "node": "component_SW1",
+      "position": [
+        -1.2,
+        0,
+        -2.42
+      ],
+      "terminals": [
+        {
+          "name": "IN",
+          "node": "terminal_SW1_IN",
+          "position": [
+            -0.26,
+            0.175,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT",
+          "node": "terminal_SW1_OUT",
+          "position": [
+            0.26,
+            0.175,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Master switch / DC rating TBD",
+      "kind": "switch",
+      "bounds": {
+        "min": [
+          -0.385,
+          0,
+          -0.305
+        ],
+        "max": [
+          0.385,
+          0.48,
+          0.39499999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES ADDITIONAL INFORMATION",
+      "sourceSpecification": "DC voltage/current and inductive-load interruption rating TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.096,
+        0.3,
+        -0.1936
+      ]
+    },
+    {
+      "id": "BUS+",
+      "node": "component_BUS_POS",
+      "position": [
+        -0.06,
+        0,
+        -2.36
+      ],
+      "terminals": [
+        {
+          "name": "IN",
+          "node": "terminal_BUS_POS_IN",
+          "position": [
+            -0.29,
+            0.25,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT_L",
+          "node": "terminal_BUS_POS_OUT_L",
+          "position": [
+            -0.145,
+            0.25,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT_M",
+          "node": "terminal_BUS_POS_OUT_M",
+          "position": [
+            0.0,
+            0.25,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT_E",
+          "node": "terminal_BUS_POS_OUT_E",
+          "position": [
+            0.145,
+            0.25,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "PROT_TAP",
+          "node": "terminal_BUS_POS_PROT_TAP",
+          "position": [
+            0.29,
+            0.25,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Positive distribution",
+      "kind": "bus",
+      "bounds": {
+        "min": [
+          -0.505,
+          0,
+          -0.375
+        ],
+        "max": [
+          0.505,
+          0.48,
+          0.46499999999999997
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Rated insulated positive busbar or distribution block TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.0048,
+        0.3,
+        -0.1888
+      ]
+    },
+    {
+      "id": "FL",
+      "node": "component_FL",
+      "position": [
+        1.16,
+        0,
+        -2.53
+      ],
+      "terminals": [
+        {
+          "name": "IN",
+          "node": "terminal_FL_IN",
+          "position": [
+            -0.24,
+            0.219,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT",
+          "node": "terminal_FL_OUT",
+          "position": [
+            0.24,
+            0.219,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Light fuse / rating TBD",
+      "kind": "fuse",
+      "bounds": {
+        "min": [
+          -0.37,
+          0,
+          -0.3
+        ],
+        "max": [
+          0.37,
+          0.48,
+          0.38999999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES ADDITIONAL INFORMATION",
+      "sourceSpecification": "Rating, DC interrupting capacity and I2t curve TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.0928,
+        0.3,
+        -0.2024
+      ]
+    },
+    {
+      "id": "S_L",
+      "node": "component_S_L",
+      "position": [
+        2.3,
+        0,
+        -2.4
+      ],
+      "terminals": [
+        {
+          "name": "IP+",
+          "node": "terminal_S_L_IP_POS",
+          "position": [
+            -0.21,
+            0.264,
+            -0.14
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "IP-",
+          "node": "terminal_S_L_IP_NEG",
+          "position": [
+            0.21,
+            0.264,
+            -0.14
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "VCC",
+          "node": "terminal_S_L_VCC",
+          "position": [
+            -0.24,
+            0.178,
+            0.25
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GND",
+          "node": "terminal_S_L_GND",
+          "position": [
+            -0.08,
+            0.178,
+            0.25
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT",
+          "node": "terminal_S_L_OUT",
+          "position": [
+            0.08,
+            0.178,
+            0.25
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Light sensor / type TBD",
+      "kind": "sensor_tbd",
+      "bounds": {
+        "min": [
+          -0.44,
+          0,
+          -0.405
+        ],
+        "max": [
+          0.44,
+          0.48,
+          0.495
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Type/range/interface TBD (Do NOT assume ACS712-30A; see INA219 / low-range candidate note)",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.184,
+        0.3,
+        -0.192
+      ]
+    },
+    {
+      "id": "L1",
+      "node": "component_L1",
+      "position": [
+        3.53,
+        0,
+        -2.39
+      ],
+      "terminals": [
+        {
+          "name": "INPUT+",
+          "node": "terminal_L1_INPUT_POS",
+          "position": [
+            -0.312,
+            0.2,
+            -0.085
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "INPUT-",
+          "node": "terminal_L1_INPUT_NEG",
+          "position": [
+            -0.312,
+            0.2,
+            0.085
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "12 V lamp / identity TBD",
+      "kind": "lamp",
+      "bounds": {
+        "min": [
+          -0.46,
+          0,
+          -0.41500000000000004
+        ],
+        "max": [
+          0.46,
+          0.48,
+          0.505
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "DESIGN ASSUMPTION / REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Complete 12 V DC lamp assembly assumed; exact wattage, inrush and driver unknown",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.2824,
+        0.3,
+        -0.1912
+      ]
+    },
+    {
+      "id": "FM",
+      "node": "component_FM",
+      "position": [
+        1.16,
+        0,
+        -1.16
+      ],
+      "terminals": [
+        {
+          "name": "IN",
+          "node": "terminal_FM_IN",
+          "position": [
+            -0.24,
+            0.219,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT",
+          "node": "terminal_FM_OUT",
+          "position": [
+            0.24,
+            0.219,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Motor fuse / rating TBD",
+      "kind": "fuse",
+      "bounds": {
+        "min": [
+          -0.37,
+          0,
+          -0.3
+        ],
+        "max": [
+          0.37,
+          0.48,
+          0.38999999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES ADDITIONAL INFORMATION",
+      "sourceSpecification": "Rating, DC interrupting capacity and time-delay (I2t) curve TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.0928,
+        0.3,
+        -0.0928
+      ]
+    },
+    {
+      "id": "S_M",
+      "node": "component_S_M",
+      "position": [
+        2.3,
+        0,
+        -1.08
+      ],
+      "terminals": [
+        {
+          "name": "IP+",
+          "node": "terminal_S_M_IP_POS",
+          "position": [
+            -0.21,
+            0.264,
+            -0.14
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "IP-",
+          "node": "terminal_S_M_IP_NEG",
+          "position": [
+            0.21,
+            0.264,
+            -0.14
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "VCC",
+          "node": "terminal_S_M_VCC",
+          "position": [
+            -0.24,
+            0.178,
+            0.25
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GND",
+          "node": "terminal_S_M_GND",
+          "position": [
+            -0.08,
+            0.178,
+            0.25
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT",
+          "node": "terminal_S_M_OUT",
+          "position": [
+            0.08,
+            0.178,
+            0.25
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "FILTER",
+          "node": "terminal_S_M_FILTER",
+          "position": [
+            0.24,
+            0.178,
+            0.25
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "ACS712-30A / IC candidate",
+      "kind": "acs",
+      "bounds": {
+        "min": [
+          -0.44,
+          0,
+          -0.41500000000000004
+        ],
+        "max": [
+          0.44,
+          0.48,
+          0.505
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "VERIFIED BY MANUFACTURER SOURCE / use conditional",
+      "sourceSpecification": "Allegro ACS712ELCTR-30A-T IC; 4.5-5.5 V supply; +/-30 A range; 66 mV/A typical at 25 degC",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.184,
+        0.3,
+        -0.0864
+      ]
+    },
+    {
+      "id": "MDRV",
+      "node": "component_MDRV",
+      "position": [
+        3.53,
+        0,
+        -1.05
+      ],
+      "terminals": [
+        {
+          "name": "INPUT+",
+          "node": "terminal_MDRV_INPUT_POS",
+          "position": [
+            -0.3237,
+            0.2,
+            -0.085
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "INPUT-",
+          "node": "terminal_MDRV_INPUT_NEG",
+          "position": [
+            -0.3237,
+            0.2,
+            0.085
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "MOTOR_OUT+",
+          "node": "terminal_MDRV_MOTOR_OUT_POS",
+          "position": [
+            0.3237,
+            0.2,
+            -0.085
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "MOTOR_OUT-",
+          "node": "terminal_MDRV_MOTOR_OUT_NEG",
+          "position": [
+            0.3237,
+            0.2,
+            0.085
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Motor controller / topology TBD",
+      "kind": "driver",
+      "bounds": {
+        "min": [
+          -0.475,
+          0,
+          -0.44
+        ],
+        "max": [
+          0.475,
+          0.48,
+          0.53
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Topology (unidirectional PWM vs H-bridge), input voltage, stall/regen current TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.2824,
+        0.3,
+        -0.084
+      ]
+    },
+    {
+      "id": "M1",
+      "node": "component_M1",
+      "position": [
+        3.83,
+        0,
+        0.23
+      ],
+      "terminals": [
+        {
+          "name": "TERM+",
+          "node": "terminal_M1_TERM_POS",
+          "position": [
+            0.3432,
+            0.2,
+            -0.085
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "TERM-",
+          "node": "terminal_M1_TERM_NEG",
+          "position": [
+            0.3432,
+            0.2,
+            0.085
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Motor / identity TBD",
+      "kind": "motor",
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.39
+        ],
+        "max": [
+          0.5,
+          0.48,
+          0.48
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Type (brushed/BLDC), nominal voltage, rated/start/stall current TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.3064,
+        0.3,
+        0.0184
+      ]
+    },
+    {
+      "id": "F2",
+      "node": "component_F2",
+      "position": [
+        -1.57,
+        0,
+        -0.7
+      ],
+      "terminals": [
+        {
+          "name": "IN",
+          "node": "terminal_F2_IN",
+          "position": [
+            -0.24,
+            0.219,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT",
+          "node": "terminal_F2_OUT",
+          "position": [
+            0.24,
+            0.219,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Electronics fuse / rating TBD",
+      "kind": "fuse",
+      "bounds": {
+        "min": [
+          -0.39,
+          0,
+          -0.305
+        ],
+        "max": [
+          0.39,
+          0.48,
+          0.39499999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES ADDITIONAL INFORMATION",
+      "sourceSpecification": "Rating, DC interrupting capacity and curve TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.1256,
+        0.3,
+        -0.056
+      ]
+    },
+    {
+      "id": "U_BUCK_BOARD",
+      "node": "component_U_BUCK_BOARD",
+      "position": [
+        -0.32,
+        0,
+        -0.7
+      ],
+      "terminals": [
+        {
+          "name": "IN+",
+          "node": "terminal_U_BUCK_BOARD_IN_POS",
+          "position": [
+            -0.44,
+            0.195,
+            -0.19
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "IN-",
+          "node": "terminal_U_BUCK_BOARD_IN_NEG",
+          "position": [
+            -0.44,
+            0.195,
+            0.19
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT+",
+          "node": "terminal_U_BUCK_BOARD_OUT_POS",
+          "position": [
+            0.44,
+            0.195,
+            -0.19
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT-",
+          "node": "terminal_U_BUCK_BOARD_OUT_NEG",
+          "position": [
+            0.44,
+            0.195,
+            0.19
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "LM2596 / module unverified",
+      "kind": "buck",
+      "bounds": {
+        "min": [
+          -0.5700000000000001,
+          0,
+          -0.46
+        ],
+        "max": [
+          0.5700000000000001,
+          0.48,
+          0.55
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Exact board manufacturer, inductor/capacitor ratings, 5.00 V setpoint accuracy, and common-ground topology TBD",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.0256,
+        0.3,
+        -0.056
+      ]
+    },
+    {
+      "id": "JGND",
+      "node": "component_JGND",
+      "position": [
+        -3.36,
+        0,
+        -0.53
+      ],
+      "terminals": [
+        {
+          "name": "STAR_RETURN",
+          "node": "terminal_JGND_STAR_RETURN",
+          "position": [
+            -0.29,
+            0.25,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "LOGIC_GND",
+          "node": "terminal_JGND_LOGIC_GND",
+          "position": [
+            0.29,
+            0.25,
+            0
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Star return / quiet reference",
+      "kind": "ground",
+      "bounds": {
+        "min": [
+          -0.6599999999999999,
+          0,
+          -0.41000000000000003
+        ],
+        "max": [
+          0.6599999999999999,
+          0.48,
+          0.5
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "DESIGN ASSUMPTION / REQUIRES HARDWARE IDENTIFICATION",
+      "sourceSpecification": "Dedicated Kelvin star-ground busbar separating high-current STAR_RETURN and quiet LOGIC_GND",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.2688,
+        0.3,
+        -0.0424
+      ]
+    },
+    {
+      "id": "U_I_L",
+      "node": "component_U_I_L",
+      "position": [
+        1.05,
+        0,
+        0.27
+      ],
+      "terminals": [
+        {
+          "name": "IN",
+          "node": "terminal_U_I_L_IN",
+          "position": [
+            -0.2847,
+            0.2,
+            -0.0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "OUT",
+          "node": "terminal_U_I_L_OUT",
+          "position": [
+            0.2847,
+            0.2,
+            -0.0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Light conditioner / TBD",
+      "kind": "conditioner",
+      "bounds": {
+        "min": [
+          -0.425,
+          0,
+          -0.375
+        ],
+        "max": [
+          0.425,
+          0.48,
+          0.46499999999999997
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Conditioning/scaling/clamping network TBD after S_L selection (formerly aliased as R_I_L)",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.084,
+        0.3,
+        0.0216
+      ]
+    },
+    {
+      "id": "C_BYP_M",
+      "node": "component_C_BYP_M",
+      "position": [
+        2.07,
+        0,
+        0.27
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_C_BYP_M_A",
+          "position": [
+            -0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_C_BYP_M_B",
+          "position": [
+            0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "100 nF / conditional",
+      "kind": "capacitor",
+      "bounds": {
+        "min": [
+          -0.28500000000000003,
+          0,
+          -0.315
+        ],
+        "max": [
+          0.28500000000000003,
+          0.48,
+          0.40499999999999997
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "0.1 uF (100 nF) ceramic from S_M.VCC to S_M.GND per Allegro typical application",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.1656,
+        0.3,
+        0.0216
+      ]
+    },
+    {
+      "id": "C_FILTER_M",
+      "node": "component_C_FILTER_M",
+      "position": [
+        2.73,
+        0,
+        0.27
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_C_FILTER_M_A",
+          "position": [
+            -0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_C_FILTER_M_B",
+          "position": [
+            0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "FILTER / value TBD",
+      "kind": "capacitor",
+      "bounds": {
+        "min": [
+          -0.28500000000000003,
+          0,
+          -0.315
+        ],
+        "max": [
+          0.28500000000000003,
+          0.48,
+          0.40499999999999997
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "1 nF ceramic from S_M.FILTER (Pin 6) to GND per Allegro typical application (~47 nF for 2 kHz pole)",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.2184,
+        0.3,
+        0.0216
+      ]
+    },
+    {
+      "id": "R_LH",
+      "node": "component_R_LH",
+      "position": [
+        -3.78,
+        0,
+        1.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_R_LH_A",
+          "position": [
+            -0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_R_LH_B",
+          "position": [
+            0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "68 kOhm / 1% assumed",
+      "kind": "resistor",
+      "bounds": {
+        "min": [
+          -0.385,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.385,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED / assumption",
+      "sourceSpecification": "68 kOhm, 1% metal-film assumed (>=0.125 W, >=50 V working voltage)",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.3024,
+        0.3,
+        0.0864
+      ]
+    },
+    {
+      "id": "NODE_VL",
+      "node": "component_NODE_VL",
+      "position": [
+        -2.79,
+        0,
+        1.1
+      ],
+      "terminals": [
+        {
+          "name": "NODE",
+          "node": "terminal_NODE_VL_NODE",
+          "position": [
+            0,
+            0.27,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Light voltage node",
+      "kind": "node",
+      "bounds": {
+        "min": [
+          -0.28,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.28,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED",
+      "sourceSpecification": "Sense junction joining R_LH.B, R_LL.A, C_L.A, and U_ESP.GPIO33",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.2232,
+        0.3,
+        0.088
+      ]
+    },
+    {
+      "id": "R_LL",
+      "node": "component_R_LL",
+      "position": [
+        -2.79,
+        0,
+        2.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_R_LL_A",
+          "position": [
+            -0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_R_LL_B",
+          "position": [
+            0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "10 kOhm / 1% assumed",
+      "kind": "resistor",
+      "bounds": {
+        "min": [
+          -0.385,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.385,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED / assumption",
+      "sourceSpecification": "10 kOhm, 1% metal-film assumed (>=0.125 W)",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.2232,
+        0.3,
+        0.1664
+      ]
+    },
+    {
+      "id": "C_L",
+      "node": "component_C_L",
+      "position": [
+        -3.78,
+        0,
+        2.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_C_L_A",
+          "position": [
+            -0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_C_L_B",
+          "position": [
+            0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "100 nF / assumed",
+      "kind": "capacitor",
+      "bounds": {
+        "min": [
+          -0.31,
+          0,
+          -0.3
+        ],
+        "max": [
+          0.31,
+          0.48,
+          0.38999999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "DESIGN ASSUMPTION",
+      "sourceSpecification": "100 nF ceramic (X7R, >=25 V rated) assumed",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.3024,
+        0.3,
+        0.1664
+      ]
+    },
+    {
+      "id": "R_MH",
+      "node": "component_R_MH",
+      "position": [
+        -1.85,
+        0,
+        1.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_R_MH_A",
+          "position": [
+            -0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_R_MH_B",
+          "position": [
+            0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "27 kOhm / 1% conditional",
+      "kind": "resistor",
+      "bounds": {
+        "min": [
+          -0.385,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.385,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED / conditional",
+      "sourceSpecification": "27 kOhm, 1% metal-film assumed",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.148,
+        0.3,
+        0.0864
+      ]
+    },
+    {
+      "id": "NODE_IM",
+      "node": "component_NODE_IM",
+      "position": [
+        -0.87,
+        0,
+        1.1
+      ],
+      "terminals": [
+        {
+          "name": "NODE",
+          "node": "terminal_NODE_IM_NODE",
+          "position": [
+            0,
+            0.27,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Motor current node",
+      "kind": "node",
+      "bounds": {
+        "min": [
+          -0.28,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.28,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED / conditional",
+      "sourceSpecification": "Sense junction joining R_MH.B, R_ML.A, C_M.A, and U_ESP.GPIO34",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.0696,
+        0.3,
+        0.088
+      ]
+    },
+    {
+      "id": "R_ML",
+      "node": "component_R_ML",
+      "position": [
+        -0.87,
+        0,
+        2.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_R_ML_A",
+          "position": [
+            -0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_R_ML_B",
+          "position": [
+            0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "20 kOhm / 1% conditional",
+      "kind": "resistor",
+      "bounds": {
+        "min": [
+          -0.385,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.385,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED / conditional",
+      "sourceSpecification": "20 kOhm, 1% metal-film assumed",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.0696,
+        0.3,
+        0.1664
+      ]
+    },
+    {
+      "id": "C_M",
+      "node": "component_C_M",
+      "position": [
+        -1.85,
+        0,
+        2.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_C_M_A",
+          "position": [
+            -0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_C_M_B",
+          "position": [
+            0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "100 nF / assumed",
+      "kind": "capacitor",
+      "bounds": {
+        "min": [
+          -0.31,
+          0,
+          -0.3
+        ],
+        "max": [
+          0.31,
+          0.48,
+          0.38999999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "DESIGN ASSUMPTION",
+      "sourceSpecification": "100 nF ceramic (X7R, >=16 V rated) assumed",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.148,
+        0.3,
+        0.1664
+      ]
+    },
+    {
+      "id": "R_VH",
+      "node": "component_R_VH",
+      "position": [
+        0.08,
+        0,
+        1.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_R_VH_A",
+          "position": [
+            -0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_R_VH_B",
+          "position": [
+            0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "68 kOhm / 1% assumed",
+      "kind": "resistor",
+      "bounds": {
+        "min": [
+          -0.385,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.385,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED / assumption",
+      "sourceSpecification": "68 kOhm, 1% metal-film assumed (>=0.125 W, >=50 V working voltage)",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.0064,
+        0.3,
+        0.0864
+      ]
+    },
+    {
+      "id": "NODE_VM",
+      "node": "component_NODE_VM",
+      "position": [
+        1.06,
+        0,
+        1.1
+      ],
+      "terminals": [
+        {
+          "name": "NODE",
+          "node": "terminal_NODE_VM_NODE",
+          "position": [
+            0,
+            0.27,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Motor voltage node",
+      "kind": "node",
+      "bounds": {
+        "min": [
+          -0.28,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.28,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED",
+      "sourceSpecification": "Sense junction joining R_VH.B, R_VL.A, C_V.A, and U_ESP.GPIO35",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.0848,
+        0.3,
+        0.088
+      ]
+    },
+    {
+      "id": "R_VL",
+      "node": "component_R_VL",
+      "position": [
+        1.06,
+        0,
+        2.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_R_VL_A",
+          "position": [
+            -0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_R_VL_B",
+          "position": [
+            0.28,
+            0.169,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "10 kOhm / 1% assumed",
+      "kind": "resistor",
+      "bounds": {
+        "min": [
+          -0.385,
+          0,
+          -0.275
+        ],
+        "max": [
+          0.385,
+          0.48,
+          0.365
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "CALCULATED AND CROSS-CHECKED / assumption",
+      "sourceSpecification": "10 kOhm, 1% metal-film assumed (>=0.125 W)",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.0848,
+        0.3,
+        0.1664
+      ]
+    },
+    {
+      "id": "C_V",
+      "node": "component_C_V",
+      "position": [
+        0.08,
+        0,
+        2.08
+      ],
+      "terminals": [
+        {
+          "name": "A",
+          "node": "terminal_C_V_A",
+          "position": [
+            -0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "B",
+          "node": "terminal_C_V_B",
+          "position": [
+            0.17,
+            0.125,
+            0.025
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "100 nF / assumed",
+      "kind": "capacitor",
+      "bounds": {
+        "min": [
+          -0.31,
+          0,
+          -0.3
+        ],
+        "max": [
+          0.31,
+          0.48,
+          0.38999999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "DESIGN ASSUMPTION",
+      "sourceSpecification": "100 nF ceramic (X7R, >=25 V rated) assumed",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.0064,
+        0.3,
+        0.1664
+      ]
+    },
+    {
+      "id": "U_ESP",
+      "node": "component_U_ESP",
+      "position": [
+        2.74,
+        0,
+        1.76
+      ],
+      "terminals": [
+        {
+          "name": "5V_IN",
+          "node": "terminal_U_ESP_5V_IN",
+          "position": [
+            -0.53,
+            0.175,
+            -0.4
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GND",
+          "node": "terminal_U_ESP_GND",
+          "position": [
+            -0.53,
+            0.175,
+            -0.24
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GPIO32",
+          "node": "terminal_U_ESP_GPIO32",
+          "position": [
+            -0.53,
+            0.175,
+            -0.08
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GPIO33",
+          "node": "terminal_U_ESP_GPIO33",
+          "position": [
+            -0.53,
+            0.175,
+            0.08
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GPIO34",
+          "node": "terminal_U_ESP_GPIO34",
+          "position": [
+            -0.53,
+            0.175,
+            0.24
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GPIO35",
+          "node": "terminal_U_ESP_GPIO35",
+          "position": [
+            -0.53,
+            0.175,
+            0.4
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "3V3",
+          "node": "terminal_U_ESP_3V3",
+          "position": [
+            0.53,
+            0.175,
+            -0.4
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GPIO21",
+          "node": "terminal_U_ESP_GPIO21",
+          "position": [
+            0.53,
+            0.175,
+            -0.24
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GPIO22",
+          "node": "terminal_U_ESP_GPIO22",
+          "position": [
+            0.53,
+            0.175,
+            -0.08
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GPIO4",
+          "node": "terminal_U_ESP_GPIO4",
+          "position": [
+            0.53,
+            0.175,
+            0.08
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Classic ESP32 / carrier TBD",
+      "kind": "esp",
+      "bounds": {
+        "min": [
+          -0.7050000000000001,
+          0,
+          -0.7749999999999999
+        ],
+        "max": [
+          0.7050000000000001,
+          0.48,
+          0.865
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Classic ESP32 (ESP32-WROOM-32 candidate); ADC1 on GPIO32-35; exact carrier board pinout unknown",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.2192,
+        0.4,
+        0.1408
+      ]
+    },
+    {
+      "id": "U_OLED_BOARD",
+      "node": "component_U_OLED_BOARD",
+      "position": [
+        -3.51,
+        0,
+        3.09
+      ],
+      "terminals": [
+        {
+          "name": "VCC",
+          "node": "terminal_U_OLED_BOARD_VCC",
+          "position": [
+            -0.3,
+            0.18,
+            -0.28
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "SDA",
+          "node": "terminal_U_OLED_BOARD_SDA",
+          "position": [
+            -0.1,
+            0.18,
+            -0.28
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "SCL",
+          "node": "terminal_U_OLED_BOARD_SCL",
+          "position": [
+            0.1,
+            0.18,
+            -0.28
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GND",
+          "node": "terminal_U_OLED_BOARD_GND",
+          "position": [
+            0.3,
+            0.18,
+            -0.28
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Optional OLED / pinout TBD",
+      "kind": "oled",
+      "bounds": {
+        "min": [
+          -0.5700000000000001,
+          0,
+          -0.37
+        ],
+        "max": [
+          0.5700000000000001,
+          0.48,
+          0.45999999999999996
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "0.96-inch I2C OLED module; exact pin order (GND/VCC vs VCC/GND) and 3.3 V pullups unknown",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.2808,
+        0.3,
+        0.2472
+      ]
+    },
+    {
+      "id": "T1_PROBE",
+      "node": "component_T1_PROBE",
+      "position": [
+        -1.94,
+        0,
+        3.09
+      ],
+      "terminals": [
+        {
+          "name": "VDD",
+          "node": "terminal_T1_PROBE_VDD",
+          "position": [
+            -0.48,
+            0.14,
+            0.13
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "GND",
+          "node": "terminal_T1_PROBE_GND",
+          "position": [
+            -0.48,
+            0.14,
+            -0.0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        },
+        {
+          "name": "DQ",
+          "node": "terminal_T1_PROBE_DQ",
+          "position": [
+            -0.48,
+            0.14,
+            -0.13
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "Optional DS18B20 / leads TBD",
+      "kind": "probe",
+      "bounds": {
+        "min": [
+          -0.645,
+          0,
+          -0.315
+        ],
+        "max": [
+          0.645,
+          0.48,
+          0.40499999999999997
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES COMPONENT IDENTIFICATION",
+      "sourceSpecification": "Waterproof probe assembly; lead wire colors and pin mapping unknown",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.1552,
+        0.3,
+        0.2472
+      ]
+    },
+    {
+      "id": "TVS1",
+      "node": "component_TVS1",
+      "position": [
+        -2.59,
+        0,
+        -1.47
+      ],
+      "terminals": [
+        {
+          "name": "CATHODE",
+          "node": "terminal_TVS1_CATHODE",
+          "position": [
+            0.22,
+            0.182,
+            0
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "physicalStatus": "UNRESOLVED - logical contact; installed pin position not verified"
+        }
+      ],
+      "name": "TVS footprint / unresolved",
+      "kind": "tvs",
+      "bounds": {
+        "min": [
+          -0.38,
+          0,
+          -0.27
+        ],
+        "max": [
+          0.38,
+          0.48,
+          0.36
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES ADDITIONAL INFORMATION",
+      "sourceSpecification": "Unselected bidirectional/unidirectional DC bus TVS diode at BUS+ to JGND",
+      "unwired": false,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.2072,
+        0.3,
+        -0.1176
+      ]
+    },
+    {
+      "id": "RP1",
+      "node": "component_RP1",
+      "position": [
+        -0.28,
+        0,
+        3.12
+      ],
+      "terminals": [],
+      "name": "Reverse polarity / unselected",
+      "kind": "protection",
+      "bounds": {
+        "min": [
+          -0.425,
+          0,
+          -0.34
+        ],
+        "max": [
+          0.425,
+          0.48,
+          0.43
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES ADDITIONAL INFORMATION",
+      "sourceSpecification": "Unselected series ideal-diode / P-FET or series Schottky / fuse-crowbar at battery input",
+      "unwired": true,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        -0.0224,
+        0.3,
+        0.2496
+      ]
+    },
+    {
+      "id": "D1",
+      "node": "component_D1",
+      "position": [
+        0.94,
+        0,
+        3.12
+      ],
+      "terminals": [],
+      "name": "Motor suppression / conditional",
+      "kind": "diode",
+      "bounds": {
+        "min": [
+          -0.41,
+          0,
+          -0.34
+        ],
+        "max": [
+          0.41,
+          0.48,
+          0.43
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "REQUIRES ADDITIONAL INFORMATION",
+      "sourceSpecification": "Unselected (Conditional: unidirectional brushed motor only; DO NOT install across reversing H-bridge)",
+      "unwired": true,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.0752,
+        0.3,
+        0.2496
+      ]
+    },
+    {
+      "id": "RLY1",
+      "node": "component_RLY1",
+      "position": [
+        2.44,
+        0,
+        3.12
+      ],
+      "terminals": [],
+      "name": "Legacy relay / UNWIRED",
+      "kind": "relay",
+      "bounds": {
+        "min": [
+          -0.575,
+          0,
+          -0.375
+        ],
+        "max": [
+          0.575,
+          0.48,
+          0.46499999999999997
+        ]
+      },
+      "geometryStatus": "ILLUSTRATIVE - form, dimensions, colours and physical terminal positions unverified",
+      "sourceStatus": "FOUND IN EXISTING PROJECT FILE",
+      "sourceSpecification": "Unwired / omitted from active netlist; coil driver, flyback diode, and DC contact rating undefined",
+      "unwired": true,
+      "terminalPlacementStatus": "UNRESOLVED",
+      "explodedOffset": [
+        0.1952,
+        0.3,
+        0.2496
+      ]
+    }
+  ],
+  "componentCount": 36,
+  "wiredComponentCount": 33,
+  "terminalCount": 87,
+  "wires": [
+    {
+      "wire_id": "W001",
+      "source_component": "BAT1",
+      "source_terminal": "BAT+",
+      "destination_component": "F1",
+      "destination_terminal": "IN",
+      "net_or_domain": "PACK_POS",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Battery model listing found (S5); physical battery terminals, short-circuit rating, and shortest unfused lead to F1 must be verified.",
+      "sourceKey": "BAT1.BAT+",
+      "destinationKey": "F1.IN",
+      "points": [
+        [
+          -3.84,
+          0.925,
+          -2.45
+        ],
+        [
+          -3.84,
+          0.98,
+          -2.45
+        ],
+        [
+          -3.84,
+          1.005,
+          -2.86
+        ],
+        [
+          -3.8,
+          0.08,
+          -2.85
+        ],
+        [
+          -2.8,
+          0.08,
+          -2.85
+        ],
+        [
+          -2.8,
+          0.08,
+          -2.45
+        ],
+        [
+          -2.77,
+          0.525,
+          -2.42
+        ],
+        [
+          -2.48,
+          0.274,
+          -2.42
+        ],
+        [
+          -2.48,
+          0.219,
+          -2.42
+        ]
+      ],
+      "sourcePosition": [
+        -3.84,
+        0.925,
+        -2.45
+      ],
+      "destinationPosition": [
+        -2.48,
+        0.219,
+        -2.42
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W002",
+      "source_component": "F1",
+      "source_terminal": "OUT",
+      "destination_component": "SW1",
+      "destination_terminal": "IN",
+      "net_or_domain": "SWITCHED_POS",
+      "status": "REQUIRES ADDITIONAL INFORMATION",
+      "evidence_or_condition": "Main fuse F1 current, DC voltage (>=32 V DC), interrupting capacity, and holder rating TBD (S6).",
+      "sourceKey": "F1.OUT",
+      "destinationKey": "SW1.IN",
+      "points": [
+        [
+          -2.0,
+          0.219,
+          -2.42
+        ],
+        [
+          -2.0,
+          0.274,
+          -2.42
+        ],
+        [
+          -1.71,
+          0.525,
+          -2.42
+        ],
+        [
+          -1.7,
+          0.092,
+          -2.45
+        ],
+        [
+          -1.725,
+          0.525,
+          -2.42
+        ],
+        [
+          -1.46,
+          0.23,
+          -2.42
+        ],
+        [
+          -1.46,
+          0.175,
+          -2.42
+        ]
+      ],
+      "sourcePosition": [
+        -2.0,
+        0.219,
+        -2.42
+      ],
+      "destinationPosition": [
+        -1.46,
+        0.175,
+        -2.42
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W003",
+      "source_component": "SW1",
+      "source_terminal": "OUT",
+      "destination_component": "BUS+",
+      "destination_terminal": "IN",
+      "net_or_domain": "BUS_POS",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Master switch SW1 DC inductive breaking rating and insulated BUS+ distribution block hardware TBD (S7).",
+      "sourceKey": "SW1.OUT",
+      "destinationKey": "BUS+.IN",
+      "points": [
+        [
+          -0.94,
+          0.175,
+          -2.42
+        ],
+        [
+          -0.94,
+          0.23,
+          -2.42
+        ],
+        [
+          -0.675,
+          0.525,
+          -2.42
+        ],
+        [
+          -0.7,
+          0.104,
+          -2.45
+        ],
+        [
+          -0.7,
+          0.104,
+          -2.35
+        ],
+        [
+          -0.705,
+          0.525,
+          -2.36
+        ],
+        [
+          -0.35,
+          0.305,
+          -2.36
+        ],
+        [
+          -0.35,
+          0.25,
+          -2.36
+        ]
+      ],
+      "sourcePosition": [
+        -0.94,
+        0.175,
+        -2.42
+      ],
+      "destinationPosition": [
+        -0.35,
+        0.25,
+        -2.36
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W004",
+      "source_component": "BUS+",
+      "source_terminal": "OUT_L",
+      "destination_component": "FL",
+      "destination_terminal": "IN",
+      "net_or_domain": "LIGHT_POS",
+      "status": "REQUIRES ADDITIONAL INFORMATION",
+      "evidence_or_condition": "Light branch fuse FL rating, DC interrupting capacity, and time-current curve TBD at BUS+ takeoff (S6).",
+      "sourceKey": "BUS+.OUT_L",
+      "destinationKey": "FL.IN",
+      "points": [
+        [
+          -0.205,
+          0.25,
+          -2.36
+        ],
+        [
+          -0.205,
+          0.305,
+          -2.36
+        ],
+        [
+          -0.705,
+          0.525,
+          -2.36
+        ],
+        [
+          -0.7,
+          0.116,
+          -2.35
+        ],
+        [
+          -0.7,
+          0.116,
+          -2.85
+        ],
+        [
+          0.6,
+          0.116,
+          -2.85
+        ],
+        [
+          0.6,
+          0.116,
+          -2.55
+        ],
+        [
+          0.65,
+          0.525,
+          -2.53
+        ],
+        [
+          0.92,
+          0.274,
+          -2.53
+        ],
+        [
+          0.92,
+          0.219,
+          -2.53
+        ]
+      ],
+      "sourcePosition": [
+        -0.205,
+        0.25,
+        -2.36
+      ],
+      "destinationPosition": [
+        0.92,
+        0.219,
+        -2.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W005",
+      "source_component": "FL",
+      "source_terminal": "OUT",
+      "destination_component": "S_L",
+      "destination_terminal": "IP+",
+      "net_or_domain": "LIGHT_POS",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Light current transducer S_L series primary input; orient IP+ toward source so forward current gives positive signal.",
+      "sourceKey": "FL.OUT",
+      "destinationKey": "S_L.IP+",
+      "points": [
+        [
+          1.4,
+          0.219,
+          -2.53
+        ],
+        [
+          1.4,
+          0.274,
+          -2.53
+        ],
+        [
+          1.67,
+          0.525,
+          -2.53
+        ],
+        [
+          1.7,
+          0.128,
+          -2.55
+        ],
+        [
+          1.72,
+          0.525,
+          -2.54
+        ],
+        [
+          2.09,
+          0.319,
+          -2.54
+        ],
+        [
+          2.09,
+          0.264,
+          -2.54
+        ]
+      ],
+      "sourcePosition": [
+        1.4,
+        0.219,
+        -2.53
+      ],
+      "destinationPosition": [
+        2.09,
+        0.264,
+        -2.54
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W006",
+      "source_component": "S_L",
+      "source_terminal": "IP-",
+      "destination_component": "L1",
+      "destination_terminal": "INPUT+",
+      "net_or_domain": "LIGHT_INPUT_POS",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Feeds complete 12 V DC lamp input boundary; exact lamp wattage and internal driver TBD.",
+      "sourceKey": "S_L.IP-",
+      "destinationKey": "L1.INPUT+",
+      "points": [
+        [
+          2.51,
+          0.264,
+          -2.54
+        ],
+        [
+          2.51,
+          0.319,
+          -2.54
+        ],
+        [
+          2.88,
+          0.525,
+          -2.54
+        ],
+        [
+          2.9,
+          0.14,
+          -2.55
+        ],
+        [
+          2.9,
+          0.14,
+          -2.45
+        ],
+        [
+          2.93,
+          0.525,
+          -2.475
+        ],
+        [
+          3.218,
+          0.255,
+          -2.475
+        ],
+        [
+          3.218,
+          0.2,
+          -2.475
+        ]
+      ],
+      "sourcePosition": [
+        2.51,
+        0.264,
+        -2.54
+      ],
+      "destinationPosition": [
+        3.218,
+        0.2,
+        -2.475
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W007",
+      "source_component": "L1",
+      "source_terminal": "INPUT-",
+      "destination_component": "JGND",
+      "destination_terminal": "STAR_RETURN",
+      "net_or_domain": "LIGHT_RETURN",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Dedicated Light return conductor home-run to JGND.STAR_RETURN; do not daisy-chain with Motor or ESP32 ground.",
+      "sourceKey": "L1.INPUT-",
+      "destinationKey": "JGND.STAR_RETURN",
+      "points": [
+        [
+          3.218,
+          0.2,
+          -2.305
+        ],
+        [
+          3.218,
+          0.255,
+          -2.305
+        ],
+        [
+          2.93,
+          0.525,
+          -2.305
+        ],
+        [
+          2.9,
+          0.152,
+          -2.35
+        ],
+        [
+          2.8,
+          0.152,
+          -2.35
+        ],
+        [
+          2.8,
+          0.152,
+          -2.95
+        ],
+        [
+          -4.2,
+          0.152,
+          -2.95
+        ],
+        [
+          -4.2,
+          0.152,
+          -0.55
+        ],
+        [
+          -4.16,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.65,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.65,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        3.218,
+        0.2,
+        -2.305
+      ],
+      "destinationPosition": [
+        -3.65,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W008",
+      "source_component": "BUS+",
+      "source_terminal": "OUT_M",
+      "destination_component": "FM",
+      "destination_terminal": "IN",
+      "net_or_domain": "MOTOR_POS",
+      "status": "REQUIRES ADDITIONAL INFORMATION",
+      "evidence_or_condition": "Motor branch fuse FM rating, time-delay I2t curve for motor startup, and DC breaking capacity TBD at BUS+ takeoff.",
+      "sourceKey": "BUS+.OUT_M",
+      "destinationKey": "FM.IN",
+      "points": [
+        [
+          -0.06,
+          0.25,
+          -2.36
+        ],
+        [
+          -0.06,
+          0.305,
+          -2.36
+        ],
+        [
+          -0.06,
+          0.525,
+          -2.89
+        ],
+        [
+          -0.1,
+          0.08,
+          -2.85
+        ],
+        [
+          0.5,
+          0.08,
+          -2.85
+        ],
+        [
+          0.5,
+          0.08,
+          -2.45
+        ],
+        [
+          0.6,
+          0.08,
+          -2.45
+        ],
+        [
+          0.6,
+          0.08,
+          -1.15
+        ],
+        [
+          0.65,
+          0.525,
+          -1.16
+        ],
+        [
+          0.92,
+          0.274,
+          -1.16
+        ],
+        [
+          0.92,
+          0.219,
+          -1.16
+        ]
+      ],
+      "sourcePosition": [
+        -0.06,
+        0.25,
+        -2.36
+      ],
+      "destinationPosition": [
+        0.92,
+        0.219,
+        -1.16
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W009",
+      "source_component": "FM",
+      "source_terminal": "OUT",
+      "destination_component": "S_M",
+      "destination_terminal": "IP+",
+      "net_or_domain": "MOTOR_POS",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "ACS712-30A candidate primary input IP+; breakout PCB trace and screw terminal ampacity must be verified.",
+      "sourceKey": "FM.OUT",
+      "destinationKey": "S_M.IP+",
+      "points": [
+        [
+          1.4,
+          0.219,
+          -1.16
+        ],
+        [
+          1.4,
+          0.274,
+          -1.16
+        ],
+        [
+          1.67,
+          0.525,
+          -1.16
+        ],
+        [
+          1.7,
+          0.092,
+          -1.15
+        ],
+        [
+          1.7,
+          0.092,
+          -1.25
+        ],
+        [
+          1.72,
+          0.525,
+          -1.22
+        ],
+        [
+          2.09,
+          0.319,
+          -1.22
+        ],
+        [
+          2.09,
+          0.264,
+          -1.22
+        ]
+      ],
+      "sourcePosition": [
+        1.4,
+        0.219,
+        -1.16
+      ],
+      "destinationPosition": [
+        2.09,
+        0.264,
+        -1.22
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W010",
+      "source_component": "S_M",
+      "source_terminal": "IP-",
+      "destination_component": "MDRV",
+      "destination_terminal": "INPUT+",
+      "net_or_domain": "MOTOR_INPUT_POS",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Measures DC supply current entering motor controller MDRV, not switched PWM motor winding current.",
+      "sourceKey": "S_M.IP-",
+      "destinationKey": "MDRV.INPUT+",
+      "points": [
+        [
+          2.51,
+          0.264,
+          -1.22
+        ],
+        [
+          2.51,
+          0.319,
+          -1.22
+        ],
+        [
+          2.88,
+          0.525,
+          -1.22
+        ],
+        [
+          2.9,
+          0.104,
+          -1.25
+        ],
+        [
+          2.9,
+          0.104,
+          -1.15
+        ],
+        [
+          2.915,
+          0.525,
+          -1.135
+        ],
+        [
+          3.2063,
+          0.255,
+          -1.135
+        ],
+        [
+          3.2063,
+          0.2,
+          -1.135
+        ]
+      ],
+      "sourcePosition": [
+        2.51,
+        0.264,
+        -1.22
+      ],
+      "destinationPosition": [
+        3.2063,
+        0.2,
+        -1.135
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W011",
+      "source_component": "MDRV",
+      "source_terminal": "INPUT-",
+      "destination_component": "JGND",
+      "destination_terminal": "STAR_RETURN",
+      "net_or_domain": "MOTOR_RETURN",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Dedicated high-current Motor return conductor home-run directly to JGND.STAR_RETURN to prevent ground-bounce on ADC reference.",
+      "sourceKey": "MDRV.INPUT-",
+      "destinationKey": "JGND.STAR_RETURN",
+      "points": [
+        [
+          3.2063,
+          0.2,
+          -0.965
+        ],
+        [
+          3.2063,
+          0.255,
+          -0.965
+        ],
+        [
+          2.915,
+          0.525,
+          -0.965
+        ],
+        [
+          2.9,
+          0.116,
+          -0.95
+        ],
+        [
+          2.8,
+          0.116,
+          -0.95
+        ],
+        [
+          2.8,
+          0.116,
+          -0.45
+        ],
+        [
+          0.3,
+          0.116,
+          -0.45
+        ],
+        [
+          0.3,
+          0.116,
+          -0.05
+        ],
+        [
+          -2.6,
+          0.116,
+          -0.05
+        ],
+        [
+          -2.6,
+          0.116,
+          0.15
+        ],
+        [
+          -4.1,
+          0.116,
+          0.15
+        ],
+        [
+          -4.1,
+          0.116,
+          -0.55
+        ],
+        [
+          -4.2,
+          0.116,
+          -0.55
+        ],
+        [
+          -4.16,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.65,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.65,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        3.2063,
+        0.2,
+        -0.965
+      ],
+      "destinationPosition": [
+        -3.65,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W012",
+      "source_component": "BUS+",
+      "source_terminal": "OUT_E",
+      "destination_component": "F2",
+      "destination_terminal": "IN",
+      "net_or_domain": "ELECTRONICS_POS",
+      "status": "REQUIRES ADDITIONAL INFORMATION",
+      "evidence_or_condition": "Electronics branch fuse F2 rating TBD (0.391 A buck calculation is a load budget example, not a fuse rating).",
+      "sourceKey": "BUS+.OUT_E",
+      "destinationKey": "F2.IN",
+      "points": [
+        [
+          0.085,
+          0.25,
+          -2.36
+        ],
+        [
+          0.085,
+          0.305,
+          -2.36
+        ],
+        [
+          0.585,
+          0.525,
+          -2.36
+        ],
+        [
+          0.6,
+          0.128,
+          -2.35
+        ],
+        [
+          0.5,
+          0.128,
+          -2.35
+        ],
+        [
+          0.5,
+          0.128,
+          -1.75
+        ],
+        [
+          -2.1,
+          0.128,
+          -1.75
+        ],
+        [
+          -2.1,
+          0.128,
+          -0.65
+        ],
+        [
+          -2.1,
+          0.525,
+          -0.7
+        ],
+        [
+          -1.81,
+          0.274,
+          -0.7
+        ],
+        [
+          -1.81,
+          0.219,
+          -0.7
+        ]
+      ],
+      "sourcePosition": [
+        0.085,
+        0.25,
+        -2.36
+      ],
+      "destinationPosition": [
+        -1.81,
+        0.219,
+        -0.7
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W013",
+      "source_component": "F2",
+      "source_terminal": "OUT",
+      "destination_component": "U_BUCK_BOARD",
+      "destination_terminal": "IN+",
+      "net_or_domain": "BUCK_INPUT_POS",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Candidate LM2596 IC rated 4.5-40 V input (S4); verify actual converter module input capacitor and polarity markings.",
+      "sourceKey": "F2.OUT",
+      "destinationKey": "U_BUCK_BOARD.IN+",
+      "points": [
+        [
+          -1.33,
+          0.219,
+          -0.7
+        ],
+        [
+          -1.33,
+          0.274,
+          -0.7
+        ],
+        [
+          -1.04,
+          0.525,
+          -0.7
+        ],
+        [
+          -1.0,
+          0.14,
+          -0.65
+        ],
+        [
+          -1.0,
+          0.14,
+          -0.85
+        ],
+        [
+          -1.03,
+          0.525,
+          -0.89
+        ],
+        [
+          -0.76,
+          0.25,
+          -0.89
+        ],
+        [
+          -0.76,
+          0.195,
+          -0.89
+        ]
+      ],
+      "sourcePosition": [
+        -1.33,
+        0.219,
+        -0.7
+      ],
+      "destinationPosition": [
+        -0.76,
+        0.195,
+        -0.89
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W014",
+      "source_component": "BAT1",
+      "source_terminal": "BAT-",
+      "destination_component": "U_BUCK_BOARD",
+      "destination_terminal": "IN-",
+      "net_or_domain": "PACK_RETURN",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Converter input return path via battery negative star; explicitly drawn in upgraded schematic (was omitted in prior SVG).",
+      "sourceKey": "BAT1.BAT-",
+      "destinationKey": "U_BUCK_BOARD.IN-",
+      "points": [
+        [
+          -3.26,
+          0.925,
+          -2.45
+        ],
+        [
+          -3.26,
+          0.98,
+          -2.45
+        ],
+        [
+          -3.26,
+          1.005,
+          -2.86
+        ],
+        [
+          -3.3,
+          0.152,
+          -2.85
+        ],
+        [
+          -2.9,
+          0.152,
+          -2.85
+        ],
+        [
+          -2.9,
+          0.152,
+          -2.35
+        ],
+        [
+          -2.7,
+          0.152,
+          -2.35
+        ],
+        [
+          -2.7,
+          0.152,
+          -1.85
+        ],
+        [
+          -1.1,
+          0.152,
+          -1.85
+        ],
+        [
+          -1.1,
+          0.152,
+          -0.55
+        ],
+        [
+          -1.0,
+          0.152,
+          -0.55
+        ],
+        [
+          -1.03,
+          0.525,
+          -0.51
+        ],
+        [
+          -0.76,
+          0.25,
+          -0.51
+        ],
+        [
+          -0.76,
+          0.195,
+          -0.51
+        ]
+      ],
+      "sourcePosition": [
+        -3.26,
+        0.925,
+        -2.45
+      ],
+      "destinationPosition": [
+        -0.76,
+        0.195,
+        -0.51
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W015",
+      "source_component": "U_BUCK_BOARD",
+      "source_terminal": "OUT+",
+      "destination_component": "U_ESP",
+      "destination_terminal": "5V_IN",
+      "net_or_domain": "LOGIC_SUPPLY",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Pre-adjust and verify 5.00 V output under load before connecting U_ESP; verify USB/5V_IN backfeed isolation on ESP32 board.",
+      "sourceKey": "U_BUCK_BOARD.OUT+",
+      "destinationKey": "U_ESP.5V_IN",
+      "points": [
+        [
+          0.12,
+          0.195,
+          -0.89
+        ],
+        [
+          0.12,
+          0.25,
+          -0.89
+        ],
+        [
+          0.39,
+          0.525,
+          -0.89
+        ],
+        [
+          0.4,
+          0.08,
+          -0.85
+        ],
+        [
+          0.7,
+          0.08,
+          -0.85
+        ],
+        [
+          0.7,
+          0.08,
+          -0.65
+        ],
+        [
+          1.7,
+          0.08,
+          -0.65
+        ],
+        [
+          1.7,
+          0.08,
+          0.85
+        ],
+        [
+          1.9,
+          0.08,
+          0.85
+        ],
+        [
+          1.9,
+          0.08,
+          1.35
+        ],
+        [
+          1.895,
+          0.525,
+          1.36
+        ],
+        [
+          2.21,
+          0.23,
+          1.36
+        ],
+        [
+          2.21,
+          0.175,
+          1.36
+        ]
+      ],
+      "sourcePosition": [
+        0.12,
+        0.195,
+        -0.89
+      ],
+      "destinationPosition": [
+        2.21,
+        0.175,
+        1.36
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W016",
+      "source_component": "U_BUCK_BOARD",
+      "source_terminal": "OUT-",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "LOGIC_RETURN",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Explicitly drawn in upgraded schematic; valid only after confirming U_BUCK_BOARD is non-isolated with continuous common IN-/OUT- ground.",
+      "sourceKey": "U_BUCK_BOARD.OUT-",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          0.12,
+          0.195,
+          -0.51
+        ],
+        [
+          0.12,
+          0.25,
+          -0.51
+        ],
+        [
+          0.39,
+          0.525,
+          -0.51
+        ],
+        [
+          0.4,
+          0.092,
+          -0.55
+        ],
+        [
+          0.4,
+          0.092,
+          -0.05
+        ],
+        [
+          -1.0,
+          0.092,
+          -0.05
+        ],
+        [
+          -1.0,
+          0.092,
+          -0.15
+        ],
+        [
+          -2.1,
+          0.092,
+          -0.15
+        ],
+        [
+          -2.1,
+          0.092,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.092,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        0.12,
+        0.195,
+        -0.51
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W017",
+      "source_component": "U_ESP",
+      "source_terminal": "GND",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "LOGIC_RETURN",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Dedicated quiet logic ground reference between ESP32 GND and JGND.LOGIC_GND (never daisy-chain with MDRV return).",
+      "sourceKey": "U_ESP.GND",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          2.21,
+          0.175,
+          1.52
+        ],
+        [
+          2.21,
+          0.23,
+          1.52
+        ],
+        [
+          1.895,
+          0.525,
+          1.52
+        ],
+        [
+          1.9,
+          0.104,
+          1.55
+        ],
+        [
+          1.4,
+          0.104,
+          1.55
+        ],
+        [
+          1.4,
+          0.104,
+          1.65
+        ],
+        [
+          0.7,
+          0.104,
+          1.65
+        ],
+        [
+          0.7,
+          0.104,
+          1.55
+        ],
+        [
+          -0.4,
+          0.104,
+          1.55
+        ],
+        [
+          -0.4,
+          0.104,
+          0.05
+        ],
+        [
+          -2.5,
+          0.104,
+          0.05
+        ],
+        [
+          -2.5,
+          0.104,
+          -0.45
+        ],
+        [
+          -2.6,
+          0.104,
+          -0.45
+        ],
+        [
+          -2.6,
+          0.104,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        2.21,
+        0.175,
+        1.52
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W018",
+      "source_component": "U_BUCK_BOARD",
+      "source_terminal": "OUT+",
+      "destination_component": "S_M",
+      "destination_terminal": "VCC",
+      "net_or_domain": "SENSOR_5V",
+      "status": "CONDITIONAL",
+      "evidence_or_condition": "5.00 V supply to ACS712 (4.5-5.5 V datasheet range, S1); power sequencing must prevent S_M driving GPIO34 while U_ESP is unpowered.",
+      "sourceKey": "U_BUCK_BOARD.OUT+",
+      "destinationKey": "S_M.VCC",
+      "points": [
+        [
+          0.12,
+          0.195,
+          -0.89
+        ],
+        [
+          0.12,
+          0.25,
+          -0.89
+        ],
+        [
+          0.39,
+          0.525,
+          -0.89
+        ],
+        [
+          0.4,
+          0.116,
+          -0.85
+        ],
+        [
+          0.4,
+          0.116,
+          -0.75
+        ],
+        [
+          0.6,
+          0.116,
+          -0.75
+        ],
+        [
+          0.6,
+          0.116,
+          -0.65
+        ],
+        [
+          1.6,
+          0.116,
+          -0.65
+        ],
+        [
+          1.6,
+          0.116,
+          -0.75
+        ],
+        [
+          1.7,
+          0.116,
+          -0.75
+        ],
+        [
+          1.7,
+          0.116,
+          -0.85
+        ],
+        [
+          1.72,
+          0.525,
+          -0.83
+        ],
+        [
+          2.06,
+          0.233,
+          -0.83
+        ],
+        [
+          2.06,
+          0.178,
+          -0.83
+        ]
+      ],
+      "sourcePosition": [
+        0.12,
+        0.195,
+        -0.89
+      ],
+      "destinationPosition": [
+        2.06,
+        0.178,
+        -0.83
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W019",
+      "source_component": "JGND",
+      "source_terminal": "LOGIC_GND",
+      "destination_component": "S_M",
+      "destination_terminal": "GND",
+      "net_or_domain": "SENSOR_GND",
+      "status": "CONDITIONAL",
+      "evidence_or_condition": "Motor current sensor signal ground referenced to quiet JGND.LOGIC_GND.",
+      "sourceKey": "JGND.LOGIC_GND",
+      "destinationKey": "S_M.GND",
+      "points": [
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -2.6,
+          0.128,
+          -0.55
+        ],
+        [
+          -2.4,
+          0.128,
+          -0.55
+        ],
+        [
+          -2.4,
+          0.128,
+          -0.45
+        ],
+        [
+          -2.2,
+          0.128,
+          -0.45
+        ],
+        [
+          -2.2,
+          0.128,
+          -0.15
+        ],
+        [
+          -1.0,
+          0.128,
+          -0.15
+        ],
+        [
+          -1.0,
+          0.128,
+          -0.05
+        ],
+        [
+          0.5,
+          0.128,
+          -0.05
+        ],
+        [
+          0.5,
+          0.128,
+          -0.25
+        ],
+        [
+          1.6,
+          0.128,
+          -0.25
+        ],
+        [
+          1.6,
+          0.128,
+          -0.35
+        ],
+        [
+          2.2,
+          0.128,
+          -0.35
+        ],
+        [
+          2.2,
+          0.128,
+          -0.45
+        ],
+        [
+          2.22,
+          0.525,
+          -0.4
+        ],
+        [
+          2.22,
+          0.233,
+          -0.83
+        ],
+        [
+          2.22,
+          0.178,
+          -0.83
+        ]
+      ],
+      "sourcePosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "destinationPosition": [
+        2.22,
+        0.178,
+        -0.83
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W020",
+      "source_component": "U_BUCK_BOARD",
+      "source_terminal": "OUT+",
+      "destination_component": "S_L",
+      "destination_terminal": "VCC",
+      "net_or_domain": "SENSOR_SUPPLY",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Supply rail for S_L (5.0 V or 3.3 V depending on selected Light current transducer, e.g., INA219 uses 3.3 V).",
+      "sourceKey": "U_BUCK_BOARD.OUT+",
+      "destinationKey": "S_L.VCC",
+      "points": [
+        [
+          0.12,
+          0.195,
+          -0.89
+        ],
+        [
+          0.12,
+          0.25,
+          -0.89
+        ],
+        [
+          0.39,
+          0.525,
+          -0.89
+        ],
+        [
+          0.4,
+          0.14,
+          -0.85
+        ],
+        [
+          0.4,
+          0.14,
+          -0.95
+        ],
+        [
+          0.7,
+          0.14,
+          -0.95
+        ],
+        [
+          0.7,
+          0.14,
+          -1.55
+        ],
+        [
+          1.7,
+          0.14,
+          -1.55
+        ],
+        [
+          1.7,
+          0.14,
+          -2.15
+        ],
+        [
+          1.72,
+          0.525,
+          -2.15
+        ],
+        [
+          2.06,
+          0.233,
+          -2.15
+        ],
+        [
+          2.06,
+          0.178,
+          -2.15
+        ]
+      ],
+      "sourcePosition": [
+        0.12,
+        0.195,
+        -0.89
+      ],
+      "destinationPosition": [
+        2.06,
+        0.178,
+        -2.15
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W021",
+      "source_component": "JGND",
+      "source_terminal": "LOGIC_GND",
+      "destination_component": "S_L",
+      "destination_terminal": "GND",
+      "net_or_domain": "SENSOR_GND",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Light current sensor reference ground to JGND.LOGIC_GND.",
+      "sourceKey": "JGND.LOGIC_GND",
+      "destinationKey": "S_L.GND",
+      "points": [
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -2.6,
+          0.152,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.152,
+          -0.65
+        ],
+        [
+          -2.2,
+          0.152,
+          -0.65
+        ],
+        [
+          -2.2,
+          0.152,
+          -0.95
+        ],
+        [
+          -2.1,
+          0.152,
+          -0.95
+        ],
+        [
+          -2.1,
+          0.152,
+          -1.15
+        ],
+        [
+          -1.2,
+          0.152,
+          -1.15
+        ],
+        [
+          -1.2,
+          0.152,
+          -1.65
+        ],
+        [
+          1.6,
+          0.152,
+          -1.65
+        ],
+        [
+          1.6,
+          0.152,
+          -1.75
+        ],
+        [
+          2.2,
+          0.152,
+          -1.75
+        ],
+        [
+          2.22,
+          0.525,
+          -1.73
+        ],
+        [
+          2.22,
+          0.233,
+          -2.15
+        ],
+        [
+          2.22,
+          0.178,
+          -2.15
+        ]
+      ],
+      "sourcePosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "destinationPosition": [
+        2.22,
+        0.178,
+        -2.15
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W022",
+      "source_component": "S_L",
+      "source_terminal": "OUT",
+      "destination_component": "U_I_L",
+      "destination_terminal": "IN",
+      "net_or_domain": "LIGHT_CURRENT_SIGNAL",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Unified designator U_I_L (previously mismatched as R_I_L in BOM); conditioning network TBD after S_L selection.",
+      "sourceKey": "S_L.OUT",
+      "destinationKey": "U_I_L.IN",
+      "points": [
+        [
+          2.38,
+          0.178,
+          -2.15
+        ],
+        [
+          2.38,
+          0.233,
+          -2.15
+        ],
+        [
+          2.38,
+          0.525,
+          -1.73
+        ],
+        [
+          2.4,
+          0.08,
+          -1.75
+        ],
+        [
+          2.3,
+          0.08,
+          -1.75
+        ],
+        [
+          2.3,
+          0.08,
+          -1.65
+        ],
+        [
+          1.8,
+          0.08,
+          -1.65
+        ],
+        [
+          1.8,
+          0.08,
+          -0.55
+        ],
+        [
+          0.5,
+          0.08,
+          -0.55
+        ],
+        [
+          0.5,
+          0.08,
+          0.25
+        ],
+        [
+          0.485,
+          0.525,
+          0.27
+        ],
+        [
+          0.7653,
+          0.255,
+          0.27
+        ],
+        [
+          0.7653,
+          0.2,
+          0.27
+        ]
+      ],
+      "sourcePosition": [
+        2.38,
+        0.178,
+        -2.15
+      ],
+      "destinationPosition": [
+        0.7653,
+        0.2,
+        0.27
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W023",
+      "source_component": "U_I_L",
+      "source_terminal": "OUT",
+      "destination_component": "U_ESP",
+      "destination_terminal": "GPIO32",
+      "net_or_domain": "LIGHT_CURRENT_ADC",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Routes conditioned Light current signal to classic ESP32 ADC1_CH4 candidate GPIO32 (must stay within 0.15-2.45 V).",
+      "sourceKey": "U_I_L.OUT",
+      "destinationKey": "U_ESP.GPIO32",
+      "points": [
+        [
+          1.3347,
+          0.2,
+          0.27
+        ],
+        [
+          1.3347,
+          0.255,
+          0.27
+        ],
+        [
+          1.615,
+          0.525,
+          0.27
+        ],
+        [
+          1.6,
+          0.092,
+          0.25
+        ],
+        [
+          1.6,
+          0.092,
+          0.95
+        ],
+        [
+          1.8,
+          0.092,
+          0.95
+        ],
+        [
+          1.8,
+          0.092,
+          1.45
+        ],
+        [
+          1.9,
+          0.092,
+          1.45
+        ],
+        [
+          1.9,
+          0.092,
+          1.65
+        ],
+        [
+          1.895,
+          0.525,
+          1.68
+        ],
+        [
+          2.21,
+          0.23,
+          1.68
+        ],
+        [
+          2.21,
+          0.175,
+          1.68
+        ]
+      ],
+      "sourcePosition": [
+        1.3347,
+        0.2,
+        0.27
+      ],
+      "destinationPosition": [
+        2.21,
+        0.175,
+        1.68
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W024",
+      "source_component": "L1",
+      "source_terminal": "INPUT+",
+      "destination_component": "R_LH",
+      "destination_terminal": "A",
+      "net_or_domain": "V_L+_TAP",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "Kelvin voltage sense tap at Light branch DC input boundary (paired with S_L current boundary).",
+      "sourceKey": "L1.INPUT+",
+      "destinationKey": "R_LH.A",
+      "points": [
+        [
+          3.218,
+          0.2,
+          -2.475
+        ],
+        [
+          3.218,
+          0.255,
+          -2.475
+        ],
+        [
+          2.93,
+          0.525,
+          -2.475
+        ],
+        [
+          2.9,
+          0.104,
+          -2.45
+        ],
+        [
+          2.9,
+          0.104,
+          -0.35
+        ],
+        [
+          0.4,
+          0.104,
+          -0.35
+        ],
+        [
+          0.4,
+          0.104,
+          0.05
+        ],
+        [
+          -0.3,
+          0.104,
+          0.05
+        ],
+        [
+          -0.3,
+          0.104,
+          0.55
+        ],
+        [
+          -4.3,
+          0.104,
+          0.55
+        ],
+        [
+          -4.3,
+          0.104,
+          1.05
+        ],
+        [
+          -4.305,
+          0.525,
+          1.08
+        ],
+        [
+          -4.06,
+          0.224,
+          1.08
+        ],
+        [
+          -4.06,
+          0.169,
+          1.08
+        ]
+      ],
+      "sourcePosition": [
+        3.218,
+        0.2,
+        -2.475
+      ],
+      "destinationPosition": [
+        -4.06,
+        0.169,
+        1.08
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W025",
+      "source_component": "R_LH",
+      "source_terminal": "B",
+      "destination_component": "NODE_VL",
+      "destination_terminal": "NODE",
+      "net_or_domain": "V_L_ADC",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "68 kOhm 1% top resistor leg to sense junction NODE_VL.",
+      "sourceKey": "R_LH.B",
+      "destinationKey": "NODE_VL.NODE",
+      "points": [
+        [
+          -3.5,
+          0.169,
+          1.08
+        ],
+        [
+          -3.5,
+          0.224,
+          1.08
+        ],
+        [
+          -3.255,
+          0.525,
+          1.08
+        ],
+        [
+          -3.3,
+          0.116,
+          1.05
+        ],
+        [
+          -3.2,
+          0.116,
+          1.05
+        ],
+        [
+          -3.2,
+          0.116,
+          0.75
+        ],
+        [
+          -2.4,
+          0.116,
+          0.75
+        ],
+        [
+          -2.4,
+          0.116,
+          1.15
+        ],
+        [
+          -2.37,
+          0.525,
+          1.1
+        ],
+        [
+          -2.79,
+          0.325,
+          1.1
+        ],
+        [
+          -2.79,
+          0.27,
+          1.1
+        ]
+      ],
+      "sourcePosition": [
+        -3.5,
+        0.169,
+        1.08
+      ],
+      "destinationPosition": [
+        -2.79,
+        0.27,
+        1.1
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W026",
+      "source_component": "NODE_VL",
+      "source_terminal": "NODE",
+      "destination_component": "R_LL",
+      "destination_terminal": "A",
+      "net_or_domain": "V_L_ADC",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "10 kOhm 1% bottom resistor leg from NODE_VL (ratio k = 5/39 = 0.128205).",
+      "sourceKey": "NODE_VL.NODE",
+      "destinationKey": "R_LL.A",
+      "points": [
+        [
+          -2.79,
+          0.27,
+          1.1
+        ],
+        [
+          -2.79,
+          0.325,
+          1.1
+        ],
+        [
+          -2.37,
+          0.525,
+          1.1
+        ],
+        [
+          -2.4,
+          0.128,
+          1.15
+        ],
+        [
+          -2.4,
+          0.128,
+          1.65
+        ],
+        [
+          -3.3,
+          0.128,
+          1.65
+        ],
+        [
+          -3.3,
+          0.128,
+          2.05
+        ],
+        [
+          -3.315,
+          0.525,
+          2.08
+        ],
+        [
+          -3.07,
+          0.224,
+          2.08
+        ],
+        [
+          -3.07,
+          0.169,
+          2.08
+        ]
+      ],
+      "sourcePosition": [
+        -2.79,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.169,
+        2.08
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W027",
+      "source_component": "R_LL",
+      "source_terminal": "B",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "V_L_RETURN",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "Returns to quiet JGND.LOGIC_GND; single-ended measurement includes any W007 return-wire drop.",
+      "sourceKey": "R_LL.B",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          -2.51,
+          0.169,
+          2.08
+        ],
+        [
+          -2.51,
+          0.224,
+          2.08
+        ],
+        [
+          -2.265,
+          0.525,
+          2.08
+        ],
+        [
+          -2.3,
+          0.14,
+          2.05
+        ],
+        [
+          -2.3,
+          0.14,
+          0.65
+        ],
+        [
+          -2.4,
+          0.14,
+          0.65
+        ],
+        [
+          -2.4,
+          0.14,
+          -0.35
+        ],
+        [
+          -2.6,
+          0.14,
+          -0.35
+        ],
+        [
+          -2.6,
+          0.14,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        -2.51,
+        0.169,
+        2.08
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W028",
+      "source_component": "NODE_VL",
+      "source_terminal": "NODE",
+      "destination_component": "C_L",
+      "destination_terminal": "A",
+      "net_or_domain": "V_L_FILTER",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "100 nF ceramic filter capacitor across R_LL (fc = 182.56 Hz with 8.718 kOhm Thevenin resistance).",
+      "sourceKey": "NODE_VL.NODE",
+      "destinationKey": "C_L.A",
+      "points": [
+        [
+          -2.79,
+          0.27,
+          1.1
+        ],
+        [
+          -2.79,
+          0.325,
+          1.1
+        ],
+        [
+          -2.37,
+          0.525,
+          1.1
+        ],
+        [
+          -2.4,
+          0.152,
+          1.15
+        ],
+        [
+          -2.4,
+          0.152,
+          1.65
+        ],
+        [
+          -4.2,
+          0.152,
+          1.65
+        ],
+        [
+          -4.2,
+          0.152,
+          2.15
+        ],
+        [
+          -4.23,
+          0.525,
+          2.105
+        ],
+        [
+          -3.95,
+          0.18,
+          2.105
+        ],
+        [
+          -3.95,
+          0.125,
+          2.105
+        ]
+      ],
+      "sourcePosition": [
+        -2.79,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        -3.95,
+        0.125,
+        2.105
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W029",
+      "source_component": "C_L",
+      "source_terminal": "B",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "V_L_RETURN",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Filter capacitor return close to ESP32 analog ground reference.",
+      "sourceKey": "C_L.B",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          -3.61,
+          0.125,
+          2.105
+        ],
+        [
+          -3.61,
+          0.18,
+          2.105
+        ],
+        [
+          -3.33,
+          0.525,
+          2.105
+        ],
+        [
+          -3.3,
+          0.08,
+          2.15
+        ],
+        [
+          -3.3,
+          0.08,
+          0.65
+        ],
+        [
+          -2.6,
+          0.08,
+          0.65
+        ],
+        [
+          -2.6,
+          0.08,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        -3.61,
+        0.125,
+        2.105
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W030",
+      "source_component": "NODE_VL",
+      "source_terminal": "NODE",
+      "destination_component": "U_ESP",
+      "destination_terminal": "GPIO33",
+      "net_or_domain": "LIGHT_VOLTAGE_ADC",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Classic ESP32 ADC1_CH5 candidate GPIO33; 2.3077 V nominal / 2.3482 V worst-1% corner at 18 V DC assumption.",
+      "sourceKey": "NODE_VL.NODE",
+      "destinationKey": "U_ESP.GPIO33",
+      "points": [
+        [
+          -2.79,
+          0.27,
+          1.1
+        ],
+        [
+          -2.79,
+          0.325,
+          1.1
+        ],
+        [
+          -2.37,
+          0.525,
+          1.1
+        ],
+        [
+          -2.4,
+          0.092,
+          1.15
+        ],
+        [
+          -2.3,
+          0.092,
+          1.15
+        ],
+        [
+          -2.3,
+          0.092,
+          1.55
+        ],
+        [
+          -1.2,
+          0.092,
+          1.55
+        ],
+        [
+          -1.2,
+          0.092,
+          1.65
+        ],
+        [
+          1.8,
+          0.092,
+          1.65
+        ],
+        [
+          1.8,
+          0.092,
+          1.75
+        ],
+        [
+          1.9,
+          0.092,
+          1.75
+        ],
+        [
+          1.9,
+          0.092,
+          1.85
+        ],
+        [
+          1.895,
+          0.525,
+          1.84
+        ],
+        [
+          2.21,
+          0.23,
+          1.84
+        ],
+        [
+          2.21,
+          0.175,
+          1.84
+        ]
+      ],
+      "sourcePosition": [
+        -2.79,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        2.21,
+        0.175,
+        1.84
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W031",
+      "source_component": "S_M",
+      "source_terminal": "OUT",
+      "destination_component": "R_MH",
+      "destination_terminal": "A",
+      "net_or_domain": "MOTOR_CURRENT_SIGNAL",
+      "status": "CONDITIONAL",
+      "evidence_or_condition": "Valid ONLY for direct 5 V ACS712-30A IC output (2.5 V at 0 A, 66 mV/A) with no onboard module divider.",
+      "sourceKey": "S_M.OUT",
+      "destinationKey": "R_MH.A",
+      "points": [
+        [
+          2.38,
+          0.178,
+          -0.83
+        ],
+        [
+          2.38,
+          0.233,
+          -0.83
+        ],
+        [
+          2.38,
+          0.525,
+          -0.4
+        ],
+        [
+          2.4,
+          0.104,
+          -0.45
+        ],
+        [
+          2.4,
+          0.104,
+          -0.25
+        ],
+        [
+          0.5,
+          0.104,
+          -0.25
+        ],
+        [
+          0.5,
+          0.104,
+          0.05
+        ],
+        [
+          0.4,
+          0.104,
+          0.05
+        ],
+        [
+          0.4,
+          0.104,
+          0.15
+        ],
+        [
+          -0.2,
+          0.104,
+          0.15
+        ],
+        [
+          -0.2,
+          0.104,
+          0.65
+        ],
+        [
+          -0.3,
+          0.104,
+          0.65
+        ],
+        [
+          -0.3,
+          0.104,
+          0.75
+        ],
+        [
+          -2.4,
+          0.104,
+          0.75
+        ],
+        [
+          -2.4,
+          0.104,
+          1.05
+        ],
+        [
+          -2.375,
+          0.525,
+          1.08
+        ],
+        [
+          -2.13,
+          0.224,
+          1.08
+        ],
+        [
+          -2.13,
+          0.169,
+          1.08
+        ]
+      ],
+      "sourcePosition": [
+        2.38,
+        0.178,
+        -0.83
+      ],
+      "destinationPosition": [
+        -2.13,
+        0.169,
+        1.08
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W032",
+      "source_component": "R_MH",
+      "source_terminal": "B",
+      "destination_component": "NODE_IM",
+      "destination_terminal": "NODE",
+      "net_or_domain": "I_M_ADC",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "27 kOhm 1% top scaler resistor to sense junction NODE_IM (supersedes legacy 15 kOhm).",
+      "sourceKey": "R_MH.B",
+      "destinationKey": "NODE_IM.NODE",
+      "points": [
+        [
+          -1.57,
+          0.169,
+          1.08
+        ],
+        [
+          -1.57,
+          0.224,
+          1.08
+        ],
+        [
+          -1.325,
+          0.525,
+          1.08
+        ],
+        [
+          -1.3,
+          0.116,
+          1.05
+        ],
+        [
+          -1.3,
+          0.116,
+          1.15
+        ],
+        [
+          -1.29,
+          0.525,
+          1.1
+        ],
+        [
+          -0.87,
+          0.325,
+          1.1
+        ],
+        [
+          -0.87,
+          0.27,
+          1.1
+        ]
+      ],
+      "sourcePosition": [
+        -1.57,
+        0.169,
+        1.08
+      ],
+      "destinationPosition": [
+        -0.87,
+        0.27,
+        1.1
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W033",
+      "source_component": "NODE_IM",
+      "source_terminal": "NODE",
+      "destination_component": "R_ML",
+      "destination_terminal": "A",
+      "net_or_domain": "I_M_ADC",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "20 kOhm 1% bottom scaler resistor from NODE_IM (ratio k_I = 20/47 = 0.425532).",
+      "sourceKey": "NODE_IM.NODE",
+      "destinationKey": "R_ML.A",
+      "points": [
+        [
+          -0.87,
+          0.27,
+          1.1
+        ],
+        [
+          -0.87,
+          0.325,
+          1.1
+        ],
+        [
+          -1.29,
+          0.525,
+          1.1
+        ],
+        [
+          -1.3,
+          0.128,
+          1.15
+        ],
+        [
+          -1.4,
+          0.128,
+          1.15
+        ],
+        [
+          -1.4,
+          0.128,
+          2.05
+        ],
+        [
+          -1.395,
+          0.525,
+          2.08
+        ],
+        [
+          -1.15,
+          0.224,
+          2.08
+        ],
+        [
+          -1.15,
+          0.169,
+          2.08
+        ]
+      ],
+      "sourcePosition": [
+        -0.87,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        -1.15,
+        0.169,
+        2.08
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W034",
+      "source_component": "R_ML",
+      "source_terminal": "B",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "I_M_RETURN",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "Scaler ground reference to quiet JGND.LOGIC_GND.",
+      "sourceKey": "R_ML.B",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          -0.59,
+          0.169,
+          2.08
+        ],
+        [
+          -0.59,
+          0.224,
+          2.08
+        ],
+        [
+          -0.345,
+          0.525,
+          2.08
+        ],
+        [
+          -0.3,
+          0.14,
+          2.05
+        ],
+        [
+          -0.3,
+          0.14,
+          1.75
+        ],
+        [
+          -0.4,
+          0.14,
+          1.75
+        ],
+        [
+          -0.4,
+          0.14,
+          1.55
+        ],
+        [
+          -0.5,
+          0.14,
+          1.55
+        ],
+        [
+          -0.5,
+          0.14,
+          0.65
+        ],
+        [
+          -2.2,
+          0.14,
+          0.65
+        ],
+        [
+          -2.2,
+          0.14,
+          0.15
+        ],
+        [
+          -2.3,
+          0.14,
+          0.15
+        ],
+        [
+          -2.3,
+          0.14,
+          -0.45
+        ],
+        [
+          -2.5,
+          0.14,
+          -0.45
+        ],
+        [
+          -2.5,
+          0.14,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.14,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        -0.59,
+        0.169,
+        2.08
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W035",
+      "source_component": "NODE_IM",
+      "source_terminal": "NODE",
+      "destination_component": "C_M",
+      "destination_terminal": "A",
+      "net_or_domain": "I_M_FILTER",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "100 nF ceramic filter capacitor at NODE_IM (fc = 138.52 Hz with 11.489 kOhm Thevenin resistance).",
+      "sourceKey": "NODE_IM.NODE",
+      "destinationKey": "C_M.A",
+      "points": [
+        [
+          -0.87,
+          0.27,
+          1.1
+        ],
+        [
+          -0.87,
+          0.325,
+          1.1
+        ],
+        [
+          -1.29,
+          0.525,
+          1.1
+        ],
+        [
+          -1.3,
+          0.152,
+          1.15
+        ],
+        [
+          -1.3,
+          0.152,
+          1.65
+        ],
+        [
+          -2.3,
+          0.152,
+          1.65
+        ],
+        [
+          -2.3,
+          0.152,
+          2.15
+        ],
+        [
+          -2.3,
+          0.525,
+          2.105
+        ],
+        [
+          -2.02,
+          0.18,
+          2.105
+        ],
+        [
+          -2.02,
+          0.125,
+          2.105
+        ]
+      ],
+      "sourcePosition": [
+        -0.87,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        -2.02,
+        0.125,
+        2.105
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W036",
+      "source_component": "C_M",
+      "source_terminal": "B",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "I_M_RETURN",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Filter capacitor ground return to JGND.LOGIC_GND.",
+      "sourceKey": "C_M.B",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          -1.68,
+          0.125,
+          2.105
+        ],
+        [
+          -1.68,
+          0.18,
+          2.105
+        ],
+        [
+          -1.4,
+          0.525,
+          2.105
+        ],
+        [
+          -1.4,
+          0.08,
+          2.15
+        ],
+        [
+          -1.4,
+          0.08,
+          0.25
+        ],
+        [
+          -2.5,
+          0.08,
+          0.25
+        ],
+        [
+          -2.5,
+          0.08,
+          -0.25
+        ],
+        [
+          -2.6,
+          0.08,
+          -0.25
+        ],
+        [
+          -2.6,
+          0.08,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        -1.68,
+        0.125,
+        2.105
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W037",
+      "source_component": "NODE_IM",
+      "source_terminal": "NODE",
+      "destination_component": "U_ESP",
+      "destination_terminal": "GPIO34",
+      "net_or_domain": "MOTOR_CURRENT_ADC",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Classic ESP32 ADC1_CH6 input-only candidate GPIO34; 1.0638 V at 0 A, 1.9064 V at +30 A, 0.2213 V at -30 A.",
+      "sourceKey": "NODE_IM.NODE",
+      "destinationKey": "U_ESP.GPIO34",
+      "points": [
+        [
+          -0.87,
+          0.27,
+          1.1
+        ],
+        [
+          -0.87,
+          0.325,
+          1.1
+        ],
+        [
+          -1.29,
+          0.525,
+          1.1
+        ],
+        [
+          -1.3,
+          0.092,
+          1.15
+        ],
+        [
+          -1.2,
+          0.092,
+          1.15
+        ],
+        [
+          -1.2,
+          0.092,
+          1.65
+        ],
+        [
+          1.5,
+          0.092,
+          1.65
+        ],
+        [
+          1.5,
+          0.092,
+          1.75
+        ],
+        [
+          1.7,
+          0.092,
+          1.75
+        ],
+        [
+          1.7,
+          0.092,
+          1.85
+        ],
+        [
+          1.8,
+          0.092,
+          1.85
+        ],
+        [
+          1.8,
+          0.092,
+          1.95
+        ],
+        [
+          1.9,
+          0.092,
+          1.95
+        ],
+        [
+          1.9,
+          0.092,
+          2.05
+        ],
+        [
+          1.895,
+          0.525,
+          2.0
+        ],
+        [
+          2.21,
+          0.23,
+          2.0
+        ],
+        [
+          2.21,
+          0.175,
+          2.0
+        ]
+      ],
+      "sourcePosition": [
+        -0.87,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        2.21,
+        0.175,
+        2.0
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W038",
+      "source_component": "MDRV",
+      "source_terminal": "INPUT+",
+      "destination_component": "R_VH",
+      "destination_terminal": "A",
+      "net_or_domain": "V_M+_TAP",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "Kelvin voltage sense tap at MDRV DC supply input boundary (never connect directly to switched PWM motor terminals).",
+      "sourceKey": "MDRV.INPUT+",
+      "destinationKey": "R_VH.A",
+      "points": [
+        [
+          3.2063,
+          0.2,
+          -1.135
+        ],
+        [
+          3.2063,
+          0.255,
+          -1.135
+        ],
+        [
+          2.915,
+          0.525,
+          -1.135
+        ],
+        [
+          2.9,
+          0.104,
+          -1.15
+        ],
+        [
+          2.8,
+          0.104,
+          -1.15
+        ],
+        [
+          2.8,
+          0.104,
+          -0.45
+        ],
+        [
+          0.6,
+          0.104,
+          -0.45
+        ],
+        [
+          0.6,
+          0.104,
+          -0.35
+        ],
+        [
+          0.3,
+          0.104,
+          -0.35
+        ],
+        [
+          0.3,
+          0.104,
+          0.25
+        ],
+        [
+          -0.1,
+          0.104,
+          0.25
+        ],
+        [
+          -0.1,
+          0.104,
+          0.75
+        ],
+        [
+          -0.4,
+          0.104,
+          0.75
+        ],
+        [
+          -0.4,
+          0.104,
+          1.05
+        ],
+        [
+          -0.445,
+          0.525,
+          1.08
+        ],
+        [
+          -0.2,
+          0.224,
+          1.08
+        ],
+        [
+          -0.2,
+          0.169,
+          1.08
+        ]
+      ],
+      "sourcePosition": [
+        3.2063,
+        0.2,
+        -1.135
+      ],
+      "destinationPosition": [
+        -0.2,
+        0.169,
+        1.08
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W039",
+      "source_component": "R_VH",
+      "source_terminal": "B",
+      "destination_component": "NODE_VM",
+      "destination_terminal": "NODE",
+      "net_or_domain": "V_M_ADC",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "68 kOhm 1% top resistor leg to sense junction NODE_VM.",
+      "sourceKey": "R_VH.B",
+      "destinationKey": "NODE_VM.NODE",
+      "points": [
+        [
+          0.36,
+          0.169,
+          1.08
+        ],
+        [
+          0.36,
+          0.224,
+          1.08
+        ],
+        [
+          0.605,
+          0.525,
+          1.08
+        ],
+        [
+          0.6,
+          0.116,
+          1.05
+        ],
+        [
+          0.6,
+          0.116,
+          1.15
+        ],
+        [
+          0.64,
+          0.525,
+          1.1
+        ],
+        [
+          1.06,
+          0.325,
+          1.1
+        ],
+        [
+          1.06,
+          0.27,
+          1.1
+        ]
+      ],
+      "sourcePosition": [
+        0.36,
+        0.169,
+        1.08
+      ],
+      "destinationPosition": [
+        1.06,
+        0.27,
+        1.1
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W040",
+      "source_component": "NODE_VM",
+      "source_terminal": "NODE",
+      "destination_component": "R_VL",
+      "destination_terminal": "A",
+      "net_or_domain": "V_M_ADC",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "10 kOhm 1% bottom resistor leg from NODE_VM (ratio k = 5/39 = 0.128205).",
+      "sourceKey": "NODE_VM.NODE",
+      "destinationKey": "R_VL.A",
+      "points": [
+        [
+          1.06,
+          0.27,
+          1.1
+        ],
+        [
+          1.06,
+          0.325,
+          1.1
+        ],
+        [
+          0.64,
+          0.525,
+          1.1
+        ],
+        [
+          0.6,
+          0.128,
+          1.15
+        ],
+        [
+          0.6,
+          0.128,
+          1.75
+        ],
+        [
+          0.5,
+          0.128,
+          1.75
+        ],
+        [
+          0.5,
+          0.128,
+          2.05
+        ],
+        [
+          0.535,
+          0.525,
+          2.08
+        ],
+        [
+          0.78,
+          0.224,
+          2.08
+        ],
+        [
+          0.78,
+          0.169,
+          2.08
+        ]
+      ],
+      "sourcePosition": [
+        1.06,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        0.78,
+        0.169,
+        2.08
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W041",
+      "source_component": "R_VL",
+      "source_terminal": "B",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "V_M_RETURN",
+      "status": "CALCULATED AND CROSS-CHECKED",
+      "evidence_or_condition": "Returns to quiet JGND.LOGIC_GND.",
+      "sourceKey": "R_VL.B",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          1.34,
+          0.169,
+          2.08
+        ],
+        [
+          1.34,
+          0.224,
+          2.08
+        ],
+        [
+          1.585,
+          0.525,
+          2.08
+        ],
+        [
+          1.6,
+          0.14,
+          2.05
+        ],
+        [
+          1.6,
+          0.14,
+          1.85
+        ],
+        [
+          1.5,
+          0.14,
+          1.85
+        ],
+        [
+          1.5,
+          0.14,
+          1.65
+        ],
+        [
+          0.7,
+          0.14,
+          1.65
+        ],
+        [
+          0.7,
+          0.14,
+          1.55
+        ],
+        [
+          -0.4,
+          0.14,
+          1.55
+        ],
+        [
+          -0.4,
+          0.14,
+          1.15
+        ],
+        [
+          -0.5,
+          0.14,
+          1.15
+        ],
+        [
+          -0.5,
+          0.14,
+          0.15
+        ],
+        [
+          -2.1,
+          0.14,
+          0.15
+        ],
+        [
+          -2.1,
+          0.14,
+          -0.05
+        ],
+        [
+          -2.2,
+          0.14,
+          -0.05
+        ],
+        [
+          -2.2,
+          0.14,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.14,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        1.34,
+        0.169,
+        2.08
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W042",
+      "source_component": "NODE_VM",
+      "source_terminal": "NODE",
+      "destination_component": "C_V",
+      "destination_terminal": "A",
+      "net_or_domain": "V_M_FILTER",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "100 nF ceramic filter capacitor at NODE_VM (fc = 182.56 Hz).",
+      "sourceKey": "NODE_VM.NODE",
+      "destinationKey": "C_V.A",
+      "points": [
+        [
+          1.06,
+          0.27,
+          1.1
+        ],
+        [
+          1.06,
+          0.325,
+          1.1
+        ],
+        [
+          0.64,
+          0.525,
+          1.1
+        ],
+        [
+          0.6,
+          0.152,
+          1.15
+        ],
+        [
+          0.6,
+          0.152,
+          1.55
+        ],
+        [
+          -0.3,
+          0.152,
+          1.55
+        ],
+        [
+          -0.3,
+          0.152,
+          1.75
+        ],
+        [
+          -0.4,
+          0.152,
+          1.75
+        ],
+        [
+          -0.4,
+          0.152,
+          2.15
+        ],
+        [
+          -0.37,
+          0.525,
+          2.105
+        ],
+        [
+          -0.09,
+          0.18,
+          2.105
+        ],
+        [
+          -0.09,
+          0.125,
+          2.105
+        ]
+      ],
+      "sourcePosition": [
+        1.06,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        -0.09,
+        0.125,
+        2.105
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W043",
+      "source_component": "C_V",
+      "source_terminal": "B",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "V_M_RETURN",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Filter capacitor return to JGND.LOGIC_GND.",
+      "sourceKey": "C_V.B",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          0.25,
+          0.125,
+          2.105
+        ],
+        [
+          0.25,
+          0.18,
+          2.105
+        ],
+        [
+          0.53,
+          0.525,
+          2.105
+        ],
+        [
+          0.5,
+          0.08,
+          2.15
+        ],
+        [
+          0.5,
+          0.08,
+          1.65
+        ],
+        [
+          -0.5,
+          0.08,
+          1.65
+        ],
+        [
+          -0.5,
+          0.08,
+          0.75
+        ],
+        [
+          -0.6,
+          0.08,
+          0.75
+        ],
+        [
+          -0.6,
+          0.08,
+          0.35
+        ],
+        [
+          -2.3,
+          0.08,
+          0.35
+        ],
+        [
+          -2.3,
+          0.08,
+          0.15
+        ],
+        [
+          -2.4,
+          0.08,
+          0.15
+        ],
+        [
+          -2.4,
+          0.08,
+          -0.45
+        ],
+        [
+          -2.5,
+          0.08,
+          -0.45
+        ],
+        [
+          -2.5,
+          0.08,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.08,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        0.25,
+        0.125,
+        2.105
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W044",
+      "source_component": "NODE_VM",
+      "source_terminal": "NODE",
+      "destination_component": "U_ESP",
+      "destination_terminal": "GPIO35",
+      "net_or_domain": "MOTOR_VOLTAGE_ADC",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Classic ESP32 ADC1_CH7 input-only candidate GPIO35; verify physical development board header pinout.",
+      "sourceKey": "NODE_VM.NODE",
+      "destinationKey": "U_ESP.GPIO35",
+      "points": [
+        [
+          1.06,
+          0.27,
+          1.1
+        ],
+        [
+          1.06,
+          0.325,
+          1.1
+        ],
+        [
+          0.64,
+          0.525,
+          1.1
+        ],
+        [
+          0.6,
+          0.092,
+          1.15
+        ],
+        [
+          0.7,
+          0.092,
+          1.15
+        ],
+        [
+          0.7,
+          0.092,
+          1.65
+        ],
+        [
+          1.5,
+          0.092,
+          1.65
+        ],
+        [
+          1.5,
+          0.092,
+          2.15
+        ],
+        [
+          1.9,
+          0.092,
+          2.15
+        ],
+        [
+          1.895,
+          0.525,
+          2.16
+        ],
+        [
+          2.21,
+          0.23,
+          2.16
+        ],
+        [
+          2.21,
+          0.175,
+          2.16
+        ]
+      ],
+      "sourcePosition": [
+        1.06,
+        0.27,
+        1.1
+      ],
+      "destinationPosition": [
+        2.21,
+        0.175,
+        2.16
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W045",
+      "source_component": "U_ESP",
+      "source_terminal": "3V3",
+      "destination_component": "U_OLED_BOARD",
+      "destination_terminal": "VCC",
+      "net_or_domain": "OPTIONAL_3V3",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Optional OLED 3.3 V supply; connect only after verifying OLED module regulator and 3.3 V I2C pullup compatibility.",
+      "sourceKey": "U_ESP.3V3",
+      "destinationKey": "U_OLED_BOARD.VCC",
+      "points": [
+        [
+          3.27,
+          0.175,
+          1.36
+        ],
+        [
+          3.27,
+          0.23,
+          1.36
+        ],
+        [
+          3.585,
+          0.525,
+          1.36
+        ],
+        [
+          3.6,
+          0.104,
+          1.35
+        ],
+        [
+          3.5,
+          0.104,
+          1.35
+        ],
+        [
+          3.5,
+          0.104,
+          0.85
+        ],
+        [
+          1.7,
+          0.104,
+          0.85
+        ],
+        [
+          1.7,
+          0.104,
+          2.25
+        ],
+        [
+          1.5,
+          0.104,
+          2.25
+        ],
+        [
+          1.5,
+          0.104,
+          2.55
+        ],
+        [
+          0.5,
+          0.104,
+          2.55
+        ],
+        [
+          0.5,
+          0.104,
+          2.65
+        ],
+        [
+          -4.2,
+          0.104,
+          2.65
+        ],
+        [
+          -4.2,
+          0.104,
+          2.85
+        ],
+        [
+          -4.22,
+          0.525,
+          2.81
+        ],
+        [
+          -3.81,
+          0.235,
+          2.81
+        ],
+        [
+          -3.81,
+          0.18,
+          2.81
+        ]
+      ],
+      "sourcePosition": [
+        3.27,
+        0.175,
+        1.36
+      ],
+      "destinationPosition": [
+        -3.81,
+        0.18,
+        2.81
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W046",
+      "source_component": "U_ESP",
+      "source_terminal": "GPIO21",
+      "destination_component": "U_OLED_BOARD",
+      "destination_terminal": "SDA",
+      "net_or_domain": "OPTIONAL_I2C",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Optional I2C SDA line; verify pullup termination to 3.3 V (never 5 V).",
+      "sourceKey": "U_ESP.GPIO21",
+      "destinationKey": "U_OLED_BOARD.SDA",
+      "points": [
+        [
+          3.27,
+          0.175,
+          1.52
+        ],
+        [
+          3.27,
+          0.23,
+          1.52
+        ],
+        [
+          3.585,
+          0.525,
+          1.52
+        ],
+        [
+          3.6,
+          0.116,
+          1.55
+        ],
+        [
+          3.6,
+          0.116,
+          0.85
+        ],
+        [
+          1.9,
+          0.116,
+          0.85
+        ],
+        [
+          1.9,
+          0.116,
+          0.95
+        ],
+        [
+          1.8,
+          0.116,
+          0.95
+        ],
+        [
+          1.8,
+          0.116,
+          1.05
+        ],
+        [
+          1.6,
+          0.116,
+          1.05
+        ],
+        [
+          1.6,
+          0.116,
+          2.65
+        ],
+        [
+          -4.2,
+          0.116,
+          2.65
+        ],
+        [
+          -4.2,
+          0.116,
+          2.85
+        ],
+        [
+          -4.22,
+          0.525,
+          2.81
+        ],
+        [
+          -3.61,
+          0.235,
+          2.81
+        ],
+        [
+          -3.61,
+          0.18,
+          2.81
+        ]
+      ],
+      "sourcePosition": [
+        3.27,
+        0.175,
+        1.52
+      ],
+      "destinationPosition": [
+        -3.61,
+        0.18,
+        2.81
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W047",
+      "source_component": "U_ESP",
+      "source_terminal": "GPIO22",
+      "destination_component": "U_OLED_BOARD",
+      "destination_terminal": "SCL",
+      "net_or_domain": "OPTIONAL_I2C",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Optional I2C SCL line; verify pullup termination to 3.3 V.",
+      "sourceKey": "U_ESP.GPIO22",
+      "destinationKey": "U_OLED_BOARD.SCL",
+      "points": [
+        [
+          3.27,
+          0.175,
+          1.68
+        ],
+        [
+          3.27,
+          0.23,
+          1.68
+        ],
+        [
+          3.585,
+          0.525,
+          1.68
+        ],
+        [
+          3.6,
+          0.128,
+          1.65
+        ],
+        [
+          3.5,
+          0.128,
+          1.65
+        ],
+        [
+          3.5,
+          0.128,
+          0.85
+        ],
+        [
+          1.4,
+          0.128,
+          0.85
+        ],
+        [
+          1.4,
+          0.128,
+          1.65
+        ],
+        [
+          -2.3,
+          0.128,
+          1.65
+        ],
+        [
+          -2.3,
+          0.128,
+          2.55
+        ],
+        [
+          -3.4,
+          0.128,
+          2.55
+        ],
+        [
+          -3.41,
+          0.525,
+          2.565
+        ],
+        [
+          -3.41,
+          0.235,
+          2.81
+        ],
+        [
+          -3.41,
+          0.18,
+          2.81
+        ]
+      ],
+      "sourcePosition": [
+        3.27,
+        0.175,
+        1.68
+      ],
+      "destinationPosition": [
+        -3.41,
+        0.18,
+        2.81
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W048",
+      "source_component": "JGND",
+      "source_terminal": "LOGIC_GND",
+      "destination_component": "U_OLED_BOARD",
+      "destination_terminal": "GND",
+      "net_or_domain": "OPTIONAL_I2C",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Optional OLED ground return to JGND.LOGIC_GND.",
+      "sourceKey": "JGND.LOGIC_GND",
+      "destinationKey": "U_OLED_BOARD.GND",
+      "points": [
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -2.6,
+          0.14,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.14,
+          0.15
+        ],
+        [
+          -2.7,
+          0.14,
+          0.15
+        ],
+        [
+          -2.7,
+          0.14,
+          0.25
+        ],
+        [
+          -3.2,
+          0.14,
+          0.25
+        ],
+        [
+          -3.2,
+          0.14,
+          1.55
+        ],
+        [
+          -3.3,
+          0.14,
+          1.55
+        ],
+        [
+          -3.3,
+          0.14,
+          2.55
+        ],
+        [
+          -3.2,
+          0.14,
+          2.55
+        ],
+        [
+          -3.21,
+          0.525,
+          2.565
+        ],
+        [
+          -3.21,
+          0.235,
+          2.81
+        ],
+        [
+          -3.21,
+          0.18,
+          2.81
+        ]
+      ],
+      "sourcePosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "destinationPosition": [
+        -3.21,
+        0.18,
+        2.81
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W049",
+      "source_component": "U_ESP",
+      "source_terminal": "3V3",
+      "destination_component": "T1_PROBE",
+      "destination_terminal": "VDD",
+      "net_or_domain": "OPTIONAL_1WIRE",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Optional DS18B20 3.3 V supply; verify physical probe wire-color-to-pin mapping before powering (S13).",
+      "sourceKey": "U_ESP.3V3",
+      "destinationKey": "T1_PROBE.VDD",
+      "points": [
+        [
+          3.27,
+          0.175,
+          1.36
+        ],
+        [
+          3.27,
+          0.23,
+          1.36
+        ],
+        [
+          3.585,
+          0.525,
+          1.36
+        ],
+        [
+          3.6,
+          0.152,
+          1.35
+        ],
+        [
+          3.6,
+          0.152,
+          1.75
+        ],
+        [
+          3.5,
+          0.152,
+          1.75
+        ],
+        [
+          3.5,
+          0.152,
+          2.75
+        ],
+        [
+          3.1,
+          0.152,
+          2.75
+        ],
+        [
+          3.1,
+          0.152,
+          3.75
+        ],
+        [
+          1.8,
+          0.152,
+          3.75
+        ],
+        [
+          1.8,
+          0.152,
+          3.65
+        ],
+        [
+          -2.7,
+          0.152,
+          3.65
+        ],
+        [
+          -2.7,
+          0.152,
+          3.25
+        ],
+        [
+          -2.725,
+          0.525,
+          3.22
+        ],
+        [
+          -2.42,
+          0.195,
+          3.22
+        ],
+        [
+          -2.42,
+          0.14,
+          3.22
+        ]
+      ],
+      "sourcePosition": [
+        3.27,
+        0.175,
+        1.36
+      ],
+      "destinationPosition": [
+        -2.42,
+        0.14,
+        3.22
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W050",
+      "source_component": "JGND",
+      "source_terminal": "LOGIC_GND",
+      "destination_component": "T1_PROBE",
+      "destination_terminal": "GND",
+      "net_or_domain": "OPTIONAL_1WIRE",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Optional DS18B20 ground return to JGND.LOGIC_GND.",
+      "sourceKey": "JGND.LOGIC_GND",
+      "destinationKey": "T1_PROBE.GND",
+      "points": [
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -2.6,
+          0.08,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.08,
+          -0.45
+        ],
+        [
+          -2.5,
+          0.08,
+          -0.45
+        ],
+        [
+          -2.5,
+          0.08,
+          0.65
+        ],
+        [
+          -2.3,
+          0.08,
+          0.65
+        ],
+        [
+          -2.3,
+          0.08,
+          2.55
+        ],
+        [
+          -2.7,
+          0.08,
+          2.55
+        ],
+        [
+          -2.7,
+          0.08,
+          3.05
+        ],
+        [
+          -2.725,
+          0.525,
+          3.09
+        ],
+        [
+          -2.42,
+          0.195,
+          3.09
+        ],
+        [
+          -2.42,
+          0.14,
+          3.09
+        ]
+      ],
+      "sourcePosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "destinationPosition": [
+        -2.42,
+        0.14,
+        3.09
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W051",
+      "source_component": "U_ESP",
+      "source_terminal": "GPIO4",
+      "destination_component": "T1_PROBE",
+      "destination_terminal": "DQ",
+      "net_or_domain": "OPTIONAL_1WIRE",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Optional 1-Wire data pin on GPIO4 (requires external 4.7 kOhm pullup to 3.3 V; do not use GPIO4 as ADC2 with Wi-Fi active).",
+      "sourceKey": "U_ESP.GPIO4",
+      "destinationKey": "T1_PROBE.DQ",
+      "points": [
+        [
+          3.27,
+          0.175,
+          1.84
+        ],
+        [
+          3.27,
+          0.23,
+          1.84
+        ],
+        [
+          3.585,
+          0.525,
+          1.84
+        ],
+        [
+          3.6,
+          0.092,
+          1.85
+        ],
+        [
+          3.6,
+          0.092,
+          2.85
+        ],
+        [
+          3.2,
+          0.092,
+          2.85
+        ],
+        [
+          3.2,
+          0.092,
+          3.75
+        ],
+        [
+          -2.7,
+          0.092,
+          3.75
+        ],
+        [
+          -2.7,
+          0.092,
+          2.95
+        ],
+        [
+          -2.725,
+          0.525,
+          2.96
+        ],
+        [
+          -2.42,
+          0.195,
+          2.96
+        ],
+        [
+          -2.42,
+          0.14,
+          2.96
+        ]
+      ],
+      "sourcePosition": [
+        3.27,
+        0.175,
+        1.84
+      ],
+      "destinationPosition": [
+        -2.42,
+        0.14,
+        2.96
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W052",
+      "source_component": "BAT1",
+      "source_terminal": "BAT-",
+      "destination_component": "JGND",
+      "destination_terminal": "STAR_RETURN",
+      "net_or_domain": "PACK_RETURN",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Main heavy-gauge battery negative return lead from BAT1- to JGND.STAR_RETURN busbar.",
+      "sourceKey": "BAT1.BAT-",
+      "destinationKey": "JGND.STAR_RETURN",
+      "points": [
+        [
+          -3.26,
+          0.925,
+          -2.45
+        ],
+        [
+          -3.26,
+          0.98,
+          -2.45
+        ],
+        [
+          -3.26,
+          1.005,
+          -2.86
+        ],
+        [
+          -3.3,
+          0.104,
+          -2.85
+        ],
+        [
+          -4.2,
+          0.104,
+          -2.85
+        ],
+        [
+          -4.2,
+          0.104,
+          -0.55
+        ],
+        [
+          -4.16,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.65,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.65,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        -3.26,
+        0.925,
+        -2.45
+      ],
+      "destinationPosition": [
+        -3.65,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W053",
+      "source_component": "JGND",
+      "source_terminal": "STAR_RETURN",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "KELVIN_STAR_TIE",
+      "status": "DESIGN ASSUMPTION",
+      "evidence_or_condition": "Added in upgraded netlist: single-point Kelvin ground tie linking quiet LOGIC_GND reference to STAR_RETURN at battery-negative star.",
+      "sourceKey": "JGND.STAR_RETURN",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          -3.65,
+          0.25,
+          -0.53
+        ],
+        [
+          -3.65,
+          0.305,
+          -0.53
+        ],
+        [
+          -4.16,
+          0.525,
+          -0.53
+        ],
+        [
+          -4.2,
+          0.116,
+          -0.55
+        ],
+        [
+          -4.2,
+          0.116,
+          0.15
+        ],
+        [
+          -2.6,
+          0.116,
+          0.15
+        ],
+        [
+          -2.6,
+          0.116,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        -3.65,
+        0.25,
+        -0.53
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W054",
+      "source_component": "MDRV",
+      "source_terminal": "MOTOR_OUT+",
+      "destination_component": "M1",
+      "destination_terminal": "TERM+",
+      "net_or_domain": "MOTOR_DRIVE_OUT",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Added in upgraded netlist: motor driver output positive to DC motor M1; PWM/switching waveform boundary (do not connect single-ended ESP32 dividers here).",
+      "sourceKey": "MDRV.MOTOR_OUT+",
+      "destinationKey": "M1.TERM+",
+      "points": [
+        [
+          3.8537,
+          0.2,
+          -1.135
+        ],
+        [
+          3.8537,
+          0.255,
+          -1.135
+        ],
+        [
+          4.145,
+          0.525,
+          -1.135
+        ],
+        [
+          4.1,
+          0.128,
+          -1.15
+        ],
+        [
+          4.5,
+          0.128,
+          -1.15
+        ],
+        [
+          4.5,
+          0.128,
+          0.15
+        ],
+        [
+          4.47,
+          0.525,
+          0.145
+        ],
+        [
+          4.1732,
+          0.255,
+          0.145
+        ],
+        [
+          4.1732,
+          0.2,
+          0.145
+        ]
+      ],
+      "sourcePosition": [
+        3.8537,
+        0.2,
+        -1.135
+      ],
+      "destinationPosition": [
+        4.1732,
+        0.2,
+        0.145
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W055",
+      "source_component": "MDRV",
+      "source_terminal": "MOTOR_OUT-",
+      "destination_component": "M1",
+      "destination_terminal": "TERM-",
+      "net_or_domain": "MOTOR_DRIVE_OUT",
+      "status": "REQUIRES COMPONENT IDENTIFICATION",
+      "evidence_or_condition": "Added in upgraded netlist: motor driver output negative to DC motor M1.",
+      "sourceKey": "MDRV.MOTOR_OUT-",
+      "destinationKey": "M1.TERM-",
+      "points": [
+        [
+          3.8537,
+          0.2,
+          -0.965
+        ],
+        [
+          3.8537,
+          0.255,
+          -0.965
+        ],
+        [
+          4.145,
+          0.525,
+          -0.965
+        ],
+        [
+          4.1,
+          0.14,
+          -0.95
+        ],
+        [
+          4.4,
+          0.14,
+          -0.95
+        ],
+        [
+          4.4,
+          0.14,
+          0.25
+        ],
+        [
+          4.5,
+          0.14,
+          0.25
+        ],
+        [
+          4.5,
+          0.14,
+          0.35
+        ],
+        [
+          4.47,
+          0.525,
+          0.315
+        ],
+        [
+          4.1732,
+          0.255,
+          0.315
+        ],
+        [
+          4.1732,
+          0.2,
+          0.315
+        ]
+      ],
+      "sourcePosition": [
+        3.8537,
+        0.2,
+        -0.965
+      ],
+      "destinationPosition": [
+        4.1732,
+        0.2,
+        0.315
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W056",
+      "source_component": "S_M",
+      "source_terminal": "VCC",
+      "destination_component": "C_BYP_M",
+      "destination_terminal": "A",
+      "net_or_domain": "SENSOR_5V_BYPASS",
+      "status": "CONDITIONAL",
+      "evidence_or_condition": "Added in upgraded netlist: 0.1 uF supply decoupling capacitor across S_M VCC to GND (W057) per Allegro datasheet (S1); verify if already on S_M_BOARD.",
+      "sourceKey": "S_M.VCC",
+      "destinationKey": "C_BYP_M.A",
+      "points": [
+        [
+          2.06,
+          0.178,
+          -0.83
+        ],
+        [
+          2.06,
+          0.233,
+          -0.83
+        ],
+        [
+          1.72,
+          0.525,
+          -0.83
+        ],
+        [
+          1.7,
+          0.152,
+          -0.85
+        ],
+        [
+          1.6,
+          0.152,
+          -0.85
+        ],
+        [
+          1.6,
+          0.152,
+          0.25
+        ],
+        [
+          1.645,
+          0.525,
+          0.295
+        ],
+        [
+          1.9,
+          0.18,
+          0.295
+        ],
+        [
+          1.9,
+          0.125,
+          0.295
+        ]
+      ],
+      "sourcePosition": [
+        2.06,
+        0.178,
+        -0.83
+      ],
+      "destinationPosition": [
+        1.9,
+        0.125,
+        0.295
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W057",
+      "source_component": "C_BYP_M",
+      "source_terminal": "B",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "SENSOR_GND",
+      "status": "CONDITIONAL",
+      "evidence_or_condition": "Bypass capacitor ground return close to S_M GND pin.",
+      "sourceKey": "C_BYP_M.B",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          2.24,
+          0.125,
+          0.295
+        ],
+        [
+          2.24,
+          0.18,
+          0.295
+        ],
+        [
+          2.24,
+          0.525,
+          -0.2
+        ],
+        [
+          2.2,
+          0.08,
+          -0.25
+        ],
+        [
+          0.3,
+          0.08,
+          -0.25
+        ],
+        [
+          0.3,
+          0.08,
+          -0.05
+        ],
+        [
+          -2.0,
+          0.08,
+          -0.05
+        ],
+        [
+          -2.0,
+          0.08,
+          -0.15
+        ],
+        [
+          -2.1,
+          0.08,
+          -0.15
+        ],
+        [
+          -2.1,
+          0.08,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.08,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        2.24,
+        0.125,
+        0.295
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W058",
+      "source_component": "S_M",
+      "source_terminal": "FILTER",
+      "destination_component": "C_FILTER_M",
+      "destination_terminal": "A",
+      "net_or_domain": "ACS_BANDWIDTH_SET",
+      "status": "CONDITIONAL",
+      "evidence_or_condition": "Added in upgraded netlist: 1 nF (or 47 nF for 2 kHz pole) capacitor from ACS712 Pin 6 (FILTER) to GND (W059) per S1; verify S_M_BOARD first.",
+      "sourceKey": "S_M.FILTER",
+      "destinationKey": "C_FILTER_M.A",
+      "points": [
+        [
+          2.54,
+          0.178,
+          -0.83
+        ],
+        [
+          2.54,
+          0.233,
+          -0.83
+        ],
+        [
+          2.88,
+          0.525,
+          -0.83
+        ],
+        [
+          2.9,
+          0.092,
+          -0.85
+        ],
+        [
+          2.9,
+          0.092,
+          -0.25
+        ],
+        [
+          2.6,
+          0.092,
+          -0.25
+        ],
+        [
+          2.56,
+          0.525,
+          -0.2
+        ],
+        [
+          2.56,
+          0.18,
+          0.295
+        ],
+        [
+          2.56,
+          0.125,
+          0.295
+        ]
+      ],
+      "sourcePosition": [
+        2.54,
+        0.178,
+        -0.83
+      ],
+      "destinationPosition": [
+        2.56,
+        0.125,
+        0.295
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W059",
+      "source_component": "C_FILTER_M",
+      "source_terminal": "B",
+      "destination_component": "JGND",
+      "destination_terminal": "LOGIC_GND",
+      "net_or_domain": "SENSOR_GND",
+      "status": "CONDITIONAL",
+      "evidence_or_condition": "ACS712 FILTER capacitor return to sensor ground.",
+      "sourceKey": "C_FILTER_M.B",
+      "destinationKey": "JGND.LOGIC_GND",
+      "points": [
+        [
+          2.9,
+          0.125,
+          0.295
+        ],
+        [
+          2.9,
+          0.18,
+          0.295
+        ],
+        [
+          3.155,
+          0.525,
+          0.295
+        ],
+        [
+          3.2,
+          0.104,
+          0.25
+        ],
+        [
+          3.2,
+          0.104,
+          -0.15
+        ],
+        [
+          1.6,
+          0.104,
+          -0.15
+        ],
+        [
+          1.6,
+          0.104,
+          -0.25
+        ],
+        [
+          0.4,
+          0.104,
+          -0.25
+        ],
+        [
+          0.4,
+          0.104,
+          0.05
+        ],
+        [
+          -2.2,
+          0.104,
+          0.05
+        ],
+        [
+          -2.2,
+          0.104,
+          -0.15
+        ],
+        [
+          -2.3,
+          0.104,
+          -0.15
+        ],
+        [
+          -2.3,
+          0.104,
+          -0.55
+        ],
+        [
+          -2.6,
+          0.104,
+          -0.55
+        ],
+        [
+          -2.56,
+          0.525,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.305,
+          -0.53
+        ],
+        [
+          -3.07,
+          0.25,
+          -0.53
+        ]
+      ],
+      "sourcePosition": [
+        2.9,
+        0.125,
+        0.295
+      ],
+      "destinationPosition": [
+        -3.07,
+        0.25,
+        -0.53
+      ],
+      "radius": 0.016,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    },
+    {
+      "wire_id": "W060",
+      "source_component": "BUS+",
+      "source_terminal": "PROT_TAP",
+      "destination_component": "TVS1",
+      "destination_terminal": "CATHODE",
+      "net_or_domain": "TRANSIENT_CLAMP_CANDIDATE",
+      "status": "REQUIRES ADDITIONAL INFORMATION",
+      "evidence_or_condition": "Added in upgraded netlist: placeholder footprint for required DC bus transient suppressor TVS1 (anode to JGND.STAR_RETURN) and reverse-polarity device RP1.",
+      "sourceKey": "BUS+.PROT_TAP",
+      "destinationKey": "TVS1.CATHODE",
+      "points": [
+        [
+          0.23,
+          0.25,
+          -2.36
+        ],
+        [
+          0.23,
+          0.305,
+          -2.36
+        ],
+        [
+          0.585,
+          0.525,
+          -2.36
+        ],
+        [
+          0.6,
+          0.116,
+          -2.35
+        ],
+        [
+          0.5,
+          0.116,
+          -2.35
+        ],
+        [
+          0.5,
+          0.116,
+          -1.55
+        ],
+        [
+          -1.0,
+          0.116,
+          -1.55
+        ],
+        [
+          -1.0,
+          0.116,
+          -1.45
+        ],
+        [
+          -2.1,
+          0.116,
+          -1.45
+        ],
+        [
+          -2.07,
+          0.525,
+          -1.47
+        ],
+        [
+          -2.37,
+          0.237,
+          -1.47
+        ],
+        [
+          -2.37,
+          0.182,
+          -1.47
+        ]
+      ],
+      "sourcePosition": [
+        0.23,
+        0.25,
+        -2.36
+      ],
+      "destinationPosition": [
+        -2.37,
+        0.182,
+        -1.47
+      ],
+      "radius": 0.009,
+      "physicalVerification": "UNVERIFIED",
+      "diameterStatus": "Presentation-only; conductor gauge is unresolved"
+    }
+  ],
+  "wireCount": 60,
+  "unresolvedConnections": [
+    {
+      "id": "TVS1",
+      "detail": "W060 ends at CATHODE. ANODE return is not a CSV row; it is intentionally not invented."
+    },
+    {
+      "id": "RP1",
+      "detail": "Required reverse-polarity device is unselected and has no scheduled connections."
+    },
+    {
+      "id": "D1",
+      "detail": "Suppression depends on motor topology; no connection is scheduled."
+    },
+    {
+      "id": "T1_PROBE",
+      "detail": "Required 4.7 kOhm DQ pullup appears in prose but has no BOM ID or wire rows."
+    },
+    {
+      "id": "RLY1",
+      "detail": "Legacy artifact has Qty 0 and no active netlist connections."
+    }
+  ],
+  "sourceStatus": "Model/connection inspection only; no claim of hardware testing",
+  "glbBytes": 6370528,
+  "meshes": 322,
+  "materials": 25,
+  "triangles": 165858
+}

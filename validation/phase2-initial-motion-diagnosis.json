@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-03",
+  "scope": "Initial phase 2 diagnostic, before functional motion fix. Screenshots compare a fixed side camera with auxiliaries off.",
+  "cases": [
+    {
+      "reducedMotion": "reduce",
+      "startOnly": {
+        "speed": "0.0",
+        "distance": "0 m traveled",
+        "throttle": "0",
+        "traction": false,
+        "status": "Running · loads only",
+        "prefersReducedMotion": true
+      },
+      "motorOnly": {
+        "speed": "0.0",
+        "distance": "0 m traveled",
+        "throttle": "0",
+        "traction": true,
+        "status": "Running · motor enabled",
+        "prefersReducedMotion": true
+      },
+      "driveBefore": {
+        "speed": "5.9",
+        "distance": "1 m traveled",
+        "throttle": "18",
+        "traction": true,
+        "status": "Running · motor enabled",
+        "prefersReducedMotion": true
+      },
+      "driveAfter": {
+        "speed": "8.6",
+        "distance": "3 m traveled",
+        "throttle": "18",
+        "traction": true,
+        "status": "Running · motor enabled",
+        "prefersReducedMotion": true
+      },
+      "renderChangesDuringDrive": false,
+      "beforeSHA256": "75b859fb885de21f064266311e32a5364394d742d9d2f811e47f13f342e164aa",
+      "afterSHA256": "75b859fb885de21f064266311e32a5364394d742d9d2f811e47f13f342e164aa",
+      "paused": {
+        "speed": "8.8",
+        "distance": "3 m traveled",
+        "throttle": "0",
+        "traction": true,
+        "status": "Paused · ready",
+        "prefersReducedMotion": true
+      },
+      "restarted": {
+        "speed": "8.7",
+        "distance": "3 m traveled",
+        "throttle": "0",
+        "traction": true,
+        "status": "Running · motor enabled",
+        "prefersReducedMotion": true
+      }
+    },
+    {
+      "reducedMotion": "no-preference",
+      "startOnly": {
+        "speed": "0.0",
+        "distance": "0 m traveled",
+        "throttle": "0",
+        "traction": false,
+        "status": "Running · loads only",
+        "prefersReducedMotion": false
+      },
+      "motorOnly": {
+        "speed": "0.0",
+        "distance": "0 m traveled",
+        "throttle": "0",
+        "traction": true,
+        "status": "Running · motor enabled",
+        "prefersReducedMotion": false
+      },
+      "driveBefore": {
+        "speed": "6.4",
+        "distance": "1 m traveled",
+        "throttle": "18",
+        "traction": true,
+        "status": "Running · motor enabled",
+        "prefersReducedMotion": false
+      },
+      "driveAfter": {
+        "speed": "9.6",
+        "distance": "3 m traveled",
+        "throttle": "18",
+        "traction": true,
+        "status": "Running · motor enabled",
+        "prefersReducedMotion": false
+      },
+      "renderChangesDuringDrive": true,
+      "beforeSHA256": "05f2ff06f12a4a0a8c226c62598d314b7519636b3a141b6c343b60633725583f",
+      "afterSHA256": "1fd8eeba60ca4182a2f71ccad86e1c7b7c67fbc7954665b97afaf498b902906a",
+      "paused": {
+        "speed": "9.8",
+        "distance": "3 m traveled",
+        "throttle": "0",
+        "traction": true,
+        "status": "Paused · ready",
+        "prefersReducedMotion": false
+      },
+      "restarted": {
+        "speed": "9.7",
+        "distance": "4 m traveled",
+        "throttle": "0",
+        "traction": true,
+        "status": "Running · motor enabled",
+        "prefersReducedMotion": false
+      }
+    }
+  ]
+}

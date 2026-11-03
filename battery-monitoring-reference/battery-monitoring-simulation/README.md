@@ -1,0 +1,5 @@
+# Simulation status
+
+This folder contains a **logic-only Wokwi simulation**: an ESP32-DevKitC-like target, SSD1306 I²C display, and two potentiometers used strictly as synthetic ADC-node stimuli. Wokwi's documentation warns that its analog model is basic. The sliders do not represent a real ACS712 breakout, battery divider component tolerance, battery, fuse, switch, buck converter, relay, motor current or inrush. The arithmetic is illustrative and no power-stage safety/thermal/accuracy claim follows from it.
+
+Files: `diagram.json` and dependency-free `sketch.ino`. The simulation was actually compiled and run in Wokwi. The raw SSD1306 initialization/graphics command stream ran without a compile/runtime error, but visual verification was **partial**: the viewport showed only a short white strip rather than the intended complete bitmap/bars. ADC slider math was verified in the serial output; see the parent validation report. No Wokwi account project was saved; these local source files are the reproducible inputs.

@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-03",
+  "receipts": {
+    "phase2Browser": "validation/phase2-browser-validation.json",
+    "regressionBrowser": "validation/browser-validation.json",
+    "unit": "validation/unit-validation.json",
+    "unitLog": "validation/unit-tests.tap",
+    "engineering": "validation/engineering-lab-validation.md"
+  },
+  "duplicateRegressionFolder": {
+    "path": "validation/phase2-regression",
+    "status": "Retained: automatic approval review rejected deletion with blocked by policy; no specific reason supplied and no alternate deletion attempted."
+  },
+  "authoritativeFilesChecked": 36,
+  "authoritativeMismatches": [],
+  "testedSources": [
+    {
+      "path": "assets/vehicle/ev-ems-gt-phase2.glb",
+      "bytes": 8457760,
+      "sha256": "040353EBD49ECFFB69AB6118BB477955CF3905BD0CE6B067BA73AF1DE8532FE1"
+    },
+    {
+      "path": "app.js",
+      "bytes": 22336,
+      "sha256": "288AC18B8700A7F986B704C4F3C252EAEB616EBB75F947EAADBAB1A33549100E"
+    },
+    {
+      "path": "vehicle-studio.js",
+      "bytes": 24788,
+      "sha256": "7452632E3A3295281925AD19DC2CACE164993ECD32660CEC8D8F41B89C3CD6FF"
+    },
+    {
+      "path": "vehicle-assembly.js",
+      "bytes": 11910,
+      "sha256": "5BE7F8F51E522BCBD1149DB5709C53ECF1A82D4C2A2B4DFF2610A81BB2CC17E5"
+    },
+    {
+      "path": "vehicle-displays.js",
+      "bytes": 4612,
+      "sha256": "2CE311DA3D77159D5C657548460E911910A89D700288344D8DF25C03E3947208"
+    },
+    {
+      "path": "wiring-layout.js",
+      "bytes": 32422,
+      "sha256": "F6ECE65B02511F1B234533572543AA9272BE472BD9135EC98ED8F9933E941180"
+    },
+    {
+      "path": "index.html",
+      "bytes": 38830,
+      "sha256": "605FB2B2C5F1DF72D404E659598868E2239FA09611D6E97EE8A4FE0D69EBCEEC"
+    },
+    {
+      "path": "tests/phase2-browser-validation.mjs",
+      "bytes": 25328,
+      "sha256": "58719384F46EDF7E402D32FEFC58A375FC76A02FF582DBEFCDDB73F921BB5428"
+    }
+  ],
+  "unitTests": 36,
+  "browserPhase2Groups": 15,
+  "browserRegressionGroups": 18,
+  "hardwareTested": false,
+  "firebaseCredentialsSubmitted": false
+}

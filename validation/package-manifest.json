@@ -1,0 +1,1637 @@
+{
+  "project": "EV EMS / Aeris GT",
+  "date": "2026-11-03",
+  "engineeringFilesPreserved": 36,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 98,
+      "sha256": "ae25a076390813ce50e175ca7eae1cf5551b0f1a0538e3a1a8dc209d80447671"
+    },
+    {
+      "path": "CIRCUIT_LAB.md",
+      "bytes": 4431,
+      "sha256": "5662ee78a5d6cff999aa371167612d51da904725771fac6b518c2bec8e4aaa29"
+    },
+    {
+      "path": "EV_EMS_FINAL_IMPLEMENTATION_AUDIT.md",
+      "bytes": 16675,
+      "sha256": "4d577cf12713f77253a24f2fed35f9949312836d55ca9c4326c25c6833ac1a1a"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/circuit_block_diagram.png",
+      "bytes": 363809,
+      "sha256": "4291013a7016d6ea81539b4f3372a4446a7d7fb09371d292bdcc87c91449b6ac"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/circuit_block_diagram.svg",
+      "bytes": 17248,
+      "sha256": "c0b8ebd924db0941f6829cc5a97c62ab535d3392e9e8a73d7be67e62cb3e261d"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/signal_and_power_flow.md",
+      "bytes": 5631,
+      "sha256": "57bbb52f8e783f979b539c5cd371f0a112ae9dd82b0e9cc74355d27e59f6a6de"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/system_architecture.md",
+      "bytes": 6230,
+      "sha256": "f7e3b78426c64618b2ac4bb63df05c39cdbeee4e4d4ef860297f0dce68767c25"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/component_list.csv",
+      "bytes": 11239,
+      "sha256": "d1949d277a9c7c289f0e2867c65d7ea0c329308475c61544d3d9232cf4a9f4fe"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/component_specifications.md",
+      "bytes": 7666,
+      "sha256": "3811c53acbc71e2ab1775c1da30db8e8958171b6f22fd27c8b5f7be5cbee2f47"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/datasheets_and_source_links.md",
+      "bytes": 2723,
+      "sha256": "0607ebb73bf97bdd2d4fc40f58128152a1863ecde47ac3a5ad60acb0dd385ecf"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/unresolved_component_identification.md",
+      "bytes": 3275,
+      "sha256": "0f1d50c67946adf3ba3f1095b2724d97573419e0510acfa04dd8f18e16d4cddf"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/2D_circuit_schematic.png",
+      "bytes": 586882,
+      "sha256": "3a24c16ab5474d0224b85006cae3acc9c3790ce07897d2e306fa90d9f85a5b6c"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/2D_circuit_schematic.svg",
+      "bytes": 46327,
+      "sha256": "9870c1fa7c19f2d506107702356dd67c6a82e3b02a7577dcbe6f224a46e6663e"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/complete_circuit_explanation.md",
+      "bytes": 4625,
+      "sha256": "4f31625718492db0a16ae393e8ab005b0e839ba0aeb5c7370415d6dd8a3262f6"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/pin_mapping.md",
+      "bytes": 3012,
+      "sha256": "95138cf2a714ed03fcd17135a6dd3f301f6dc3152c7e6377820aa0162a5893b6"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/polarity_and_grounding.md",
+      "bytes": 3170,
+      "sha256": "ccdeccabc2dd4e609221557b392673617a864be9a66ee18dab7221f2efb96f4c"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/wiring_connections.csv",
+      "bytes": 9980,
+      "sha256": "17573a8bd105298573659feda8d5f175948eb8d598ccd1dea2aa894e9d4247c3"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/calibration_requirements.md",
+      "bytes": 2935,
+      "sha256": "84ccaf891db712a8dc5e73883764350c9be1b090523d15a1c7d12dcd04e0150c"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/current_measurement.md",
+      "bytes": 4196,
+      "sha256": "27ad04afe257bda5fc5be0def682a54c761689730839e70bc6b706c5478417cb"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/power_energy_and_cost.md",
+      "bytes": 2116,
+      "sha256": "3e6a8f14bf1ebc356575d058d48542fb6899ee9fbf6ce6894a2ab531f9d5bccf"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/voltage_measurement.md",
+      "bytes": 2985,
+      "sha256": "3bc0e5f1dfa4f33be685a8bfa17992b6de10ff8297b29f1a3d08750b63b1d298"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/worked_calculation_examples.md",
+      "bytes": 2445,
+      "sha256": "cdfd42dda1a2ea71546ed3950238717c594c95d77601e739939205a180e8432a"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/fuse_and_protection_requirements.md",
+      "bytes": 5819,
+      "sha256": "55fd9b4274a5d53befa1e873d5d30828aee824558e8c371051cb34b9b5647397"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/motor_and_inductive_load_protection.md",
+      "bytes": 1507,
+      "sha256": "e88555b8dd686d150e16c50eba81ba9c09162a95a2fd42e94f8503ea39b03b3e"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/reverse_polarity_and_transient_protection.md",
+      "bytes": 1347,
+      "sha256": "9d378b1f389194d81eb664d2c244a45aab8e4d6c1cfe846e0cf0314f0f8b10dd"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/student_lab_safety_checklist.md",
+      "bytes": 3817,
+      "sha256": "a3a8eb434a5406491cb36db1c7747e5d1cdb6949b03e5dcc45a795a24f2e2718"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/unresolved_safety_decisions.md",
+      "bytes": 1903,
+      "sha256": "1ac6b6cf2fbe4a67c8e7e69a43f6952590023b7944cb217889f5a1b132597fe0"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/calculation_checks.py",
+      "bytes": 12633,
+      "sha256": "c6f8e26a3cf0592d481e7ebfdd219476f37b993515115f165359e526d62cd000"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/calculation_results.json",
+      "bytes": 9326,
+      "sha256": "478f4541650f61c5104df8db7b46d6d6b7c99d631245203665352cca9892b8a4"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/engineering_calculation_checks.md",
+      "bytes": 5839,
+      "sha256": "5e171a75ee8947c97c98c8fc5dcd35bb1d3df23b9582e217c329517da74e6197"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/known_errors_and_conflicts.md",
+      "bytes": 4261,
+      "sha256": "5111d1507f73e4021278ce7af8c3c74e24db61fb003a6ce28f65006cf58f218f"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/package_consistency_verifier.py",
+      "bytes": 1788,
+      "sha256": "89a76b4989a69c072e627d0cf5e14f4197eeeabf37ac01c7a9992666de7f678c"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/simulation_and_test_plan.md",
+      "bytes": 2988,
+      "sha256": "942d85aca769d66d712051c69214426f8907ce88531d172072a9d0a0e19b5b8d"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/verification_status.csv",
+      "bytes": 7194,
+      "sha256": "1b77155bc7e8376826360b02ffa34992c5cf528498ecf0c138ca81cfbe46588d"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/07_References/reference_material.md",
+      "bytes": 2968,
+      "sha256": "a14d614624667af0d627a3447bcfd99297dfb52085429847e5c15f0da8c58f1f"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/07_References/source_register.md",
+      "bytes": 7155,
+      "sha256": "5b8fc44d4708b7cce1aa857e9da0856272522558648d3aac077a31d6634d33dd"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/CHANGELOG_AND_CORRECTION_REGISTER.md",
+      "bytes": 11428,
+      "sha256": "9ae63c558f676082cfacc21d518f19676c05bcd26898b9a54c382dd027782cb4"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/INDEPENDENT_AUDIT_REPORT.md",
+      "bytes": 22087,
+      "sha256": "0cb833d10efa84f5a40b76b2b874a482b404a7b029487b58288eac01af83f95c"
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/README.md",
+      "bytes": 13204,
+      "sha256": "bb57d3c8ec5bb8f8c5bb65f395a63ba9970fa56dc0b28af372161d5c1ba559f9"
+    },
+    {
+      "path": "FINAL_REPORT.md",
+      "bytes": 25208,
+      "sha256": "97ac1934622a1e75e2073c3174dcc2cfb5230bef260428fd4a1bf8cfc1490294"
+    },
+    {
+      "path": "FIREBASE_SETUP.md",
+      "bytes": 4877,
+      "sha256": "44894e8749636ae7f7f91e2dc1786f8da7d5b82198a36f402a9f7c147a5f48a2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10404,
+      "sha256": "53bfb91b5e06de3d77110969a70cc43e912971e5081c05dc331ae1897ff84d94"
+    },
+    {
+      "path": "SIMULATION_MODEL.md",
+      "bytes": 9696,
+      "sha256": "0302d3c7fae4c441fe003cb773fd363035e5cf7c532ab90616fb93a773679f8a"
+    },
+    {
+      "path": "WIRING_LAYOUT.md",
+      "bytes": 5649,
+      "sha256": "d30d4f41f59463cdf794b0cfe28eac052dbd895c012f331516fb29e77e34f9cf"
+    },
+    {
+      "path": "app.js",
+      "bytes": 25508,
+      "sha256": "8138e57490ab9570026134bf3b21726b394f708f6d5d5e9b35053c26409e9889"
+    },
+    {
+      "path": "assets/circuit/README.md",
+      "bytes": 5197,
+      "sha256": "3b49a944a8adeaf15764788aea2ec8323bf7d79b37c3b74f5ec43b2523ae797a"
+    },
+    {
+      "path": "assets/circuit/circuit-lab-preview.png",
+      "bytes": 3768824,
+      "sha256": "4674d83b2061c7e82546ae1075379bb5d0165490649d0be2f7ccef8368c9c6a4"
+    },
+    {
+      "path": "assets/circuit/circuit-lab.blend",
+      "bytes": 1008182,
+      "sha256": "c9c3fa4349271fbdff1c52d76636d7e1ee7438318e89d1803d2bed4b2b1df49a"
+    },
+    {
+      "path": "assets/circuit/circuit-lab.glb",
+      "bytes": 6370528,
+      "sha256": "e649765a5cfa6edf114b5209909b11ec2bb25a630f32f9c8db687031c85c5a3a"
+    },
+    {
+      "path": "assets/circuit/circuit-manifest.json",
+      "bytes": 170623,
+      "sha256": "a4f6b82ea578886bbda5cfa5830c0b8dcd05b383aa3d9af0157d24fa353a64fc"
+    },
+    {
+      "path": "assets/circuit/esp32-detail.png",
+      "bytes": 2667581,
+      "sha256": "8ddb2c47d13c83e5f1ff40e5a54a087d1822614d50eb79799209c041f546feba"
+    },
+    {
+      "path": "assets/circuit/source-validation.json",
+      "bytes": 704,
+      "sha256": "b2172e72f3f13953029e23e0b6319b13a180d721d06ca506390f841f6b71036e"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "bytes": 182,
+      "sha256": "fd85b1ac3c23f202c7d767f78162d82ec2f3c9f994f7d07746378502b96306b1"
+    },
+    {
+      "path": "assets/fonts/dmmono-OFL.txt",
+      "bytes": 4484,
+      "sha256": "2bada5ea45c3c63b7f1ea1f88ce9672c9e4f0c42b2c3b7378949084fe55a3066"
+    },
+    {
+      "path": "assets/fonts/font-0.woff2",
+      "bytes": 9552,
+      "sha256": "a52e19ebe0398c9c0f8fa28a0c5e9a6bc324f35d9f0881c9aa407d10af447175"
+    },
+    {
+      "path": "assets/fonts/font-1.woff2",
+      "bytes": 14820,
+      "sha256": "e1896b13b2b1bb112fac2f9571bd6c40e118746e77a4511edbf43fbb41bf3e1e"
+    },
+    {
+      "path": "assets/fonts/font-2.woff2",
+      "bytes": 9616,
+      "sha256": "8711f938c3f04f91e35ae64ebc7f2eecd800d2ae1c3542f6c837c758a50422f5"
+    },
+    {
+      "path": "assets/fonts/font-3.woff2",
+      "bytes": 14988,
+      "sha256": "9964608a849396bd00c4bfd7034afe03486469dcf20b4f6b8cbdfdd310369951"
+    },
+    {
+      "path": "assets/fonts/font-4.woff2",
+      "bytes": 2588,
+      "sha256": "3c09135e88bbfcd848e99be137710afbb615a8d9a73c5c48e6cb0245a162af1d"
+    },
+    {
+      "path": "assets/fonts/font-5.woff2",
+      "bytes": 14352,
+      "sha256": "447c49583b1b735cc6f566151db1d24354cec41076c55dd98455cfbde9e806c1"
+    },
+    {
+      "path": "assets/fonts/font-6.woff2",
+      "bytes": 9268,
+      "sha256": "e507c109c31789b33994646b457ee288639324516357250607c9b1398186e069"
+    },
+    {
+      "path": "assets/fonts/font-7.woff2",
+      "bytes": 8388,
+      "sha256": "dbf64d973b3987844df30992c93f47d24ac8935ee8c9b1e320942aeb1b367703"
+    },
+    {
+      "path": "assets/fonts/font-8.woff2",
+      "bytes": 15160,
+      "sha256": "2f7335119075b2079f1d882530bbc18728461612bf90743203d73a74a48f4d9b"
+    },
+    {
+      "path": "assets/fonts/font-9.woff2",
+      "bytes": 24532,
+      "sha256": "8c2def024c1bf31aacf3624ae3c4d701269b4ec3dc765c04830839f0d36b2d9e"
+    },
+    {
+      "path": "assets/fonts/fonts.css",
+      "bytes": 10438,
+      "sha256": "5cd0cd43aa2b14ff141b83f849dedd8c7d0649c24db46e5c69e72f257d104971"
+    },
+    {
+      "path": "assets/fonts/manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "assets/vehicle/README.md",
+      "bytes": 6700,
+      "sha256": "314ab71f890a1ff0fcc7788fee51ac0cbb61d55cc047a79d4965aa5cea9ee0a2"
+    },
+    {
+      "path": "assets/vehicle/ev-ems-gt-phase2.blend",
+      "bytes": 2073105,
+      "sha256": "36d13687acc79811111d5478bedccc44a7fe4ffaff72bb8f446de617f67572d9"
+    },
+    {
+      "path": "assets/vehicle/ev-ems-gt-phase2.glb",
+      "bytes": 8457760,
+      "sha256": "040353ebd49ecffb69ab6118bb477955cf3905bd0ce6b067ba73af1de8532fe1"
+    },
+    {
+      "path": "assets/vehicle/ev-ems-gt.blend",
+      "bytes": 1972517,
+      "sha256": "6b5e393460ce314eca0c64c898cfc0aed095fba2eda74e5efc5a9d57d14a6529"
+    },
+    {
+      "path": "assets/vehicle/ev-ems-gt.glb",
+      "bytes": 6972324,
+      "sha256": "c35f842a494998c90b4e9fbfab466a12e5624a530e17401ab3c0d5364992e658"
+    },
+    {
+      "path": "assets/vehicle/glb-validation.json",
+      "bytes": 987,
+      "sha256": "692ba8b1055c78dd4a8e52764a98c3d28061939ad3b1ebc45254d26d7d057573"
+    },
+    {
+      "path": "assets/vehicle/interior-rear-phase2.png",
+      "bytes": 1413329,
+      "sha256": "da69d8076e8163cd6bc97c7d7ee14284f9f93e9379356f62eddeb4a23f354956"
+    },
+    {
+      "path": "assets/vehicle/interior-seats-phase2.png",
+      "bytes": 1534978,
+      "sha256": "210c010fd25d350348d5a0b73a3be8771effa1a5d29ca6a6aeec6eccf8443377"
+    },
+    {
+      "path": "assets/vehicle/interior-window-phase2.png",
+      "bytes": 1364886,
+      "sha256": "f68c55b261ee50b6e15c978944f81f9fbf421acda3c27b3537028015759e72f4"
+    },
+    {
+      "path": "assets/vehicle/interior.png",
+      "bytes": 1515254,
+      "sha256": "26ee5b1d5a7174bee3be8212a8243921257b7c8675c74018d6a384632e41c54a"
+    },
+    {
+      "path": "assets/vehicle/model-manifest-phase2.json",
+      "bytes": 5931,
+      "sha256": "8a28f9ac2c1bd77e5085a867e03e5a1b6c63d3f6334c6a50d90fcd0f4e2e33bd"
+    },
+    {
+      "path": "assets/vehicle/model-manifest.json",
+      "bytes": 8853,
+      "sha256": "112991af917265edc9d1eef4a9ef7480f2b10d42a4672d868aef3afc08d74d9e"
+    },
+    {
+      "path": "assets/vehicle/model-validation-phase2.json",
+      "bytes": 2583,
+      "sha256": "ae6581c23e36f74bd18df76117eb5aaed085c9c0bc2be4d9e0c4f0c52e36c806"
+    },
+    {
+      "path": "assets/vehicle/model-validation.json",
+      "bytes": 892,
+      "sha256": "791f59b8bdcaa2ccd6c8c83c25fdb7f53bd8500a4414cea83440482a398f4c66"
+    },
+    {
+      "path": "assets/vehicle/poster-phase2.png",
+      "bytes": 1497005,
+      "sha256": "886c50dd8bf754f4add95ccefbefecb420ed983148eb0b97357b71aa4ba2df93"
+    },
+    {
+      "path": "assets/vehicle/poster.png",
+      "bytes": 1500998,
+      "sha256": "18dbc1e95049f691c135dc84aa208751715ffe4b3d5736f564c79ca53179c3b9"
+    },
+    {
+      "path": "assets/vehicle/powertrain.png",
+      "bytes": 1259057,
+      "sha256": "8f105c1940b830af8506974bfbf631e4a2eba6c7d9f705f7db62a774796b6a59"
+    },
+    {
+      "path": "assets/vehicle/rear.png",
+      "bytes": 1249672,
+      "sha256": "7dd70a1655751d58ebed9088c9a1ac151781ec532d46bc39fd9b39c2591fcc83"
+    },
+    {
+      "path": "battery-monitoring-reference/ASTRA_3D_WIRING_HANDOFF.md",
+      "bytes": 5949,
+      "sha256": "69feb0d042007b74a17f8fe883ef504bc8ecbe7b09b171a58a692f13aea25f6d"
+    },
+    {
+      "path": "battery-monitoring-reference/README.md",
+      "bytes": 644,
+      "sha256": "07bf220088205593dc3f93c2c028f4008316b3550da549cbf751ab6c23ec7197"
+    },
+    {
+      "path": "battery-monitoring-reference/battery-monitoring-pinout.csv",
+      "bytes": 7958,
+      "sha256": "fb60b49a55096a87ca91b1810274f3067cb69977017717c1401302c998fd912c"
+    },
+    {
+      "path": "battery-monitoring-reference/battery-monitoring-schematic.png",
+      "bytes": 177399,
+      "sha256": "5d9e8e0034c832d1fff544926b6daa2ec42bdee831af6ea827f2e3ee10fe1493"
+    },
+    {
+      "path": "battery-monitoring-reference/battery-monitoring-schematic.svg",
+      "bytes": 10133,
+      "sha256": "3d01119fc79f13c0c6d152a349fb00766f93129dc967b61a4e58e07ddf916e2d"
+    },
+    {
+      "path": "battery-monitoring-reference/battery-monitoring-simulation/README.md",
+      "bytes": 1027,
+      "sha256": "e276ca0d221b7914711a9444c254a122d8cadaa785293fdbc92fc2ed598bbf3b"
+    },
+    {
+      "path": "battery-monitoring-reference/battery-monitoring-simulation/diagram.json",
+      "bytes": 1147,
+      "sha256": "ad2809a81a753d82d9fbebeffd474dec2a22106873c495574464c5d62299d1cf"
+    },
+    {
+      "path": "battery-monitoring-reference/battery-monitoring-simulation/sketch.ino",
+      "bytes": 4131,
+      "sha256": "3d9a5498f544e3d07c97d5af7be0ba467353095fc521b061a07c5c37cf8db263"
+    },
+    {
+      "path": "battery-monitoring-reference/battery-monitoring-validation-report.md",
+      "bytes": 9485,
+      "sha256": "f3f23074016150bc86aaa3d3443cb92e3193f2e139d772d146a645819c3887d9"
+    },
+    {
+      "path": "battery-monitoring-reference/battery-monitoring-wiring-guide.md",
+      "bytes": 10420,
+      "sha256": "d57caa46c191f4ed2c4cc592876e608a792f32e6a1c9f6319c3444ac42ecef5c"
+    },
+    {
+      "path": "battery-monitoring-reference/render_schematic.py",
+      "bytes": 7995,
+      "sha256": "9b74f8e03873e3b2396cdeee730132ca56f32bd4865b1599dd606691e522cfad"
+    },
+    {
+      "path": "blender-workflow/README.md",
+      "bytes": 1170,
+      "sha256": "4149baaf3a2e35317effc094229227ad9760da98bcd5c088d1f36009800190b2"
+    },
+    {
+      "path": "blender-workflow/output/ecs-battery-assembly.glb",
+      "bytes": 4597232,
+      "sha256": "aadc4817afb07d93ad7d35b13c969a8e41beb9e3634ed87e0cb53348a1018503"
+    },
+    {
+      "path": "blender-workflow/output/ecs-gt-complete-car.blend",
+      "bytes": 1658040,
+      "sha256": "8a11b05de23f56074e9ce9419273abbcfeac475e3e78a8c88c3e70d8b1f0beae"
+    },
+    {
+      "path": "blender-workflow/output/ev-vehicle-assembly.glb",
+      "bytes": 6725800,
+      "sha256": "34e15604cf84fec5e60941b1696f44d59a8ff5c1712640353495e00b461b2921"
+    },
+    {
+      "path": "blender-workflow/output/inspected-assembly.blend",
+      "bytes": 1656109,
+      "sha256": "14496463eceadd48f6a5496e3b39510378f02e98297b2c08a450db9db7ebb410"
+    },
+    {
+      "path": "blender-workflow/scripts/assembly_reference.py",
+      "bytes": 23508,
+      "sha256": "4e9a6266026d2af18314c24c403e2973a71157be191720372710108fdb6f6ae1"
+    },
+    {
+      "path": "blender-workflow/scripts/build_circuit_lab.py",
+      "bytes": 38390,
+      "sha256": "f5ce0850a5ce74cec112e5e66ae353919d570907f794aa12a93087323aadff2c"
+    },
+    {
+      "path": "blender-workflow/scripts/build_ev_ems_gt.py",
+      "bytes": 16086,
+      "sha256": "92390b2101fc62e111c03d65dd00ef66d27a46e01128a8dd502ad31ef3961492"
+    },
+    {
+      "path": "blender-workflow/scripts/build_ev_ems_phase2.py",
+      "bytes": 13615,
+      "sha256": "49f2e6e91e2831743cad83f605443353b01ff2e710dabe010f22c4b4ee72db62"
+    },
+    {
+      "path": "blender-workflow/scripts/check_circuit_lab.py",
+      "bytes": 4893,
+      "sha256": "49701074f95225d2afaf2e69507771bca0c184d84cfaeabef42eaaa7470b0db6"
+    },
+    {
+      "path": "blender-workflow/scripts/check_ev_ems_phase2.py",
+      "bytes": 3913,
+      "sha256": "210f18c95d63780d8617c553138cdd65a3e3d11ee86ee616190712482c7067ec"
+    },
+    {
+      "path": "blender-workflow/scripts/ev_detail_geometry.py",
+      "bytes": 56718,
+      "sha256": "2d7b1e6feb2632c3e2e3771aaa7bb777d342f22691373e58ad1bc044bae4e6ad"
+    },
+    {
+      "path": "blender-workflow/scripts/ev_ems_coachwork.py",
+      "bytes": 11026,
+      "sha256": "04a4e2383e80595bb9bad67be6bca9b2822e306f52c9f0958adc70cce9134bd4"
+    },
+    {
+      "path": "blender-workflow/scripts/ev_ems_mechanics.py",
+      "bytes": 6075,
+      "sha256": "d247d920fafb0c0bb4eb13f4a39cbd3671eef42d928c762b5549af37d5e03bdc"
+    },
+    {
+      "path": "blender-workflow/scripts/ev_ems_phase2_interior.py",
+      "bytes": 11516,
+      "sha256": "2b1d9d9df5ad0785222f79dcb1c2545bf658a830f3cb9c7604bf73e0b723cfb8"
+    },
+    {
+      "path": "blender-workflow/scripts/generate_ecs_assembly.py",
+      "bytes": 46796,
+      "sha256": "d654089f07b21f17f57541fd56e94ed6ea8c492ff22eed63b218c1c20a5ee3bf"
+    },
+    {
+      "path": "blender-workflow/scripts/generate_ev_assembly.py",
+      "bytes": 22668,
+      "sha256": "27ce2029776c996c639980f6b703de35882177646c0acfb5631a9b5c96a556ef"
+    },
+    {
+      "path": "blender-workflow/scripts/render_ev_ems_checks.py",
+      "bytes": 2797,
+      "sha256": "b089c00253f4eb7a592cb0203052b703152c572dfa7a5a6a06b88e4888c4e92a"
+    },
+    {
+      "path": "blender-workflow/scripts/run_circuit_build.py",
+      "bytes": 803,
+      "sha256": "b6156ec7f5030d323844d31134c64925b715866e270c4c013fb5aef6c1a2b7ab"
+    },
+    {
+      "path": "blender-workflow/scripts/run_phase2_checks.py",
+      "bytes": 388,
+      "sha256": "768f425df7d8301d5255f0693b76aecb4febf1f35f705383f0dd8a7908e5c2b6"
+    },
+    {
+      "path": "blender-workflow/scripts/verify_vehicle_glb.py",
+      "bytes": 3532,
+      "sha256": "0671d8a2c42438113f0484f76383a94738d368725ea8a7ea86daa8012880268c"
+    },
+    {
+      "path": "charts.js",
+      "bytes": 4790,
+      "sha256": "9cd3fe013df0491c881ee9e2f8270e4dbecbef38f8e1170172eba7eddf9b3c7e"
+    },
+    {
+      "path": "circuit-lab.css",
+      "bytes": 11328,
+      "sha256": "b6dd823149bc0729f7d0962074eaab71305db896b5d5697f2aba319721cd1a6f"
+    },
+    {
+      "path": "circuit-lab.js",
+      "bytes": 40612,
+      "sha256": "ffcddf93eb93426747c6dca35618d5b0aa6811b7e4351fdddeaa107ff2ef0983"
+    },
+    {
+      "path": "circuit-review.js",
+      "bytes": 9563,
+      "sha256": "2561aba5dd1b0569b59cc99e7f821770150958b197079e3f5bfd53214cc7c3da"
+    },
+    {
+      "path": "circuit-schematic.js",
+      "bytes": 10472,
+      "sha256": "4d5ec407cadb01d4c7e2df6aca1f98e5ce0059c0ab71f72003b8aa11b9e7713e"
+    },
+    {
+      "path": "docs/advanced-circuit-audit.md",
+      "bytes": 7938,
+      "sha256": "1ba7dd1a9873d9dc97790c020e4eb1fa5ffb7daa88cbb5f77ee12f00744fafa0"
+    },
+    {
+      "path": "docs/advanced-simulation-audit.md",
+      "bytes": 5941,
+      "sha256": "517157e2a3f16bf82e6050ad1669ac78601d9902b5b1cf3adf8c5aa366e1b2cf"
+    },
+    {
+      "path": "docs/hardware-build-proposal.md",
+      "bytes": 12418,
+      "sha256": "44e2391c03ac970e4d6bf2e811b000996d2c1a91569311f963dc920a95705fd1"
+    },
+    {
+      "path": "docs/manufacturer-cross-check.md",
+      "bytes": 3313,
+      "sha256": "6d5db8cc304f93873a0a44cdc2aea65302ae8002d5c55f07d10d3eff2436860b"
+    },
+    {
+      "path": "docs/provenance/README.md",
+      "bytes": 2271,
+      "sha256": "9e9db8727f694a9cd1cc14e3f07711e6e03eb64b66daa492e63745a39c4c79c4"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/01_System_Overview/circuit_block_diagram.svg",
+      "bytes": 4839,
+      "sha256": "fc1536d001a95683583f4fa69a63a7baf45f6fff982e86dcfa43a2dddcd37dd2"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/01_System_Overview/signal_and_power_flow.md",
+      "bytes": 2117,
+      "sha256": "7cc2ea1b567fdc56a5f72777faae80e9c2e56cd29c871b5eac2e0d8306681712"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/01_System_Overview/system_architecture.md",
+      "bytes": 3174,
+      "sha256": "6ea499724621eeb5a5e09be3ff47d83195b80ca1240eb170961b24b785ae9e07"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/02_Component_Details/component_list.csv",
+      "bytes": 7032,
+      "sha256": "466f623cf8448b79811e314379803e35e66694575d4ddf3ecab7643e3efab29f"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/02_Component_Details/component_specifications.md",
+      "bytes": 3542,
+      "sha256": "b55f075c9cbd212be8bd52051903a342864f051d1e29d9fa83ce9e7285a384d1"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/02_Component_Details/datasheets_and_source_links.md",
+      "bytes": 2745,
+      "sha256": "3fbe5f6a4283041150001fd127b16d9f406bf55fef562d0cc25482a778029cc2"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/02_Component_Details/unresolved_component_identification.md",
+      "bytes": 3297,
+      "sha256": "af436eb5f2220f4e346b8459d639789135d06183356881e6f3f8c99fa2536b10"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/03_Circuit_Design/2D_circuit_schematic.png",
+      "bytes": 378953,
+      "sha256": "8784db1412a19b406e2f681cece426f4ca64b08ee1ec3cb5fe28d0755dc58400"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/03_Circuit_Design/2D_circuit_schematic.svg",
+      "bytes": 24338,
+      "sha256": "d43c2c5e8b62d63131dd80a9dee0a3732b45dc4ba79d51fea147c948adc97535"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/03_Circuit_Design/complete_circuit_explanation.md",
+      "bytes": 3498,
+      "sha256": "26d796a5714f6be44f9358fe41c3386d7919c818e1a46f05c2c155efc9b67d37"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/03_Circuit_Design/pin_mapping.md",
+      "bytes": 1928,
+      "sha256": "cabf6118162a979803fa2499705bd4cd8a8c0255f6a15b354e00e1324dd75d7c"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/03_Circuit_Design/polarity_and_grounding.md",
+      "bytes": 2019,
+      "sha256": "c289e53aeb87ea3d24335d63bad8526ff35f1c1a0e3dfa9817cd6dff4e3534d4"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/03_Circuit_Design/wiring_connections.csv",
+      "bytes": 5915,
+      "sha256": "ff14b313f157c5122caee5ff297611c13f7014820e499ab6fbb0823a0118808f"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/calibration_requirements.md",
+      "bytes": 2965,
+      "sha256": "f14d899713ed9a89b5404afb506ae9144028b1a4e43d96eadc122b997d13d820"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/current_measurement.md",
+      "bytes": 2005,
+      "sha256": "68c8a0b9387ea36ec84aad33ee02d76a6ff6ab68be1f9590231c0af1a5af0b1e"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/power_energy_and_cost.md",
+      "bytes": 2148,
+      "sha256": "408bd47b3e57b9cb7efba9245fe17b1fd05e45569adbfb511d6ae661841ace33"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/voltage_measurement.md",
+      "bytes": 1366,
+      "sha256": "e03b1054a3219758111e3f87d86d561ecac19a3735516ceabf44aeab05431b33"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/worked_calculation_examples.md",
+      "bytes": 2490,
+      "sha256": "83c848ecf77eb99d71ebd0ad9ffa85454fa4079cc35edc0b88c03dae9ef84459"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/05_Protection_and_Safety/fuse_and_protection_requirements.md",
+      "bytes": 2525,
+      "sha256": "5b0a68ec97d01e609c5e930224e442de8ea5a034c5a9ef2110a80936b0d2e20d"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/05_Protection_and_Safety/motor_and_inductive_load_protection.md",
+      "bytes": 1518,
+      "sha256": "48fd1e1fa06938514f190a5500c6ce6534e62acb885abe21772c3347393b0e09"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/05_Protection_and_Safety/reverse_polarity_and_transient_protection.md",
+      "bytes": 1358,
+      "sha256": "ab8f0071f5de21969219d736a37fa19457554fdbdcc8af70e5546ba0f860374d"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/05_Protection_and_Safety/unresolved_safety_decisions.md",
+      "bytes": 1921,
+      "sha256": "db3173546421990c2cc7b6eca0d32e1f6262678bbc70f00969dfd19dc9804188"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/06_Validation/calculation_checks.py",
+      "bytes": 6153,
+      "sha256": "df44c1a8c74cfa7e07b81f4f334dd58b7018700025136421464a07206b73bdc2"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/06_Validation/calculation_results.json",
+      "bytes": 5074,
+      "sha256": "fcf2a874027fc9ccf1bee7aae8ce48bf12068d8b102fe0a6c7d6c15721828167"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/06_Validation/engineering_calculation_checks.md",
+      "bytes": 4067,
+      "sha256": "c6a1317319a637b536699ba8f3da150b230d034e7256d14686706841e943f16d"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/06_Validation/known_errors_and_conflicts.md",
+      "bytes": 3249,
+      "sha256": "79b85e1950cc63acdfce7ce359ba74dfc2e37a739ef92f4e329d4994b86cedad"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/06_Validation/simulation_and_test_plan.md",
+      "bytes": 3017,
+      "sha256": "c0b4343a4c9a6d5a9daaca67604781a72c35efbb2da1efe216234270ee2eb3cd"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/06_Validation/verification_status.csv",
+      "bytes": 3459,
+      "sha256": "370507946701bfa7f924bf53087d8d6c8524931fdef951edb61cab2c64753b5b"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/07_References/reference_material.md",
+      "bytes": 2995,
+      "sha256": "a93b0dfac8ab18deebb8a602533ad4ab2b32114220ca6ae51f6eab6be96118cb"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/07_References/source_register.md",
+      "bytes": 7186,
+      "sha256": "63e95836143c1a30102dd11e09c797d29de79b36ad572b03f5b92e2e13ebf216"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/INDEPENDENT_AUDIT_REPORT.md",
+      "bytes": 19535,
+      "sha256": "0c1792e153e2d3ec2e68568b935bedd683d4a6c732912684ca681e28d1d3950e"
+    },
+    {
+      "path": "docs/provenance/circuit-details-original/README.md",
+      "bytes": 4862,
+      "sha256": "031a75987c52c0dc6a066a7eef232213bf1c73e425ff591b57d904f6b43f5f0e"
+    },
+    {
+      "path": "docs/provenance/historical-assembly/PROJECT_AUDIT_2026-10-14.md",
+      "bytes": 13500,
+      "sha256": "bd6395cce5ce7859b1bd00dff1dfe4281b3a8e96c029fe83662b0fb9cbc33037"
+    },
+    {
+      "path": "docs/provenance/historical-assembly/assembly-inspection.png",
+      "bytes": 2702964,
+      "sha256": "4cb399c9a0ca941f875402ff772b00fc2e39567f25f43a86fca95a9180d80232"
+    },
+    {
+      "path": "docs/provenance/historical-assembly/audit-20261014/asset-results.json",
+      "bytes": 632,
+      "sha256": "f647bdbd501bf8e40d49c569aab68bd46429f6219e669c67d0c9c5e3c22a9cb5"
+    },
+    {
+      "path": "docs/provenance/historical-assembly/audit-20261014/browser-results.json",
+      "bytes": 6787,
+      "sha256": "72c62c9b4b9c7f9b88af9e4eebe9906cc20142edecdc8bf0bbfd9188be367a36"
+    },
+    {
+      "path": "docs/provenance/historical-assembly/audit-20261014/changed-file-hashes.json",
+      "bytes": 2141,
+      "sha256": "6a743258a1c15452bc7b34ab621b66387bf1e25aa765805b8b04ad5f58b7adda"
+    },
+    {
+      "path": "docs/provenance/historical-assembly/blender-import-validation.json",
+      "bytes": 9404,
+      "sha256": "ea5c08413554dd43fc73843d5bfc13cc2f9bd1c8f784d3a8153e89018bf65b2a"
+    },
+    {
+      "path": "docs/provenance/historical-assembly/ev-generation-result.json",
+      "bytes": 1284,
+      "sha256": "d6a43882245555e9ab562701388398cb96d75e716f4deea4afd1b5dcfb294d46"
+    },
+    {
+      "path": "docs/provenance/historical-assembly/original-glb-inventory.json",
+      "bytes": 191498,
+      "sha256": "f0f9eb0268179a367bfa4d9f6fe032e0e47f6bd6cd7672e4a84b2625ffcc4daa"
+    },
+    {
+      "path": "drivetrain-kinematics.js",
+      "bytes": 1772,
+      "sha256": "a233312bd6a069af442113b1d4c17fc9d5883a61a41d331aa0ae5583a1aef5f4"
+    },
+    {
+      "path": "engineering-lab.css",
+      "bytes": 30761,
+      "sha256": "523f9f9c6b32d7a06487db8e9e22b6bc835f50873e6e7a9e67d0b06af5c3a10d"
+    },
+    {
+      "path": "engineering-lab.js",
+      "bytes": 37495,
+      "sha256": "064c13c1dfca89a2045d6ca0ed87b4aff18597bc7f3bca1b108a7724c9a9fc11"
+    },
+    {
+      "path": "ev-simulation-engine.js",
+      "bytes": 24707,
+      "sha256": "7f1f5f8f7fb8ee65fc792e88a706c4dc495cff72e94a389affec1b8b254605c8"
+    },
+    {
+      "path": "ev-vehicle-data.js",
+      "bytes": 4031,
+      "sha256": "c1c6ceac3b5f4d0fa2b0ef7642d85ef9db61102bba738706d8980d85fc67c1fa"
+    },
+    {
+      "path": "firebase-config.js",
+      "bytes": 10926,
+      "sha256": "1654bce815558f56850a002855d233abfec9c82fa36a26a29af04a6aa83c6a95"
+    },
+    {
+      "path": "hardware-validation/ASTRA_3D_WIRING_HANDOFF_FINAL.md",
+      "bytes": 14895,
+      "sha256": "fc7096bffa53e5743fc49a7d866522e2934d706cca087c7c6f3cefb6acd916db"
+    },
+    {
+      "path": "hardware-validation/INDEPENDENT_ENGINEERING_AUDIT_2026-11-02.md",
+      "bytes": 30912,
+      "sha256": "a6d858f3178a2fe4f4f0dc27e1b5d9ed2effdffa9487881da142a3abbe7b4553"
+    },
+    {
+      "path": "hardware-validation/README.md",
+      "bytes": 919,
+      "sha256": "6599ce6ffb30fa833ab7e4a42bb3f88b0ed31ba9abf62f45ca76a14c19a85e20"
+    },
+    {
+      "path": "hardware-validation/assembly-reference.json",
+      "bytes": 30692,
+      "sha256": "588a1503339bb639f60a852ab45a1429e482d2ddb5f3efba02d575757a399c2d"
+    },
+    {
+      "path": "hardware-validation/build_handoff.py",
+      "bytes": 11497,
+      "sha256": "75a3c4708c61bed0a4a1935b41e076c9e1dac0549c0a21d1bb95599aa921a0cc"
+    },
+    {
+      "path": "hardware-validation/build_reference.py",
+      "bytes": 15108,
+      "sha256": "ee2b9f1306d3abe7f85ba14bd19cc22fe3a971f158788cd84836017712e3fbb2"
+    },
+    {
+      "path": "hardware-validation/calculations.json",
+      "bytes": 1675,
+      "sha256": "54935ebbda4553d7a47bfdb7af9adc51982171bed1d2ec18a6bc97eb0c0e70d3"
+    },
+    {
+      "path": "hardware-validation/calculations.py",
+      "bytes": 1862,
+      "sha256": "f0dd830e09d98067ff29e1041e0c84ee7b77292aef931bcceee80a5cf80a28fd"
+    },
+    {
+      "path": "hardware-validation/corrected-schematic.png",
+      "bytes": 365733,
+      "sha256": "650416840828d2c317c79958c42ad07981b83afc1d55b54773b83049df723472"
+    },
+    {
+      "path": "hardware-validation/corrected-wiring-table.csv",
+      "bytes": 3826,
+      "sha256": "cf3cd78210bf9ab4b01c97c6b9ebb1e4ed5bb460fb5b82ba2d90bc476c2c5820"
+    },
+    {
+      "path": "hardware-validation/provided-references/ASTRA_3D_WIRING_HANDOFF_VERIFIED.md",
+      "bytes": 5190,
+      "sha256": "5294e3cea7e25aab361357429463a2833fdb0f198d456bde288b12a852a28116"
+    },
+    {
+      "path": "hardware-validation/provided-references/ECS_INDEPENDENT_AUDIT_REPORT.md",
+      "bytes": 26968,
+      "sha256": "734d7c140440fb9b23fbccb42e82de76ffbfd623522138ddb4df29582cd58529"
+    },
+    {
+      "path": "hardware-validation/provided-references/ECS_corrected_schematic.svg",
+      "bytes": 13210,
+      "sha256": "160a1c4eb4465f7adf2afcd97f865c8696a86b62a5f19a69517a277e4f205fba"
+    },
+    {
+      "path": "hardware-validation/provided-references/README.md",
+      "bytes": 595,
+      "sha256": "23add71479001bbfdf702ec48d538e1395accf57178f61af4f967d03d54a6dfc"
+    },
+    {
+      "path": "hardware-validation/provided-references/audit_calcs.py",
+      "bytes": 2289,
+      "sha256": "9b6efb23878bab526eecf93e3f249a6683c5583a2361cc50ce4d42df4bd30a84"
+    },
+    {
+      "path": "hardware-validation/provided-references/audit_calcs_output.txt",
+      "bytes": 2288,
+      "sha256": "548ecb089e208dde97431f36665e4aba36d8a1421728986143c984039afabd68"
+    },
+    {
+      "path": "hardware-validation/provided-references/battery-monitoring-pinout_CORRECTED.csv",
+      "bytes": 6432,
+      "sha256": "133d414ac156398ec8b7df4f3daf7af1148176ca8b76b681925bfc4145c751a8"
+    },
+    {
+      "path": "hardware-validation/remaining-verification.md",
+      "bytes": 16647,
+      "sha256": "ed0695261d0387a8f6009b28709e96cffb827b9dcf31c2a06f344c0d48f57d46"
+    },
+    {
+      "path": "hardware-validation/wire-routes.json",
+      "bytes": 600510,
+      "sha256": "9e864b3e552861ee763995e5c2ff963f550a2f9a100edea5ad226f36006bdf53"
+    },
+    {
+      "path": "hardware/revision-b-schematic.svg",
+      "bytes": 27868,
+      "sha256": "86fa88c873a0eb7a75eabbaba7864cb833d7156c957ef5f3b1a7f88ee9dd9507"
+    },
+    {
+      "path": "hardware/revision-b.json",
+      "bytes": 16819,
+      "sha256": "8796dc1fe09f3be4057749c46b677df68559cf0d49e46dfdb2365655f6a4abd2"
+    },
+    {
+      "path": "index.html",
+      "bytes": 42767,
+      "sha256": "ba0cdce84b93d45237084149739bcb13a66fea862f83d5edd3cfed9fd391583c"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 2602,
+      "sha256": "5bd34b347cefe24b66f072842a8846eaecff861dfeaac6d93911a92a7401f22b"
+    },
+    {
+      "path": "package.json",
+      "bytes": 831,
+      "sha256": "ffdb29583dade207c6a5669439a454655ceef7f3f1a40ba86db8c693b8344810"
+    },
+    {
+      "path": "scripts/audit-circuit-electrical.py",
+      "bytes": 2504,
+      "sha256": "fa3d5a690e2656382535af08e930134bd41889164c57af580fa4b55888d2874b"
+    },
+    {
+      "path": "scripts/build-hardware-schematic.mjs",
+      "bytes": 8092,
+      "sha256": "2416fc4fb8a4dbce394f45353c42bb0a6e640b10e8a4c757fffbbe9279a88843"
+    },
+    {
+      "path": "scripts/capture-studio.mjs",
+      "bytes": 1692,
+      "sha256": "dda23aa9446f34031a86408c726d9039b2e91f762488d702bfe7650811a73e82"
+    },
+    {
+      "path": "scripts/package_project.py",
+      "bytes": 5045,
+      "sha256": "50aaf69adbd3c361301c43f60586b54b321f30c308592b335233b6ea68449795"
+    },
+    {
+      "path": "scripts/run-driving-scenarios.mjs",
+      "bytes": 3130,
+      "sha256": "c211f3c8fd40174b6a1ec6d0341cd8857ffbf4cb414dbebd1d66752a1949dbd1"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 1289,
+      "sha256": "83b879396fd449f7e1e44e70192522adc95729e0d7ab5ad3054b25614261c64b"
+    },
+    {
+      "path": "scripts/vendor-fonts.mjs",
+      "bytes": 1251,
+      "sha256": "b955dd750d4e9186706e8d63ad1c7db93ff449bf2f171126a40c477f520a76c9"
+    },
+    {
+      "path": "scripts/vendor.mjs",
+      "bytes": 631,
+      "sha256": "e715b008586bc193a31f6959ed6ef1edd6022da55a711c680822c2ff5af2cd31"
+    },
+    {
+      "path": "scripts/verify_advanced.mjs",
+      "bytes": 4436,
+      "sha256": "75271c01628ec28649ef814c4542e5d5baf2cf2516a97698008375a13de85dae"
+    },
+    {
+      "path": "scripts/verify_unit.mjs",
+      "bytes": 866,
+      "sha256": "57604c8929f0e22f86b57f8f5b26600ced281c3050c3c91bf0d77729984b7e85"
+    },
+    {
+      "path": "studio.css",
+      "bytes": 28784,
+      "sha256": "0c9541d160446bee6123c147bc58d97dde02a3fa1966136c31363cdb2c93c867"
+    },
+    {
+      "path": "style.css",
+      "bytes": 20279,
+      "sha256": "282859b6b69b4b3acfdfc31e17a1518adc237bdf4c3be8d5457f9d1742d02e29"
+    },
+    {
+      "path": "telemetry.js",
+      "bytes": 2877,
+      "sha256": "d3d362b48fc9222a72633ea6fb2f5ea9ca9659d5bf487c82ce400b35de481258"
+    },
+    {
+      "path": "tests/browser-validation.mjs",
+      "bytes": 26643,
+      "sha256": "c50ee003441ed0bcb7d156da79ec5f468434873c2f22e0ff8ea688ee7529165a"
+    },
+    {
+      "path": "tests/circuit-assets.test.mjs",
+      "bytes": 4114,
+      "sha256": "2d57e0ba2f0d4de93e2ddca3110ac973d2be847e97046861a5ed5b678476e879"
+    },
+    {
+      "path": "tests/circuit-browser.mjs",
+      "bytes": 11584,
+      "sha256": "ba3cf057b84fe6959401f8c8d26c7aac013951a9d3a9faeec206dc942520126c"
+    },
+    {
+      "path": "tests/circuit-electrical.test.mjs",
+      "bytes": 7955,
+      "sha256": "d625dc7d1d84810ac579eee5f6c9ed91ec2d3ee3126f0b6defa5f7b9b7952e3f"
+    },
+    {
+      "path": "tests/circuit-lab.test.mjs",
+      "bytes": 4212,
+      "sha256": "05f1276879622165eab2548de039cc673b61ebab2caf3b3ed1f563b54982b3ab"
+    },
+    {
+      "path": "tests/circuit-schematic-browser.mjs",
+      "bytes": 2767,
+      "sha256": "dcaa0bcf446ece3416eaa9a230f6b24faf3777078e0f63a87e69ab87232f9748"
+    },
+    {
+      "path": "tests/circuit-schematic.test.mjs",
+      "bytes": 2101,
+      "sha256": "8c1cc7170c3695ae560ad586ec1657d1b07973ded616468d477e6ac8cc1f7f20"
+    },
+    {
+      "path": "tests/drivetrain.test.mjs",
+      "bytes": 2236,
+      "sha256": "7f9af8f94cf27750586fe45397bb9c257181a0495fe51e192c3f93d336ff6aab"
+    },
+    {
+      "path": "tests/energy-display-browser.mjs",
+      "bytes": 8024,
+      "sha256": "1884735bb86215aff1413b116b72c0b52a82d3d9e59abbfadf5cdd56200b469b"
+    },
+    {
+      "path": "tests/engineering-browser.mjs",
+      "bytes": 8720,
+      "sha256": "045172fd718f62ca862b4d904b35d051715894d1ac692ec26b971813c56d4b75"
+    },
+    {
+      "path": "tests/engineering-lab.test.mjs",
+      "bytes": 3139,
+      "sha256": "e4781abdc6aa08052a34b7fe37580ff1eb32e08fb65f6f87eb2e575b28fd5a3d"
+    },
+    {
+      "path": "tests/ev-simulation.test.mjs",
+      "bytes": 17316,
+      "sha256": "05880b71d9cb7f8cc2d2ec16c27f28fc10894cc21288222769fc2079f66063dc"
+    },
+    {
+      "path": "tests/hardware-proposal.test.mjs",
+      "bytes": 4416,
+      "sha256": "f5f736ea0e31f811b26ec331818e1dc15f6e382b5409457c1e278d7265f0e7fe"
+    },
+    {
+      "path": "tests/hardware-schematic-browser.mjs",
+      "bytes": 2265,
+      "sha256": "423a582038f23aa42c1a13a659e72b8df0f4edc21595eca30fc8f024ef29cba2"
+    },
+    {
+      "path": "tests/phase2-assets.test.mjs",
+      "bytes": 3577,
+      "sha256": "fcbf9ed96d36a863b5fd69bba54bf49069fa30dd71d5e8b49d2c6b41ea78e43f"
+    },
+    {
+      "path": "tests/phase2-browser-validation.mjs",
+      "bytes": 25657,
+      "sha256": "3a36324f25217de8fe91f769a5464c2bec4aa3b9d949b61111c396eed86c145f"
+    },
+    {
+      "path": "tests/phase2-motion-probe.mjs",
+      "bytes": 3659,
+      "sha256": "06fb98fff7bc60c14cdfc6ef30df0a41e6303ea4b5095c07e11dc5c3538c0e2c"
+    },
+    {
+      "path": "tests/physics-scenarios.test.mjs",
+      "bytes": 7815,
+      "sha256": "74bd6a4ac17baffc0ca64e6e59f1bc8ce3a4f6666ffd65722159c5b5f532ff77"
+    },
+    {
+      "path": "tests/simulation-audit.test.mjs",
+      "bytes": 6454,
+      "sha256": "fffbeea475d76aece07c474483b87f9d8cb14611a945bf0c78f546024c5d4658"
+    },
+    {
+      "path": "tests/telemetry.test.mjs",
+      "bytes": 2668,
+      "sha256": "8ded5e8f7c00efa82b0b12395f89c4967ea677d0f65014a0e273763bc31d031a"
+    },
+    {
+      "path": "tests/vehicle-camera-browser.mjs",
+      "bytes": 9371,
+      "sha256": "41d2feaf600870ef1a732b7762f662c7c809e9de566dab20c8a7e6d24b393a56"
+    },
+    {
+      "path": "tests/vehicle-displays.test.mjs",
+      "bytes": 4748,
+      "sha256": "5def04daf34c9cb5d2bbd4793425682f21c7f3f0dc16a957e9e8d1dab6e93ce4"
+    },
+    {
+      "path": "validation/advanced-acceptance-manifest.json",
+      "bytes": 24655,
+      "sha256": "d392d832cf0e5d42983a5fb2b410c07820cc27374174b2d156d1425be74e1d27"
+    },
+    {
+      "path": "validation/advanced-circuit-audit/calculation_results.json",
+      "bytes": 9326,
+      "sha256": "478f4541650f61c5104df8db7b46d6d6b7c99d631245203665352cca9892b8a4"
+    },
+    {
+      "path": "validation/advanced-circuit-audit/source-check-report.json",
+      "bytes": 5235,
+      "sha256": "0507e199e7a1b4fec8535d28829687eb750dd62994e69b8ecb9829dfa334baca"
+    },
+    {
+      "path": "validation/browser-engineering-desktop.png",
+      "bytes": 216588,
+      "sha256": "ecb6339b07044280da88bd4cb82234726094bcdb4c732e7f589b2070ef0a79ba"
+    },
+    {
+      "path": "validation/browser-fallback.png",
+      "bytes": 457631,
+      "sha256": "3520616605e124d3f7321659986239f895473a92386f1e7cb0f8ff555f2709b5"
+    },
+    {
+      "path": "validation/browser-monitor-desktop.png",
+      "bytes": 121417,
+      "sha256": "2d289fbd07d0355174f0644d47660dd6a26562d7c2a644a356193ac255430965"
+    },
+    {
+      "path": "validation/browser-studio-cutaway.png",
+      "bytes": 245473,
+      "sha256": "31ce64befc50da2bab8d9dec0aeb4c451a18d131c28af58ca33d902b3c2b6e8d"
+    },
+    {
+      "path": "validation/browser-studio-desktop.png",
+      "bytes": 401051,
+      "sha256": "1449425956c7c045f45a2942ada09da8b8d2045bc95a47bd7cf0a6ba6797579f"
+    },
+    {
+      "path": "validation/browser-studio-mobile.png",
+      "bytes": 102453,
+      "sha256": "81e18b97f36dcaf7e84c223d05ca571863b9a97fb952ea707ce92794f14970ab"
+    },
+    {
+      "path": "validation/browser-validation.json",
+      "bytes": 4653,
+      "sha256": "38d50769bab0f681a798852dda1cd381e43c74d1398f08740a37e12d854b3156"
+    },
+    {
+      "path": "validation/camera-expanded-energy-desktop.png",
+      "bytes": 254149,
+      "sha256": "202a6ad58ff16e7b2187d5e1ece210e4e2fb5909113f928205c7b7d03ac4d902"
+    },
+    {
+      "path": "validation/camera-expanded-energy-landscape.png",
+      "bytes": 59263,
+      "sha256": "93fde3ed0a5021d38ebbab4cd01900cc0095074d924ba0220192c7835273a8c1"
+    },
+    {
+      "path": "validation/camera-expanded-energy-mobile.png",
+      "bytes": 64895,
+      "sha256": "548703ef05b4908688fc849be2d02581f5c0f650ef7de7cd1e0d481c29662a16"
+    },
+    {
+      "path": "validation/camera-native-fullscreen.png",
+      "bytes": 254237,
+      "sha256": "afe6f7118201a72aace36c26c5a4147740f2d91380b9059f8f7853829a618929"
+    },
+    {
+      "path": "validation/circuit-3d-320.png",
+      "bytes": 254800,
+      "sha256": "18eeafced5d6ffe2e74c92e049f4cc10f0834e440c33a5fa72f78e0b26e6b84c"
+    },
+    {
+      "path": "validation/circuit-3d-390.png",
+      "bytes": 281292,
+      "sha256": "1f677010c9bcfd04ba4fb2986ae5a9536e52c34ad44e361a121f2abeaf4d6278"
+    },
+    {
+      "path": "validation/circuit-3d-assembly.png",
+      "bytes": 401582,
+      "sha256": "ad9fb2f2b14374ebf0cad098073fa59c90529c5bba0d319d052107f55ee332a5"
+    },
+    {
+      "path": "validation/circuit-3d-browser-validation.json",
+      "bytes": 9643,
+      "sha256": "b671b862f102f16062e5a043241c127fc64ef07e85a9949439fac41d96ae4376"
+    },
+    {
+      "path": "validation/circuit-3d-esp32.png",
+      "bytes": 728794,
+      "sha256": "54d683f9a813707df4a6e7a9a06254791a47ecb569939861f20ec14657ae6ac3"
+    },
+    {
+      "path": "validation/circuit-3d-wire-inspection.png",
+      "bytes": 807663,
+      "sha256": "094ea2cc7027baee56655df4ce14bb0cd77f010f48f5a5ec7a33abb59f331ad6"
+    },
+    {
+      "path": "validation/circuit-build-status.json",
+      "bytes": 22,
+      "sha256": "beddebacb141fdf84309e392f971cc8bc984dc8702b128dab3332d289b177ae4"
+    },
+    {
+      "path": "validation/circuit-conventional-schematic.png",
+      "bytes": 82346,
+      "sha256": "6dbcf76f0fb789f547203d95368abaa2956a08fb8268b8832b2173e5f03d24db"
+    },
+    {
+      "path": "validation/circuit-source-status.json",
+      "bytes": 704,
+      "sha256": "b2172e72f3f13953029e23e0b6319b13a180d721d06ca506390f841f6b71036e"
+    },
+    {
+      "path": "validation/cleanup-receipt.json",
+      "bytes": 674,
+      "sha256": "4f56eae8de50c4dcb9f6c4d0580936158a6be33f9c99bbaa408682437a7d11d3"
+    },
+    {
+      "path": "validation/energy-display-browser.json",
+      "bytes": 3822,
+      "sha256": "c2ce30d540abc5f200292ee007cece6abf207ee98ee188d23c1ff3ceb3fc9063"
+    },
+    {
+      "path": "validation/energy-screen-320.png",
+      "bytes": 32862,
+      "sha256": "048633b4ade57fea2ca8ccd379c4bf0d7bc9e782a657398bb4f8d111f45f1f08"
+    },
+    {
+      "path": "validation/energy-screen-390.png",
+      "bytes": 38341,
+      "sha256": "aa574dd5fe570330e75398b4fc4825c5dc25c0938f4c1bfdd443e9a5dc1fe3e3"
+    },
+    {
+      "path": "validation/energy-screen-five-devices.png",
+      "bytes": 230258,
+      "sha256": "78e70f43cd7a3232a9080be1521765823474bd64e0754df605ee5577bf515cea"
+    },
+    {
+      "path": "validation/energy-screen-reset.png",
+      "bytes": 229710,
+      "sha256": "188ae2bf1aa406b728236062d30119c18db0ad4025c6c87a7b46598331aaaf9c"
+    },
+    {
+      "path": "validation/energy-screen-retained-off.png",
+      "bytes": 228064,
+      "sha256": "f73b3c25121db6ff3438bf0e193493941d614d64b910df47ef2786496414ba49"
+    },
+    {
+      "path": "validation/engineering-browser.json",
+      "bytes": 720,
+      "sha256": "c4aab89763cd82850cfb9e410f5a7f250e9eccb729ed227685618a6f76322a57"
+    },
+    {
+      "path": "validation/engineering-checks.json",
+      "bytes": 824,
+      "sha256": "f35a4e0af709d7aacd8c207f7b1a0da85449bcc2943c9e164af0b14aadc86b21"
+    },
+    {
+      "path": "validation/engineering-lab-320.png",
+      "bytes": 174414,
+      "sha256": "0d3813fd9fc8ae7159408f35ac4d5423c2887979781b52bb00856d3e6b5a9298"
+    },
+    {
+      "path": "validation/engineering-lab-390.png",
+      "bytes": 182088,
+      "sha256": "a84f9eabf8eb838a2190fd783e771ff351032bbed797413d84d8aab26583ad3d"
+    },
+    {
+      "path": "validation/engineering-lab-desktop.png",
+      "bytes": 241162,
+      "sha256": "bd48ebe781ec19faf369fb8a922528ac7fc5752076f7e25875d65c50c28518d3"
+    },
+    {
+      "path": "validation/engineering-lab-validation.md",
+      "bytes": 3883,
+      "sha256": "ebee536a14f714bad91ea7ede0a98da909a2b6f78fbb22ef2993522d6455e7c7"
+    },
+    {
+      "path": "validation/engineering-package-sha256.json",
+      "bytes": 6852,
+      "sha256": "20d2bc1e6bb5dfc5650a1934676d148071aa01d37c9abd395adc3e9b5bfb5f31"
+    },
+    {
+      "path": "validation/hardware-proposal-desktop.png",
+      "bytes": 464431,
+      "sha256": "6c28c50ff98a936210a2679f0257b778642cbc21fc65ac6b2ab0c8854a2f8f09"
+    },
+    {
+      "path": "validation/hardware-proposal-schematic-detail.png",
+      "bytes": 91161,
+      "sha256": "aa645631d31bab713658f6078a77a5fdee4fd5511d4d574b1ec60c60b6d660a5"
+    },
+    {
+      "path": "validation/hardware-proposal-schematic.png",
+      "bytes": 538512,
+      "sha256": "2392c68f9cbc41cecdf2b060a9182ae23fc956e6d4e5aa144154b2dddc1cc141"
+    },
+    {
+      "path": "validation/hardware-schematic-browser.json",
+      "bytes": 517,
+      "sha256": "010a8c94300ac9c3a0f26c12cc8cdd8c1f690254e4a6254da8b3182a23925da1"
+    },
+    {
+      "path": "validation/initial-state-audit.md",
+      "bytes": 8312,
+      "sha256": "9964b9bd38e30cd9555714079b72dbcea06974277aa9ee1de3e275472703422c"
+    },
+    {
+      "path": "validation/mechanism-final-preview.png",
+      "bytes": 440504,
+      "sha256": "8810a15ee249eeab1ab6ebd8d90c7158702d97927276a99c2761b329f4c6d600"
+    },
+    {
+      "path": "validation/phase2-acceptance-manifest.json",
+      "bytes": 2122,
+      "sha256": "ebc19d28e6fdb2a7dcb810b1e4c305b16c5c4d925f15a52f1b0280081e8e801c"
+    },
+    {
+      "path": "validation/phase2-browser-validation.json",
+      "bytes": 18747,
+      "sha256": "30422d9ae0f6ae545f35d984f32fe401b666e0e274d3b8b7ae6de87771ae8508"
+    },
+    {
+      "path": "validation/phase2-circuit-mobile.png",
+      "bytes": 69005,
+      "sha256": "5c4eac9901d22c081c8c257c66d2ce66887a9b8338a6425bbc1ea342adf40261"
+    },
+    {
+      "path": "validation/phase2-cleanup-inventory.json",
+      "bytes": 1538,
+      "sha256": "95bd043c099288dce50910c88f334f19168bb99532ccb8de723d4de45e57956e"
+    },
+    {
+      "path": "validation/phase2-cleanup-receipt.json",
+      "bytes": 2185,
+      "sha256": "19bb70d3686bce4cd3c6ea48c98fa5bda9b6bee23be747327a0ebbb7d4feac17"
+    },
+    {
+      "path": "validation/phase2-cutaway.png",
+      "bytes": 335112,
+      "sha256": "92e4d0ec762ea2723a209238c3d686d2a8e93b8e9bae37fd0837a88c70bc2a9b"
+    },
+    {
+      "path": "validation/phase2-exploded.png",
+      "bytes": 440453,
+      "sha256": "e1fcc5f44c1c59bfb0d7219eb380eff281df81ebd915d33bd460145a2bc49d23"
+    },
+    {
+      "path": "validation/phase2-gizmo-after.png",
+      "bytes": 587014,
+      "sha256": "e6a2cec10b0d9e9e8f32e03a05d7617fd71254e5b8f348f8a931fc0d18942260"
+    },
+    {
+      "path": "validation/phase2-gizmo-before.png",
+      "bytes": 581940,
+      "sha256": "74119347940c6443572fc55be4810071ad16f6696fda0e9821e879f93aeef632"
+    },
+    {
+      "path": "validation/phase2-initial-motion-diagnosis.json",
+      "bytes": 3390,
+      "sha256": "4ffd47954c8190b7803105b012ec7283649b29b1725bd5a7454c7e672441bb2b"
+    },
+    {
+      "path": "validation/phase2-interior-paused-screens.png",
+      "bytes": 267979,
+      "sha256": "26736f9c96e6f5b0d5f20e6debe941d46403c1f671909f94ad3a19cd3529e045"
+    },
+    {
+      "path": "validation/phase2-interior-running-screens.png",
+      "bytes": 310974,
+      "sha256": "670d77a4b5a750036073c9c1d36e1a8ceaa451401f5f0d5ec8c98913d4876315"
+    },
+    {
+      "path": "validation/phase2-live-cabin.png",
+      "bytes": 244276,
+      "sha256": "e0714356bd65415c7416383c605e25b5b42a1e660be6fbd57d4bfe6dc5770a11"
+    },
+    {
+      "path": "validation/phase2-live-studio.png",
+      "bytes": 383211,
+      "sha256": "4c2ffb6fafaeca0eba0c6f44d533013ba00f9a148a19ce39e9d46fd2f6a06bdc"
+    },
+    {
+      "path": "validation/phase2-simulator-mobile.png",
+      "bytes": 91486,
+      "sha256": "bd5b6fe355b3f67d69650ce32d59ea99d8f1dffbda8e08a0faa27582f9e9bbcb"
+    },
+    {
+      "path": "validation/phase2-validation-summary.md",
+      "bytes": 3988,
+      "sha256": "764fd9392e02cd9ee11bb5b14da0500ed5a333a6e4193c83f2c5643edf904ff7"
+    },
+    {
+      "path": "validation/phase2-wheel-after-no-preference.png",
+      "bytes": 239485,
+      "sha256": "1fd8eeba60ca4182a2f71ccad86e1c7b7c67fbc7954665b97afaf498b902906a"
+    },
+    {
+      "path": "validation/phase2-wheel-after-reduce.png",
+      "bytes": 239229,
+      "sha256": "75b859fb885de21f064266311e32a5364394d742d9d2f811e47f13f342e164aa"
+    },
+    {
+      "path": "validation/phase2-wheel-before-no-preference.png",
+      "bytes": 239664,
+      "sha256": "05f2ff06f12a4a0a8c226c62598d314b7519636b3a141b6c343b60633725583f"
+    },
+    {
+      "path": "validation/phase2-wheel-before-reduce.png",
+      "bytes": 239229,
+      "sha256": "75b859fb885de21f064266311e32a5364394d742d9d2f811e47f13f342e164aa"
+    },
+    {
+      "path": "validation/phase2-wheel-fixed-camera-after.png",
+      "bytes": 303118,
+      "sha256": "de5602b467733a5139958bf64354b658e01e4be663e9e8f53c4f01140eb60454"
+    },
+    {
+      "path": "validation/phase2-wheel-fixed-camera-before.png",
+      "bytes": 303162,
+      "sha256": "93b5c2970226c61675c65ebc97256f918821e9d3f694cf3fc1513a9117cc9a7b"
+    },
+    {
+      "path": "validation/phase2-wiring-overview.png",
+      "bytes": 241708,
+      "sha256": "37427c9ba1a2a7c970c916a89250579ad9a128e7749ee8e86476414e494b5eba"
+    },
+    {
+      "path": "validation/preservation-manifest.json",
+      "bytes": 17876,
+      "sha256": "3835c16b1ed0a9f1c02ad0787599586417f379d9281fc1bb947cfc854aefcb1e"
+    },
+    {
+      "path": "validation/schematic-bus.png",
+      "bytes": 11482,
+      "sha256": "a19de34b34ef617140ea2049ea3f92856be32b9af0b0d895a1494c4616e34a58"
+    },
+    {
+      "path": "validation/schematic-controller.png",
+      "bytes": 28603,
+      "sha256": "57f90bf0090929804f3dcd49eacacf533e5bbec9bc8d8356f518bb4a5e9dc9fa"
+    },
+    {
+      "path": "validation/schematic-layout-audit.json",
+      "bytes": 109,
+      "sha256": "54ed7fce5c82a6856ea7f3712894a787c44509cafdff21876ae7b1acfca3cd55"
+    },
+    {
+      "path": "validation/schematic-motor-sensor.png",
+      "bytes": 17100,
+      "sha256": "af34112475574ae2ebf91927487444c17152075d3f7cfaa2a76af39c53fd4fd1"
+    },
+    {
+      "path": "validation/schematic-native-detail.png",
+      "bytes": 80822,
+      "sha256": "63f4e40e1da3efc9a71dad29b6f30ea5f04ec67497e5bdef478320f936b22a98"
+    },
+    {
+      "path": "validation/schematic-star-ground.png",
+      "bytes": 15305,
+      "sha256": "720e1eeefaeb140b0c3d2deedede19e449d4aa27a5ecbea3e77b6dd0fd11c536"
+    },
+    {
+      "path": "validation/schematic-unresolved-protection.png",
+      "bytes": 12225,
+      "sha256": "9e20412545c1fca40357b1d82a44f0868840fb8f9c3c33d451c9b056a1a53be2"
+    },
+    {
+      "path": "validation/unit-tests.tap",
+      "bytes": 17449,
+      "sha256": "61f1c558e57ccdaed0fd629a5ddc62f45eeac8ab0b7383e7138cd62b1c70321d"
+    },
+    {
+      "path": "validation/unit-validation.json",
+      "bytes": 669,
+      "sha256": "ea3478696c2521ef6483334e83dcf4bc399337800620691de1853421387561d6"
+    },
+    {
+      "path": "validation/vehicle-camera-browser.json",
+      "bytes": 2705,
+      "sha256": "7323dae9adf4a66c17ddaae1aef1015bf900f82d3c63142d6586ef419cd85d00"
+    },
+    {
+      "path": "validation/wiring-layout-desktop.png",
+      "bytes": 237399,
+      "sha256": "17577333e523def1910c30e563cf5fb4dcf6938bca8cdd64930e6139f74a09c7"
+    },
+    {
+      "path": "validation/wiring-layout-focus.png",
+      "bytes": 148571,
+      "sha256": "36399c88990815ccf980021f75c1c09721ea47d6b5a66370f4dfe96beb862e22"
+    },
+    {
+      "path": "validation/wiring-layout-integrated.png",
+      "bytes": 281693,
+      "sha256": "c1513d1db7db684f3537ed80ef202f4e0d47931b8050a1063475cbb07c614846"
+    },
+    {
+      "path": "validation/wiring-layout-mobile.png",
+      "bytes": 178235,
+      "sha256": "4a1d7b296d8738cbaeada56dcf90a9cb10875c52bd850add6e6109ad210301f8"
+    },
+    {
+      "path": "validation/wiring-layout-terminal.png",
+      "bytes": 242093,
+      "sha256": "cca983e05625f7cf308f798db762031f03c923893663e0860347e54ccde1c260"
+    },
+    {
+      "path": "validation/wiring-source-verification.json",
+      "bytes": 12747,
+      "sha256": "23449fec550d2a3ce18e433f8f51c0286bb4b9ab45c27ea01a0cd5fa133bc052"
+    },
+    {
+      "path": "vehicle-assembly.js",
+      "bytes": 12087,
+      "sha256": "7dda5a1cf367b09d496083a13eb01881b14a144fafeb7e7a71d4fa767e1b1dba"
+    },
+    {
+      "path": "vehicle-displays.js",
+      "bytes": 6952,
+      "sha256": "31a3f95687f292ddaf214cc94ab23e9a1d4e545be90377817fbab271119ae896"
+    },
+    {
+      "path": "vehicle-studio.js",
+      "bytes": 35172,
+      "sha256": "77f5e05d4de02fdc4f5b580a4d14f218188245c0683c1ad2bb376fc5acf4cf05"
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "vendor/three/build/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "path": "vendor/three/build/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "path": "vendor/three/examples/jsm/controls/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "path": "vendor/three/examples/jsm/controls/TransformControls.js",
+      "bytes": 49397,
+      "sha256": "621fb8894c0f748c2be2a6ff8a6bdd72c18a22b24ddfe21d506514544df5c84e"
+    },
+    {
+      "path": "vendor/three/examples/jsm/environments/RoomEnvironment.js",
+      "bytes": 4899,
+      "sha256": "c20f0b4677f6128a138d7152b85cbef9091f4f45cdfa05adca04d40c1697c7ae"
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 114739,
+      "sha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 35539,
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+    },
+    {
+      "path": "wiring-layout.js",
+      "bytes": 32422,
+      "sha256": "f6ece65b02511f1b234533572543aa9272be472bd9135ec98ed8f9933e941180"
+    }
+  ]
+}

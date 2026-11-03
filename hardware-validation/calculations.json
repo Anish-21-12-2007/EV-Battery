@@ -1,0 +1,41 @@
+{
+  "assumptions": [
+    "classic ESP32 characterized upper target 2.45 V",
+    "resistors 1% independent extremes",
+    "18 V maximum DC sense voltage design assumption, not charge/surge rating",
+    "ACS OUT bounded by 5.5V rail; excludes faults/transients/unpowered MCU",
+    "ACS nominal zero 2.5V, slope .066V/A at 5V",
+    "buck example 5V .60A, 75% efficiency at 10.5V plus .010A allowance"
+  ],
+  "current_divider": {
+    "ratio": 0.425531914893617,
+    "ratio_min": 0.42065009560229444,
+    "ratio_max": 0.43042829746430855,
+    "r_thevenin_ohm": 11489.36170212766,
+    "fc_100nf_hz": 138.52374676516814,
+    "node_zero_nominal_v": 1.0638297872340425,
+    "node_30A_nominal_v": 1.9063829787234043,
+    "node_minus30A_nominal_v": 0.22127659574468087,
+    "sensitivity_mv_per_a": 28.085106382978722,
+    "node_supply_rail_bound_v": 2.367355636053697
+  },
+  "voltage_divider": {
+    "ratio": 0.1282051282051282,
+    "ratio_min": 0.1259862560447951,
+    "ratio_max": 0.1304572461896151,
+    "r_thevenin_ohm": 8717.948717948719,
+    "fc_100nf_hz": 182.56008178187994,
+    "node_18v_max_v": 2.348230431413072,
+    "node_12_6v_v": 1.6153846153846152,
+    "ceiling_at_2_45v_v": 18.78009900990099,
+    "divider_drain_18v_a": 0.00023076923076923076,
+    "r3_dissipation_18v_w": 0.0036213017751479284
+  },
+  "buck_example_input_a": 0.39095238095238094,
+  "acs_supply_2percent_offset_equivalent_a": 0.7575757575757576,
+  "adc_60mv_error_equivalent_current_a": 2.1363636363636362,
+  "adc_60mv_error_equivalent_bus_v": 0.468,
+  "nominal_energy_wh": 91.19999999999999,
+  "legacy_62k_node_18v_nominal": 2.5,
+  "legacy_15k20k_node_30a": 2.56
+}

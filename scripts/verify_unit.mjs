@@ -1,0 +1,10 @@
+import { spawnSync } from 'node:child_process';
+import { readdirSync, writeFileSync, mkdirSync } from 'node:fs';
+const tests=readdirSync('tests').filter(name=>name.endsWith('.test.mjs')).map(name=>'tests/'+name);
+const result=spawnSync(process.execPath,['--test','--test-reporter=tap',...tests],{encoding:'utf8'});
+const output=result.stdout+result.stderr;
+mkdirSync('validation',{recursive:true});
+writeFileSync('validation/unit-tests.tap',output);
+const report={date:'2026-11-03',command:'node --test --test-reporter=tap tests/*.test.mjs',passed:Number(output.match(/# pass (\d+)/)?.[1]||0),failed:Number(output.match(/# fail (\d+)/)?.[1]||0),exitCode:result.status,files:tests,hardwareTested:false};
+writeFileSync('validation/unit-validation.json',JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify(report,null,2));process.exitCode=result.status||0;

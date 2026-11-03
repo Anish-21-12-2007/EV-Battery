@@ -1,0 +1,21 @@
+{
+  "csv_sha256": "cf3cd78210bf9ab4b01c97c6b9ebb1e4ed5bb460fb5b82ba2d90bc476c2c5820",
+  "components": 24,
+  "assets": {
+    "ecs-battery-assembly.glb": {
+      "bytes": 4597232,
+      "nodes": 240,
+      "meshes": 240,
+      "wires": 41,
+      "sha256": "aadc4817afb07d93ad7d35b13c969a8e41beb9e3634ed87e0cb53348a1018503"
+    },
+    "ev-vehicle-assembly.glb": {
+      "bytes": 6725800,
+      "nodes": 209,
+      "meshes": 209,
+      "wires": 11,
+      "sha256": "34e15604cf84fec5e60941b1696f44d59a8ff5c1712640353495e00b461b2921"
+    }
+  },
+  "scope": "Software metadata agreement only; no physical continuity or safety validation."
+}

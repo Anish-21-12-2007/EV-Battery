@@ -1,0 +1,37 @@
+Connection ID,Source component,Source terminal,Destination component,Destination terminal / GPIO,Wire class,Expected voltage / current,Required components,Status,Evidence basis,Safety notes
+W01,Amptek AT12-7.6 battery,+,F1 fuse holder,battery-side IN,HIGH-CURRENT +,12 V nominal; 10.5-14.8 V in use,F1 element TBD (see rule in report Sec. C); polarized connector,CONDITIONAL,Rule-based; no ratings measured,Fuse as close to battery + as practical; 30 A not approved
+W02,F1 fuse holder,load-side OUT,SW1 rocker switch,IN,HIGH-CURRENT +,Battery voltage; motor current unknown,DC-rated switch >= F1 and inrush,CONDITIONAL,Rating unknown,"Check DC rating, not AC marking"
+W03,SW1 rocker switch,OUT,ACS712-30A module,IP+ (current input),HIGH-CURRENT +,Total battery current (motor + electronics),Short wire sized >= F1,CONDITIONAL,Datasheet: current IP+ -> IP- raises output; module PCB rating unknown,MOVED from motor-only branch; verify module silk and PCB/terminal rating
+W04,ACS712-30A module,IP- (current output),LOAD BUS,+ terminal block,HIGH-CURRENT +,Total battery current,Terminal block rated >= F1,CONDITIONAL,As W03,Single distribution point
+W05,LOAD BUS,+,DC motor,+,HIGH-CURRENT +,Motor running/start/stall UNKNOWN; must be 12 V-class motor,Wire sized after measuring motor,UNVERIFIED,Motor nameplate missing,Do not connect until nameplate voltage and measured stall current known
+W06,DC motor,-,Battery star point,BAT- post,HIGH-CURRENT RETURN,Motor current,Separate return conductor; no breadboard,CONDITIONAL,Rule-based,Keep away from ADC/I2C wiring; do not route via ESP32 GND
+W07,DC motor,+ and - terminals,DC motor,(across terminals),NOISE SUPPRESSION,-,"100 nF ceramic >= 50 V, leads <= 2 cm",CONDITIONAL,Practice,No flyback diode unless later switched by MOSFET/relay (unidirectional only)
+W08,LOAD BUS,+,F2 inline fuse,IN,LOW-CURRENT +,<= 0.29 A calculated,F2 = 1-2 A,CALCULATED,audit_calcs.py,Protects thin buck/logic wiring
+W09,F2 inline fuse,OUT,LM2596 module,IN+,LOW-CURRENT +,"Battery voltage, 10.5-14.8 V (module limit 40 V IC; confirm board caps)",Read board silkscreen; polarity check,CONDITIONAL,"TI datasheet cited by prior AI, not re-fetched",Do not trust module marking alone
+W10,Battery star point,BAT-,LM2596 module,IN-,LOW-CURRENT RETURN,<= 0.29 A,Separate thin conductor to star,CONDITIONAL,Rule-based,Continuity-test IN- to OUT- (expected common)
+W11,LM2596 module,"OUT+ (set 5.00 V, ESP32 unplugged)",ESP32 dev board,VIN or 5V pin (exact label from board),5 V POWER,5.00 +/- 0.05 V; ~0.55 A Wi-Fi peak,Meter-verify first; one supply source only,CONDITIONAL,"ESP32 devkit guide cited by prior AI, not re-fetched",No USB to PC while buck energized unless board has back-feed protection
+W12,LM2596 module,OUT-,ESP32 dev board,GND,LOGIC GROUND,0 V,-,CONDITIONAL,As W11,Common ground only after continuity check
+W13,LM2596 module,OUT+ (5.00 V),ACS712-30A module,VCC,5 V POWER,5 V; 10 typ/13 max mA,Within 4.5-5.5 V,CONDITIONAL,Allegro datasheet rev 22 (IC); breakout pinout unverified,Zero and gain are ratiometric to this rail
+W14,LM2596 module,OUT-,ACS712-30A module,GND,LOGIC GROUND,0 V,-,CONDITIONAL,As W13,Confirm module silk
+W15,ACS712-30A module,VIOUT / OUT,R1 15 kΩ 1%,end A,ANALOG SIGNAL,2.5 V zero; 0.5-4.5 V span at +/-30 A,-,CONDITIONAL,Datasheet (IC),Inspect breakout for onboard conditioning
+W16,R1 15 kΩ 1%,end B = node A,ESP32 dev board,"GPIO34 (ADC1_CH6, input-only)",ANALOG SIGNAL,Zero 1.429 V; 37.7 mV/A; valid to +27.1 A (2.45 V),R2 20 kΩ 1% to GND; C1 100 nF REQUIRED,CALCULATED,audit_calcs.py; ESP-IDF ADC range,ADC 150-2450 mV documented range
+W17,Node A,node,R2 20 kΩ 1%,top,ANALOG SIGNAL,-,-,CALCULATED,audit_calcs.py,-
+W18,R2 20 kΩ 1%,bottom,Logic ground,ESP32 GND,LOGIC GROUND,0 V,-,CALCULATED,audit_calcs.py,-
+W19,Node A,node,C1 100 nF,top,ANALOG FILTER,fc ~186 Hz,Ceramic X7R; bottom to logic GND,CALCULATED,audit_calcs.py,"Now required, not optional"
+W20,LOAD BUS,+,R3 62 kΩ 1%,top,SENSE SIGNAL,<= 14.8 V,1/4 W,CALCULATED,audit_calcs.py,Replaces 120k/22k
+W21,R3 62 kΩ 1%,bottom = node B,ESP32 dev board,"GPIO35 (ADC1_CH7, input-only)",ANALOG SIGNAL,Ratio 0.13889; 12.6 V = 1.750 V; 17.6 V = 2.45 V,R4 10 kΩ 1% to GND; C2 100 nF REQUIRED,CALCULATED,audit_calcs.py; ESP-IDF ADC range,Never above 3.3 V; optional BAT54S clamp
+W22,Node B,node,R4 10 kΩ 1%,top,ANALOG SIGNAL,-,-,CALCULATED,audit_calcs.py,-
+W23,R4 10 kΩ 1%,bottom,Logic ground,ESP32 GND,LOGIC GROUND,0 V,-,CALCULATED,audit_calcs.py,-
+W24,Node B,node,C2 100 nF,top,ANALOG FILTER,fc ~185 Hz,Ceramic X7R; bottom to logic GND,CALCULATED,audit_calcs.py,Required
+W25,ESP32 dev board,3V3,0.96in OLED module,VCC,3.3 V POWER,3.3 V; ~20-30 mA,Inspect OLED silk and regulator,CONDITIONAL,Module-specific,OLED never powered from 5 V; former row P21 deleted
+W26,ESP32 dev board,GPIO21 (SDA),0.96in OLED module,SDA,I2C,3.3 V logic; address probably 0x3C or 0x3D (scan),Pull-ups to 3.3 V only,CONDITIONAL,Module-specific,Run I2C scan
+W27,ESP32 dev board,GPIO22 (SCL),0.96in OLED module,SCL,I2C,3.3 V logic,Pull-ups to 3.3 V only,CONDITIONAL,Module-specific,-
+W28,ESP32 dev board,GND,0.96in OLED module,GND,LOGIC GROUND,0 V,-,CONDITIONAL,Module-specific,-
+W29,ESP32 dev board,3V3,DS18B20 probe,VDD (red),3.3 V POWER,3.3 V,Confirm datasheet pin order,UNVERIFIED,Sensor not yet specified/inspected,Added to meet temperature requirement
+W30,ESP32 dev board,GND,DS18B20 probe,GND (black),LOGIC GROUND,0 V,-,UNVERIFIED,As W29,-
+W31,ESP32 dev board,GPIO4,DS18B20 probe,DQ (yellow),1-WIRE,3.3 V logic,R5 4.7 kΩ from DQ to 3V3,UNVERIFIED,As W29,GPIO4 is not a strapping or flash pin
+W32,DS18B20 probe,tip,Battery case,"side wall, mid-height",SENSING POINT,Case-surface temperature,Thermal tape/foam cover; keep off terminals,UNVERIFIED,Placement decision,"Measures case surface, not cell core"
+W33,LOAD BUS,+ / BAT- (optional),TVS diode,across supply,PROTECTION (optional),Standoff >= 15 V,"Unidirectional, e.g. SMBJ-class; check clamp < 40 V",UNVERIFIED,Optional engineering choice,Skip if unsure
+W34,ESP32 dev board,GPIO25,Relay module,IN,RESERVED,NOT CONNECTED,-,UNVERIFIED,Relay unresolved,Leave open in Phase 1
+W35,LM2596 module,OUT+ / OUT-,Relay module,VCC / GND,RESERVED,NOT CONNECTED,-,UNVERIFIED,Relay unresolved,Leave open
+W36,Relay module,COM / NO / NC,Motor power path,none,RESERVED,NOT CONNECTED,DC-rated device TBD,UNVERIFIED,Relay unresolved,No motor current through relay

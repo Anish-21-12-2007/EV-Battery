@@ -1,0 +1,532 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1540" viewBox="0 0 2200 1540">
+  <defs>
+    <marker id="arrowPower" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b91c1c"/>
+    </marker>
+    <marker id="arrowSignal" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#6d28d9"/>
+    </marker>
+    <marker id="arrowReturn" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect x="0" y="0" width="2200" height="1540" fill="#f8fafc"/>
+
+  <!-- Top Title Block -->
+  <rect x="30" y="22" width="2140" height="118" rx="14" fill="#0f172a"/>
+  <text x="58" y="62" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#ffffff">
+    Upgraded 2D Circuit Schematic — Conditional Two-Load (Light + Motor) 12 V DC Monitoring Proposal
+  </text>
+  <text x="58" y="92" font-family="Arial, sans-serif" font-size="15.5" fill="#cbd5e1">
+    Not As-Built • Documentary Engineering Design &amp; Safety Audit • Reconciled 100% with component_list.csv (42 items) &amp; wiring_connections.csv (W001–W060)
+  </text>
+
+  <!-- Legend Strip inside Title Block -->
+  <line x1="58" y1="118" x2="118" y2="118" stroke="#ef4444" stroke-width="5" stroke-dasharray="10 7"/>
+  <text x="130" y="123" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Provisional DC Power Path (TBD)</text>
+
+  <line x1="395" y1="118" x2="455" y2="118" stroke="#a855f7" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="467" y="123" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Conditional Analog / Digital Signal Net</text>
+
+  <line x1="775" y1="118" x2="835" y2="118" stroke="#0284c7" stroke-width="4"/>
+  <text x="847" y="123" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Calculated Passive Divider / Filter Network</text>
+
+  <line x1="1185" y1="118" x2="1245" y2="118" stroke="#64748b" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="1257" y="123" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Dedicated Home-Run Return Conductor to JGND Star</text>
+
+  <text x="1675" y="123" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#fbbf24">WARNING: Do NOT Connect to 96 V EV Simulator</text>
+
+  <!-- =====================================================================
+       LEFT PANE: 12 V DC POWER DISTRIBUTION, LOADS & KELVIN STAR RETURN
+       ===================================================================== -->
+  <rect x="30" y="156" width="1290" height="1354" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="54" y="194" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#0f172a">
+    1. 12 V DC Power Distribution, Branch Sensing Boundaries &amp; Dedicated Star Return (W001–W021, W052–W060)
+  </text>
+  <text x="54" y="220" font-family="Arial, sans-serif" font-size="14.5" fill="#475569">
+    18.0 V DC sense ceiling is a calculation assumption only • All fuses (F1, FL, FM, F2), wire gauges, switches, and protection parts (RP1, TVS1, D1) are TBD
+  </text>
+
+  <!-- BAT1 Box -->
+  <text x="54" y="340" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a">BAT1 (Source S5 Listing)</text>
+  <rect x="54" y="355" width="145" height="190" rx="10" fill="#f8fafc" stroke="#1e293b" stroke-width="3"/>
+  <text x="126" y="392" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#0f172a">12 V DC</text>
+  <text x="126" y="418" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#334155">7.6 Ah</text>
+  <text x="126" y="442" font-family="Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#475569">(91.2 Wh nom)</text>
+  <text x="126" y="468" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#b45309">Installed unit, I_sc</text>
+  <text x="126" y="486" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#b45309">&amp; limits unverified</text>
+  <text x="206" y="378" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#b91c1c">BAT+</text>
+  <text x="206" y="514" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#334155">BAT−</text>
+
+  <!-- W001: BAT+ to F1 -->
+  <line x1="199" y1="385" x2="248" y2="385" stroke="#b91c1c" stroke-width="5" stroke-dasharray="10 7"/>
+  <line x1="248" y1="385" x2="248" y2="285" stroke="#b91c1c" stroke-width="5" stroke-dasharray="10 7"/>
+  <line x1="248" y1="285" x2="285" y2="285" stroke="#b91c1c" stroke-width="5" stroke-dasharray="10 7" marker-end="url(#arrowPower)"/>
+  <text x="242" y="272" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W001 (PACK_POS)</text>
+
+  <!-- F1 Main Fuse -->
+  <rect x="285" y="250" width="130" height="70" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="350" y="278" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="middle" fill="#78350f">F1 Main Fuse</text>
+  <text x="350" y="298" font-family="Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#92400e">Place near BAT+</text>
+  <text x="350" y="314" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b45309">Rating / I_brk TBD</text>
+
+  <!-- W002 & RP1 Candidate -->
+  <line x1="415" y1="285" x2="450" y2="285" stroke="#b91c1c" stroke-width="5" stroke-dasharray="10 7"/>
+  <text x="432" y="272" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W002</text>
+
+  <rect x="450" y="250" width="110" height="70" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="505" y="278" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#881337">RP1 (Opt)</text>
+  <text x="505" y="297" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#9f1239">Rev-Polarity</text>
+  <text x="505" y="313" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#be123c">Part TBD</text>
+
+  <line x1="560" y1="285" x2="590" y2="285" stroke="#b91c1c" stroke-width="5" stroke-dasharray="10 7"/>
+
+  <!-- SW1 Master Switch -->
+  <rect x="590" y="250" width="135" height="70" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="657" y="278" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="middle" fill="#78350f">SW1 Master</text>
+  <text x="657" y="298" font-family="Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#92400e">DC Motor Break</text>
+  <text x="657" y="314" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b45309">Rating TBD</text>
+
+  <!-- W003 to BUS+ -->
+  <line x1="725" y1="285" x2="770" y2="285" stroke="#b91c1c" stroke-width="5" stroke-dasharray="10 7"/>
+  <text x="747" y="272" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W003</text>
+
+  <!-- BUS+ Vertical Distribution Spine (x=770) -->
+  <circle cx="770" cy="285" r="7" fill="#b91c1c"/>
+  <text x="785" y="278" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#b91c1c">BUS+ (Insulated Distribution Busbar TBD)</text>
+  <line x1="770" y1="285" x2="770" y2="860" stroke="#b91c1c" stroke-width="6" stroke-dasharray="10 7"/>
+
+  <!-- TVS1 Transient Suppressor Placeholder at BUS+ (W060) -->
+  <line x1="770" y1="335" x2="710" y2="335" stroke="#be123c" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <rect x="590" y="345" width="150" height="62" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="665" y="368" font-family="Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" fill="#881337">TVS1 Clamp (W060)</text>
+  <text x="665" y="386" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#9f1239">Bus surge clamp to</text>
+  <text x="665" y="401" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#be123c">STAR_RETURN: TBD</text>
+
+  <!-- =====================================================================
+       BRANCH 1: LIGHT LOAD (FL -> S_L -> L1, ending at x=1225)
+       ===================================================================== -->
+  <circle cx="770" cy="420" r="6" fill="#b91c1c"/>
+  <line x1="770" y1="420" x2="810" y2="420" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="790" y="408" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W004</text>
+
+  <rect x="810" y="388" width="90" height="64" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="855" y="416" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#78350f">FL</text>
+  <text x="855" y="438" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b45309">Fuse TBD</text>
+
+  <line x1="900" y1="420" x2="935" y2="420" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="917" y="408" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W005</text>
+
+  <rect x="935" y="380" width="140" height="80" rx="8" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="1005" y="408" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="middle" fill="#4c1d95">S_L Current</text>
+  <text x="1005" y="428" font-family="Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#5b21b6">IP+ → IP− (TBD)</text>
+  <text x="1005" y="448" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#6d28d9">W020 VCC | W021 GND</text>
+  <!-- Signal tap I_L_OUT -->
+  <line x1="1005" y1="380" x2="1005" y2="352" stroke="#6d28d9" stroke-width="3" stroke-dasharray="6 4"/>
+  <text x="1005" y="344" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#6d28d9">W022: I_L_OUT → U_I_L</text>
+
+  <line x1="1075" y1="420" x2="1115" y2="420" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="1095" y="408" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W006</text>
+
+  <!-- Voltage tap V_L+ -->
+  <circle cx="1100" cy="420" r="4.5" fill="#6d28d9"/>
+  <line x1="1100" y1="420" x2="1100" y2="368" stroke="#6d28d9" stroke-width="3" stroke-dasharray="6 4"/>
+  <text x="1100" y="360" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#6d28d9">W024: V_L+ Tap</text>
+
+  <rect x="1115" y="380" width="110" height="80" rx="8" fill="#f8fafc" stroke="#1e293b" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="1170" y="408" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="middle" fill="#0f172a">L1 Light</text>
+  <text x="1170" y="428" font-family="Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#334155">12 V DC Lamp*</text>
+  <text x="1170" y="448" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#b45309">Rating TBD</text>
+
+  <!-- Dedicated Home-Run Return W007 from L1 right side to dedicated corridor x=1295 -->
+  <line x1="1225" y1="420" x2="1295" y2="420" stroke="#475569" stroke-width="3.5" stroke-dasharray="9 6"/>
+  <line x1="1295" y1="420" x2="1295" y2="1075" stroke="#475569" stroke-width="3.5" stroke-dasharray="9 6"/>
+  <line x1="1295" y1="1075" x2="540" y2="1075" stroke="#475569" stroke-width="3.5" stroke-dasharray="9 6" marker-end="url(#arrowReturn)"/>
+  <text x="910" y="1067" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#334155">W007: Dedicated Light Return (L1.INPUT− → JGND.STAR_RETURN)</text>
+
+  <!-- =====================================================================
+       BRANCH 2: MOTOR CONTROLLER & DC MOTOR (FM -> S_M -> MDRV -> M1)
+       ===================================================================== -->
+  <circle cx="770" cy="615" r="6" fill="#b91c1c"/>
+  <line x1="770" y1="615" x2="810" y2="615" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="790" y="603" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W008</text>
+
+  <rect x="810" y="583" width="90" height="64" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="855" y="611" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#78350f">FM</text>
+  <text x="855" y="633" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b45309">Fuse TBD</text>
+
+  <line x1="900" y1="615" x2="935" y2="615" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="917" y="603" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W009</text>
+
+  <rect x="935" y="570" width="140" height="90" rx="8" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="1005" y="596" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#4c1d95">S_M: ACS712-30A?</text>
+  <text x="1005" y="616" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5b21b6">IP+ → IP− (66 mV/A)</text>
+  <text x="1005" y="634" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#6d28d9">W018 5V | W019 GND</text>
+  <text x="1005" y="650" font-family="Arial, sans-serif" font-size="10.5" text-anchor="middle" fill="#475569">C_BYP_M / C_FILTER_M</text>
+
+  <!-- Signal tap I_M_OUT -->
+  <line x1="1005" y1="570" x2="1005" y2="542" stroke="#6d28d9" stroke-width="3" stroke-dasharray="6 4"/>
+  <text x="1005" y="534" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#6d28d9">W031: I_M_OUT → R_MH</text>
+
+  <line x1="1075" y1="615" x2="1115" y2="615" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="1093" y="603" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W010</text>
+
+  <!-- Voltage tap V_M+ at MDRV DC input boundary -->
+  <circle cx="1100" cy="615" r="4.5" fill="#6d28d9"/>
+  <line x1="1100" y1="615" x2="1100" y2="558" stroke="#6d28d9" stroke-width="3" stroke-dasharray="6 4"/>
+  <text x="1100" y="550" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#6d28d9">W038: V_M+ Tap</text>
+
+  <rect x="1115" y="570" width="110" height="90" rx="8" fill="#f8fafc" stroke="#1e293b" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="1170" y="598" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="middle" fill="#0f172a">MDRV</text>
+  <text x="1170" y="618" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#334155">Motor Driver</text>
+  <text x="1170" y="636" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#475569">DC Input Boundary</text>
+  <text x="1170" y="652" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#b45309">Topology TBD</text>
+
+  <!-- Downstream Motor M1 and Conditional Flyback D1 (W054, W055) -->
+  <line x1="1150" y1="660" x2="1150" y2="700" stroke="#b91c1c" stroke-width="3.5" stroke-dasharray="6 4"/>
+  <line x1="1190" y1="660" x2="1190" y2="700" stroke="#334155" stroke-width="3.5" stroke-dasharray="6 4"/>
+  <text x="1082" y="686" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#475569">W054/W055</text>
+
+  <rect x="1115" y="700" width="110" height="64" rx="8" fill="#fef2f2" stroke="#991b1b" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="1170" y="724" font-family="Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" fill="#7f1d1d">M1 DC Motor</text>
+  <text x="1170" y="742" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#991b1b">&amp; D1* (Cond.)</text>
+  <text x="1170" y="757" font-family="Arial, sans-serif" font-size="10.5" text-anchor="middle" fill="#b91c1c">*No D1 if H-Bridge</text>
+
+  <!-- Dedicated Home-Run Return W011 from MDRV right side to dedicated corridor x=1275 -->
+  <line x1="1225" y1="615" x2="1275" y2="615" stroke="#1e293b" stroke-width="4" stroke-dasharray="9 6"/>
+  <line x1="1275" y1="615" x2="1275" y2="1115" stroke="#1e293b" stroke-width="4" stroke-dasharray="9 6"/>
+  <line x1="1275" y1="1115" x2="540" y2="1115" stroke="#1e293b" stroke-width="4" stroke-dasharray="9 6" marker-end="url(#arrowReturn)"/>
+  <text x="910" y="1107" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a">W011: Dedicated High-Current Motor Return (MDRV.INPUT− → JGND.STAR_RETURN)</text>
+
+  <!-- =====================================================================
+       BRANCH 3: ELECTRONICS BUCK CONVERTER & ESP32 (F2 -> U_BUCK_BOARD -> U_ESP)
+       ===================================================================== -->
+  <circle cx="770" cy="845" r="6" fill="#b91c1c"/>
+  <line x1="770" y1="845" x2="810" y2="845" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="790" y="833" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W012</text>
+
+  <rect x="810" y="813" width="90" height="64" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="855" y="841" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#78350f">F2</text>
+  <text x="855" y="863" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b45309">Fuse TBD</text>
+
+  <line x1="900" y1="845" x2="935" y2="845" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="917" y="833" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W013</text>
+
+  <rect x="935" y="800" width="140" height="95" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="1005" y="827" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1e3a8a">U_BUCK_BOARD</text>
+  <text x="1005" y="847" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">LM2596 IC? (≤40 V)</text>
+  <text x="1005" y="865" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#1d4ed8">Verify 5.00 V &amp; Common</text>
+  <text x="1005" y="881" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#b45309">IN− / OUT− Continuity</text>
+
+  <line x1="1075" y1="845" x2="1115" y2="845" stroke="#b91c1c" stroke-width="4" stroke-dasharray="9 6"/>
+  <text x="1095" y="833" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#b91c1c">W015</text>
+
+  <rect x="1115" y="800" width="110" height="95" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="1170" y="827" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="middle" fill="#1e3a8a">U_ESP</text>
+  <text x="1170" y="847" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">Classic ESP32</text>
+  <text x="1170" y="865" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#334155">ADC1: GPIO32–35</text>
+  <text x="1170" y="881" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#b45309">Board Pinout TBD</text>
+
+  <!-- Optional Peripherals Callout Box (Placed on left under TVS1 so Buck/ESP returns drop straight down cleanly!) -->
+  <rect x="450" y="800" width="290" height="95" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="595" y="825" font-family="Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" fill="#1e293b">Optional Peripherals on U_ESP (W045–W051)</text>
+  <text x="595" y="846" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569">• U_OLED_BOARD: GPIO21 (SDA), GPIO22 (SCL), 3V3</text>
+  <text x="595" y="866" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569">• T1_PROBE (DS18B20): GPIO4 (1-Wire DQ), 3V3</text>
+  <text x="595" y="884" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#b45309">Verify 3.3V pullups &amp; probe wire colors first</text>
+
+  <!-- W014: Buck IN- return drops straight down from x=975 (zero boxes below it!) -->
+  <line x1="975" y1="895" x2="975" y2="1155" stroke="#475569" stroke-width="3.5" stroke-dasharray="8 5"/>
+  <line x1="975" y1="1155" x2="540" y2="1155" stroke="#475569" stroke-width="3.5" stroke-dasharray="8 5" marker-end="url(#arrowReturn)"/>
+  <text x="765" y="1147" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#334155">W014: Buck IN− Return (U_BUCK_BOARD.IN− → JGND.STAR_RETURN)</text>
+
+  <!-- W016 & W017: Buck OUT- (x=1040) and ESP32 GND (x=1170) drop straight down to Quiet LOGIC_GND -->
+  <line x1="1040" y1="895" x2="1040" y2="1225" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="8 5"/>
+  <line x1="1170" y1="895" x2="1170" y2="1225" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="8 5"/>
+  <line x1="1170" y1="1225" x2="735" y2="1225" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="8 5" marker-end="url(#arrowReturn)"/>
+  <text x="955" y="1217" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0369a1">W016 (Buck OUT−) &amp; W017 (U_ESP.GND) → Quiet JGND.LOGIC_GND</text>
+
+  <!-- =====================================================================
+       JGND KELVIN STAR GROUND ARCHITECTURE (STAR_RETURN + W053 + LOGIC_GND)
+       ===================================================================== -->
+  <line x1="199" y1="520" x2="248" y2="520" stroke="#1e293b" stroke-width="5.5" stroke-dasharray="10 7"/>
+  <line x1="248" y1="520" x2="248" y2="1115" stroke="#1e293b" stroke-width="5.5" stroke-dasharray="10 7"/>
+  <line x1="248" y1="1115" x2="350" y2="1115" stroke="#1e293b" stroke-width="5.5" stroke-dasharray="10 7" marker-end="url(#arrowReturn)"/>
+  <text x="195" y="830" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#1e293b">W052 (PACK_RETURN)</text>
+
+  <!-- STAR_RETURN Box -->
+  <rect x="350" y="1060" width="190" height="115" rx="10" fill="#f1f5f9" stroke="#0f172a" stroke-width="3"/>
+  <text x="445" y="1090" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="middle" fill="#0f172a">JGND.STAR_RETURN</text>
+  <text x="445" y="1113" font-family="Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#334155">High-Current Battery−</text>
+  <text x="445" y="1133" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#334155">Star Busbar (W007, W011,</text>
+  <text x="445" y="1151" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#334155">W014, W052)</text>
+
+  <!-- W053 Single-Point Kelvin Star Tie -->
+  <line x1="445" y1="1175" x2="445" y2="1225" stroke="#0284c7" stroke-width="4.5"/>
+  <line x1="445" y1="1225" x2="545" y2="1225" stroke="#0284c7" stroke-width="4.5"/>
+  <text x="445" y="1247" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0369a1">W053: Kelvin Star Tie</text>
+
+  <!-- LOGIC_GND Box -->
+  <rect x="545" y="1185" width="190" height="85" rx="10" fill="#f0f9ff" stroke="#0284c7" stroke-width="3"/>
+  <text x="640" y="1215" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="middle" fill="#0c4a6e">JGND.LOGIC_GND</text>
+  <text x="640" y="1236" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">Quiet Analog &amp; Logic Ref</text>
+  <text x="640" y="1254" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#0369a1">(No Motor Return Current!)</text>
+
+  <!-- Left Pane Engineering Notes Box -->
+  <rect x="54" y="1295" width="1242" height="190" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="76" y="1325" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" fill="#0f172a">
+    Key Topological Corrections in This Upgraded Schematic (Compared to Prior Package SVG):
+  </text>
+  <text x="76" y="1352" font-family="Arial, sans-serif" font-size="13.5" fill="#334155">
+    1. Eliminated Daisy-Chained Return Bug (Finding I10): L1 (W007), MDRV (W011), U_BUCK_BOARD IN− (W014), and U_ESP/Buck OUT− (W016/W017) use separate
+  </text>
+  <text x="94" y="1373" font-family="Arial, sans-serif" font-size="13.5" fill="#334155">
+    home-run conductors to JGND.STAR_RETURN and JGND.LOGIC_GND (joined by Kelvin tie W053) so motor return drop cannot corrupt single-ended ADC readings.
+  </text>
+  <text x="76" y="1399" font-family="Arial, sans-serif" font-size="13.5" fill="#334155">
+    2. Added Missing Netlist Components &amp; Returns (Findings I12, I13): Explicitly drew DC/DC converter ground leads (W014, W016), downstream motor M1 (W054, W055),
+  </text>
+  <text x="94" y="1420" font-family="Arial, sans-serif" font-size="13.5" fill="#334155">
+    unified conditioner designator U_I_L (W022, W023), sensor supply/ground ports (W018–W021), decoupling C_BYP_M/C_FILTER_M (W056–W059), and RP1/TVS1/D1.
+  </text>
+  <text x="76" y="1446" font-family="Arial, sans-serif" font-size="13.5" fill="#b91c1c" font-weight="700">
+    3. Construction Gate Warning: Do NOT energize until F1, FL, FM, F2, SW1, WIRE gauges, S_L, U_BUCK_BOARD, and MDRV are physically identified and rated.
+  </text>
+
+  <!-- =====================================================================
+       RIGHT PANE: ANALOG MEASUREMENT FRONT END (W022–W044)
+       ===================================================================== -->
+  <rect x="1340" y="156" width="830" height="1354" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="1364" y="194" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#0f172a">
+    2. Analog Measurement Front End &amp; Classic ESP32 ADC1 Interface
+  </text>
+  <text x="1364" y="220" font-family="Arial, sans-serif" font-size="13.5" fill="#475569">
+    Characterized 11 dB window: 150–2450 mV (S2) • Powered GPIO abs max: −0.3 V to 3.6 V • Unpowered (VDD=0V): 0.3 V max
+  </text>
+
+  <!-- CHANNEL 1: LIGHT CURRENT (W022, W023 -> GPIO32) -->
+  <rect x="1364" y="248" width="782" height="145" rx="10" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1.5"/>
+  <text x="1384" y="275" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#581c87">
+    CHANNEL 1: LIGHT BRANCH CURRENT INTERFACE (W022–W023 → Candidate GPIO32 / ADC1_CH4)
+  </text>
+  <rect x="1384" y="296" width="140" height="52" rx="7" fill="#ffffff" stroke="#7e22ce" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1454" y="320" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#4c1d95">S_L.OUT</text>
+  <text x="1454" y="338" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#6b21a8">Transducer TBD</text>
+
+  <line x1="1524" y1="322" x2="1584" y2="322" stroke="#7e22ce" stroke-width="3.5" stroke-dasharray="8 5" marker-end="url(#arrowSignal)"/>
+  <text x="1554" y="311" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#6b21a8">W022</text>
+
+  <rect x="1584" y="296" width="215" height="52" rx="7" fill="#ffffff" stroke="#7e22ce" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1691" y="320" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#4c1d95">U_I_L Conditioner</text>
+  <text x="1691" y="338" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#6b21a8">Scaling / Clamp TBD</text>
+
+  <line x1="1799" y1="322" x2="1864" y2="322" stroke="#7e22ce" stroke-width="3.5" stroke-dasharray="8 5" marker-end="url(#arrowSignal)"/>
+  <text x="1831" y="311" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#6b21a8">W023</text>
+
+  <rect x="1864" y="296" width="255" height="52" rx="7" fill="#f3e8ff" stroke="#6b21a8" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1991" y="320" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#3b0764">U_ESP.GPIO32 (ADC1_CH4)</text>
+  <text x="1991" y="338" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#581c87">Or I²C SDA/SCL if INA219 used</text>
+
+  <text x="1384" y="374" font-family="Arial, sans-serif" font-size="12" fill="#475569">
+    Note: Do not assume ACS712-30A for S_L (at 0.5 A, scaled shift is 14.04 mV vs ±60 mV ADC error = ±427% error). Keep S_L &amp; U_I_L TBD.
+  </text>
+
+  <!-- CHANNEL 2: LIGHT INPUT VOLTAGE DIVIDER 1 (W024–W030 -> GPIO33) -->
+  <rect x="1364" y="412" width="782" height="248" rx="10" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.5"/>
+  <text x="1384" y="439" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#0c4a6e">
+    CHANNEL 2: LIGHT INPUT VOLTAGE DIVIDER 1 (W024–W030 → Candidate GPIO33 / ADC1_CH5)
+  </text>
+  <text x="1384" y="460" font-family="Arial, sans-serif" font-size="12" fill="#0369a1">
+    Ratio k = 10k / (68k + 10k) = 5/39 ≈ 0.128205 • At 18.0 V DC: 2.3077 V nom, 2.3482 V worst 1% • 2.45 V hit at 18.78 V • f_c = 182.56 Hz
+  </text>
+
+  <rect x="1384" y="492" width="120" height="46" rx="7" fill="#ffffff" stroke="#0284c7" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1444" y="520" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#0c4a6e">V_L+ Tap</text>
+
+  <line x1="1504" y1="515" x2="1550" y2="515" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="8 5"/>
+  <text x="1527" y="505" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0369a1">W024</text>
+
+  <rect x="1550" y="492" width="145" height="46" rx="7" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+  <text x="1622" y="514" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#0f172a">R_LH: 68 kΩ</text>
+  <text x="1622" y="531" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">1% (3.62 mW @ 18V)</text>
+
+  <line x1="1695" y1="515" x2="1765" y2="515" stroke="#0284c7" stroke-width="3.5"/>
+  <text x="1725" y="505" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0369a1">W025</text>
+
+  <!-- NODE_VL Junction -->
+  <circle cx="1765" cy="515" r="6" fill="#0284c7"/>
+  <rect x="1715" y="470" width="100" height="24" rx="5" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="1765" y="487" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0c4a6e">NODE_VL</text>
+
+  <line x1="1765" y1="515" x2="1864" y2="515" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="8 5" marker-end="url(#arrowSignal)"/>
+  <text x="1820" y="505" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0369a1">W030</text>
+
+  <rect x="1864" y="492" width="255" height="46" rx="7" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1991" y="514" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0c4a6e">U_ESP.GPIO33 (ADC1_CH5)</text>
+  <text x="1991" y="531" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#0369a1">1.538V @ 12V | 2.308V @ 18V</text>
+
+  <!-- Bottom leg R_LL & C_L (Labels placed cleanly to the left/right of vertical stems) -->
+  <line x1="1765" y1="515" x2="1765" y2="552" stroke="#0284c7" stroke-width="3.5"/>
+  <line x1="1690" y1="552" x2="1840" y2="552" stroke="#0284c7" stroke-width="3.5"/>
+  <line x1="1690" y1="552" x2="1690" y2="568" stroke="#0284c7" stroke-width="3.5"/>
+  <line x1="1840" y1="552" x2="1840" y2="568" stroke="#0284c7" stroke-width="3.5"/>
+  <text x="1660" y="558" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="end" fill="#0369a1">W026</text>
+  <text x="1870" y="558" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start" fill="#0369a1">W028</text>
+
+  <rect x="1625" y="568" width="130" height="44" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <text x="1690" y="588" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">R_LL: 10 kΩ</text>
+  <text x="1690" y="604" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">1% (0.53 mW)</text>
+
+  <rect x="1775" y="568" width="130" height="44" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <text x="1840" y="588" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">C_L: 100 nF</text>
+  <text x="1840" y="604" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">LPF (182.6 Hz)</text>
+
+  <line x1="1690" y1="612" x2="1690" y2="632" stroke="#334155" stroke-width="3"/>
+  <line x1="1840" y1="612" x2="1840" y2="632" stroke="#334155" stroke-width="3"/>
+  <line x1="1690" y1="632" x2="1840" y2="632" stroke="#334155" stroke-width="3"/>
+  <text x="1765" y="650" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#334155">W027 / W029 → Quiet JGND.LOGIC_GND</text>
+
+  <!-- CHANNEL 3: MOTOR CURRENT SCALER (W031–W037 -> GPIO34) -->
+  <rect x="1364" y="678" width="782" height="248" rx="10" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1.5"/>
+  <text x="1384" y="705" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#581c87">
+    CHANNEL 3: MOTOR CURRENT SCALER (W031–W037 → Candidate GPIO34 / ADC1_CH6 Input-Only)
+  </text>
+  <text x="1384" y="726" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">
+    Ratio k_I = 20k / (27k + 20k) = 20/47 ≈ 0.425532 • 0 A (2.50V) → 1.0638 V • ±30 A → 0.2213–1.9064 V (28.085 mV/A) • f_c = 138.52 Hz
+  </text>
+
+  <rect x="1384" y="757" width="120" height="46" rx="7" fill="#ffffff" stroke="#7e22ce" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1444" y="785" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#4c1d95">S_M.OUT</text>
+
+  <line x1="1504" y1="780" x2="1550" y2="780" stroke="#7e22ce" stroke-width="3.5" stroke-dasharray="8 5"/>
+  <text x="1527" y="770" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#6b21a8">W031</text>
+
+  <rect x="1550" y="757" width="145" height="46" rx="7" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+  <text x="1622" y="779" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#0f172a">R_MH: 27 kΩ</text>
+  <text x="1622" y="796" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">1% (Direct ACS Out)</text>
+
+  <line x1="1695" y1="780" x2="1765" y2="780" stroke="#7e22ce" stroke-width="3.5"/>
+  <text x="1725" y="770" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#6b21a8">W032</text>
+
+  <!-- NODE_IM Junction -->
+  <circle cx="1765" cy="780" r="6" fill="#7e22ce"/>
+  <rect x="1715" y="735" width="100" height="24" rx="5" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+  <text x="1765" y="752" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#4c1d95">NODE_IM</text>
+
+  <line x1="1765" y1="780" x2="1864" y2="780" stroke="#7e22ce" stroke-width="3.5" stroke-dasharray="8 5" marker-end="url(#arrowSignal)"/>
+  <text x="1820" y="770" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#6b21a8">W037</text>
+
+  <rect x="1864" y="757" width="255" height="46" rx="7" fill="#f3e8ff" stroke="#6b21a8" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1991" y="779" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#3b0764">U_ESP.GPIO34 (ADC1_CH6)</text>
+  <text x="1991" y="796" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#581c87">Input-Only | 5.5V bound: 2.367V</text>
+
+  <!-- Bottom leg R_ML & C_M -->
+  <line x1="1765" y1="780" x2="1765" y2="817" stroke="#7e22ce" stroke-width="3.5"/>
+  <line x1="1690" y1="817" x2="1840" y2="817" stroke="#7e22ce" stroke-width="3.5"/>
+  <line x1="1690" y1="817" x2="1690" y2="833" stroke="#7e22ce" stroke-width="3.5"/>
+  <line x1="1840" y1="817" x2="1840" y2="833" stroke="#7e22ce" stroke-width="3.5"/>
+  <text x="1660" y="823" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="end" fill="#6b21a8">W033</text>
+  <text x="1870" y="823" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start" fill="#6b21a8">W035</text>
+
+  <rect x="1625" y="833" width="130" height="44" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <text x="1690" y="853" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">R_ML: 20 kΩ</text>
+  <text x="1690" y="869" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">1% (k_I = 20/47)</text>
+
+  <rect x="1775" y="833" width="130" height="44" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <text x="1840" y="853" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">C_M: 100 nF</text>
+  <text x="1840" y="869" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">LPF (138.5 Hz)</text>
+
+  <line x1="1690" y1="877" x2="1690" y2="897" stroke="#334155" stroke-width="3"/>
+  <line x1="1840" y1="877" x2="1840" y2="897" stroke="#334155" stroke-width="3"/>
+  <line x1="1690" y1="897" x2="1840" y2="897" stroke="#334155" stroke-width="3"/>
+  <text x="1765" y="915" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#334155">W034 / W036 → Quiet JGND.LOGIC_GND</text>
+
+  <!-- CHANNEL 4: MOTOR-CONTROLLER INPUT VOLTAGE DIVIDER 2 (W038–W044 -> GPIO35) -->
+  <rect x="1364" y="944" width="782" height="248" rx="10" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.5"/>
+  <text x="1384" y="971" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#0c4a6e">
+    CHANNEL 4: MOTOR-DRIVER DC INPUT VOLTAGE DIVIDER 2 (W038–W044 → GPIO35 / ADC1_CH7)
+  </text>
+  <text x="1384" y="992" font-family="Arial, sans-serif" font-size="12" fill="#0369a1">
+    Senses MDRV DC supply input (NOT switched PWM motor terminals) • Ratio k = 5/39 ≈ 0.128205 • R_th = 8.718 kΩ • f_c = 182.56 Hz
+  </text>
+
+  <rect x="1384" y="1022" width="120" height="46" rx="7" fill="#ffffff" stroke="#0284c7" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1444" y="1050" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#0c4a6e">V_M+ Tap</text>
+
+  <line x1="1504" y1="1045" x2="1550" y2="1045" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="8 5"/>
+  <text x="1527" y="1035" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0369a1">W038</text>
+
+  <rect x="1550" y="1022" width="145" height="46" rx="7" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+  <text x="1622" y="1044" font-family="Arial, sans-serif" font-size="14.5" font-weight="700" text-anchor="middle" fill="#0f172a">R_VH: 68 kΩ</text>
+  <text x="1622" y="1061" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">1% (3.62 mW @ 18V)</text>
+
+  <line x1="1695" y1="1045" x2="1765" y2="1045" stroke="#0284c7" stroke-width="3.5"/>
+  <text x="1725" y="1035" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0369a1">W039</text>
+
+  <!-- NODE_VM Junction -->
+  <circle cx="1765" cy="1045" r="6" fill="#0284c7"/>
+  <rect x="1715" y="1000" width="100" height="24" rx="5" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="1765" y="1017" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0c4a6e">NODE_VM</text>
+
+  <line x1="1765" y1="1045" x2="1864" y2="1045" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="8 5" marker-end="url(#arrowSignal)"/>
+  <text x="1820" y="1035" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0369a1">W044</text>
+
+  <rect x="1864" y="1022" width="255" height="46" rx="7" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1991" y="1044" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0c4a6e">U_ESP.GPIO35 (ADC1_CH7)</text>
+  <text x="1991" y="1061" font-family="Arial, sans-serif" font-size="11.5" text-anchor="middle" fill="#0369a1">Input-Only | ±60mV → ±0.468V</text>
+
+  <!-- Bottom leg R_VL & C_V -->
+  <line x1="1765" y1="1045" x2="1765" y2="1082" stroke="#0284c7" stroke-width="3.5"/>
+  <line x1="1690" y1="1082" x2="1840" y2="1082" stroke="#0284c7" stroke-width="3.5"/>
+  <line x1="1690" y1="1082" x2="1690" y2="1098" stroke="#0284c7" stroke-width="3.5"/>
+  <line x1="1840" y1="1082" x2="1840" y2="1098" stroke="#0284c7" stroke-width="3.5"/>
+  <text x="1660" y="1088" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="end" fill="#0369a1">W040</text>
+  <text x="1870" y="1088" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start" fill="#0369a1">W042</text>
+
+  <rect x="1625" y="1098" width="130" height="44" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <text x="1690" y="1118" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">R_VL: 10 kΩ</text>
+  <text x="1690" y="1134" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">1% (0.53 mW)</text>
+
+  <rect x="1775" y="1098" width="130" height="44" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <text x="1840" y="1118" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">C_V: 100 nF</text>
+  <text x="1840" y="1134" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">LPF (182.6 Hz)</text>
+
+  <line x1="1690" y1="1142" x2="1690" y2="1162" stroke="#334155" stroke-width="3"/>
+  <line x1="1840" y1="1142" x2="1840" y2="1162" stroke="#334155" stroke-width="3"/>
+  <line x1="1690" y1="1162" x2="1840" y2="1162" stroke="#334155" stroke-width="3"/>
+  <text x="1765" y="1180" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#334155">W041 / W043 → Quiet JGND.LOGIC_GND</text>
+
+  <!-- Right Pane Footer: Protection & Sequencing Warnings -->
+  <rect x="1364" y="1210" width="782" height="275" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="1384" y="1240" font-family="Arial, sans-serif" font-size="15.5" font-weight="700" fill="#78350f">
+    Analog Front-End Safety, Sequencing &amp; Calibration Rules (Findings C1, C5, I1, I2, R5, R6):
+  </text>
+  <text x="1384" y="1268" font-family="Arial, sans-serif" font-size="12.5" fill="#1e293b">
+    • <tspan font-weight="700" fill="#92400e">Superseded Legacy Dividers Retired:</tspan> Legacy 120 kΩ / 22 kΩ reaches 2.7887 V nom (2.8362 V worst-1%) at 18 V, and legacy
+  </text>
+  <text x="1398" y="1288" font-family="Arial, sans-serif" font-size="12.5" fill="#1e293b">
+    15 kΩ / 20 kΩ reaches 2.5600 V at +30 A—both exceed Espressif's 2.45 V 11 dB accuracy limit. Use 68 kΩ / 10 kΩ and 27 kΩ / 20 kΩ.
+  </text>
+  <text x="1384" y="1316" font-family="Arial, sans-serif" font-size="12.5" fill="#1e293b">
+    • <tspan font-weight="700" fill="#92400e">Unpowered MCU Injection Hazard (Finding R6):</tspan> When ESP32 is unpowered (VDD = 0 V), absolute max pin voltage is 0.3 V.
+  </text>
+  <text x="1398" y="1336" font-family="Arial, sans-serif" font-size="12.5" fill="#1e293b">
+    An energized 5 V ACS712 (1.064 V @ 0 A) or 12–18 V divider (1.54–2.31 V) injects current into unpowered GPIO ESD diodes.
+  </text>
+  <text x="1384" y="1364" font-family="Arial, sans-serif" font-size="12.5" fill="#1e293b">
+    • <tspan font-weight="700" fill="#92400e">Open Bottom-Resistor Fault:</tspan> If R_LL, R_VL, or R_ML opens, full branch voltage (via 68 kΩ) or 5 V sensor output (via 27 kΩ) hits the GPIO.
+  </text>
+  <text x="1384" y="1392" font-family="Arial, sans-serif" font-size="12.5" fill="#1e293b">
+    • <tspan font-weight="700" fill="#92400e">Ratiometric 5 V Drift:</tspan> ACS712 zero-current point is V_CC / 2. A ±2% (±100 mV) drift on the 5 V buck rail shifts zero by ±50 mV
+  </text>
+  <text x="1398" y="1412" font-family="Arial, sans-serif" font-size="12.5" fill="#1e293b">
+    raw (±0.758 A equivalent error). Calibrate V_ZERO at true zero primary current and verify buck regulation before measurement.
+  </text>
+  <text x="1384" y="1442" font-family="Arial, sans-serif" font-size="12.5" fill="#1e293b">
+    • <tspan font-weight="700" fill="#92400e">Breakout Verification:</tspan> Confirm S_M_BOARD has no onboard output voltage divider before adding R_MH (27 kΩ) / R_ML (20 kΩ).
+  </text>
+  <text x="1384" y="1468" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#475569">
+    Document Ref: FINAL_EV_EMS_ENGINEERING_PACKAGE / 03_Circuit_Design/2D_circuit_schematic.svg • Date: 2026-11-02
+  </text>
+</svg>

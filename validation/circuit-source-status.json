@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "sourceComponents": 36,
+  "connectedComponents": 33,
+  "logicalContacts": 87,
+  "sourceWires": 60,
+  "maxWireEndpointError": 4.76837158203125e-07,
+  "sourceObjects": 1530,
+  "capacitorLeadContacts": 10,
+  "maxCapacitorLeadContactError": 2.4027400458748785e-07,
+  "physicalHardwareTested": false,
+  "physicalPlacementsVerified": false,
+  "checks": [
+    "All CSV endpoints have exact logical terminal objects",
+    "All wire end-ring centres meet those contacts",
+    "Every source status is preserved",
+    "Unscheduled RP1, D1 and legacy relay have no invented wires",
+    "All ten formed capacitor leads meet their existing A/B metallic contact posts"
+  ]
+}

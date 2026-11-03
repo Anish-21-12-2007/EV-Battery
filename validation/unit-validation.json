@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-03",
+  "command": "node --test --test-reporter=tap tests/*.test.mjs",
+  "passed": 79,
+  "failed": 0,
+  "exitCode": 0,
+  "files": [
+    "tests/circuit-assets.test.mjs",
+    "tests/circuit-electrical.test.mjs",
+    "tests/circuit-lab.test.mjs",
+    "tests/circuit-schematic.test.mjs",
+    "tests/drivetrain.test.mjs",
+    "tests/engineering-lab.test.mjs",
+    "tests/ev-simulation.test.mjs",
+    "tests/hardware-proposal.test.mjs",
+    "tests/phase2-assets.test.mjs",
+    "tests/physics-scenarios.test.mjs",
+    "tests/simulation-audit.test.mjs",
+    "tests/telemetry.test.mjs",
+    "tests/vehicle-displays.test.mjs"
+  ],
+  "hardwareTested": false
+}

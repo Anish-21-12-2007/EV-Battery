@@ -1,0 +1,52 @@
+[
+  {
+    "file": "index.html",
+    "before_sha256": "65583d19504ac0f7671339e258bcd8c13c9a21737c27600b3d12e236c3ac0516",
+    "after_sha256": "1efac542b3a5a862668dc3b30e5495d8e15ae6d37f1c31a22c85c3dd0cb3c588"
+  },
+  {
+    "file": "style.css",
+    "before_sha256": "08f104879fd4e47472dfef1881b8c88b535a55def14bd458123eb6122cbb30c1",
+    "after_sha256": "eba9ddba0dbbe6af1bc2686bc2b4c7479236f298b1960c7bd5c8f634c88826c4"
+  },
+  {
+    "file": "app.js",
+    "before_sha256": "46d44da416bec054a58c5e33f3ca7e4cb36fe628d749f2ced5c4385d970b1e78",
+    "after_sha256": "81f714ea2bc5ad69217c8c8c9691b2abc89dff2d7b31bba93f14bf947dc6cba4"
+  },
+  {
+    "file": "firebase-config.js",
+    "before_sha256": "6022f5db4a1c3380a9bfb16d6bed4c722f7603d107164ec861c5d5e0c3996723",
+    "after_sha256": "3697d58597c82523565d94af3c55809bac364bef518a1ce9ef9ef0e2d297b798"
+  },
+  {
+    "file": "model-viewer.js",
+    "before_sha256": "dd9c76017f239787cc5bd35a2dd109bdd045704a66516aed7bd9c37a484384a5",
+    "after_sha256": "bcb1245a1eca735a1fa4154bc7aba64cb60dbed997659d89b9863785c12ac4d6"
+  },
+  {
+    "file": "ev-viewer.js",
+    "before_sha256": "fdef7fd94d0f03d29fd00ee07ec79dd8b8932ec3a91571fe8748d8d58ad72271",
+    "after_sha256": "d7af8651bb538c1048a1784358f1195bd58566fd2f4d0c051f63e3d36c14537c"
+  },
+  {
+    "file": "ev-simulation-engine.js",
+    "before_sha256": "60bd4250e1cd61ea9930936167b8e2da4c3987c6e7cad57b993fbcc0015261c6",
+    "after_sha256": "97a1a9240c96edc5fcccc022125ce86d4fc011603a1c98a8c005761818192f1c"
+  },
+  {
+    "file": "viewer-interaction.js",
+    "before_sha256": null,
+    "after_sha256": "a4bcdda3d871cb43814bc7ff777e207312a3f99c0d63a375eb7efff98d12cb1d"
+  },
+  {
+    "file": "README.md",
+    "before_sha256": "8f9e2c1d8d1fd454fc9ccb1c6b632f0e731891bc65172260e5bd13bbfd9fb4c4",
+    "after_sha256": "033c7969043d5b9cc1e2cd17fc4a4147b8cf40fd0afcf57cb973b6ff11b423fc"
+  },
+  {
+    "file": "FIREBASE_SETUP.md",
+    "before_sha256": "2d64932444c974671bf4415a2ebfdf1a3c2d88e5b07c284efee79fa397d87565",
+    "after_sha256": "721db139cf95df9cb43892dee276d4475a7657ef31fc5b1535362a9811d6e4a1"
+  }
+]

@@ -1,0 +1,327 @@
+{
+  "date": "2026-11-03",
+  "source_copy": "C:\\Users\\uppal\\AppData\\Local\\Temp\\EV_EMS_precleanup_20261102",
+  "source_copy_deleted": false,
+  "final_package_baseline_files": 36,
+  "final_package_baseline_matches": true,
+  "retained_evidence": [
+    {
+      "source": "Circuit_Details/01_System_Overview/circuit_block_diagram.svg",
+      "preserved": "docs/provenance/circuit-details-original/01_System_Overview/circuit_block_diagram.svg",
+      "sha256": "fc1536d001a95683583f4fa69a63a7baf45f6fff982e86dcfa43a2dddcd37dd2",
+      "bytes": 4839,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/01_System_Overview/signal_and_power_flow.md",
+      "preserved": "docs/provenance/circuit-details-original/01_System_Overview/signal_and_power_flow.md",
+      "sha256": "7cc2ea1b567fdc56a5f72777faae80e9c2e56cd29c871b5eac2e0d8306681712",
+      "bytes": 2117,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/01_System_Overview/system_architecture.md",
+      "preserved": "docs/provenance/circuit-details-original/01_System_Overview/system_architecture.md",
+      "sha256": "6ea499724621eeb5a5e09be3ff47d83195b80ca1240eb170961b24b785ae9e07",
+      "bytes": 3174,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/02_Component_Details/component_list.csv",
+      "preserved": "docs/provenance/circuit-details-original/02_Component_Details/component_list.csv",
+      "sha256": "466f623cf8448b79811e314379803e35e66694575d4ddf3ecab7643e3efab29f",
+      "bytes": 7032,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/02_Component_Details/component_specifications.md",
+      "preserved": "docs/provenance/circuit-details-original/02_Component_Details/component_specifications.md",
+      "sha256": "b55f075c9cbd212be8bd52051903a342864f051d1e29d9fa83ce9e7285a384d1",
+      "bytes": 3542,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/02_Component_Details/datasheets_and_source_links.md",
+      "preserved": "docs/provenance/circuit-details-original/02_Component_Details/datasheets_and_source_links.md",
+      "sha256": "3fbe5f6a4283041150001fd127b16d9f406bf55fef562d0cc25482a778029cc2",
+      "bytes": 2745,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/02_Component_Details/unresolved_component_identification.md",
+      "preserved": "docs/provenance/circuit-details-original/02_Component_Details/unresolved_component_identification.md",
+      "sha256": "af436eb5f2220f4e346b8459d639789135d06183356881e6f3f8c99fa2536b10",
+      "bytes": 3297,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/03_Circuit_Design/2D_circuit_schematic.png",
+      "preserved": "docs/provenance/circuit-details-original/03_Circuit_Design/2D_circuit_schematic.png",
+      "sha256": "8784db1412a19b406e2f681cece426f4ca64b08ee1ec3cb5fe28d0755dc58400",
+      "bytes": 378953,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/03_Circuit_Design/2D_circuit_schematic.svg",
+      "preserved": "docs/provenance/circuit-details-original/03_Circuit_Design/2D_circuit_schematic.svg",
+      "sha256": "d43c2c5e8b62d63131dd80a9dee0a3732b45dc4ba79d51fea147c948adc97535",
+      "bytes": 24338,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/03_Circuit_Design/complete_circuit_explanation.md",
+      "preserved": "docs/provenance/circuit-details-original/03_Circuit_Design/complete_circuit_explanation.md",
+      "sha256": "26d796a5714f6be44f9358fe41c3386d7919c818e1a46f05c2c155efc9b67d37",
+      "bytes": 3498,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/03_Circuit_Design/pin_mapping.md",
+      "preserved": "docs/provenance/circuit-details-original/03_Circuit_Design/pin_mapping.md",
+      "sha256": "cabf6118162a979803fa2499705bd4cd8a8c0255f6a15b354e00e1324dd75d7c",
+      "bytes": 1928,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/03_Circuit_Design/polarity_and_grounding.md",
+      "preserved": "docs/provenance/circuit-details-original/03_Circuit_Design/polarity_and_grounding.md",
+      "sha256": "c289e53aeb87ea3d24335d63bad8526ff35f1c1a0e3dfa9817cd6dff4e3534d4",
+      "bytes": 2019,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/03_Circuit_Design/wiring_connections.csv",
+      "preserved": "docs/provenance/circuit-details-original/03_Circuit_Design/wiring_connections.csv",
+      "sha256": "ff14b313f157c5122caee5ff297611c13f7014820e499ab6fbb0823a0118808f",
+      "bytes": 5915,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/04_Measurement_and_Calculations/calibration_requirements.md",
+      "preserved": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/calibration_requirements.md",
+      "sha256": "f14d899713ed9a89b5404afb506ae9144028b1a4e43d96eadc122b997d13d820",
+      "bytes": 2965,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/04_Measurement_and_Calculations/current_measurement.md",
+      "preserved": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/current_measurement.md",
+      "sha256": "68c8a0b9387ea36ec84aad33ee02d76a6ff6ab68be1f9590231c0af1a5af0b1e",
+      "bytes": 2005,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/04_Measurement_and_Calculations/power_energy_and_cost.md",
+      "preserved": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/power_energy_and_cost.md",
+      "sha256": "408bd47b3e57b9cb7efba9245fe17b1fd05e45569adbfb511d6ae661841ace33",
+      "bytes": 2148,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/04_Measurement_and_Calculations/voltage_measurement.md",
+      "preserved": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/voltage_measurement.md",
+      "sha256": "e03b1054a3219758111e3f87d86d561ecac19a3735516ceabf44aeab05431b33",
+      "bytes": 1366,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/04_Measurement_and_Calculations/worked_calculation_examples.md",
+      "preserved": "docs/provenance/circuit-details-original/04_Measurement_and_Calculations/worked_calculation_examples.md",
+      "sha256": "83c848ecf77eb99d71ebd0ad9ffa85454fa4079cc35edc0b88c03dae9ef84459",
+      "bytes": 2490,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/05_Protection_and_Safety/fuse_and_protection_requirements.md",
+      "preserved": "docs/provenance/circuit-details-original/05_Protection_and_Safety/fuse_and_protection_requirements.md",
+      "sha256": "5b0a68ec97d01e609c5e930224e442de8ea5a034c5a9ef2110a80936b0d2e20d",
+      "bytes": 2525,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/05_Protection_and_Safety/motor_and_inductive_load_protection.md",
+      "preserved": "docs/provenance/circuit-details-original/05_Protection_and_Safety/motor_and_inductive_load_protection.md",
+      "sha256": "48fd1e1fa06938514f190a5500c6ce6534e62acb885abe21772c3347393b0e09",
+      "bytes": 1518,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/05_Protection_and_Safety/reverse_polarity_and_transient_protection.md",
+      "preserved": "docs/provenance/circuit-details-original/05_Protection_and_Safety/reverse_polarity_and_transient_protection.md",
+      "sha256": "ab8f0071f5de21969219d736a37fa19457554fdbdcc8af70e5546ba0f860374d",
+      "bytes": 1358,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/05_Protection_and_Safety/unresolved_safety_decisions.md",
+      "preserved": "docs/provenance/circuit-details-original/05_Protection_and_Safety/unresolved_safety_decisions.md",
+      "sha256": "db3173546421990c2cc7b6eca0d32e1f6262678bbc70f00969dfd19dc9804188",
+      "bytes": 1921,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/06_Validation/calculation_checks.py",
+      "preserved": "docs/provenance/circuit-details-original/06_Validation/calculation_checks.py",
+      "sha256": "df44c1a8c74cfa7e07b81f4f334dd58b7018700025136421464a07206b73bdc2",
+      "bytes": 6153,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/06_Validation/calculation_results.json",
+      "preserved": "docs/provenance/circuit-details-original/06_Validation/calculation_results.json",
+      "sha256": "fcf2a874027fc9ccf1bee7aae8ce48bf12068d8b102fe0a6c7d6c15721828167",
+      "bytes": 5074,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/06_Validation/engineering_calculation_checks.md",
+      "preserved": "docs/provenance/circuit-details-original/06_Validation/engineering_calculation_checks.md",
+      "sha256": "c6a1317319a637b536699ba8f3da150b230d034e7256d14686706841e943f16d",
+      "bytes": 4067,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/06_Validation/known_errors_and_conflicts.md",
+      "preserved": "docs/provenance/circuit-details-original/06_Validation/known_errors_and_conflicts.md",
+      "sha256": "79b85e1950cc63acdfce7ce359ba74dfc2e37a739ef92f4e329d4994b86cedad",
+      "bytes": 3249,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/06_Validation/simulation_and_test_plan.md",
+      "preserved": "docs/provenance/circuit-details-original/06_Validation/simulation_and_test_plan.md",
+      "sha256": "c0b4343a4c9a6d5a9daaca67604781a72c35efbb2da1efe216234270ee2eb3cd",
+      "bytes": 3017,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/06_Validation/verification_status.csv",
+      "preserved": "docs/provenance/circuit-details-original/06_Validation/verification_status.csv",
+      "sha256": "370507946701bfa7f924bf53087d8d6c8524931fdef951edb61cab2c64753b5b",
+      "bytes": 3459,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/07_References/reference_material.md",
+      "preserved": "docs/provenance/circuit-details-original/07_References/reference_material.md",
+      "sha256": "a93b0dfac8ab18deebb8a602533ad4ab2b32114220ca6ae51f6eab6be96118cb",
+      "bytes": 2995,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/07_References/source_register.md",
+      "preserved": "docs/provenance/circuit-details-original/07_References/source_register.md",
+      "sha256": "63e95836143c1a30102dd11e09c797d29de79b36ad572b03f5b92e2e13ebf216",
+      "bytes": 7186,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/INDEPENDENT_AUDIT_REPORT.md",
+      "preserved": "docs/provenance/circuit-details-original/INDEPENDENT_AUDIT_REPORT.md",
+      "sha256": "0c1792e153e2d3ec2e68568b935bedd683d4a6c732912684ca681e28d1d3950e",
+      "bytes": 19535,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "Circuit_Details/README.md",
+      "preserved": "docs/provenance/circuit-details-original/README.md",
+      "sha256": "031a75987c52c0dc6a066a7eef232213bf1c73e425ff591b57d904f6b43f5f0e",
+      "bytes": 4862,
+      "reason": "Original pre-upgrade engineering evidence; superseded by final package"
+    },
+    {
+      "source": "hardware-validation/corrected-schematic.png",
+      "preserved": "hardware-validation/corrected-schematic.png",
+      "sha256": "650416840828d2c317c79958c42ad07981b83afc1d55b54773b83049df723472",
+      "bytes": 365733,
+      "reason": "Restores the historical schematic already cited by the retained reference README"
+    },
+    {
+      "source": "hardware-validation/provided-references/ECS_corrected_schematic.svg",
+      "preserved": "hardware-validation/provided-references/ECS_corrected_schematic.svg",
+      "sha256": "160a1c4eb4465f7adf2afcd97f865c8696a86b62a5f19a69517a277e4f205fba",
+      "bytes": 13210,
+      "reason": "One copy of the original corrected schematic input; identical numbered duplicate omitted"
+    },
+    {
+      "source": "hardware-validation/inspected-assembly.blend",
+      "preserved": "blender-workflow/output/inspected-assembly.blend",
+      "sha256": "14496463eceadd48f6a5496e3b39510378f02e98297b2c08a450db9db7ebb410",
+      "bytes": 1656109,
+      "reason": "Unique editable inspected historical low-voltage assembly; not the final 60-connection design"
+    },
+    {
+      "source": "hardware-validation/PROJECT_AUDIT_2026-10-14.md",
+      "preserved": "docs/provenance/historical-assembly/PROJECT_AUDIT_2026-10-14.md",
+      "sha256": "bd6395cce5ce7859b1bd00dff1dfe4281b3a8e96c029fe83662b0fb9cbc33037",
+      "bytes": 13500,
+      "reason": "Dated software and geometry review, historical claims only"
+    },
+    {
+      "source": "hardware-validation/blender-import-validation.json",
+      "preserved": "docs/provenance/historical-assembly/blender-import-validation.json",
+      "sha256": "ea5c08413554dd43fc73843d5bfc13cc2f9bd1c8f784d3a8153e89018bf65b2a",
+      "bytes": 9404,
+      "reason": "Original geometry inspection evidence, not physical validation"
+    },
+    {
+      "source": "hardware-validation/original-glb-inventory.json",
+      "preserved": "docs/provenance/historical-assembly/original-glb-inventory.json",
+      "sha256": "f0f9eb0268179a367bfa4d9f6fe032e0e47f6bd6cd7672e4a84b2625ffcc4daa",
+      "bytes": 191498,
+      "reason": "Original machine-readable model inventory"
+    },
+    {
+      "source": "hardware-validation/assembly-inspection.png",
+      "preserved": "docs/provenance/historical-assembly/assembly-inspection.png",
+      "sha256": "4cb399c9a0ca941f875402ff772b00fc2e39567f25f43a86fca95a9180d80232",
+      "bytes": 2702964,
+      "reason": "Original Blender assembly inspection image, not a hardware photograph"
+    },
+    {
+      "source": "hardware-validation/audit-20261014/asset-results.json",
+      "preserved": "docs/provenance/historical-assembly/audit-20261014/asset-results.json",
+      "sha256": "f647bdbd501bf8e40d49c569aab68bd46429f6219e669c67d0c9c5e3c22a9cb5",
+      "bytes": 632,
+      "reason": "Previous source asset hashes and object counts"
+    },
+    {
+      "source": "hardware-validation/audit-20261014/browser-results.json",
+      "preserved": "docs/provenance/historical-assembly/audit-20261014/browser-results.json",
+      "sha256": "72c62c9b4b9c7f9b88af9e4eebe9906cc20142edecdc8bf0bbfd9188be367a36",
+      "bytes": 6787,
+      "reason": "Original dated audit support; not current release test evidence"
+    },
+    {
+      "source": "hardware-validation/audit-20261014/changed-file-hashes.json",
+      "preserved": "docs/provenance/historical-assembly/audit-20261014/changed-file-hashes.json",
+      "sha256": "6a743258a1c15452bc7b34ab621b66387bf1e25aa765805b8b04ad5f58b7adda",
+      "bytes": 2141,
+      "reason": "Original dated audit file identity evidence"
+    },
+    {
+      "source": "blender-workflow/output/ev-generation-result.json",
+      "preserved": "docs/provenance/historical-assembly/ev-generation-result.json",
+      "sha256": "d6a43882245555e9ab562701388398cb96d75e716f4deea4afd1b5dcfb294d46",
+      "bytes": 1284,
+      "reason": "Metadata for the retained original ECS GT source and GLB"
+    }
+  ],
+  "duplicate_archives": [
+    {
+      "original": "Circuit_Details.zip",
+      "sha256": "a5d53ff8387ab196c6268bfa6cb962de0a3d5b06916c2ce89d5fcfb4f2986910",
+      "files": 32,
+      "all_files_equal_extracted_source": true,
+      "archive_retained": false
+    },
+    {
+      "original": "FINAL_EV_EMS_ENGINEERING_PACKAGE.zip",
+      "sha256": "5e36bc39d0ded9180b38993616e8d5600853ac71a4a6186500c63528b1aa4941",
+      "files": 36,
+      "all_files_equal_extracted_source": true,
+      "archive_retained": false
+    }
+  ],
+  "scope": "Historical documentary evidence and editable model sources only. No hardware or Firebase validation."
+}

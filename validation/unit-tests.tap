@@ -1,0 +1,405 @@
+TAP version 13
+# Subtest: Blender export has separate selectable component groups and all 87 exact named contacts
+ok 1 - Blender export has separate selectable component groups and all 87 exact named contacts
+  ---
+  duration_ms: 10.544339
+  ...
+# Subtest: all 60 model wires preserve the authoritative endpoints, statuses and source evidence
+ok 2 - all 60 model wires preserve the authoritative endpoints, statuses and source evidence
+  ---
+  duration_ms: 2.76909
+  ...
+# Subtest: unidentified parts, physical placements and unscheduled protection remain explicitly unresolved
+ok 3 - unidentified parts, physical placements and unscheduled protection remain explicitly unresolved
+  ---
+  duration_ms: 1.66542
+  ...
+# Subtest: divider calculator agrees with all independent resistor-tolerance corners
+ok 4 - divider calculator agrees with all independent resistor-tolerance corners
+  ---
+  duration_ms: 4.32497
+  ...
+# Subtest: direct ACS712-30A nominal scaling and ratiometric offset assumptions are explicit arithmetic
+ok 5 - direct ACS712-30A nominal scaling and ratiometric offset assumptions are explicit arithmetic
+  ---
+  duration_ms: 0.616069
+  ...
+# Subtest: unpowered hypothetical clamp calculation applies KCL instead of treating top-resistor current as pin current
+ok 6 - unpowered hypothetical clamp calculation applies KCL instead of treating top-resistor current as pin current
+  ---
+  duration_ms: 0.895269
+  ...
+# Subtest: nominal energy units and separately timed branch integration agree
+ok 7 - nominal energy units and separately timed branch integration agree
+  ---
+  duration_ms: 2.41697
+  ...
+# Subtest: current source has unresolved protection and optional pullup scheduling, not a complete build netlist
+ok 8 - current source has unresolved protection and optional pullup scheduling, not a complete build netlist
+  ---
+  duration_ms: 3.81092
+  ...
+# Subtest: light current supply and interface remain unresolved candidate records
+ok 9 - light current supply and interface remain unresolved candidate records
+  ---
+  duration_ms: 0.33725
+  ...
+# Subtest: non-isolated buck continuity creates a second return path independent of W053
+ok 10 - non-isolated buck continuity creates a second return path independent of W053
+  ---
+  duration_ms: 4.977639
+  ...
+# Subtest: branch voltage taps are at DC inputs, not PWM motor outputs
+ok 11 - branch voltage taps are at DC inputs, not PWM motor outputs
+  ---
+  duration_ms: 0.78553
+  ...
+# Subtest: startup, shutdown, open-resistor, sensor-disconnect, and ground-return fault conditions are explicitly analyzed and marked UNVERIFIED
+ok 12 - startup, shutdown, open-resistor, sensor-disconnect, and ground-return fault conditions are explicitly analyzed and marked UNVERIFIED
+  ---
+  duration_ms: 1.66399
+  ...
+# Subtest: manifest rejects missing contacts, duplicate parts and false physical verification
+ok 13 - manifest rejects missing contacts, duplicate parts and false physical verification
+  ---
+  duration_ms: 6.11579
+  ...
+# Subtest: floor cable route preserves both contact endpoints and avoids an intervening board
+ok 14 - floor cable route preserves both contact endpoints and avoids an intervening board
+  ---
+  duration_ms: 29.290238
+  ...
+# Subtest: a same-component Kelvin tie remains a continuous source-matched cable
+ok 15 - a same-component Kelvin tie remains a continuous source-matched cable
+  ---
+  duration_ms: 1.9213
+  ...
+# Subtest: inspection cable exits follow rotated terminal directions at both ends
+ok 16 - inspection cable exits follow rotated terminal directions at both ends
+  ---
+  duration_ms: 3.62781
+  ...
+# Subtest: every exported circuit contact resolves the actual 60-row source netlist
+ok 17 - every exported circuit contact resolves the actual 60-row source netlist
+  ---
+  duration_ms: 100.869091
+  ...
+# Subtest: schematic joins every CSV endpoint pair without bridging device internals
+ok 18 - schematic joins every CSV endpoint pair without bridging device internals
+  ---
+  duration_ms: 4.956669
+  ...
+# Subtest: conventional diagram accounts for all 33 connected components and all 60 identities
+ok 19 - conventional diagram accounts for all 33 connected components and all 60 identities
+  ---
+  duration_ms: 10.821059
+  ...
+# Subtest: one wheel circumference turns wheels once, and two external reductions preserve output direction
+ok 20 - one wheel circumference turns wheels once, and two external reductions preserve output direction
+  ---
+  duration_ms: 3.30679
+  ...
+# Subtest: stopping preserves integrated mechanical position with zero rpm
+ok 21 - stopping preserves integrated mechanical position with zero rpm
+  ---
+  duration_ms: 0.235
+  ...
+# Subtest: export contains separately pivoted moving parts and stationary brake calipers
+ok 22 - export contains separately pivoted moving parts and stationary brake calipers
+  ---
+  duration_ms: 84.710102
+  ...
+# Subtest: engineering source parser preserves real BOM and all wire conditions
+ok 23 - engineering source parser preserves real BOM and all wire conditions
+  ---
+  duration_ms: 55.050615
+  ...
+# Subtest: CSV reader handles quoted delimiters, quotes and line breaks
+ok 24 - CSV reader handles quoted delimiters, quotes and line breaks
+  ---
+  duration_ms: 19.382647
+  ...
+# Subtest: divider reproduces independent nominal and tolerance corners
+ok 25 - divider reproduces independent nominal and tolerance corners
+  ---
+  duration_ms: 0.76083
+  ...
+# Subtest: current scaler exposes small-signal resolution and signed endpoints
+ok 26 - current scaler exposes small-signal resolution and signed endpoints
+  ---
+  duration_ms: 1.13405
+  ...
+# Subtest: energy calculator integrates different branch durations without fabricating totals
+ok 27 - energy calculator integrates different branch durations without fabricating totals
+  ---
+  duration_ms: 0.48911
+  ...
+# Subtest: simulation begins as an independent software scenario with 5 controllable devices
+ok 28 - simulation begins as an independent software scenario with 5 controllable devices
+  ---
+  duration_ms: 10.891879
+  ...
+# Subtest: auxiliary controls are independent and blank ratings cannot be enabled
+ok 29 - auxiliary controls are independent and blank ratings cannot be enabled
+  ---
+  duration_ms: 19.653919
+  ...
+# Subtest: traction force is torque limited at low speed
+ok 30 - traction force is torque limited at low speed
+  ---
+  duration_ms: 0.946
+  ...
+# Subtest: at the speed cap, full throttle supplies only road-load force and consistent power
+ok 31 - at the speed cap, full throttle supplies only road-load force and consistent power
+  ---
+  duration_ms: 560.026209
+  ...
+# Subtest: gross draw, regen recovery, SOC, and terminal P=VI remain coherent
+ok 32 - gross draw, regen recovery, SOC, and terminal P=VI remain coherent
+  ---
+  duration_ms: 110.666919
+  ...
+# Subtest: range is gated by distance and positive energy use; tariff uses INR/kWh
+ok 33 - range is gated by distance and positive energy use; tariff uses INR/kWh
+  ---
+  duration_ms: 1074.375508
+  ...
+# Subtest: one 60 Hz-sized update and smaller updates integrate the same fixed steps
+ok 34 - one 60 Hz-sized update and smaller updates integrate the same fixed steps
+  ---
+  duration_ms: 165.637266
+  ...
+# Subtest: reset pauses, clears simulation energy and disables devices
+ok 35 - reset pauses, clears simulation energy and disables devices
+  ---
+  duration_ms: 37.251647
+  ...
+# Subtest: partial throttle at the cap uses only the road-load holding power
+ok 36 - partial throttle at the cap uses only the road-load holding power
+  ---
+  duration_ms: 609.837918
+  ...
+# Subtest: acceleration work including the speed-cap boundary equals kinetic energy on a lossless road
+ok 37 - acceleration work including the speed-cap boundary equals kinetic energy on a lossless road
+  ---
+  duration_ms: 500.38552
+  ...
+# Subtest: battery-limited loads reduce actual device draw and motion instead of inventing power
+ok 38 - battery-limited loads reduce actual device draw and motion instead of inventing power
+  ---
+  duration_ms: 164.019487
+  ...
+# Subtest: depletion stops auxiliary power and energy integration while preserving the ledger
+ok 39 - depletion stops auxiliary power and energy integration while preserving the ledger
+  ---
+  duration_ms: 557.639784
+  ...
+# Subtest: regen recovery cannot exceed actual removed kinetic energy, including the stopping step
+ok 40 - regen recovery cannot exceed actual removed kinetic energy, including the stopping step
+  ---
+  duration_ms: 314.544741
+  ...
+# Subtest: full charge rejects further regeneration without creating terminal energy
+ok 41 - full charge rejects further regeneration without creating terminal energy
+  ---
+  duration_ms: 417.009903
+  ...
+# Subtest: pause freezes time and sets device demand to zero without losing selections
+ok 42 - pause freezes time and sets device demand to zero without losing selections
+  ---
+  duration_ms: 9.184179
+  ...
+# Subtest: invalid assumptions preserve defaults and excessive step requests fail before advancing
+ok 43 - invalid assumptions preserve defaults and excessive step requests fail before advancing
+  ---
+  duration_ms: 3.07993
+  ...
+# Subtest: high rolling resistance plus a battery-saturating auxiliary cannot produce phantom traction work
+ok 44 - high rolling resistance plus a battery-saturating auxiliary cannot produce phantom traction work
+  ---
+  duration_ms: 13.348089
+  ...
+# Subtest: device kWh, usable-battery percentages and tariff costs reconcile for all five devices
+ok 45 - device kWh, usable-battery percentages and tariff costs reconcile for all five devices
+  ---
+  duration_ms: 634.133591
+  ...
+# Subtest: switching each device OFF stops its accumulation and retains its previous consumption
+ok 46 - switching each device OFF stops its accumulation and retains its previous consumption
+  ---
+  duration_ms: 192.231542
+  ...
+# Subtest: trip-energy reset keeps motion, SOC and switches, resets range observation, then integrates new consumption
+ok 47 - trip-energy reset keeps motion, SOC and switches, resets range observation, then integrates new consumption
+  ---
+  duration_ms: 615.95804
+  ...
+# Subtest: proposal keeps inherited design distinct and refuses undocumented battery operation
+ok 48 - proposal keeps inherited design distinct and refuses undocumented battery operation
+  ---
+  duration_ms: 4.3475
+  ...
+# Subtest: every proposed contact references a listed component or external node and has a disposition
+ok 49 - every proposed contact references a listed component or external node and has a disposition
+  ---
+  duration_ms: 3.06149
+  ...
+# Subtest: 3.3V logic devices share noncolliding I2C addresses and do not take a 12V logic supply
+ok 50 - 3.3V logic devices share noncolliding I2C addresses and do not take a 12V logic supply
+  ---
+  duration_ms: 4.075769
+  ...
+# Subtest: source-to-load paths include the appropriate shunt and dedicated driver return
+ok 51 - source-to-load paths include the appropriate shunt and dedicated driver return
+  ---
+  duration_ms: 1.23293
+  ...
+# Subtest: independent tolerance-corner calculations fit proposed sensor range, without treating stall as allowed operation
+ok 52 - independent tolerance-corner calculations fit proposed sensor range, without treating stall as allowed operation
+  ---
+  duration_ms: 0.35716
+  ...
+# Subtest: nominal scaling preserves shunt-loss and energy units at an independent test point
+ok 53 - nominal scaling preserves shunt-loss and energy units at an independent test point
+  ---
+  duration_ms: 1.58217
+  ...
+# Subtest: phase 2 assembly exposes individual seats, coachwork and drivetrain groups
+ok 54 - phase 2 assembly exposes individual seats, coachwork and drivetrain groups
+  ---
+  duration_ms: 4.11877
+  ...
+# Subtest: brake discs share wheel pivots while calipers and suspension remain independent siblings
+ok 55 - brake discs share wheel pivots while calipers and suspension remain independent siblings
+  ---
+  duration_ms: 1.467079
+  ...
+# Subtest: both in-car screens are distinct UV-mapped meshes attached to cabin assemblies
+ok 56 - both in-car screens are distinct UV-mapped meshes attached to cabin assemblies
+  ---
+  duration_ms: 0.991479
+  ...
+# Subtest: rotational inertia increases effective mass and conserves translational + rotational kinetic energy
+ok 57 - rotational inertia increases effective mass and conserves translational + rotational kinetic energy
+  ---
+  duration_ms: 61.263144
+  ...
+# Subtest: torque, angular velocity, gear ratio, differential split and mechanical power agree
+ok 58 - torque, angular velocity, gear ratio, differential split and mechanical power agree
+  ---
+  duration_ms: 34.528357
+  ...
+# Subtest: downhill operation accelerates under gravity and recovers bounded regenerative energy with exact energy balance
+ok 59 - downhill operation accelerates under gravity and recovers bounded regenerative energy with exact energy balance
+  ---
+  duration_ms: 194.968742
+  ...
+# Subtest: uphill gradient increases road load and prevents unphysical backward rollback at rest
+ok 60 - uphill gradient increases road load and prevents unphysical backward rollback at rest
+  ---
+  duration_ms: 85.258343
+  ...
+# Subtest: all five canonical driving scenarios execute with zero mechanical or electrical energy conservation error
+ok 61 - all five canonical driving scenarios execute with zero mechanical or electrical energy conservation error
+  ---
+  duration_ms: 580.305171
+  ...
+# Subtest: substep ON time belongs to the old state when a switch turns OFF
+ok 62 - substep ON time belongs to the old state when a switch turns OFF
+  ---
+  duration_ms: 9.676129
+  ...
+# Subtest: piecewise power and efficiency edits preserve elapsed energy under the preceding settings
+ok 63 - piecewise power and efficiency edits preserve elapsed energy under the preceding settings
+  ---
+  duration_ms: 5.19997
+  ...
+# Subtest: pause includes the last elapsed fraction and resume does not replay it
+ok 64 - pause includes the last elapsed fraction and resume does not replay it
+  ---
+  duration_ms: 1.71312
+  ...
+# Subtest: trip reset settles pre-reset elapsed time before establishing a new ledger
+ok 65 - trip reset settles pre-reset elapsed time before establishing a new ledger
+  ---
+  duration_ms: 2.46198
+  ...
+# Subtest: large exact-duration calls cannot defer one full step through repeated-subtraction roundoff
+ok 66 - large exact-duration calls cannot defer one full step through repeated-subtraction roundoff
+  ---
+  duration_ms: 10158.583085
+  ...
+# Subtest: fractional scheduling preserves a real remainder and partitioned constant-load duration
+ok 67 - fractional scheduling preserves a real remainder and partitioned constant-load duration
+  ---
+  duration_ms: 11.971649
+  ...
+# Subtest: terminal energy plus internal heat converges to independent integrated chemical energy
+ok 68 - terminal energy plus internal heat converges to independent integrated chemical energy
+  ---
+  duration_ms: 18973.499126
+  ...
+# Subtest: finite tariff overflow is withheld and recovers when a representable tariff is entered
+ok 69 - finite tariff overflow is withheld and recovers when a representable tariff is entered
+  ---
+  duration_ms: 1437.181404
+  ...
+# Subtest: an excessive step request leaves both integrated and pending state unchanged
+ok 70 - an excessive step request leaves both integrated and pending state unchanged
+  ---
+  duration_ms: 3.444169
+  ...
+# Subtest: accepts the minimal aggregate schema and leaves optional sensors unavailable
+ok 71 - accepts the minimal aggregate schema and leaves optional sensors unavailable
+  ---
+  duration_ms: 4.20143
+  ...
+# Subtest: computes branch powers and sum only when both branch V/I pairs exist
+ok 72 - computes branch powers and sum only when both branch V/I pairs exist
+  ---
+  duration_ms: 0.46927
+  ...
+# Subtest: rejects malformed, non-finite, negative, implausible-time and mislabeled records
+ok 73 - rejects malformed, non-finite, negative, implausible-time and mislabeled records
+  ---
+  duration_ms: 1.19008
+  ...
+# Subtest: freshness is a display policy based on timestamp age
+ok 74 - freshness is a display policy based on timestamp age
+  ---
+  duration_ms: 0.50303
+  ...
+# Subtest: rejects derived branch power overflow rather than rendering nonfinite measurements
+ok 75 - rejects derived branch power overflow rather than rendering nonfinite measurements
+  ---
+  duration_ms: 0.36537
+  ...
+# Subtest: in-car display values come from the same simulation snapshot and device ledgers
+ok 76 - in-car display values come from the same simulation snapshot and device ledgers
+  ---
+  duration_ms: 42.646677
+  ...
+# Subtest: the actual infotainment texture draws only the requested energy columns for all five devices, even when OFF
+ok 77 - the actual infotainment texture draws only the requested energy columns for all five devices, even when OFF
+  ---
+  duration_ms: 246.931741
+  ...
+# Subtest: in-car display distinguishes OFF, PAUSED and NO POWER without invented load readings
+ok 78 - in-car display distinguishes OFF, PAUSED and NO POWER without invented load readings
+  ---
+  duration_ms: 2.41993
+  ...
+# Subtest: display projection does not mutate the source state or expose mutable device objects
+ok 79 - display projection does not mutate the source state or expose mutable device objects
+  ---
+  duration_ms: 3.48789
+  ...
+1..79
+# tests 79
+# suites 0
+# pass 79
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 44566.086287

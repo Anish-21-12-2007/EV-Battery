@@ -1,0 +1,377 @@
+{
+  "status": "passed",
+  "browser": "155.0.8059.79",
+  "checks": [
+    "36 detailed component roots, 87 modeled contacts and all 60 source connection paths loaded",
+    "Component selection and original specifications; full wire selection with both endpoints and conditional source status; unwired relay remains unwired",
+    "Movement, rotation and hide/reveal preserve cable contact endpoints; wire selection reveals hidden endpoint; component reset restores exact placement",
+    "Exploded assembly keeps wires attached; restore resets all positions, rotations and visibility",
+    "Orbit, zoom and pan mouse gestures, wire visibility and pin labels operate",
+    "Conventional schematic exposes 33 connected symbols and all 60 wire identities from the same source; zoom and fit work",
+    "3D assembly and schematic fit 390px and 320px layouts without page overflow"
+  ],
+  "errors": [],
+  "sourceConnections": [
+    {
+      "id": "W001",
+      "source": "BAT1.BAT+",
+      "destination": "F1.IN",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W002",
+      "source": "F1.OUT",
+      "destination": "SW1.IN",
+      "status": "REQUIRES ADDITIONAL INFORMATION"
+    },
+    {
+      "id": "W003",
+      "source": "SW1.OUT",
+      "destination": "BUS+.IN",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W004",
+      "source": "BUS+.OUT_L",
+      "destination": "FL.IN",
+      "status": "REQUIRES ADDITIONAL INFORMATION"
+    },
+    {
+      "id": "W005",
+      "source": "FL.OUT",
+      "destination": "S_L.IP+",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W006",
+      "source": "S_L.IP-",
+      "destination": "L1.INPUT+",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W007",
+      "source": "L1.INPUT-",
+      "destination": "JGND.STAR_RETURN",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W008",
+      "source": "BUS+.OUT_M",
+      "destination": "FM.IN",
+      "status": "REQUIRES ADDITIONAL INFORMATION"
+    },
+    {
+      "id": "W009",
+      "source": "FM.OUT",
+      "destination": "S_M.IP+",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W010",
+      "source": "S_M.IP-",
+      "destination": "MDRV.INPUT+",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W011",
+      "source": "MDRV.INPUT-",
+      "destination": "JGND.STAR_RETURN",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W012",
+      "source": "BUS+.OUT_E",
+      "destination": "F2.IN",
+      "status": "REQUIRES ADDITIONAL INFORMATION"
+    },
+    {
+      "id": "W013",
+      "source": "F2.OUT",
+      "destination": "U_BUCK_BOARD.IN+",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W014",
+      "source": "BAT1.BAT-",
+      "destination": "U_BUCK_BOARD.IN-",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W015",
+      "source": "U_BUCK_BOARD.OUT+",
+      "destination": "U_ESP.5V_IN",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W016",
+      "source": "U_BUCK_BOARD.OUT-",
+      "destination": "JGND.LOGIC_GND",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W017",
+      "source": "U_ESP.GND",
+      "destination": "JGND.LOGIC_GND",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W018",
+      "source": "U_BUCK_BOARD.OUT+",
+      "destination": "S_M.VCC",
+      "status": "CONDITIONAL"
+    },
+    {
+      "id": "W019",
+      "source": "JGND.LOGIC_GND",
+      "destination": "S_M.GND",
+      "status": "CONDITIONAL"
+    },
+    {
+      "id": "W020",
+      "source": "U_BUCK_BOARD.OUT+",
+      "destination": "S_L.VCC",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W021",
+      "source": "JGND.LOGIC_GND",
+      "destination": "S_L.GND",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W022",
+      "source": "S_L.OUT",
+      "destination": "U_I_L.IN",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W023",
+      "source": "U_I_L.OUT",
+      "destination": "U_ESP.GPIO32",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W024",
+      "source": "L1.INPUT+",
+      "destination": "R_LH.A",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W025",
+      "source": "R_LH.B",
+      "destination": "NODE_VL.NODE",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W026",
+      "source": "NODE_VL.NODE",
+      "destination": "R_LL.A",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W027",
+      "source": "R_LL.B",
+      "destination": "JGND.LOGIC_GND",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W028",
+      "source": "NODE_VL.NODE",
+      "destination": "C_L.A",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W029",
+      "source": "C_L.B",
+      "destination": "JGND.LOGIC_GND",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W030",
+      "source": "NODE_VL.NODE",
+      "destination": "U_ESP.GPIO33",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W031",
+      "source": "S_M.OUT",
+      "destination": "R_MH.A",
+      "status": "CONDITIONAL"
+    },
+    {
+      "id": "W032",
+      "source": "R_MH.B",
+      "destination": "NODE_IM.NODE",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W033",
+      "source": "NODE_IM.NODE",
+      "destination": "R_ML.A",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W034",
+      "source": "R_ML.B",
+      "destination": "JGND.LOGIC_GND",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W035",
+      "source": "NODE_IM.NODE",
+      "destination": "C_M.A",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W036",
+      "source": "C_M.B",
+      "destination": "JGND.LOGIC_GND",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W037",
+      "source": "NODE_IM.NODE",
+      "destination": "U_ESP.GPIO34",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W038",
+      "source": "MDRV.INPUT+",
+      "destination": "R_VH.A",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W039",
+      "source": "R_VH.B",
+      "destination": "NODE_VM.NODE",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W040",
+      "source": "NODE_VM.NODE",
+      "destination": "R_VL.A",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W041",
+      "source": "R_VL.B",
+      "destination": "JGND.LOGIC_GND",
+      "status": "CALCULATED AND CROSS-CHECKED"
+    },
+    {
+      "id": "W042",
+      "source": "NODE_VM.NODE",
+      "destination": "C_V.A",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W043",
+      "source": "C_V.B",
+      "destination": "JGND.LOGIC_GND",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W044",
+      "source": "NODE_VM.NODE",
+      "destination": "U_ESP.GPIO35",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W045",
+      "source": "U_ESP.3V3",
+      "destination": "U_OLED_BOARD.VCC",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W046",
+      "source": "U_ESP.GPIO21",
+      "destination": "U_OLED_BOARD.SDA",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W047",
+      "source": "U_ESP.GPIO22",
+      "destination": "U_OLED_BOARD.SCL",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W048",
+      "source": "JGND.LOGIC_GND",
+      "destination": "U_OLED_BOARD.GND",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W049",
+      "source": "U_ESP.3V3",
+      "destination": "T1_PROBE.VDD",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W050",
+      "source": "JGND.LOGIC_GND",
+      "destination": "T1_PROBE.GND",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W051",
+      "source": "U_ESP.GPIO4",
+      "destination": "T1_PROBE.DQ",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W052",
+      "source": "BAT1.BAT-",
+      "destination": "JGND.STAR_RETURN",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W053",
+      "source": "JGND.STAR_RETURN",
+      "destination": "JGND.LOGIC_GND",
+      "status": "DESIGN ASSUMPTION"
+    },
+    {
+      "id": "W054",
+      "source": "MDRV.MOTOR_OUT+",
+      "destination": "M1.TERM+",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W055",
+      "source": "MDRV.MOTOR_OUT-",
+      "destination": "M1.TERM-",
+      "status": "REQUIRES COMPONENT IDENTIFICATION"
+    },
+    {
+      "id": "W056",
+      "source": "S_M.VCC",
+      "destination": "C_BYP_M.A",
+      "status": "CONDITIONAL"
+    },
+    {
+      "id": "W057",
+      "source": "C_BYP_M.B",
+      "destination": "JGND.LOGIC_GND",
+      "status": "CONDITIONAL"
+    },
+    {
+      "id": "W058",
+      "source": "S_M.FILTER",
+      "destination": "C_FILTER_M.A",
+      "status": "CONDITIONAL"
+    },
+    {
+      "id": "W059",
+      "source": "C_FILTER_M.B",
+      "destination": "JGND.LOGIC_GND",
+      "status": "CONDITIONAL"
+    },
+    {
+      "id": "W060",
+      "source": "BUS+.PROT_TAP",
+      "destination": "TVS1.CATHODE",
+      "status": "REQUIRES ADDITIONAL INFORMATION"
+    }
+  ],
+  "physicalTesting": "Not performed. This verifies software, modeled geometry and source connectivity only."
+}

@@ -1,0 +1,422 @@
+{
+  "imported_file": "C:\\Users\\uppal\\OneDrive\\Desktop\\ECS-Battery-Monitoring\\blender-workflow\\output\\ecs-battery-assembly.glb",
+  "blender": "5.2.2 LTS",
+  "mesh_count": 350,
+  "components": 24,
+  "wires": 41,
+  "triangles": 99683,
+  "endpoint_checks": [
+    {
+      "wire": "W01",
+      "end": "start",
+      "nearest_mesh_vertex": 0.02499983353717712
+    },
+    {
+      "wire": "W01",
+      "end": "end",
+      "nearest_mesh_vertex": 0.025000055599895876
+    },
+    {
+      "wire": "W02",
+      "end": "start",
+      "nearest_mesh_vertex": 0.024999976437527757
+    },
+    {
+      "wire": "W02",
+      "end": "end",
+      "nearest_mesh_vertex": 0.024999976437527757
+    },
+    {
+      "wire": "W03",
+      "end": "start",
+      "nearest_mesh_vertex": 0.024999976437527757
+    },
+    {
+      "wire": "W03",
+      "end": "end",
+      "nearest_mesh_vertex": 0.02499999855644997
+    },
+    {
+      "wire": "W04",
+      "end": "start",
+      "nearest_mesh_vertex": 0.02500000554138647
+    },
+    {
+      "wire": "W04",
+      "end": "end",
+      "nearest_mesh_vertex": 0.0249999525723529
+    },
+    {
+      "wire": "W05",
+      "end": "start",
+      "nearest_mesh_vertex": 0.0249999525723529
+    },
+    {
+      "wire": "W05",
+      "end": "end",
+      "nearest_mesh_vertex": 0.025000055599895876
+    },
+    {
+      "wire": "W06",
+      "end": "start",
+      "nearest_mesh_vertex": 0.025000055599895876
+    },
+    {
+      "wire": "W06",
+      "end": "end",
+      "nearest_mesh_vertex": 0.0249999525723529
+    },
+    {
+      "wire": "W07a",
+      "end": "start",
+      "nearest_mesh_vertex": 0.025000055599895876
+    },
+    {
+      "wire": "W07a",
+      "end": "end",
+      "nearest_mesh_vertex": 0.025000055599895876
+    },
+    {
+      "wire": "W07b",
+      "end": "start",
+      "nearest_mesh_vertex": 0.025000055599895876
+    },
+    {
+      "wire": "W07b",
+      "end": "end",
+      "nearest_mesh_vertex": 0.025000055599895876
+    },
+    {
+      "wire": "W08",
+      "end": "start",
+      "nearest_mesh_vertex": 0.01499998580430894
+    },
+    {
+      "wire": "W08",
+      "end": "end",
+      "nearest_mesh_vertex": 0.01499998580430894
+    },
+    {
+      "wire": "W09",
+      "end": "start",
+      "nearest_mesh_vertex": 0.01499998580430894
+    },
+    {
+      "wire": "W09",
+      "end": "end",
+      "nearest_mesh_vertex": 0.014999970160977106
+    },
+    {
+      "wire": "W10",
+      "end": "start",
+      "nearest_mesh_vertex": 0.011999920631176251
+    },
+    {
+      "wire": "W10",
+      "end": "end",
+      "nearest_mesh_vertex": 0.012000024010645807
+    },
+    {
+      "wire": "W11",
+      "end": "start",
+      "nearest_mesh_vertex": 0.012000024010645807
+    },
+    {
+      "wire": "W11",
+      "end": "end",
+      "nearest_mesh_vertex": 0.01199996443871417
+    },
+    {
+      "wire": "W12",
+      "end": "start",
+      "nearest_mesh_vertex": 0.012000024010645807
+    },
+    {
+      "wire": "W12",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W12b",
+      "end": "start",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W12b",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999994148925693
+    },
+    {
+      "wire": "W13",
+      "end": "start",
+      "nearest_mesh_vertex": 0.012000024010645807
+    },
+    {
+      "wire": "W13",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999898348387989
+    },
+    {
+      "wire": "W14",
+      "end": "start",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W14",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999898348387989
+    },
+    {
+      "wire": "W15",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W15",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W16a",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W16a",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W16b",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W16b",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W17",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W17",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W18",
+      "end": "start",
+      "nearest_mesh_vertex": 0.01199992063121326
+    },
+    {
+      "wire": "W18",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W19",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W19",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W19b",
+      "end": "start",
+      "nearest_mesh_vertex": 0.011999920631176251
+    },
+    {
+      "wire": "W19b",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W20",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W20",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W21a",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W21a",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W21b",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W21b",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W22",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W22",
+      "end": "end",
+      "nearest_mesh_vertex": 0.010000005330656165
+    },
+    {
+      "wire": "W23",
+      "end": "start",
+      "nearest_mesh_vertex": 0.011999890769198877
+    },
+    {
+      "wire": "W23",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W24",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999948305306088
+    },
+    {
+      "wire": "W24",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W24b",
+      "end": "start",
+      "nearest_mesh_vertex": 0.011999920631176251
+    },
+    {
+      "wire": "W24b",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W25",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W25",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W26",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999952034153027
+    },
+    {
+      "wire": "W26",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W27",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999952034153027
+    },
+    {
+      "wire": "W27",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990415039803
+    },
+    {
+      "wire": "W28",
+      "end": "start",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W28",
+      "end": "end",
+      "nearest_mesh_vertex": 0.011999920631176251
+    },
+    {
+      "wire": "W29",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W29",
+      "end": "end",
+      "nearest_mesh_vertex": 0.010000059536364583
+    },
+    {
+      "wire": "W30",
+      "end": "start",
+      "nearest_mesh_vertex": 0.011999994755255775
+    },
+    {
+      "wire": "W30",
+      "end": "end",
+      "nearest_mesh_vertex": 0.012000017341029486
+    },
+    {
+      "wire": "W31",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W31",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W37",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999948305206167
+    },
+    {
+      "wire": "W37",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W38",
+      "end": "start",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W38",
+      "end": "end",
+      "nearest_mesh_vertex": 0.009999990414939883
+    },
+    {
+      "wire": "W39",
+      "end": "start",
+      "nearest_mesh_vertex": 0.025000055599895876
+    },
+    {
+      "wire": "W39",
+      "end": "end",
+      "nearest_mesh_vertex": 0.02499983353717712
+    },
+    {
+      "wire": "W40",
+      "end": "start",
+      "nearest_mesh_vertex": 0.02499983353717712
+    },
+    {
+      "wire": "W40",
+      "end": "end",
+      "nearest_mesh_vertex": 0.025000055599895876
+    }
+  ],
+  "csv_sha256": "cf3cd78210bf9ab4b01c97c6b9ebb1e4ed5bb460fb5b82ba2d90bc476c2c5820",
+  "result": "PASS"
+}

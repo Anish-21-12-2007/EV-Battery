@@ -1,0 +1,39 @@
+﻿ID,Qty,Class,Proposed identity / rating,Evidence source,Status,Audit note
+BAT1,1,Battery pack,"Amptek product-table model 12 V, 7.6 Ah, 2050 g",S5,VERIFIED BY MANUFACTURER SOURCE / installed identity unverified,"Listing supports the model table only; physical battery, chemistry/revision, terminals, charging/discharge limits and usable capacity not confirmed."
+F1,1,Main fuse + holder,"Rating, DC voltage, interrupting rating and time-current curve TBD",S6,REQUIRES ADDITIONAL INFORMATION,Place near BAT+ after source-terminal arrangement is known. No amperage approved.
+SW1,1,Master switch,DC voltage/current and inductive-load interruption rating TBD,S7,REQUIRES ADDITIONAL INFORMATION,"Exact switch, inrush and motor/controller type unknown."
+BUS+,1,Distribution node,Rated busbar or distribution block TBD,—,REQUIRES COMPONENT IDENTIFICATION,Do not use an uninsulated breadboard for battery current.
+FL,1,Light branch fuse,"Rating, DC interrupting capacity and curve TBD",S6,REQUIRES ADDITIONAL INFORMATION,"Select for actual load, inrush, wire and fault current."
+S_L,1,Light branch current transducer,Type/range/interface TBD,—,REQUIRES COMPONENT IDENTIFICATION,Must suit measured DC input current and produce a compatible safe signal.
+L1,1,Light load,Complete 12 V DC lamp/load assumed; exact type and rating unknown,—,DESIGN ASSUMPTION,"Assumption excludes bare LED, mains AC, and unprotected LED die."
+FM,1,Motor branch fuse,"Rating, DC interrupting capacity and curve TBD",S6,REQUIRES ADDITIONAL INFORMATION,Motor start/stall current and conductor details missing.
+S_M,1,Motor branch current sensor IC candidate,Allegro ACS712-30A IC; ±30 A optimized range; 66 mV/A typical at 25 °C,S1,VERIFIED BY MANUFACTURER SOURCE / use conditional,Not automotive; exact suffix and suitability for this motor unknown.
+S_M_BOARD,1,Current-sensor breakout/module,"Board, terminals, trace width, output network and current rating unknown",—,REQUIRES COMPONENT IDENTIFICATION,IC datasheet does not rate an unidentified board.
+MDRV,1,Motor controller / driver,"Type, input voltage, PWM, current, regen and suppression behavior TBD",—,REQUIRES COMPONENT IDENTIFICATION,Voltage channel is proposed at the driver DC input boundary.
+M1,1,Motor,"Type, rated/start/stall current, direction and nominal voltage TBD",—,REQUIRES COMPONENT IDENTIFICATION,Do not infer simple brushed motor from a drawing.
+F2,1,Electronics-branch fuse,"Rating, DC interrupting capacity and curve TBD",S6,REQUIRES ADDITIONAL INFORMATION,The existing current handoff also leaves F2 rating unresolved.
+U_BUCK_IC,1,Regulator IC candidate,TI LM2596 family; 4.5–40 V input; 3 A under datasheet conditions,S4,VERIFIED BY MANUFACTURER SOURCE / candidate only,"This IC specification does not establish generic board output, thermal rating or quality."
+U_BUCK_BOARD,1,DC/DC converter module,"Exact manufacturer, topology, input/output range and rating TBD",S4,REQUIRES COMPONENT IDENTIFICATION,"Verify polarity, isolation, output setpoint, ripple, startup and heat."
+U_ESP,1,MCU development board,Classic ESP32 ADC1 mapping is proposed; exact board/module/revision unknown,"S2,S3",REQUIRES COMPONENT IDENTIFICATION,GPIO32–35 are chip ADC1 candidates; physical header position is unknown.
+R_LH,1,Voltage-divider resistor,"68 kΩ, 1% assumed",S2,CALCULATED AND CROSS-CHECKED / assumption,Top leg for Light input-voltage channel; power rating/fault use still require selection.
+R_LL,1,Voltage-divider resistor,"10 kΩ, 1% assumed",S2,CALCULATED AND CROSS-CHECKED / assumption,Bottom leg to logic ground.
+C_L,1,Filter capacitor,100 nF assumed,S3,DESIGN ASSUMPTION,Forms nominal divider filter; voltage rating/dielectric/placement not specified.
+R_VH,1,Voltage-divider resistor,"68 kΩ, 1% assumed",S2,CALCULATED AND CROSS-CHECKED / assumption,Top leg for Motor-driver DC input voltage channel.
+R_VL,1,Voltage-divider resistor,"10 kΩ, 1% assumed",S2,CALCULATED AND CROSS-CHECKED / assumption,Bottom leg to logic ground.
+C_V,1,Filter capacitor,100 nF assumed,S3,DESIGN ASSUMPTION,Forms nominal divider filter; voltage rating/dielectric/placement not specified.
+R_MH,1,ACS output scaler resistor,"27 kΩ, 1% assumed","S1,S2",CALCULATED AND CROSS-CHECKED / conditional,Only for direct 5 V ACS712-30A IC output; inspect breakout for existing conditioning.
+R_ML,1,ACS output scaler resistor,"20 kΩ, 1% assumed","S1,S2",CALCULATED AND CROSS-CHECKED / conditional,Bottom leg to logic ground.
+C_M,1,ACS ADC-node filter,100 nF assumed,S2,DESIGN ASSUMPTION,Nominal RC pole about 138.5 Hz with 27 kΩ || 20 kΩ.
+R_I_L,1,Light current-signal interface,Conditioning/protection TBD after S_L selection,—,REQUIRES COMPONENT IDENTIFICATION,No unsupported interface values are drawn.
+U_OLED_IC,1,Display controller IC,SSD1306 only if that is the actual display driver,S12,REQUIRES COMPONENT IDENTIFICATION,IC is not a display module.
+U_OLED_BOARD,1,OLED display module,"0.96-inch I²C module was described in existing files; exact board, VCC tolerance, pullups and address unknown",—,REQUIRES COMPONENT IDENTIFICATION,Only connect after exact module accepts 3.3 V and I²C pullups terminate at 3.3 V.
+T1_IC,1,Temperature sensor IC,DS18B20 proposed in current handoff,S13,FOUND IN EXISTING PROJECT FILE / physical unit unverified,"Probe wiring, placement, CRC and actual presence not confirmed."
+T1_PROBE,1,Temperature probe assembly,Manufacturer/lead colors/pin order unknown,S13,REQUIRES COMPONENT IDENTIFICATION,Do not infer pinout from wire color.
+D1,1,Motor transient component,No part selected,S7,REQUIRES ADDITIONAL INFORMATION,A simple flyback diode is only conditionally applicable to a unidirectional brushed motor without a conflicting bridge topology.
+TVS1,1,Transient suppressor,No part selected,S6,REQUIRES ADDITIONAL INFORMATION,"Choose from measured/defined transients, source and protected-device limits."
+RP1,1,Reverse-polarity protection,No part selected,S6,REQUIRES ADDITIONAL INFORMATION,Protection method and voltage/current losses depend on actual battery and load.
+WIRE,set,Conductors,"Gauge, strand, insulation, length and installation TBD",S6,REQUIRES COMPONENT IDENTIFICATION,Protection coordination cannot be closed without conductor data.
+J1,set,Connectors / fuse holders,"Manufacturer, contact rating and enclosure TBD",S6,REQUIRES COMPONENT IDENTIFICATION,No terminal rating inferred from illustrative geometry.
+RLY1,0,Relay,Unwired / not selected,S7,FOUND IN EXISTING PROJECT FILE,"No coil driver, contact rating, flyback or branch-switch function defined."
+C_BYP_M,1,Sensor supply bypass capacitor,0.1 µF in Allegro typical ACS712 application; verify existing module,S1,REQUIRES COMPONENT IDENTIFICATION,Check for onboard decoupling before adding; do not duplicate blindly.
+C_FILTER_M,1,ACS712 FILTER-pin capacitor,Typical application shows 1 nF; module and desired bandwidth unknown,S1,REQUIRES COMPONENT IDENTIFICATION,Only if bare IC/interface needs it; verify module and startup/filter behavior.

@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-03",
+  "browser": "Microsoft Edge headless",
+  "baseURL": "http://127.0.0.2:5500",
+  "checks": [
+    {
+      "name": "All three primary sections navigate with one active section",
+      "passed": true,
+      "ms": 1553
+    },
+    {
+      "name": "3D asset loads into a real WebGL canvas",
+      "passed": true,
+      "ms": 333
+    },
+    {
+      "name": "Hardware monitor starts unavailable with empty graphs and no actuator",
+      "passed": true,
+      "ms": 176,
+      "detail": {
+        "auth": "Authentication unavailable",
+        "database": "Not connected"
+      }
+    },
+    {
+      "name": "Isolated telemetry fixtures exercise branches, charts, stale state, tariff and clearing",
+      "passed": true,
+      "ms": 74
+    },
+    {
+      "name": "Four auxiliary controls independently change demand and energy",
+      "passed": true,
+      "ms": 1767
+    },
+    {
+      "name": "Traction throttle, braking, pause and reset stay synchronized",
+      "passed": true,
+      "ms": 1270
+    },
+    {
+      "name": "Tariff and exported CSV use real simulated run samples",
+      "passed": true,
+      "ms": 1130
+    },
+    {
+      "name": "Editable assumptions apply, update displayed pack and reset the scenario",
+      "passed": true,
+      "ms": 1077
+    },
+    {
+      "name": "Camera presets change the rendered vehicle; orbit and zoom are functional",
+      "passed": true,
+      "ms": 3535
+    },
+    {
+      "name": "Layers, component selection, paint and rendering quality respond",
+      "passed": true,
+      "ms": 950
+    },
+    {
+      "name": "Auxiliary switches change actual lighting, display and airflow renders",
+      "passed": true,
+      "ms": 3931
+    },
+    {
+      "name": "Engineering components, source registers, calculations and schematic work in the app",
+      "passed": true,
+      "ms": 1390
+    },
+    {
+      "name": "Every local document and asset hyperlink resolves",
+      "passed": true,
+      "ms": 102,
+      "detail": {
+        "checkedLinks": 18
+      }
+    },
+    {
+      "name": "320, 390, 768 and 1440 pixel layouts and mobile navigation have no page overflow",
+      "passed": true,
+      "ms": 2507,
+      "detail": [
+        {
+          "width": 320,
+          "name": "monitor",
+          "scrollWidth": 320
+        },
+        {
+          "width": 320,
+          "name": "circuit",
+          "scrollWidth": 320
+        },
+        {
+          "width": 320,
+          "name": "simulator",
+          "scrollWidth": 320
+        },
+        {
+          "width": 390,
+          "name": "monitor",
+          "scrollWidth": 390
+        },
+        {
+          "width": 390,
+          "name": "circuit",
+          "scrollWidth": 390
+        },
+        {
+          "width": 390,
+          "name": "simulator",
+          "scrollWidth": 390
+        },
+        {
+          "width": 768,
+          "name": "monitor",
+          "scrollWidth": 768
+        },
+        {
+          "width": 768,
+          "name": "circuit",
+          "scrollWidth": 768
+        },
+        {
+          "width": 768,
+          "name": "simulator",
+          "scrollWidth": 768
+        },
+        {
+          "width": 1440,
+          "name": "monitor",
+          "scrollWidth": 1440
+        },
+        {
+          "width": 1440,
+          "name": "circuit",
+          "scrollWidth": 1440
+        },
+        {
+          "width": 1440,
+          "name": "simulator",
+          "scrollWidth": 1440
+        }
+      ]
+    },
+    {
+      "name": "Healthy browser run has no script errors or missing local assets",
+      "passed": true,
+      "ms": 0
+    },
+    {
+      "name": "Aborted GLB load shows poster, useful component descriptions, working controls and retry",
+      "passed": true,
+      "ms": 1341
+    },
+    {
+      "name": "Disabled WebGL still leaves a usable software simulator",
+      "passed": true,
+      "ms": 1572
+    },
+    {
+      "name": "External services unavailable preserves local 3D and reports Firebase unavailable",
+      "passed": true,
+      "ms": 775
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "localHttpErrors": [],
+  "externalRequestFailures": [],
+  "hardwareTested": false,
+  "firebaseCredentialsSubmitted": false,
+  "passed": 18,
+  "failed": 0
+}

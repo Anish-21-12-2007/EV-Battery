@@ -1,0 +1,228 @@
+{
+  "package_version": "FINAL_EV_EMS_ENGINEERING_PACKAGE (2026-11-02 Upgraded Audit & Correction Release)",
+  "method": "Python binary floating-point formulas independently cross-checked by exact Fraction divider ratios, worst-case corner equations, and manufacturer datasheet bounds; no physical hardware measurements or simulations.",
+  "assumptions": {
+    "divider_resistors_ohm": {
+      "current_motor": [
+        27000,
+        20000
+      ],
+      "voltage_each_branch": [
+        68000,
+        10000
+      ]
+    },
+    "resistor_tolerance_fraction": 0.01,
+    "capacitor_f": 1e-07,
+    "assumed_maximum_dc_sense_voltage_v": 18.0,
+    "classic_esp32_adc_characterized_range_11db_v": [
+      0.15,
+      2.45
+    ],
+    "classic_esp32_gpio_abs_max_powered_3v3_v": [
+      -0.3,
+      3.6
+    ],
+    "classic_esp32_gpio_abs_max_unpowered_0v_v": [
+      -0.3,
+      0.3
+    ],
+    "acs712_30a_supply_range_v": [
+      4.5,
+      5.5
+    ],
+    "acs712_30a_nominal_zero_v_at_vcc_5v": 2.5,
+    "acs712_30a_sensitivity_range_v_per_a": [
+      0.063,
+      0.066,
+      0.069
+    ],
+    "lm2596_ic_input_max_v": 40.0,
+    "ev_defaults": {
+      "mass_kg": 720,
+      "wheel_radius_m": 0.31,
+      "max_motor_power_w": 18000,
+      "max_speed_m_s": 22,
+      "aux_w": 180,
+      "Cd": 0.34,
+      "frontal_area_m2": 1.9,
+      "Crr": 0.012,
+      "motor_efficiency": 0.9,
+      "inverter_efficiency": 0.93,
+      "regen_fraction": 0.28,
+      "pack_v_nominal": 96,
+      "pack_ah": 150,
+      "R_internal_ohm": 0.035
+    },
+    "cost_example": {
+      "voltage_v": 12.0,
+      "light_current_a": 0.5,
+      "light_hours": 2.0,
+      "motor_current_a": 4.0,
+      "motor_hours": 0.25,
+      "tariff_inr_per_kwh": 8.0
+    }
+  },
+  "voltage_divider_per_load": {
+    "r_top_ohm": 68000,
+    "r_bottom_ohm": 10000,
+    "tolerance_fraction": 0.01,
+    "ratio_fraction": "5/39",
+    "ratio": 0.1282051282051282,
+    "ratio_min_corner": 0.1259862560447951,
+    "ratio_max_corner": 0.1304572461896151,
+    "thevenin_ohm": 8717.948717948719,
+    "rc_cutoff_100nf_hz": 182.56008178187994,
+    "independent_ratio_crosscheck_abs_error": 0.0,
+    "node_at_12v_nominal_v": 1.5384615384615383,
+    "node_at_12v_min_1pct_v": 1.5118350725375413,
+    "node_at_12v_max_1pct_v": 1.5654869542753813,
+    "node_at_18v_nominal_v": 2.3076923076923075,
+    "node_at_18v_min_1pct_v": 2.267752608806312,
+    "node_at_18v_worst_v": 2.348230431413072,
+    "node_at_18v_worst_0p1pct_v": 2.3117189705165377,
+    "input_for_0p15v_nominal_v": 1.1700000000000002,
+    "input_for_0p15v_worst_low_v": 1.1906060606060607,
+    "input_for_2p45v_nominal_v": 19.110000000000003,
+    "input_for_2p45v_worst_v": 18.78009900990099,
+    "input_for_3p30v_nominal_v": 25.740000000000002,
+    "input_for_3p60v_abs_max_worst_v": 27.595247524752473,
+    "divider_current_at_12v_a": 0.00015384615384615385,
+    "divider_current_at_18v_a": 0.00023076923076923076,
+    "total_resistor_power_at_12v_w": 0.0018461538461538461,
+    "total_resistor_power_at_18v_w": 0.004153846153846154,
+    "top_resistor_power_at_18v_w": 0.0036213017751479284,
+    "bottom_resistor_power_at_18v_w": 0.0005325443786982248,
+    "equivalent_source_error_for_60mv_adc_error_v": 0.468,
+    "open_bottom_resistor_fault_injection_current_at_18v_powered_3v3_a": 0.00021176470588235295,
+    "unpowered_mcu_injection_current_at_18v_via_68k_a": 0.0002602941176470588
+  },
+  "current_divider": {
+    "r_top_ohm": 27000,
+    "r_bottom_ohm": 20000,
+    "tolerance_fraction": 0.01,
+    "ratio_fraction": "20/47",
+    "ratio": 0.425531914893617,
+    "ratio_min_corner": 0.42065009560229444,
+    "ratio_max_corner": 0.43042829746430855,
+    "thevenin_ohm": 11489.36170212766,
+    "rc_cutoff_100nf_hz": 138.52374676516814,
+    "independent_ratio_crosscheck_abs_error": 0.0,
+    "zero_adc_node_v_at_5v_vcc": 1.0638297872340425,
+    "plus_30a_nominal_adc_node_v": 1.9063829787234043,
+    "plus_30a_worst_1pct_adc_node_v": 1.9283187726401025,
+    "plus_30a_worst_sens_69mv_and_1pct_v": 1.96705731941189,
+    "minus_30a_nominal_adc_node_v": 0.22127659574468087,
+    "minus_30a_worst_1pct_adc_node_v": 0.2187380497131931,
+    "adc_sensitivity_v_per_a": 0.028085106382978724,
+    "adc_sensitivity_mv_per_a": 28.085106382978722,
+    "adc_node_with_5p5v_sensor_rail_worst_v": 2.367355636053697,
+    "equivalent_current_for_60mv_adc_error_a": 2.1363636363636362,
+    "ratiometric_vcc_2pct_drift_zero_shift_raw_v": 0.05,
+    "ratiometric_vcc_2pct_drift_equivalent_current_error_a": 0.7575757575757576,
+    "unpowered_mcu_zero_current_node_v": 1.0638297872340425,
+    "unpowered_mcu_injection_current_at_2p5v_out_a": 8.148148148148149e-05,
+    "unpowered_mcu_injection_current_at_4p48v_out_a": 0.00015481481481481485
+  },
+  "light_branch_sensor_resolution_analysis": {
+    "example_light_current_a": 0.5,
+    "acs712_30a_66mv_per_a": {
+      "raw_signal_shift_at_0p5a_mv": 33.0,
+      "scaled_adc_shift_at_0p5a_mv": 14.042553191489361,
+      "equivalent_60mv_adc_error_a": 2.1363636363636362,
+      "relative_error_from_60mv_adc_at_0p5a_pct": 427.27272727272725,
+      "suitability": "UNSUITABLE for 0.5 A light branch (signal shift is 14.04 mV vs +/-60 mV ADC error budget = +/-427.3% error)."
+    },
+    "acs712_05b_185mv_per_a_candidate": {
+      "raw_signal_shift_at_0p5a_mv": 92.5,
+      "scaled_adc_shift_at_0p5a_mv": 39.361702127659576,
+      "scaled_sensitivity_mv_per_a": 78.72340425531915,
+      "plus_5a_scaled_adc_node_nominal_v": 1.4574468085106382,
+      "equivalent_60mv_adc_error_a": 0.7621621621621621,
+      "relative_error_from_60mv_adc_at_0p5a_pct": 152.43243243243242,
+      "suitability": "MARGINAL on ESP32 ADC1 (signal shift 39.36 mV at 0.5 A vs +/-60 mV ADC error = +/-152.4% error without multipoint calibration)."
+    },
+    "ina219_i2c_0p1ohm_shunt_candidate": {
+      "shunt_resistor_ohm": 0.1,
+      "shunt_voltage_at_0p5a_mv": 50.0,
+      "shunt_power_at_0p5a_mw": 25.0,
+      "lsb_step_12bit_40mv_pga_uv": 10.0,
+      "current_lsb_at_0p1ohm_ma": 0.1,
+      "suitability": "RECOMMENDED ARCHITECTURAL ALTERNATIVE if S_L is <3 A: digital I2C output at 3.3 V eliminates ESP32 ADC non-linearity, 5V ratiometric drift, and single-ended ground drop."
+    }
+  },
+  "legacy_120k_22k_voltage_divider": {
+    "r_top_ohm": 120000,
+    "r_bottom_ohm": 22000,
+    "ratio_fraction": "11/71",
+    "ratio": 0.15492957746478872,
+    "node_at_18v_v": 2.788732394366197,
+    "node_at_18v_1pct_worst_v": 2.8361934477379096,
+    "input_for_2p45v_nominal_v": 15.813636363636366,
+    "input_for_2p45v_worst_v": 15.5490099009901,
+    "status": "SUPERSEDED / INCORRECT AT 18V (Exceeds 2.45 V ESP32 ADC1 11 dB ceiling above 15.55 V worst-corner)."
+  },
+  "legacy_15k_20k_current_divider": {
+    "r_top_ohm": 15000,
+    "r_bottom_ohm": 20000,
+    "ratio_fraction": "4/7",
+    "ratio": 0.5714285714285714,
+    "positive_30a_adc_node_v": 2.56,
+    "positive_30a_1pct_worst_v": 2.581911554921541,
+    "positive_current_at_2p45v_a": 27.08333333333334,
+    "status": "SUPERSEDED / INCORRECT AT +30A (Exceeds 2.45 V ESP32 ADC1 11 dB ceiling above +27.08 A nominal)."
+  },
+  "single_ended_ground_drop_error_analysis": {
+    "motor_current_a": 10.0,
+    "return_wire_resistance_10mohm_drop_v": 0.1,
+    "return_wire_resistance_50mohm_drop_v": 0.5,
+    "return_wire_resistance_100mohm_drop_v": 1.0,
+    "power_error_at_10a_and_100mohm_w": 10.0,
+    "note": "If motor return current shares impedance with logic ground JGND, single-ended voltage dividers read V_load + I_return*R_return instead of true differential load voltage."
+  },
+  "buck_example_input_a": 0.39095238095238094,
+  "nominal_energy_12v_7p6ah_wh": 91.2,
+  "nominal_energy_96v_150ah_wh": 14400.0,
+  "ev_ocv_curve_outputs_v": {
+    "soc_0": 83.76211799953526,
+    "soc_50": 96.0,
+    "soc_100": 108.23788200046474
+  },
+  "ev_road_load_at_22m_s": {
+    "drag_coefficient_n_per_mps2": 0.395675,
+    "drag_n": 191.5067,
+    "rolling_n": 84.75840000000001,
+    "road_load_n": 276.2651,
+    "wheel_power_w": 6077.832200000001,
+    "combined_motor_inverter_efficiency": 0.8370000000000001,
+    "battery_power_steady_w": 7441.448267622462,
+    "steady_wh_per_km": 93.95768014674825,
+    "full_throttle_model_mechanical_power_w": 18000.0,
+    "full_throttle_model_force_at_22m_s_n": 818.1818181818181,
+    "full_throttle_model_battery_power_w": 21685.37634408602,
+    "full_throttle_model_wh_per_km": 273.80525686977296,
+    "nominal_pack_range_arithmetic_steady_km": 153.26048895108192,
+    "nominal_pack_range_arithmetic_full_throttle_km": 52.592123922766454,
+    "half_nominal_energy_range_arithmetic_steady_km": 76.63024447554096,
+    "half_nominal_energy_range_arithmetic_full_throttle_km": 26.296061961383227,
+    "regen_effective_fraction_before_caps": 0.23436000000000004,
+    "nominal_11kw_charger_current_at_96v_a": 114.58333333333333,
+    "dcdc_180w_input_at_88pct_w": 204.54545454545453
+  },
+  "petrol_factors": {
+    "EPA_CO2_kg_per_litre": 2.347697029306865,
+    "old_2p31_kg_per_l_at_7p2_l_100km_kg_per_100km": 16.632,
+    "EPA_factor_at_7p2_l_100km_kg_per_100km": 16.903418611009428,
+    "DOE_gasoline_E10_LHV_kwh_per_litre_range": [
+      8.679998852663791,
+      8.987825488393419
+    ]
+  },
+  "synthetic_cost_example": {
+    "light_wh": 12.0,
+    "motor_wh": 12.0,
+    "total_wh": 24.0,
+    "total_kwh": 0.024,
+    "cost_inr_at_assumed_tariff": 0.192
+  }
+}

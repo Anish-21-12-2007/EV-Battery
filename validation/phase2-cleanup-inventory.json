@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-03",
+  "scope": "Read-only phase 2 cleanup inventory. Does not authorize deletion or supersede prior approval denial.",
+  "candidates": [
+    {
+      "path": "blender-workflow/scripts/__pycache__",
+      "kind": "python cache",
+      "recommendation": "Do not delete: prior automatic approval denial applies. Exclude from release archive if packaging policy allows without deletion."
+    },
+    {
+      "path": "assets/vehicle/ev-ems-gt.blend1",
+      "bytes": 1915367,
+      "kind": "generated/backup candidate",
+      "recommendation": "Review after current model/build completes; keep unique evidence. No deletion performed."
+    }
+  ],
+  "denied_external_copy": {
+    "path": "C:\\Users\\uppal\\AppData\\Local\\Temp\\EV_EMS_precleanup_20261102",
+    "action": "Leave intact; do not retry deletion by another tool or method."
+  },
+  "artifact_recommendations": [
+    "Keep current source, GLB, Blender source, original authoritative/provenance evidence and final acceptance evidence.",
+    "After final phase 2 acceptance, old browser last-failure/intermediate visual screenshots can be reviewed for redundancy. Keep before/after wheel evidence for the confirmed reduced-motion bug.",
+    "Do not ship node_modules or __pycache__ in release archive. Keep package-lock and vendored browser runtime.",
+    "tests/phase2-motion-probe.mjs is an initial diagnostic; a completed phase2 acceptance suite may supersede it, while preserving its diagnosis JSON and representative evidence."
+  ]
+}

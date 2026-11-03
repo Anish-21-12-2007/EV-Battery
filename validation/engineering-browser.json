@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "browser": "155.0.8059.79",
+  "checks": [
+    "All 9 component selectors, trace action, exact wire search, empty result, clear, 60-wire and 42-component registers",
+    "Divider nominal and out-of-range results, empty-input validation, signed current, branch energy and zero tariff",
+    "Original SVG decoded, zoom to 150%, fit to 100%",
+    "Separate hardware proposal loads eight exact-part rows, all28 proposed connection records and readable SVG with qualification limits",
+    "All five panels at 390px and 320px without page overflow; architecture reflows to component grid and large tables scroll within their own surfaces",
+    "No JavaScript page errors in the isolated module"
+  ]
+}

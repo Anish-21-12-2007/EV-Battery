@@ -1,0 +1,541 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="2916" viewBox="0 0 2200 2916" role="img" aria-labelledby="title desc"><title id="title">Revision B proposed two-load circuit schematic</title><desc id="desc">Eight module symbols and named nets show all 28 connections. Separate USB logic and qualified bench load supply. Not battery wiring. Original 60-wire diagram is a separate design.</desc><style>text{font-family:Arial,Helvetica,sans-serif;fill:#142c3a}.heading{font-size:32px;font-weight:700}.subheading{font-size:22px}.warning{font-size:23px;fill:#a13518;font-weight:700}.module-title{font-size:23px;font-weight:700}.small{font-size:18px;fill:#405969}.text,.pin{font-size:21px}.net{font-size:18px;font-weight:700;fill:#145979}.module{fill:#fff;stroke:#203c4f;stroke-width:2}.external{fill:#f2f7fa;stroke:#546f80;stroke-width:2;stroke-dasharray:9 5}.wire,.rule{stroke:#203c4f;stroke-width:2;fill:none}.rule{stroke:#9db0ba}.junction{fill:#203c4f}.symbol{fill:#fff;stroke:#203c4f;stroke-width:2}.symbol-text{font-size:23px}.table-head{fill:#dce9f0}.table-row{fill:#fff}.table-alt{fill:#f1f5f7}.table-title{font-size:21px;font-weight:700}.table-text{font-size:20px}</style><rect width="2200" height="2916" fill="#fff"/><text x="60" y="60" class="heading" >REVISION B · TWO-LOAD 12 V PROTOTYPE</text>
+<text x="60" y="103" class="warning" >PROPOSED — NOT BATTERY WIRING — NO HARDWARE QUALIFICATION</text>
+<text x="60" y="143" class="subheading" >Conventional module symbols. Equal net names connect electrically; positions are logical, not physical.</text>
+<text x="60" y="181" class="subheading" >Each endpoint lists its B record(s). The index below preserves all 28 proposed connections and their gates.</text>
+<g data-component="ESP">
+<rect x="70" y="230" width="390" height="520" class="module"/>
+<text x="88" y="264" class="module-title" >ESP · ESP32-DevKitC-32E</text>
+<text x="88" y="296" class="small" >Micro-USB power only</text>
+<line x1="70" y1="314" x2="460" y2="314" class="rule"/>
+<g data-endpoint="ESP.Micro-USB" data-records="B001">
+<line x1="446" y1="350" x2="484" y2="350" class="wire"/>
+<circle cx="446" cy="350" r="3" class="junction"/>
+<text x="88" y="346" class="pin" >Micro-USB</text>
+<text x="88" y="370" class="small" >B001</text>
+<text x="489" y="355" class="net" >USB5</text>
+</g>
+<g data-endpoint="ESP.J2.1 3V3" data-records="B002 B003 B004">
+<line x1="446" y1="408" x2="484" y2="408" class="wire"/>
+<circle cx="446" cy="408" r="3" class="junction"/>
+<text x="88" y="404" class="pin" >J2.1 3V3</text>
+<text x="88" y="428" class="small" >B002 / B003 / B004</text>
+<text x="489" y="413" class="net" >3V3</text>
+</g>
+<g data-endpoint="ESP.J2.14 GND" data-records="B005 B008">
+<line x1="446" y1="466" x2="484" y2="466" class="wire"/>
+<circle cx="446" cy="466" r="3" class="junction"/>
+<text x="88" y="462" class="pin" >J2.14 GND</text>
+<text x="88" y="486" class="small" >B005 / B008</text>
+<text x="489" y="471" class="net" >G0</text>
+</g>
+<g data-endpoint="ESP.J3.6 GPIO21" data-records="B009 B010 B011">
+<line x1="446" y1="524" x2="484" y2="524" class="wire"/>
+<circle cx="446" cy="524" r="3" class="junction"/>
+<text x="88" y="520" class="pin" >J3.6 GPIO21</text>
+<text x="88" y="544" class="small" >B009 / B010 / B011</text>
+<text x="489" y="529" class="net" >SDA</text>
+</g>
+<g data-endpoint="ESP.J3.3 GPIO22" data-records="B012 B013 B014">
+<line x1="446" y1="582" x2="484" y2="582" class="wire"/>
+<circle cx="446" cy="582" r="3" class="junction"/>
+<text x="88" y="578" class="pin" >J3.3 GPIO22</text>
+<text x="88" y="602" class="small" >B012 / B013 / B014</text>
+<text x="489" y="587" class="net" >SCL</text>
+</g>
+<g data-endpoint="ESP.J2.10 GPIO26" data-records="B015">
+<line x1="446" y1="640" x2="484" y2="640" class="wire"/>
+<circle cx="446" cy="640" r="3" class="junction"/>
+<text x="88" y="636" class="pin" >J2.10 GPIO26</text>
+<text x="88" y="660" class="small" >B015</text>
+<text x="489" y="645" class="net" >M_CTL</text>
+</g>
+<g data-endpoint="ESP.J2.11 GPIO27" data-records="B016">
+<line x1="446" y1="698" x2="484" y2="698" class="wire"/>
+<circle cx="446" cy="698" r="3" class="junction"/>
+<text x="88" y="694" class="pin" >J2.11 GPIO27</text>
+<text x="88" y="718" class="small" >B016</text>
+<text x="489" y="703" class="net" >L_CTL</text>
+</g>
+</g>
+<g data-component="IM">
+<rect x="600" y="230" width="390" height="445" class="module"/>
+<text x="618" y="264" class="module-title" >IM · Adafruit 904</text>
+<text x="618" y="296" class="small" >INA219 · 0x40 · 0.1 Ω shunt</text>
+<line x1="600" y1="314" x2="990" y2="314" class="rule"/>
+<g data-endpoint="IM.VIN" data-records="B002">
+<line x1="976" y1="350" x2="1014" y2="350" class="wire"/>
+<circle cx="976" cy="350" r="3" class="junction"/>
+<text x="618" y="346" class="pin" >VIN</text>
+<text x="618" y="370" class="small" >B002</text>
+<text x="1019" y="355" class="net" >3V3</text>
+</g>
+<g data-endpoint="IM.GND" data-records="B006">
+<line x1="976" y1="408" x2="1014" y2="408" class="wire"/>
+<circle cx="976" cy="408" r="3" class="junction"/>
+<text x="618" y="404" class="pin" >GND</text>
+<text x="618" y="428" class="small" >B006</text>
+<text x="1019" y="413" class="net" >G0</text>
+</g>
+<g data-endpoint="IM.SDA" data-records="B009">
+<line x1="976" y1="466" x2="1014" y2="466" class="wire"/>
+<circle cx="976" cy="466" r="3" class="junction"/>
+<text x="618" y="462" class="pin" >SDA</text>
+<text x="618" y="486" class="small" >B009</text>
+<text x="1019" y="471" class="net" >SDA</text>
+</g>
+<g data-endpoint="IM.SCL" data-records="B012">
+<line x1="976" y1="524" x2="1014" y2="524" class="wire"/>
+<circle cx="976" cy="524" r="3" class="junction"/>
+<text x="618" y="520" class="pin" >SCL</text>
+<text x="618" y="544" class="small" >B012</text>
+<text x="1019" y="529" class="net" >SCL</text>
+</g>
+<g data-endpoint="IM.Vin+" data-records="B019">
+<line x1="976" y1="582" x2="1014" y2="582" class="wire"/>
+<circle cx="976" cy="582" r="3" class="junction"/>
+<text x="618" y="578" class="pin" >Vin+</text>
+<text x="618" y="602" class="small" >B019</text>
+<text x="1019" y="587" class="net" >12V_BENCH</text>
+</g>
+<g data-endpoint="IM.Vin-" data-records="B021">
+<line x1="976" y1="640" x2="1014" y2="640" class="wire"/>
+<circle cx="976" cy="640" r="3" class="junction"/>
+<text x="618" y="636" class="pin" >Vin-</text>
+<text x="618" y="660" class="small" >B021</text>
+<text x="1019" y="645" class="net" >M_SUP</text>
+</g>
+</g>
+<g data-component="QM">
+<rect x="1130" y="230" width="390" height="390" class="module"/>
+<text x="1148" y="264" class="module-title" >QM · Adafruit 5648</text>
+<text x="1148" y="296" class="small" >On/off MOSFET + flyback diode</text>
+<line x1="1130" y1="314" x2="1520" y2="314" class="rule"/>
+<g data-endpoint="QM.In" data-records="B015">
+<line x1="1506" y1="350" x2="1544" y2="350" class="wire"/>
+<circle cx="1506" cy="350" r="3" class="junction"/>
+<text x="1148" y="346" class="pin" >In</text>
+<text x="1148" y="370" class="small" >B015</text>
+<text x="1549" y="355" class="net" >M_CTL</text>
+</g>
+<g data-endpoint="QM.V+" data-records="B021">
+<line x1="1506" y1="408" x2="1544" y2="408" class="wire"/>
+<circle cx="1506" cy="408" r="3" class="junction"/>
+<text x="1148" y="404" class="pin" >V+</text>
+<text x="1148" y="428" class="small" >B021</text>
+<text x="1549" y="413" class="net" >M_SUP</text>
+</g>
+<g data-endpoint="QM.output +" data-records="B023">
+<line x1="1506" y1="466" x2="1544" y2="466" class="wire"/>
+<circle cx="1506" cy="466" r="3" class="junction"/>
+<text x="1148" y="462" class="pin" >output +</text>
+<text x="1148" y="486" class="small" >B023</text>
+<text x="1549" y="471" class="net" >M_SUP</text>
+</g>
+<g data-endpoint="QM.output −" data-records="B024">
+<line x1="1506" y1="524" x2="1544" y2="524" class="wire"/>
+<circle cx="1506" cy="524" r="3" class="junction"/>
+<text x="1148" y="520" class="pin" >output −</text>
+<text x="1148" y="544" class="small" >B024</text>
+<text x="1549" y="529" class="net" >M_SW</text>
+</g>
+<g data-endpoint="QM.GND" data-records="B027">
+<line x1="1506" y1="582" x2="1544" y2="582" class="wire"/>
+<circle cx="1506" cy="582" r="3" class="junction"/>
+<text x="1148" y="578" class="pin" >GND</text>
+<text x="1148" y="602" class="small" >B027</text>
+<text x="1549" y="587" class="net" >G0</text>
+</g>
+</g>
+<g data-component="M1">
+<rect x="1650" y="230" width="390" height="245" class="module"/>
+<text x="1668" y="264" class="module-title" >M1 · Pololu 3041</text>
+<text x="1668" y="296" class="small" >12 V motor · no deliberate stalls</text>
+<line x1="1650" y1="314" x2="2040" y2="314" class="rule"/>
+<g data-endpoint="M1.terminal A" data-records="B023">
+<line x1="2026" y1="350" x2="2064" y2="350" class="wire"/>
+<circle cx="2026" cy="350" r="3" class="junction"/>
+<text x="1668" y="346" class="pin" >terminal A</text>
+<text x="1668" y="370" class="small" >B023</text>
+<text x="2069" y="355" class="net" >M_SUP</text>
+</g>
+<g data-endpoint="M1.terminal B" data-records="B024">
+<line x1="2026" y1="408" x2="2064" y2="408" class="wire"/>
+<circle cx="2026" cy="408" r="3" class="junction"/>
+<text x="1668" y="404" class="pin" >terminal B</text>
+<text x="1668" y="428" class="small" >B024</text>
+<text x="2069" y="413" class="net" >M_SW</text>
+</g>
+<circle cx="1974" cy="417" r="25" class="symbol"/>
+<text x="1974" y="424" class="symbol-text" text-anchor="middle">M</text>
+</g>
+<g data-component="OLED">
+<rect x="70" y="810" width="390" height="320" class="module"/>
+<text x="88" y="844" class="module-title" >OLED · Adafruit 4440</text>
+<text x="88" y="876" class="small" >128×32 · 0x3C · STEMMA QT</text>
+<line x1="70" y1="894" x2="460" y2="894" class="rule"/>
+<g data-endpoint="OLED.QT V+" data-records="B004">
+<line x1="446" y1="930" x2="484" y2="930" class="wire"/>
+<circle cx="446" cy="930" r="3" class="junction"/>
+<text x="88" y="926" class="pin" >QT V+</text>
+<text x="88" y="950" class="small" >B004</text>
+<text x="489" y="935" class="net" >3V3</text>
+</g>
+<g data-endpoint="OLED.QT GND" data-records="B008">
+<line x1="446" y1="988" x2="484" y2="988" class="wire"/>
+<circle cx="446" cy="988" r="3" class="junction"/>
+<text x="88" y="984" class="pin" >QT GND</text>
+<text x="88" y="1008" class="small" >B008</text>
+<text x="489" y="993" class="net" >G0</text>
+</g>
+<g data-endpoint="OLED.QT SDA" data-records="B011">
+<line x1="446" y1="1046" x2="484" y2="1046" class="wire"/>
+<circle cx="446" cy="1046" r="3" class="junction"/>
+<text x="88" y="1042" class="pin" >QT SDA</text>
+<text x="88" y="1066" class="small" >B011</text>
+<text x="489" y="1051" class="net" >SDA</text>
+</g>
+<g data-endpoint="OLED.QT SCL" data-records="B014">
+<line x1="446" y1="1104" x2="484" y2="1104" class="wire"/>
+<circle cx="446" cy="1104" r="3" class="junction"/>
+<text x="88" y="1100" class="pin" >QT SCL</text>
+<text x="88" y="1124" class="small" >B014</text>
+<text x="489" y="1109" class="net" >SCL</text>
+</g>
+</g>
+<g data-component="IL">
+<rect x="600" y="730" width="390" height="445" class="module"/>
+<text x="618" y="764" class="module-title" >IL · Adafruit 904</text>
+<text x="618" y="796" class="small" >INA219 · 0x41 · A0 bridged</text>
+<line x1="600" y1="814" x2="990" y2="814" class="rule"/>
+<g data-endpoint="IL.VIN" data-records="B003">
+<line x1="976" y1="850" x2="1014" y2="850" class="wire"/>
+<circle cx="976" cy="850" r="3" class="junction"/>
+<text x="618" y="846" class="pin" >VIN</text>
+<text x="618" y="870" class="small" >B003</text>
+<text x="1019" y="855" class="net" >3V3</text>
+</g>
+<g data-endpoint="IL.GND" data-records="B007">
+<line x1="976" y1="908" x2="1014" y2="908" class="wire"/>
+<circle cx="976" cy="908" r="3" class="junction"/>
+<text x="618" y="904" class="pin" >GND</text>
+<text x="618" y="928" class="small" >B007</text>
+<text x="1019" y="913" class="net" >G0</text>
+</g>
+<g data-endpoint="IL.SDA" data-records="B010">
+<line x1="976" y1="966" x2="1014" y2="966" class="wire"/>
+<circle cx="976" cy="966" r="3" class="junction"/>
+<text x="618" y="962" class="pin" >SDA</text>
+<text x="618" y="986" class="small" >B010</text>
+<text x="1019" y="971" class="net" >SDA</text>
+</g>
+<g data-endpoint="IL.SCL" data-records="B013">
+<line x1="976" y1="1024" x2="1014" y2="1024" class="wire"/>
+<circle cx="976" cy="1024" r="3" class="junction"/>
+<text x="618" y="1020" class="pin" >SCL</text>
+<text x="618" y="1044" class="small" >B013</text>
+<text x="1019" y="1029" class="net" >SCL</text>
+</g>
+<g data-endpoint="IL.Vin+" data-records="B020">
+<line x1="976" y1="1082" x2="1014" y2="1082" class="wire"/>
+<circle cx="976" cy="1082" r="3" class="junction"/>
+<text x="618" y="1078" class="pin" >Vin+</text>
+<text x="618" y="1102" class="small" >B020</text>
+<text x="1019" y="1087" class="net" >12V_BENCH</text>
+</g>
+<g data-endpoint="IL.Vin-" data-records="B022">
+<line x1="976" y1="1140" x2="1014" y2="1140" class="wire"/>
+<circle cx="976" cy="1140" r="3" class="junction"/>
+<text x="618" y="1136" class="pin" >Vin-</text>
+<text x="618" y="1160" class="small" >B022</text>
+<text x="1019" y="1145" class="net" >L_SUP</text>
+</g>
+</g>
+<g data-component="QL">
+<rect x="1130" y="730" width="390" height="390" class="module"/>
+<text x="1148" y="764" class="module-title" >QL · Adafruit 5648</text>
+<text x="1148" y="796" class="small" >On/off MOSFET + flyback diode</text>
+<line x1="1130" y1="814" x2="1520" y2="814" class="rule"/>
+<g data-endpoint="QL.In" data-records="B016">
+<line x1="1506" y1="850" x2="1544" y2="850" class="wire"/>
+<circle cx="1506" cy="850" r="3" class="junction"/>
+<text x="1148" y="846" class="pin" >In</text>
+<text x="1148" y="870" class="small" >B016</text>
+<text x="1549" y="855" class="net" >L_CTL</text>
+</g>
+<g data-endpoint="QL.V+" data-records="B022">
+<line x1="1506" y1="908" x2="1544" y2="908" class="wire"/>
+<circle cx="1506" cy="908" r="3" class="junction"/>
+<text x="1148" y="904" class="pin" >V+</text>
+<text x="1148" y="928" class="small" >B022</text>
+<text x="1549" y="913" class="net" >L_SUP</text>
+</g>
+<g data-endpoint="QL.output +" data-records="B025">
+<line x1="1506" y1="966" x2="1544" y2="966" class="wire"/>
+<circle cx="1506" cy="966" r="3" class="junction"/>
+<text x="1148" y="962" class="pin" >output +</text>
+<text x="1148" y="986" class="small" >B025</text>
+<text x="1549" y="971" class="net" >L_SUP</text>
+</g>
+<g data-endpoint="QL.output −" data-records="B026">
+<line x1="1506" y1="1024" x2="1544" y2="1024" class="wire"/>
+<circle cx="1506" cy="1024" r="3" class="junction"/>
+<text x="1148" y="1020" class="pin" >output −</text>
+<text x="1148" y="1044" class="small" >B026</text>
+<text x="1549" y="1029" class="net" >L_SW</text>
+</g>
+<g data-endpoint="QL.GND" data-records="B028">
+<line x1="1506" y1="1082" x2="1544" y2="1082" class="wire"/>
+<circle cx="1506" cy="1082" r="3" class="junction"/>
+<text x="1148" y="1078" class="pin" >GND</text>
+<text x="1148" y="1102" class="small" >B028</text>
+<text x="1549" y="1087" class="net" >G0</text>
+</g>
+</g>
+<g data-component="L1">
+<rect x="1650" y="730" width="390" height="245" class="module"/>
+<text x="1668" y="764" class="module-title" >L1 · Adafruit 5864</text>
+<text x="1668" y="796" class="small" >175 mm / ten marked sections</text>
+<line x1="1650" y1="814" x2="2040" y2="814" class="rule"/>
+<g data-endpoint="L1.+" data-records="B025">
+<line x1="2026" y1="850" x2="2064" y2="850" class="wire"/>
+<circle cx="2026" cy="850" r="3" class="junction"/>
+<text x="1668" y="846" class="pin" >+</text>
+<text x="1668" y="870" class="small" >B025</text>
+<text x="2069" y="855" class="net" >L_SUP</text>
+</g>
+<g data-endpoint="L1.−" data-records="B026">
+<line x1="2026" y1="908" x2="2064" y2="908" class="wire"/>
+<circle cx="2026" cy="908" r="3" class="junction"/>
+<text x="1668" y="904" class="pin" >−</text>
+<text x="1668" y="928" class="small" >B026</text>
+<text x="2069" y="913" class="net" >L_SW</text>
+</g>
+<circle cx="1974" cy="917" r="25" class="symbol"/>
+<line x1="1957" y1="900" x2="1991" y2="934" class="wire"/>
+<line x1="1957" y1="934" x2="1991" y2="900" class="wire"/>
+</g>
+<rect x="70" y="1230" width="1970" height="290" class="external"/>
+<text x="92" y="1266" class="module-title" >EXTERNAL CONNECTIONS · SOURCE AND WIRING GATES REMAIN OPEN</text>
+<text x="95" y="1310" class="pin" >USB.Micro-B → USB5</text>
+<text x="95" y="1334" class="small" >USB only → controller; no header input power</text>
+<text x="595" y="1310" class="small" >B001</text>
+<text x="95" y="1382" class="pin" >BENCH.POS → 12V_BENCH</text>
+<text x="95" y="1406" class="small" >Qualified isolated source +; setpoint ≤12.0 V</text>
+<text x="595" y="1382" class="small" >B018</text>
+<text x="95" y="1454" class="pin" >BENCH.NEG → G0</text>
+<text x="95" y="1478" class="small" >Qualified source return</text>
+<text x="595" y="1454" class="small" >B017</text>
+<text x="1080" y="1310" class="pin" >JPOS.BUS → 12V_BENCH</text>
+<text x="1080" y="1334" class="small" >Insulated positive distribution; ratings pending</text>
+<text x="1580" y="1310" class="small" >B018 / B019 / B020</text>
+<text x="1080" y="1382" class="pin" >JSTAR.COMMON → G0</text>
+<text x="1080" y="1406" class="small" >One physical junction; review USB/scope/earth paths</text>
+<text x="1580" y="1382" class="small" >B005 / B006 / B007 / B017 / B027 / B028</text>
+<text x="70" y="1568" class="module-title" >NET LEGEND</text>
+<text x="70" y="1604" class="text" >3V3 / SDA / SCL: logic only. G0: shared reference. 12V_BENCH: load input. M_SUP / L_SUP: after shunts.</text>
+<text x="70" y="1638" class="text" >M_SW / L_SW: switched load returns, not GND. V+ and output + join inside each driver. Shunt terminals do not short.</text>
+<text x="70" y="1672" class="text" >Load connections stay gated until source, wiring, current limits, flyback and measurement setup are reviewed.</text>
+<text x="70" y="1730" class="module-title" >PROPOSED CONNECTION INDEX</text>
+<rect x="70" y="1754" width="1970" height="36" class="table-head"/>
+<text x="78" y="1779" class="table-title" >ID</text>
+<text x="168" y="1779" class="table-title" >From</text>
+<text x="728" y="1779" class="table-title" >To</text>
+<text x="1288" y="1779" class="table-title" >Disposition</text>
+<g data-wire-id="B001">
+<rect x="70" y="1790" width="1970" height="36" class="table-row"/>
+<text x="78" y="1815" class="table-text" >B001</text>
+<text x="168" y="1815" class="table-text" >USB.Micro-B</text>
+<text x="728" y="1815" class="table-text" >ESP.Micro-USB</text>
+<text x="1288" y="1815" class="table-text" >PROPOSED LOGIC</text>
+</g>
+<g data-wire-id="B002">
+<rect x="70" y="1826" width="1970" height="36" class="table-alt"/>
+<text x="78" y="1851" class="table-text" >B002</text>
+<text x="168" y="1851" class="table-text" >ESP.J2.1 3V3</text>
+<text x="728" y="1851" class="table-text" >IM.VIN</text>
+<text x="1288" y="1851" class="table-text" >PROPOSED LOGIC</text>
+</g>
+<g data-wire-id="B003">
+<rect x="70" y="1862" width="1970" height="36" class="table-row"/>
+<text x="78" y="1887" class="table-text" >B003</text>
+<text x="168" y="1887" class="table-text" >ESP.J2.1 3V3</text>
+<text x="728" y="1887" class="table-text" >IL.VIN</text>
+<text x="1288" y="1887" class="table-text" >PROPOSED LOGIC</text>
+</g>
+<g data-wire-id="B004">
+<rect x="70" y="1898" width="1970" height="36" class="table-alt"/>
+<text x="78" y="1923" class="table-text" >B004</text>
+<text x="168" y="1923" class="table-text" >ESP.J2.1 3V3</text>
+<text x="728" y="1923" class="table-text" >OLED.QT V+</text>
+<text x="1288" y="1923" class="table-text" >PROPOSED LOGIC</text>
+</g>
+<g data-wire-id="B005">
+<rect x="70" y="1934" width="1970" height="36" class="table-row"/>
+<text x="78" y="1959" class="table-text" >B005</text>
+<text x="168" y="1959" class="table-text" >ESP.J2.14 GND</text>
+<text x="728" y="1959" class="table-text" >JSTAR.COMMON</text>
+<text x="1288" y="1959" class="table-text" >PROPOSED REFERENCE</text>
+</g>
+<g data-wire-id="B006">
+<rect x="70" y="1970" width="1970" height="36" class="table-alt"/>
+<text x="78" y="1995" class="table-text" >B006</text>
+<text x="168" y="1995" class="table-text" >IM.GND</text>
+<text x="728" y="1995" class="table-text" >JSTAR.COMMON</text>
+<text x="1288" y="1995" class="table-text" >PROPOSED REFERENCE</text>
+</g>
+<g data-wire-id="B007">
+<rect x="70" y="2006" width="1970" height="36" class="table-row"/>
+<text x="78" y="2031" class="table-text" >B007</text>
+<text x="168" y="2031" class="table-text" >IL.GND</text>
+<text x="728" y="2031" class="table-text" >JSTAR.COMMON</text>
+<text x="1288" y="2031" class="table-text" >PROPOSED REFERENCE</text>
+</g>
+<g data-wire-id="B008">
+<rect x="70" y="2042" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2067" class="table-text" >B008</text>
+<text x="168" y="2067" class="table-text" >OLED.QT GND</text>
+<text x="728" y="2067" class="table-text" >ESP.J2.14 GND</text>
+<text x="1288" y="2067" class="table-text" >PROPOSED LOGIC</text>
+</g>
+<g data-wire-id="B009">
+<rect x="70" y="2078" width="1970" height="36" class="table-row"/>
+<text x="78" y="2103" class="table-text" >B009</text>
+<text x="168" y="2103" class="table-text" >ESP.J3.6 GPIO21</text>
+<text x="728" y="2103" class="table-text" >IM.SDA</text>
+<text x="1288" y="2103" class="table-text" >PROPOSED I2C</text>
+</g>
+<g data-wire-id="B010">
+<rect x="70" y="2114" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2139" class="table-text" >B010</text>
+<text x="168" y="2139" class="table-text" >ESP.J3.6 GPIO21</text>
+<text x="728" y="2139" class="table-text" >IL.SDA</text>
+<text x="1288" y="2139" class="table-text" >PROPOSED I2C</text>
+</g>
+<g data-wire-id="B011">
+<rect x="70" y="2150" width="1970" height="36" class="table-row"/>
+<text x="78" y="2175" class="table-text" >B011</text>
+<text x="168" y="2175" class="table-text" >ESP.J3.6 GPIO21</text>
+<text x="728" y="2175" class="table-text" >OLED.QT SDA</text>
+<text x="1288" y="2175" class="table-text" >PROPOSED I2C</text>
+</g>
+<g data-wire-id="B012">
+<rect x="70" y="2186" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2211" class="table-text" >B012</text>
+<text x="168" y="2211" class="table-text" >ESP.J3.3 GPIO22</text>
+<text x="728" y="2211" class="table-text" >IM.SCL</text>
+<text x="1288" y="2211" class="table-text" >PROPOSED I2C</text>
+</g>
+<g data-wire-id="B013">
+<rect x="70" y="2222" width="1970" height="36" class="table-row"/>
+<text x="78" y="2247" class="table-text" >B013</text>
+<text x="168" y="2247" class="table-text" >ESP.J3.3 GPIO22</text>
+<text x="728" y="2247" class="table-text" >IL.SCL</text>
+<text x="1288" y="2247" class="table-text" >PROPOSED I2C</text>
+</g>
+<g data-wire-id="B014">
+<rect x="70" y="2258" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2283" class="table-text" >B014</text>
+<text x="168" y="2283" class="table-text" >ESP.J3.3 GPIO22</text>
+<text x="728" y="2283" class="table-text" >OLED.QT SCL</text>
+<text x="1288" y="2283" class="table-text" >PROPOSED I2C</text>
+</g>
+<g data-wire-id="B015">
+<rect x="70" y="2294" width="1970" height="36" class="table-row"/>
+<text x="78" y="2319" class="table-text" >B015</text>
+<text x="168" y="2319" class="table-text" >ESP.J2.10 GPIO26</text>
+<text x="728" y="2319" class="table-text" >QM.In</text>
+<text x="1288" y="2319" class="table-text" >PROPOSED CONTROL</text>
+</g>
+<g data-wire-id="B016">
+<rect x="70" y="2330" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2355" class="table-text" >B016</text>
+<text x="168" y="2355" class="table-text" >ESP.J2.11 GPIO27</text>
+<text x="728" y="2355" class="table-text" >QL.In</text>
+<text x="1288" y="2355" class="table-text" >PROPOSED CONTROL</text>
+</g>
+<g data-wire-id="B017">
+<rect x="70" y="2366" width="1970" height="36" class="table-row"/>
+<text x="78" y="2391" class="table-text" >B017</text>
+<text x="168" y="2391" class="table-text" >BENCH.NEG</text>
+<text x="728" y="2391" class="table-text" >JSTAR.COMMON</text>
+<text x="1288" y="2391" class="table-text" >GATED LOAD POWER</text>
+</g>
+<g data-wire-id="B018">
+<rect x="70" y="2402" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2427" class="table-text" >B018</text>
+<text x="168" y="2427" class="table-text" >BENCH.POS</text>
+<text x="728" y="2427" class="table-text" >JPOS.BUS</text>
+<text x="1288" y="2427" class="table-text" >GATED LOAD POWER</text>
+</g>
+<g data-wire-id="B019">
+<rect x="70" y="2438" width="1970" height="36" class="table-row"/>
+<text x="78" y="2463" class="table-text" >B019</text>
+<text x="168" y="2463" class="table-text" >JPOS.BUS</text>
+<text x="728" y="2463" class="table-text" >IM.Vin+</text>
+<text x="1288" y="2463" class="table-text" >GATED LOAD POWER</text>
+</g>
+<g data-wire-id="B020">
+<rect x="70" y="2474" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2499" class="table-text" >B020</text>
+<text x="168" y="2499" class="table-text" >JPOS.BUS</text>
+<text x="728" y="2499" class="table-text" >IL.Vin+</text>
+<text x="1288" y="2499" class="table-text" >GATED LOAD POWER</text>
+</g>
+<g data-wire-id="B021">
+<rect x="70" y="2510" width="1970" height="36" class="table-row"/>
+<text x="78" y="2535" class="table-text" >B021</text>
+<text x="168" y="2535" class="table-text" >IM.Vin-</text>
+<text x="728" y="2535" class="table-text" >QM.V+</text>
+<text x="1288" y="2535" class="table-text" >GATED MOTOR</text>
+</g>
+<g data-wire-id="B022">
+<rect x="70" y="2546" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2571" class="table-text" >B022</text>
+<text x="168" y="2571" class="table-text" >IL.Vin-</text>
+<text x="728" y="2571" class="table-text" >QL.V+</text>
+<text x="1288" y="2571" class="table-text" >GATED LAMP</text>
+</g>
+<g data-wire-id="B023">
+<rect x="70" y="2582" width="1970" height="36" class="table-row"/>
+<text x="78" y="2607" class="table-text" >B023</text>
+<text x="168" y="2607" class="table-text" >QM.output +</text>
+<text x="728" y="2607" class="table-text" >M1.terminal A</text>
+<text x="1288" y="2607" class="table-text" >GATED MOTOR</text>
+</g>
+<g data-wire-id="B024">
+<rect x="70" y="2618" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2643" class="table-text" >B024</text>
+<text x="168" y="2643" class="table-text" >QM.output −</text>
+<text x="728" y="2643" class="table-text" >M1.terminal B</text>
+<text x="1288" y="2643" class="table-text" >GATED MOTOR</text>
+</g>
+<g data-wire-id="B025">
+<rect x="70" y="2654" width="1970" height="36" class="table-row"/>
+<text x="78" y="2679" class="table-text" >B025</text>
+<text x="168" y="2679" class="table-text" >QL.output +</text>
+<text x="728" y="2679" class="table-text" >L1.+</text>
+<text x="1288" y="2679" class="table-text" >GATED LAMP</text>
+</g>
+<g data-wire-id="B026">
+<rect x="70" y="2690" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2715" class="table-text" >B026</text>
+<text x="168" y="2715" class="table-text" >QL.output −</text>
+<text x="728" y="2715" class="table-text" >L1.−</text>
+<text x="1288" y="2715" class="table-text" >GATED LAMP</text>
+</g>
+<g data-wire-id="B027">
+<rect x="70" y="2726" width="1970" height="36" class="table-row"/>
+<text x="78" y="2751" class="table-text" >B027</text>
+<text x="168" y="2751" class="table-text" >QM.GND</text>
+<text x="728" y="2751" class="table-text" >JSTAR.COMMON</text>
+<text x="1288" y="2751" class="table-text" >GATED LOAD RETURN</text>
+</g>
+<g data-wire-id="B028">
+<rect x="70" y="2762" width="1970" height="36" class="table-alt"/>
+<text x="78" y="2787" class="table-text" >B028</text>
+<text x="168" y="2787" class="table-text" >QL.GND</text>
+<text x="728" y="2787" class="table-text" >JSTAR.COMMON</text>
+<text x="1288" y="2787" class="table-text" >GATED LOAD RETURN</text>
+</g>
+<text x="70" y="2846" class="text" >Read docs/hardware-build-proposal.md for exact parts, measurement boundaries and commissioning gates.</text>
+<text x="70" y="2880" class="warning" >The inherited 60-wire circuit is a separate design. Do not combine wiring instructions.</text></svg>

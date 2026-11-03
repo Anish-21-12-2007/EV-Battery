@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f7f9fc"/>
+<text x="60" y="70" font-family="Arial" font-size="34" font-weight="700" fill="#172a40">Light + Motor monitor — proposed measurement architecture</text>
+<text x="60" y="112" font-family="Arial" font-size="19" fill="#526174">Two branch currents and two matching branch-input voltage channels; all identities and ratings remain open.</text>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#526174"/></marker></defs>
+<g font-family="Arial" font-size="20" fill="#16283b" stroke-width="2">
+<rect x="70" y="300" width="190" height="120" rx="14" fill="#fff" stroke="#607086"/><text x="165" y="345" text-anchor="middle">12 V battery</text><text x="165" y="380" text-anchor="middle" font-size="16">model / limits TBD</text>
+<rect x="330" y="300" width="210" height="120" rx="14" fill="#fff7ed" stroke="#c38a3b"/><text x="435" y="345" text-anchor="middle">F1 + SW1</text><text x="435" y="380" text-anchor="middle" font-size="16">fuse / DC rating TBD</text>
+<rect x="610" y="300" width="210" height="120" rx="14" fill="#fff" stroke="#607086"/><text x="715" y="345" text-anchor="middle">Positive bus</text><text x="715" y="380" text-anchor="middle" font-size="16">branch fuses required</text>
+<path d="M260 360 H330 M540 360 H610" stroke="#c8443b" stroke-width="5" fill="none" marker-end="url(#arr)"/>
+<rect x="900" y="180" width="260" height="130" rx="14" fill="#f6f0ff" stroke="#8564b0"/><text x="1030" y="220" text-anchor="middle">FL → S_L → Light</text><text x="1030" y="255" text-anchor="middle" font-size="16">separate current channel</text><text x="1030" y="282" text-anchor="middle" font-size="16">voltage tap at same input</text>
+<rect x="900" y="370" width="260" height="130" rx="14" fill="#f6f0ff" stroke="#8564b0"/><text x="1030" y="410" text-anchor="middle">FM → S_M → MDRV</text><text x="1030" y="445" text-anchor="middle" font-size="16">separate current channel</text><text x="1030" y="472" text-anchor="middle" font-size="16">voltage tap at driver input</text>
+<rect x="900" y="560" width="260" height="130" rx="14" fill="#eff7ff" stroke="#607086"/><text x="1030" y="600" text-anchor="middle">F2 → DC/DC → ESP32</text><text x="1030" y="635" text-anchor="middle" font-size="16">electronics not in branch sum</text><text x="1030" y="662" text-anchor="middle" font-size="16">unless separately measured</text>
+<path d="M820 360 H850 V245 H900 M850 360 V435 H900 M850 360 V625 H900" stroke="#c8443b" stroke-width="4" fill="none" stroke-dasharray="10 8" marker-end="url(#arr)"/>
+<rect x="1240" y="215" width="300" height="120" rx="14" fill="#fff" stroke="#8b9aab"/><text x="1390" y="255" text-anchor="middle">V_L×I_L → E_L</text><text x="1390" y="292" text-anchor="middle" font-size="16">branch energy</text>
+<rect x="1240" y="405" width="300" height="120" rx="14" fill="#fff" stroke="#8b9aab"/><text x="1390" y="445" text-anchor="middle">V_M×I_M → E_M</text><text x="1390" y="482" text-anchor="middle" font-size="16">branch energy</text>
+<path d="M1160 245 H1240 M1160 435 H1240" stroke="#8564b0" stroke-width="3" fill="none" stroke-dasharray="8 7" marker-end="url(#arr)"/>
+<rect x="1240" y="560" width="300" height="80" rx="14" fill="#f4f7fb" stroke="#8b9aab"/><text x="1390" y="592" text-anchor="middle">E_total = E_L + E_M</text><text x="1390" y="618" text-anchor="middle" font-size="16">sum branch energy once</text>
+<path d="M1390 525 V560 M1540 275 H1570 V600 H1540" stroke="#526174" stroke-width="3" fill="none" stroke-dasharray="8 7" marker-end="url(#arr)"/>
+<rect x="1240" y="680" width="300" height="100" rx="14" fill="#fff7ed" stroke="#c38a3b"/><text x="1390" y="720" text-anchor="middle">E_grid × tariff</text><text x="1390" y="750" text-anchor="middle" font-size="16">tariff / charge losses TBD</text>
+<path d="M1390 640 V680" stroke="#526174" stroke-width="3" fill="none" stroke-dasharray="8 7" marker-end="url(#arr)"/>
+<rect x="70" y="560" width="750" height="170" rx="14" fill="#fff" stroke="#8b9aab"/>
+<text x="105" y="605" font-size="21" font-weight="700">Limits carried with the drawing</text>
+<text x="105" y="645" font-size="17">• Not as-built; all sensors, loads, wiring, protection and boards need identification.</text>
+<text x="105" y="680" font-size="17">• 12 V concept only; it is separate from the illustrative 96 V EV simulator.</text>
+<text x="70" y="810" font-size="18" fill="#526174">A main battery sensor can cross-check totals, but must not be added to branch energies.</text>
+<text x="70" y="845" font-size="18" fill="#526174">Solid arithmetic is conditional on the stated measurement boundary, calibration and sampling.</text>
+</g></svg>

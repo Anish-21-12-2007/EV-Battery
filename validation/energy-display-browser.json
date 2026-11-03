@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-03",
+  "baseURL": "http://127.0.0.2:39301",
+  "checks": [
+    {
+      "name": "Actual infotainment texture shows all five device ledgers and exact totals",
+      "passed": true,
+      "detail": {
+        "energy": {
+          "totalKwh": 0.00017687715394419028,
+          "totalBatteryPercent": 0.001364792854507641,
+          "totalCostInr": 0.0014150172315535222,
+          "tariffInrPerKwh": 8,
+          "costCalculationStatus": "available",
+          "nominalCapacityKwh": 14.4,
+          "usableCapacityKwh": 12.96,
+          "usableCapacityVerified": false,
+          "usableCapacityBasis": "Scenario assumption: nominal energy × (1 − reserve fraction); usable capacity is not verified."
+        },
+        "devices": [
+          {
+            "id": "tractionMotor",
+            "name": "Traction motor",
+            "enabled": true,
+            "operating": false,
+            "status": "PAUSED",
+            "demandW": 0,
+            "batteryInputW": 0,
+            "energyWh": 0.03846174990378627,
+            "energyKwh": 0.000038461749903786274,
+            "batteryPercentConsumed": 0.0002967727616032891,
+            "costInr": 0.0003076939992302902
+          },
+          {
+            "id": "headlights",
+            "name": "Headlights",
+            "enabled": true,
+            "operating": false,
+            "status": "PAUSED",
+            "demandW": 0,
+            "batteryInputW": 0,
+            "energyWh": 0.012626262626262623,
+            "energyKwh": 0.000012626262626262623,
+            "batteryPercentConsumed": 0.00009742486594338443,
+            "costInr": 0.00010101010101010098
+          },
+          {
+            "id": "airConditioning",
+            "name": "Air conditioning",
+            "enabled": true,
+            "operating": false,
+            "status": "PAUSED",
+            "demandW": 0,
+            "batteryInputW": 0,
+            "energyWh": 0.11837121212121209,
+            "energyKwh": 0.00011837121212121208,
+            "batteryPercentConsumed": 0.0009133581182192291,
+            "costInr": 0.0009469696969696967
+          },
+          {
+            "id": "cabinLights",
+            "name": "Cabin lights",
+            "enabled": true,
+            "operating": false,
+            "status": "PAUSED",
+            "demandW": 0,
+            "batteryInputW": 0,
+            "energyWh": 0.0018939393939393949,
+            "energyKwh": 0.000001893939393939395,
+            "batteryPercentConsumed": 0.000014613729891507677,
+            "costInr": 0.00001515151515151516
+          },
+          {
+            "id": "infotainment",
+            "name": "Infotainment",
+            "enabled": true,
+            "operating": false,
+            "status": "PAUSED",
+            "demandW": 0,
+            "batteryInputW": 0,
+            "energyWh": 0.005523989898989898,
+            "energyKwh": 0.000005523989898989898,
+            "batteryPercentConsumed": 0.000042623378850230696,
+            "costInr": 0.000044191919191919185
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tariff changes immediately recalculate costs while retaining electricity",
+      "passed": true,
+      "detail": {
+        "before": 0.0014150172315535222,
+        "after": 0.0028300344631070444
+      }
+    },
+    {
+      "name": "OFF stops every device and retains all energy on the in-car screen",
+      "passed": true,
+      "detail": {
+        "retainedEnergyKwh": 0.00017687715394419028
+      }
+    },
+    {
+      "name": "Reset trip energy requires confirmation, supports cancel, and clears the screen upon confirmation while retaining battery charge and driving state",
+      "passed": true
+    },
+    {
+      "name": "Energy camera and controls remain accessible at 390 and 320 pixels",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "hardwareTested": false
+}

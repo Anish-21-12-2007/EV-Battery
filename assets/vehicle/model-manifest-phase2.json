@@ -1,0 +1,317 @@
+{
+  "name": "Aeris GT / EV-EMS phase 2",
+  "base_source": {
+    "sha256": "6b5e393460ce314eca0c64c898cfc0aed095fba2eda74e5efc5a9d57d14a6529",
+    "bytes": 1972517,
+    "objects": 1399,
+    "frame_at_load": 1
+  },
+  "source_blend": "assets/vehicle/ev-ems-gt-phase2.blend",
+  "web_asset": "assets/vehicle/ev-ems-gt-phase2.glb",
+  "source_parts": 1446,
+  "component_groups": [
+    "Battery",
+    "Body",
+    "Bonnet",
+    "BrakeCaliper_FL",
+    "BrakeCaliper_FR",
+    "BrakeCaliper_RL",
+    "BrakeCaliper_RR",
+    "BrakeDisc_FL",
+    "BrakeDisc_FR",
+    "BrakeDisc_RL",
+    "BrakeDisc_RR",
+    "CabinLights",
+    "CenterConsole",
+    "Charger",
+    "Chassis",
+    "Cooling",
+    "DCDC",
+    "Dashboard",
+    "Differential",
+    "Door_L",
+    "Door_R",
+    "DriveShaft_L",
+    "DriveShaft_R",
+    "GearIntermediate",
+    "Glass",
+    "Harness",
+    "Headlights",
+    "Infotainment",
+    "InstrumentCluster",
+    "Interior",
+    "Inverter",
+    "Motor",
+    "MotorRotor",
+    "MotorStator",
+    "Seat_FL",
+    "Seat_FR",
+    "Seat_RL",
+    "Seat_RR",
+    "SteeringWheel",
+    "Suspension_FL",
+    "Suspension_FR",
+    "Suspension_RL",
+    "Suspension_RR",
+    "Taillights",
+    "Wheel_FL",
+    "Wheel_FR",
+    "Wheel_RL",
+    "Wheel_RR"
+  ],
+  "group_count": 48,
+  "draw_meshes": 251,
+  "triangles": 321578,
+  "glb_bytes": 8457760,
+  "materials": 42,
+  "interior": {
+    "seats": {
+      "Seat_FL": [
+        0.015,
+        0.34,
+        0.64
+      ],
+      "Seat_FR": [
+        0.015,
+        -0.34,
+        0.64
+      ],
+      "Seat_RL": [
+        0.65,
+        0.34,
+        0.61
+      ],
+      "Seat_RR": [
+        0.65,
+        -0.34,
+        0.61
+      ]
+    },
+    "screens": {
+      "Screen_Cluster": {
+        "group": "InstrumentCluster",
+        "material": "Display_Cluster",
+        "width_m": 0.32,
+        "height_m": 0.1,
+        "aspect": 3.2,
+        "recommended_canvas": [
+          1280,
+          400
+        ],
+        "center_blender": [
+          -0.447,
+          0.34,
+          0.963
+        ],
+        "center_gltf": [
+          -0.447,
+          0.963,
+          -0.34
+        ],
+        "normal_gltf": [
+          1,
+          0,
+          0
+        ]
+      },
+      "Screen_Infotainment": {
+        "group": "Infotainment",
+        "material": "Display_Infotainment",
+        "width_m": 0.28,
+        "height_m": 0.175,
+        "aspect": 1.6,
+        "recommended_canvas": [
+          1024,
+          640
+        ],
+        "center_blender": [
+          -0.413,
+          -0.135,
+          0.934
+        ],
+        "center_gltf": [
+          -0.413,
+          0.934,
+          0.135
+        ],
+        "normal_gltf": [
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    "seating": "Sculpted low seating 2+2 coupe; compact rear seats are deliberately lower and shorter to clear the fastback glass."
+  },
+  "pivots_gltf": {
+    "Bonnet": [
+      -0.86,
+      0.8,
+      0
+    ],
+    "Door_L": [
+      -0.82,
+      0.79,
+      -0.81
+    ],
+    "Door_R": [
+      -0.82,
+      0.79,
+      0.81
+    ],
+    "Dashboard": [
+      -0.59,
+      0.82,
+      0
+    ],
+    "SteeringWheel": [
+      -0.284,
+      0.92,
+      -0.34
+    ],
+    "CenterConsole": [
+      0,
+      0.7,
+      0
+    ],
+    "InstrumentCluster": [
+      -0.447,
+      0.963,
+      -0.34
+    ],
+    "Infotainment": [
+      -0.413,
+      0.934,
+      0.135
+    ],
+    "Seat_FL": [
+      0.015,
+      0.64,
+      -0.34
+    ],
+    "Seat_FR": [
+      0.015,
+      0.64,
+      0.34
+    ],
+    "Seat_RL": [
+      0.65,
+      0.61,
+      -0.34
+    ],
+    "Seat_RR": [
+      0.65,
+      0.61,
+      0.34
+    ],
+    "MotorRotor": [
+      1.48,
+      0.49,
+      -0.05
+    ],
+    "GearIntermediate": [
+      1.32,
+      0.49,
+      -0.05
+    ],
+    "Differential": [
+      1.32,
+      0.31,
+      -0.05
+    ],
+    "DriveShaft_L": [
+      1.32,
+      0.31,
+      0
+    ],
+    "DriveShaft_R": [
+      1.32,
+      0.31,
+      0
+    ],
+    "Wheel_FL": [
+      -1.32,
+      0.31,
+      -0.78
+    ],
+    "BrakeDisc_FL": [
+      -1.32,
+      0.31,
+      -0.78
+    ],
+    "BrakeCaliper_FL": [
+      -1.32,
+      0.31,
+      -0.78
+    ],
+    "Suspension_FL": [
+      -1.32,
+      0.4,
+      -0.56
+    ],
+    "Wheel_FR": [
+      -1.32,
+      0.31,
+      0.78
+    ],
+    "BrakeDisc_FR": [
+      -1.32,
+      0.31,
+      0.78
+    ],
+    "BrakeCaliper_FR": [
+      -1.32,
+      0.31,
+      0.78
+    ],
+    "Suspension_FR": [
+      -1.32,
+      0.4,
+      0.56
+    ],
+    "Wheel_RL": [
+      1.32,
+      0.31,
+      -0.78
+    ],
+    "BrakeDisc_RL": [
+      1.32,
+      0.31,
+      -0.78
+    ],
+    "BrakeCaliper_RL": [
+      1.32,
+      0.31,
+      -0.78
+    ],
+    "Suspension_RL": [
+      1.32,
+      0.4,
+      -0.56
+    ],
+    "Wheel_RR": [
+      1.32,
+      0.31,
+      0.78
+    ],
+    "BrakeDisc_RR": [
+      1.32,
+      0.31,
+      0.78
+    ],
+    "BrakeCaliper_RR": [
+      1.32,
+      0.31,
+      0.78
+    ],
+    "Suspension_RR": [
+      1.32,
+      0.4,
+      0.56
+    ]
+  },
+  "hierarchy": "Every assembly component is a root sibling; meshes are immediate children. Brake discs have their own wheel-aligned pivots.",
+  "animation": "Source timeline 1-241 at 24fps: wheels, discs, differential and halfshafts 5 turns; motor41; intermediate-15. Calipers and suspension fixed. GLB has no baked animation; browser uses simulator state.",
+  "uv_contract": "Screen UV0 bottom-left(0,0), top-right(1,1) from cabin +X. CanvasTexture.flipY=false. Both surfaces emit towards glTF +X.",
+  "engineering_scope": "Illustrative 2+2 vehicle geometry and straight-line drivetrain kinematics; not physical circuit wiring or manufacturer CAD."
+}

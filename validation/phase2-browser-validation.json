@@ -1,0 +1,615 @@
+{
+  "date": "2026-11-03",
+  "browser": "Microsoft Edge headless",
+  "baseURL": "http://127.0.0.2:20669",
+  "checks": [
+    {
+      "name": "Phase 2 model exposes 48 independent assemblies and two mapped live screens",
+      "passed": true,
+      "ms": 281,
+      "detail": {
+        "parts": [
+          "Body",
+          "Glass",
+          "Interior",
+          "Battery",
+          "Motor",
+          "MotorStator",
+          "MotorRotor",
+          "GearIntermediate",
+          "Differential",
+          "DriveShaft_L",
+          "DriveShaft_R",
+          "Inverter",
+          "DCDC",
+          "Charger",
+          "Cooling",
+          "Chassis",
+          "Harness",
+          "Headlights",
+          "Taillights",
+          "CabinLights",
+          "Infotainment",
+          "Dashboard",
+          "SteeringWheel",
+          "CenterConsole",
+          "Door_L",
+          "Door_R",
+          "Bonnet",
+          "Wheel_FL",
+          "Wheel_FR",
+          "Wheel_RL",
+          "Wheel_RR",
+          "BrakeDisc_FL",
+          "BrakeDisc_FR",
+          "BrakeDisc_RL",
+          "BrakeDisc_RR",
+          "BrakeCaliper_FL",
+          "BrakeCaliper_FR",
+          "BrakeCaliper_RL",
+          "BrakeCaliper_RR",
+          "Suspension_FL",
+          "Suspension_FR",
+          "Suspension_RL",
+          "Suspension_RR",
+          "Seat_FL",
+          "Seat_FR",
+          "Seat_RL",
+          "Seat_RR",
+          "InstrumentCluster"
+        ],
+        "screens": [
+          {
+            "mesh": "Screen_Cluster",
+            "material": "Screen_Cluster_Live",
+            "width": 1280,
+            "height": 400,
+            "textureVersion": 4
+          },
+          {
+            "mesh": "Screen_Infotainment",
+            "material": "Screen_Infotainment_Live",
+            "width": 1024,
+            "height": 640,
+            "textureVersion": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "Actual pointer drag moves the selected 3D gizmo without moving another component",
+      "passed": true,
+      "ms": 25663,
+      "detail": {
+        "before": [
+          0,
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0.182163433910016,
+          0.2321313369225313
+        ]
+      }
+    },
+    {
+      "name": "Every component independently translates, rotates, hides and resets with a stable energy model",
+      "passed": true,
+      "ms": 111130,
+      "detail": {
+        "validatedComponents": 48,
+        "names": [
+          "Body",
+          "Glass",
+          "Interior",
+          "Battery",
+          "Motor",
+          "MotorStator",
+          "MotorRotor",
+          "GearIntermediate",
+          "Differential",
+          "DriveShaft_L",
+          "DriveShaft_R",
+          "Inverter",
+          "DCDC",
+          "Charger",
+          "Cooling",
+          "Chassis",
+          "Harness",
+          "Headlights",
+          "Taillights",
+          "CabinLights",
+          "Infotainment",
+          "Dashboard",
+          "SteeringWheel",
+          "CenterConsole",
+          "Door_L",
+          "Door_R",
+          "Bonnet",
+          "Wheel_FL",
+          "Wheel_FR",
+          "Wheel_RL",
+          "Wheel_RR",
+          "BrakeDisc_FL",
+          "BrakeDisc_FR",
+          "BrakeDisc_RL",
+          "BrakeDisc_RR",
+          "BrakeCaliper_FL",
+          "BrakeCaliper_FR",
+          "BrakeCaliper_RL",
+          "BrakeCaliper_RR",
+          "Suspension_FL",
+          "Suspension_FR",
+          "Suspension_RL",
+          "Suspension_RR",
+          "Seat_FL",
+          "Seat_FR",
+          "Seat_RL",
+          "Seat_RR",
+          "InstrumentCluster"
+        ]
+      }
+    },
+    {
+      "name": "Exploded view preserves manual edits and complete restore removes offsets and hidden state",
+      "passed": true,
+      "ms": 4493
+    },
+    {
+      "name": "Start remains stationary at zero throttle; Drive demo provides immediate propulsion",
+      "passed": true,
+      "ms": 11610,
+      "detail": {
+        "speedKmh": 4.254993936207132,
+        "distanceM": 0.6514158856141118,
+        "throttlePercent": 18
+      }
+    },
+    {
+      "name": "Reduced-motion wheels and discs visibly rotate from integrated distance while calipers stay fixed",
+      "passed": true,
+      "ms": 17075,
+      "detail": {
+        "beforeSHA256": "93b5c2970226c61675c65ebc97256f918821e9d3f694cf3fc1513a9117cc9a7b",
+        "afterSHA256": "de5602b467733a5139958bf64354b658e01e4be663e9e8f53c4f01140eb60454",
+        "distanceM": 5.211599546686699,
+        "wheelAngles": {
+          "BrakeDisc_FL": 4.245240826565663,
+          "BrakeDisc_FR": 4.245240826565663,
+          "BrakeDisc_RL": 4.245240826565663,
+          "BrakeDisc_RR": 4.245240826565663,
+          "Wheel_FL": 4.245240826565663,
+          "Wheel_FR": 4.245240826565663,
+          "Wheel_RL": 4.245240826565663,
+          "Wheel_RR": 4.245240826565663
+        },
+        "rotorAngles": {
+          "Differential": 4.245240826565663,
+          "DriveShaft_L": 4.245240826565663,
+          "DriveShaft_R": 4.245240826565663,
+          "GearIntermediate": -0.16935186533780922,
+          "MotorRotor": 5.908322364812314
+        }
+      }
+    },
+    {
+      "name": "User offsets survive active wheel motion and pause freezes operating angles",
+      "passed": true,
+      "ms": 13004
+    },
+    {
+      "name": "All auxiliary switches affect real scene state and screen device ledgers",
+      "passed": true,
+      "ms": 78557,
+      "detail": [
+        {
+          "id": "headlights",
+          "watts": 80,
+          "batteryInputW": 90.9090909090909,
+          "energyWh": 0.002525252525252525
+        },
+        {
+          "id": "airConditioning",
+          "watts": 750,
+          "batteryInputW": 852.2727272727273,
+          "energyWh": 0.023674242424242424
+        },
+        {
+          "id": "cabinLights",
+          "watts": 12,
+          "batteryInputW": 13.636363636363637,
+          "energyWh": 0.0003787878787878788
+        },
+        {
+          "id": "infotainment",
+          "watts": 35,
+          "batteryInputW": 39.77272727272727,
+          "energyWh": 0.00110479797979798
+        }
+      ]
+    },
+    {
+      "name": "In-car running and paused views share exact numeric readings with the external simulation",
+      "passed": true,
+      "ms": 21011,
+      "detail": {
+        "actual": {
+          "running": false,
+          "tractionEnabled": true,
+          "throttle": 0,
+          "braking": 0,
+          "speedMps": 1.2534318746594197,
+          "speedKmh": 4.5123547487739115,
+          "distanceM": 0.73263566393046,
+          "elevationChangeM": 0,
+          "simulatedSeconds": 1.166699999999954,
+          "voltageV": 104.40918011817087,
+          "voltageOcvV": 104.40918011817087,
+          "currentA": 0,
+          "powerW": 0,
+          "accelerationMps2": 0,
+          "mechanicalDriveW": 0,
+          "batteryPowerLimited": false,
+          "tractionPowerW": 0,
+          "auxiliaryOutputW": 0,
+          "auxiliaryBatteryInputW": 0,
+          "regenW": 0,
+          "tractiveForceN": 0,
+          "roadLoadForceN": 0,
+          "brakingForceN": 0,
+          "aerodynamicDragForceN": 0,
+          "rollingResistanceForceN": 0,
+          "gravitationalForceN": 0,
+          "roadSlopeRad": 0,
+          "effectiveMassKg": 720,
+          "wheelAngularVelocityRadS": 4.0433286279336125,
+          "motorAngularVelocityRadS": 33.15529474905562,
+          "wheelRpm": 38.61094426083632,
+          "motorRpm": 316.60974293885783,
+          "wheelTorqueNm": 0,
+          "motorTorqueNm": 0,
+          "leftAxleTorqueNm": 0,
+          "rightAxleTorqueNm": 0,
+          "translationalKineticEnergyWh": 0.15710914644122273,
+          "rotationalKineticEnergyWh": 0,
+          "kineticEnergyWh": 0.15710914644122273,
+          "potentialEnergyChangeWh": 0,
+          "mechanicalDriveEnergyWh": 0.17441455483247728,
+          "drivetrainLossEnergyWh": 0.03396603636522554,
+          "aerodynamicLossEnergyWh": 0.00006183931064347474,
+          "rollingLossEnergyWh": 0.017243569080611008,
+          "brakingMechanicalEnergyWh": 0,
+          "brakingDissipatedEnergyWh": 0,
+          "mechanicalEnergyBalanceErrorWh": 8.326672684688674e-17,
+          "soc": 0.7199658822735039,
+          "socPercent": 71.99658822735039,
+          "nominalPackEnergyWh": 14400,
+          "grossBatteryEnergyWh": 0.5313590949855687,
+          "recoveredBatteryEnergyWh": 0,
+          "usablePackEnergyWh": 12960,
+          "usableCapacityVerified": false,
+          "usableCapacityBasis": "Scenario assumption: nominal energy × (1 − reserve fraction); usable capacity is not verified.",
+          "tripDistanceM": 0.73263566393046,
+          "tripSeconds": 1.166699999999954,
+          "totalDeviceEnergyKwh": 0.0005313590949855686,
+          "totalDeviceBatteryPercent": 0.004099993016863956,
+          "totalDeviceCostInr": null,
+          "costCalculationStatus": "tariff-unset",
+          "netEnergyWh": 0.5313590949855687,
+          "energyUsedWh": 0.5313590949855687,
+          "deviceEnergyWh": {
+            "tractionMotor": 0.20838059119770283,
+            "headlights": 0.029462121212120027,
+            "airConditioning": 0.2762073863636253,
+            "cabinLights": 0.004419318181818005,
+            "infotainment": 0.012889678030302505
+          },
+          "devices": [
+            {
+              "id": "tractionMotor",
+              "name": "Traction motor",
+              "enabled": true,
+              "ratingW": null,
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.20838059119770283,
+              "energyKwh": 0.00020838059119770283,
+              "batteryPercentConsumed": 0.0016078749320810404,
+              "costInr": null
+            },
+            {
+              "id": "headlights",
+              "name": "Headlights",
+              "enabled": true,
+              "operating": false,
+              "ratingW": 80,
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.029462121212120027,
+              "energyKwh": 0.000029462121212120026,
+              "batteryPercentConsumed": 0.00022733118219228415,
+              "costInr": null
+            },
+            {
+              "id": "airConditioning",
+              "name": "Air conditioning",
+              "enabled": true,
+              "operating": false,
+              "ratingW": 750,
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.2762073863636253,
+              "energyKwh": 0.0002762073863636253,
+              "batteryPercentConsumed": 0.0021312298330526643,
+              "costInr": null
+            },
+            {
+              "id": "cabinLights",
+              "name": "Cabin lights",
+              "enabled": true,
+              "operating": false,
+              "ratingW": 12,
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.004419318181818005,
+              "energyKwh": 0.000004419318181818005,
+              "batteryPercentConsumed": 0.00003409967732884264,
+              "costInr": null
+            },
+            {
+              "id": "infotainment",
+              "name": "Infotainment system",
+              "enabled": true,
+              "operating": false,
+              "ratingW": 35,
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.012889678030302505,
+              "energyKwh": 0.000012889678030302505,
+              "batteryPercentConsumed": 0.00009945739220912426,
+              "costInr": null
+            }
+          ],
+          "tariffInrPerKwh": null,
+          "terminalEnergyWh": 0.5313590949855687,
+          "batteryInternalLossWh": 0.002973834009702383,
+          "energyBalanceErrorWh": 0,
+          "costInr": null,
+          "netWhPerKm": null,
+          "estimatedRangeKm": null,
+          "rangeObservation": false,
+          "reserveSoc": 0.1,
+          "assumptions": {
+            "massKg": 720,
+            "wheelRadiusM": 0.31,
+            "gearRatio": 8.2,
+            "maxMotorTorqueNm": 180,
+            "maxMotorPowerW": 18000,
+            "maxSpeedMps": 22,
+            "maxBrakingDecelMps2": 3,
+            "integrationStepS": 0.02,
+            "regenFraction": 0.28,
+            "maxRegenPowerW": 10000,
+            "dragCoeff": 0.34,
+            "frontalAreaM2": 1.9,
+            "rollingCoeff": 0.012,
+            "roadGradePercent": 0,
+            "rotationalInertiaKgM2": 0,
+            "motorEff": 0.9,
+            "inverterEff": 0.93,
+            "dcdcEff": 0.88,
+            "internalResistanceOhm": 0.035,
+            "reserveSoc": 0.1,
+            "rangeMinimumDistanceM": 500,
+            "nominalVoltageV": 96,
+            "capacityAh": 150
+          },
+          "sourceLabel": "SOFTWARE SIMULATION — EDITABLE SCENARIO, NOT VEHICLE DATA"
+        },
+        "rendered": {
+          "running": false,
+          "speedKmh": 4.5123547487739115,
+          "socPercent": 71.99658822735039,
+          "powerW": 0,
+          "voltageV": 104.40918011817087,
+          "currentA": 0,
+          "netEnergyWh": 0.5313590949855687,
+          "energy": {
+            "totalKwh": 0.0005313590949855686,
+            "totalBatteryPercent": 0.004099993016863956,
+            "totalCostInr": null,
+            "tariffInrPerKwh": null,
+            "costCalculationStatus": "tariff-unset",
+            "nominalCapacityKwh": 14.4,
+            "usableCapacityKwh": 12.96,
+            "usableCapacityVerified": false,
+            "usableCapacityBasis": "Scenario assumption: nominal energy × (1 − reserve fraction); usable capacity is not verified."
+          },
+          "devices": [
+            {
+              "id": "tractionMotor",
+              "name": "Traction motor",
+              "enabled": true,
+              "operating": false,
+              "status": "PAUSED",
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.20838059119770283,
+              "energyKwh": 0.00020838059119770283,
+              "batteryPercentConsumed": 0.0016078749320810404,
+              "costInr": null
+            },
+            {
+              "id": "headlights",
+              "name": "Headlights",
+              "enabled": true,
+              "operating": false,
+              "status": "PAUSED",
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.029462121212120027,
+              "energyKwh": 0.000029462121212120026,
+              "batteryPercentConsumed": 0.00022733118219228415,
+              "costInr": null
+            },
+            {
+              "id": "airConditioning",
+              "name": "Air conditioning",
+              "enabled": true,
+              "operating": false,
+              "status": "PAUSED",
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.2762073863636253,
+              "energyKwh": 0.0002762073863636253,
+              "batteryPercentConsumed": 0.0021312298330526643,
+              "costInr": null
+            },
+            {
+              "id": "cabinLights",
+              "name": "Cabin lights",
+              "enabled": true,
+              "operating": false,
+              "status": "PAUSED",
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.004419318181818005,
+              "energyKwh": 0.000004419318181818005,
+              "batteryPercentConsumed": 0.00003409967732884264,
+              "costInr": null
+            },
+            {
+              "id": "infotainment",
+              "name": "Infotainment",
+              "enabled": true,
+              "operating": false,
+              "status": "PAUSED",
+              "demandW": 0,
+              "batteryInputW": 0,
+              "energyWh": 0.012889678030302505,
+              "energyKwh": 0.000012889678030302505,
+              "batteryPercentConsumed": 0.00009945739220912426,
+              "costInr": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "All 60 visual routes and 87 logical terminals exactly match the authoritative CSV",
+      "passed": true,
+      "ms": 16622,
+      "detail": {
+        "independentParser": "Python stdlib csv.DictReader",
+        "routes": 60,
+        "terminals": 87,
+        "endpointMismatches": 0,
+        "sourceStatusMismatches": 0,
+        "allPhysicalStatuses": "UNVERIFIED"
+      }
+    },
+    {
+      "name": "Every selectable wire highlights its entire original path and exposes its original endpoints",
+      "passed": true,
+      "ms": 10446,
+      "detail": {
+        "completeWireSelections": 60,
+        "pin": "U_ESP.GPIO34",
+        "incidentWireIds": [
+          "W037"
+        ]
+      }
+    },
+    {
+      "name": "Wiring search, full index, zoom, pan, focus and family filtering work",
+      "passed": true,
+      "ms": 12505,
+      "detail": {
+        "controls": [
+          "search",
+          "index",
+          "zoom",
+          "button pan",
+          "keyboard pan",
+          "focus",
+          "family",
+          "clear"
+        ]
+      }
+    },
+    {
+      "name": "Unscheduled hardware has no invented terminal mappings",
+      "passed": true,
+      "ms": 1866
+    },
+    {
+      "name": "320, 390, 768 and 1440 pixel simulator and wiring layouts stay within the viewport",
+      "passed": true,
+      "ms": 20074,
+      "detail": [
+        {
+          "width": 320,
+          "section": "simulator",
+          "viewport": 320,
+          "document": 320
+        },
+        {
+          "width": 320,
+          "section": "circuit",
+          "viewport": 320,
+          "document": 320
+        },
+        {
+          "width": 390,
+          "section": "simulator",
+          "viewport": 390,
+          "document": 390
+        },
+        {
+          "width": 390,
+          "section": "circuit",
+          "viewport": 390,
+          "document": 390
+        },
+        {
+          "width": 768,
+          "section": "simulator",
+          "viewport": 768,
+          "document": 768
+        },
+        {
+          "width": 768,
+          "section": "circuit",
+          "viewport": 768,
+          "document": 768
+        },
+        {
+          "width": 1440,
+          "section": "simulator",
+          "viewport": 1440,
+          "document": 1440
+        },
+        {
+          "width": 1440,
+          "section": "circuit",
+          "viewport": 1440,
+          "document": 1440
+        }
+      ]
+    },
+    {
+      "name": "Browser reports no application errors or missing local assets",
+      "passed": true,
+      "ms": 4
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "localHttpErrors": [],
+  "hardwareTested": false,
+  "firebaseCredentialsSubmitted": false,
+  "changedAuthoritativeFiles": false,
+  "passed": 15,
+  "failed": 0
+}

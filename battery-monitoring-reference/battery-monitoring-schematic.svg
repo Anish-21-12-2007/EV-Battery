@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" role="img" aria-labelledby="title desc">
+<title id="title">ECS Battery Monitoring — proposed conditional wiring architecture</title>
+<desc id="desc">A student-oriented power and logic wiring reference with conditional labels. Motor path is illustrative proposal; relay is not connected. Not a build authorization.</desc>
+<defs>
+  <marker id="arrowRed" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#c43b42"/></marker>
+  <marker id="arrowBlack" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#293446"/></marker>
+  <marker id="arrowOrange" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#da7a21"/></marker>
+  <marker id="arrowBlue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#2467b2"/></marker>
+  <style>
+    text{font-family:'Segoe UI',Arial,sans-serif;fill:#17253a}.title{font-size:34px;font-weight:700}.sub{font-size:18px;fill:#52637a}.panel{fill:#fff;stroke:#d8e1ec;stroke-width:2}.pt{font-size:23px;font-weight:700}.box{fill:#f8fafc;stroke:#718198;stroke-width:2}.warn{fill:#fff3d9;stroke:#d49a27;stroke-width:2}.red{stroke:#c43b42;stroke-width:6;fill:none}.black{stroke:#293446;stroke-width:5;fill:none}.blue{stroke:#2467b2;stroke-width:4;fill:none}.orange{stroke:#da7a21;stroke-width:5;fill:none}.green{stroke:#26805b;stroke-width:4;fill:none}.purple{stroke:#8052ac;stroke-width:4;fill:none}.dash{stroke-dasharray:10 9}.label{font-size:18px;font-weight:600}.small{font-size:15px;fill:#52637a}.pin{font-size:14px;font-weight:700}.legend{font-size:16px;font-weight:600}
+  </style>
+</defs>
+<rect width="1800" height="1200" fill="#f2f5f9"/>
+<text x="55" y="58" class="title">ECS Battery Monitoring — proposed wiring architecture</text>
+<text x="57" y="88" class="sub">CONDITIONAL REFERENCE • Not electrically verified • Do not energize until physical module, wire and load ratings are checked</text>
+
+<!-- Power panel -->
+<rect x="35" y="115" width="1730" height="455" rx="22" class="panel"/>
+<text x="65" y="157" class="pt">1. Battery and motor power path</text>
+<text x="66" y="185" class="small">Fuse close to battery positive; proposed sensor placement measures motor-branch current only.</text>
+<!-- battery -->
+<rect x="78" y="255" width="190" height="155" rx="18" class="box"/>
+<text x="173" y="291" text-anchor="middle" class="label">12 V VRLA</text><text x="173" y="317" text-anchor="middle" class="label">Amptek AT12-7.6</text>
+<text x="92" y="351" class="pin">+ BAT</text><text x="92" y="390" class="pin">− BAT</text>
+<!-- fuse -->
+<rect x="370" y="295" width="160" height="86" rx="14" class="box"/>
+<text x="450" y="328" text-anchor="middle" class="label">FUSE + HOLDER</text><text x="450" y="354" text-anchor="middle" class="small">30 A element value TBD</text><text x="450" y="372" text-anchor="middle" class="small">DC interrupt rating TBD</text>
+<!-- switch -->
+<rect x="635" y="295" width="190" height="86" rx="14" class="box"/>
+<text x="730" y="328" text-anchor="middle" class="label">ROCKER SWITCH</text><text x="730" y="355" text-anchor="middle" class="small">DC / inrush rating TBD</text>
+<!-- ACS primary -->
+<rect x="930" y="260" width="265" height="155" rx="18" class="box"/>
+<text x="1062" y="295" text-anchor="middle" class="label">ACS712-30A MODULE</text>
+<text x="948" y="333" class="pin">IP+  →  IP−</text><text x="948" y="358" class="small">High-current path in series</text><text x="948" y="385" class="small">Breakout current rating TBD</text>
+<!-- motor -->
+<rect x="1370" y="285" width="220" height="105" rx="50" class="box"/>
+<text x="1480" y="327" text-anchor="middle" class="label">DC MOTOR</text><text x="1480" y="355" text-anchor="middle" class="small">rated / start / stall A TBD</text>
+<!-- positive wires -->
+<path d="M268 330 H370" class="red" marker-end="url(#arrowRed)"/><text x="310" y="314" class="pin">+</text>
+<path d="M530 330 H635" class="red" marker-end="url(#arrowRed)"/>
+<path d="M825 330 H930" class="red" marker-end="url(#arrowRed)"/><text x="840" y="313" class="pin">switched +</text>
+<path d="M1195 330 H1370" class="red" marker-end="url(#arrowRed)"/>
+<text x="1209" y="310" class="pin">IP− → motor +</text>
+<!-- negative return -->
+<path d="M1590 350 H1665 V535 H170 V410" class="black" marker-end="url(#arrowBlack)"/>
+<text x="300" y="519" class="pin">Motor − return → Battery − star point</text>
+<!-- branch -->
+<path d="M730 381 V465 H850" class="orange" marker-end="url(#arrowOrange)"/>
+<text x="754" y="454" class="pin">IN+</text>
+<rect x="850" y="430" width="310" height="95" rx="15" class="box"/>
+<text x="1005" y="455" text-anchor="middle" class="label">LM2596 BUCK MODULE</text><text x="1005" y="482" text-anchor="middle" class="small">IN+ switched bus • IN− battery− star</text><text x="1005" y="510" text-anchor="middle" class="small">Meter-check OUT = 5.00 V first</text>
+<path d="M170 535 H800 V500 H850" class="black"/>
+<text x="811" y="516" class="pin">IN−</text>
+<path d="M1160 475 H1280" class="orange" marker-end="url(#arrowOrange)"/><text x="1180" y="457" class="pin">5 V OUT</text>
+<rect x="1280" y="432" width="420" height="89" rx="14" class="warn"/>
+<text x="1300" y="461" class="label">Fuse, rocker, wire &amp; ACS board ratings</text><text x="1300" y="488" class="small">are unknown: 30 A is not approved; no motor test yet.</text><text x="1300" y="511" class="small">Relay intentionally omitted from motor path.</text>
+
+<!-- Signal panel -->
+<rect x="35" y="595" width="1730" height="525" rx="22" class="panel"/>
+<text x="65" y="638" class="pt">2. Low-voltage logic, display and measurement</text>
+<text x="66" y="666" class="small">Use classic ESP32 pin labels only if the physical board confirms this pinout; ADC and OLED modules still require checking.</text>
+<!-- ESP -->
+<rect x="95" y="735" width="295" height="285" rx="20" class="box"/>
+<text x="242" y="775" text-anchor="middle" class="label">ESP32 DEV BOARD</text><text x="120" y="814" class="pin">5V/VIN ← verified buck 5 V only*</text>
+<text x="120" y="850" class="pin">GPIO34 / ADC1_CH6 ← current node</text><text x="120" y="881" class="pin">GPIO35 / ADC1_CH7 ← battery node</text>
+<text x="120" y="923" class="pin">GPIO21 SDA  •  GPIO22 SCL</text><text x="120" y="955" class="pin">GND = logic reference</text><text x="120" y="992" class="small">*Confirm exact board input; one supply source.</text>
+<!-- OLED -->
+<rect x="500" y="755" width="280" height="195" rx="18" class="box"/>
+<text x="640" y="796" text-anchor="middle" class="label">0.96-in OLED</text><text x="530" y="834" class="pin">SDA ← GPIO21</text><text x="530" y="861" class="pin">SCL ← GPIO22</text><text x="530" y="888" class="pin">VCC = verified 3.3 V candidate</text><text x="530" y="916" class="pin">GND → logic GND</text><text x="530" y="939" class="small">Address/pull-up rail: inspect/scan</text>
+<path d="M390 837 H500" class="blue" marker-end="url(#arrowBlue)"/><path d="M390 872 H500" class="blue" marker-end="url(#arrowBlue)"/><text x="406" y="824" class="pin">SDA/SCL</text>
+<!-- current sensor output/divider -->
+<rect x="850" y="725" width="380" height="185" rx="18" class="box"/>
+<text x="1040" y="765" text-anchor="middle" class="label">ACS712 SIGNAL SCALE</text>
+<text x="875" y="802" class="pin">OUT / VIOUT → 15 kΩ series</text><text x="875" y="834" class="pin">ADC node → GPIO34</text><text x="875" y="866" class="pin">20 kΩ node → GND; optional 100 nF</text><text x="875" y="894" class="small">Nominal factor 0.571; calibrate offset/gain.</text>
+<!-- battery divider -->
+<rect x="850" y="945" width="380" height="135" rx="18" class="box"/>
+<text x="1040" y="982" text-anchor="middle" class="label">BATTERY DIVIDER</text><text x="875" y="1015" class="pin">switched + → 120 kΩ → GPIO35 node</text><text x="875" y="1043" class="pin">22 kΩ node → GND; optional 100 nF</text><text x="875" y="1068" class="small">18 V assumed ceiling gives ≈2.8 V.</text>
+<!-- shared ground -->
+<path d="M390 980 H445 V1067 H780 V1050 H850" class="black dash"/>
+<text x="470" y="1096" class="small">Logic GND shared only after confirming module topology; motor return stays on its own path.</text>
+<!-- relay conditional -->
+<rect x="1320" y="735" width="390" height="220" rx="18" class="warn"/>
+<text x="1515" y="778" text-anchor="middle" class="label">5 V RELAY / MODULE</text>
+<text x="1348" y="815" class="pin">VCC, GND, IN, COM, NO, NC</text><text x="1348" y="847" class="pin">TBD — exact board and driver unknown</text>
+<text x="1348" y="883" class="small">GPIO25 is only a candidate; no wire assigned.</text><text x="1348" y="912" class="small">Do not switch motor until DC inductive /</text><text x="1348" y="936" class="small">startup rating is verified.</text>
+<path d="M1230 862 H1320" class="purple dash"/><text x="1241" y="845" class="pin">NO CONNECTION</text>
+<!-- legend -->
+<text x="1325" y="1002" class="legend">LEGEND</text>
+<path d="M1325 1025 H1370" class="red"/><text x="1380" y="1031" class="small">high-current +</text><path d="M1535 1025 H1580" class="black"/><text x="1590" y="1031" class="small">return</text>
+<path d="M1325 1055 H1370" class="orange"/><text x="1380" y="1061" class="small">regulated 5 V</text><path d="M1535 1055 H1580" class="blue"/><text x="1590" y="1061" class="small">I²C</text>
+<path d="M1325 1085 H1370" class="purple"/><text x="1380" y="1091" class="small">ADC signal</text><path d="M1535 1085 H1580" class="purple dash"/><text x="1590" y="1091" class="small">conditional / no connection</text>
+
+<rect x="55" y="1140" width="1690" height="42" rx="12" fill="#fde8e8" stroke="#d97777" stroke-width="2"/>
+<text x="75" y="1168" style="font-family:'Segoe UI',Arial,sans-serif;font-size:17px;font-weight:700;fill:#8f252a">WARNING: Educational proposal only. Confirm exact board labels, all voltage/current ratings, fuse sizing and wiring before energizing. See guide + validation report.</text>
+</svg>

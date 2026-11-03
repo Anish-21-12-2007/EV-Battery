@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-03",
+  "removed": [
+    {
+      "path": "assets/vehicle/ev-ems-gt.blend1",
+      "bytes": 1915367,
+      "sha256": "B0FB353ABB22571A6623AC239874D98875EB0F5B954F91EFAABA578914394FF2"
+    },
+    {
+      "path": "validation/phase2-failure-2.png",
+      "bytes": 103792,
+      "sha256": "9B79D41DD250B4AFBADAB43DF7D6DC6D0F415E6AE2E9D32F5ACDCB3673F647DE"
+    },
+    {
+      "path": "validation/phase2-failure-3.png",
+      "bytes": 106869,
+      "sha256": "DF5B80ED3C8A8B71C0ED326C20E897D27099C4B5B6CFE0F43B58B2E5CDEE495B"
+    },
+    {
+      "path": "validation/phase2-failure-7.png",
+      "bytes": 397727,
+      "sha256": "B81B4E5F3A23EC0D680DD48699EF964CB50D7325A145889064D580D1EDED693C"
+    },
+    {
+      "path": "validation/phase2-failure-8.png",
+      "bytes": 291332,
+      "sha256": "E36154B2CBD6E1D3C0F2E537F8E0AE4FB6D2988050FC544836F88CC8FAD9FA02"
+    },
+    {
+      "path": "validation/phase2-gizmo-initial.png",
+      "bytes": 513866,
+      "sha256": "5712DFCA76C88AE1D22F615260CD5DDC4573554DC377E044FB025F423B8B05AD"
+    },
+    {
+      "path": "validation/phase2-unit-tests.txt",
+      "bytes": 3449,
+      "sha256": "77F2BBBC0D63B4B7A82312CB34273C1B8597192B299A445FE27AD3CF90DA8576"
+    },
+    {
+      "path": "assets/vehicle/phase2-check-error.txt",
+      "bytes": 838,
+      "sha256": "E9036AB7EAE2A2B5B3E2449B84F5644D014440EB2A502BB5142661F8D5E9C247"
+    }
+  ],
+  "preserved": [
+    "Required source models and build scripts",
+    "Original engineering handoff and unique cited historical evidence",
+    "Final validation receipts and relevant before/after evidence"
+  ],
+  "untouchedPriorDenials": [
+    "C:\\Users\\uppal\\AppData\\Local\\Temp\\EV_EMS_precleanup_20261102",
+    "blender-workflow/scripts/__pycache__",
+    "validation/phase2-regression"
+  ],
+  "archiveExcludes": [
+    "node_modules",
+    "__pycache__",
+    "*.blend1",
+    "*.pyc",
+    "*.log",
+    "test-results",
+    "playwright-report",
+    "phase2-regression"
+  ],
+  "finalDenial": "Automatic approval review rejected duplicate regression folder deletion: blocked by policy; no alternative deletion attempted."
+}

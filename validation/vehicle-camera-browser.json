@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-03",
+  "checks": [
+    {
+      "name": "Every view allows close zoom and panning instead of the old exterior distance barrier",
+      "passed": true,
+      "detail": {
+        "closestExteriorDistance": 0.2726744338350593,
+        "near": 0.005
+      }
+    },
+    {
+      "name": "Open energy screen reveals a large real vehicle display with every corner inside the view",
+      "passed": true,
+      "detail": {
+        "position": [
+          -0.09299998760223388,
+          0.9339999854564671,
+          0.13500000536441806
+        ],
+        "target": [
+          -0.4129999876022339,
+          0.9339999854564671,
+          0.13500000536441803
+        ],
+        "distance": 0.32,
+        "near": 0.005,
+        "fov": 34.626473531007115,
+        "minDistance": 0.015,
+        "maxDistance": 25,
+        "enablePan": true,
+        "enableZoom": true,
+        "dragMode": "orbit",
+        "autoOrbit": false,
+        "expanded": true,
+        "nativeFullscreen": false,
+        "width": 1440,
+        "height": 892,
+        "energyScreenCorners": [
+          [
+            0.8693956559795252,
+            -0.8771929824561445,
+            0.9688484424221211
+          ],
+          [
+            -0.869395655979526,
+            0.8771929824561358,
+            0.9688484424221211
+          ],
+          [
+            0.8693956559795252,
+            0.8771929824561355,
+            0.9688484424221211
+          ],
+          [
+            -0.869395655979526,
+            -0.8771929824561447,
+            0.9688484424221211
+          ]
+        ],
+        "energyScreenUnobstructed": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Pan gesture moves the target; zoom can inspect fine details; reset restores complete screen framing",
+      "passed": true,
+      "detail": {
+        "closestDistance": 0.015000000000000013,
+        "dragMode": "orbit"
+      }
+    },
+    {
+      "name": "Native fullscreen uses the existing vehicle stage and closes cleanly",
+      "passed": true,
+      "detail": {
+        "fullscreenElement": "vehicle-stage"
+      }
+    },
+    {
+      "name": "Fullscreen rejection falls back to an expanded view of the same WebGL canvas",
+      "passed": true
+    },
+    {
+      "name": "Look inside opens the cabin in the same expanded viewport without changing the trip",
+      "passed": true
+    },
+    {
+      "name": "Mobile expansion fills the viewport and preserves the actual screen in landscape",
+      "passed": true,
+      "detail": {
+        "landscapeWidth": 844,
+        "landscapeHeight": 294
+      }
+    }
+  ],
+  "errors": [],
+  "actualVehicleMesh": "Screen_Infotainment"
+}

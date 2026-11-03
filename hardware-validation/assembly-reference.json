@@ -1,0 +1,1187 @@
+{
+  "revision": "2026-10-13-final",
+  "components": [
+    {
+      "id": "battery",
+      "name": "12 V · 7.6 Ah VRLA battery",
+      "shortName": "VRLA battery",
+      "prefix": "Battery_",
+      "center": [
+        -3.7,
+        2.1
+      ],
+      "terminals": {
+        "BAT+": [
+          -4.13,
+          2.1,
+          1.43
+        ],
+        "BAT-": [
+          -3.27,
+          2.1,
+          1.43
+        ]
+      },
+      "description": "Nominal battery specification. Terminal type, limits and dimensions require physical confirmation. BAT− is the star return.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "fuse",
+      "name": "F1 · main fuse, rating TBD",
+      "shortName": "F1 · rating TBD",
+      "prefix": "Fuse_",
+      "center": [
+        -2.3,
+        2.4
+      ],
+      "terminals": {
+        "IN": [
+          -2.65,
+          1.95,
+          0.23
+        ],
+        "OUT": [
+          -1.95,
+          1.95,
+          0.23
+        ]
+      },
+      "description": "F1 must be adjacent to battery positive. DC interrupt capacity, holder and time-current curve remain unverified. 30 A is not approved.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "switch",
+      "name": "SW1 · DC rocker, rating TBD",
+      "shortName": "SW1 rocker",
+      "prefix": "Rocker_Switch",
+      "center": [
+        -1.1,
+        2.4
+      ],
+      "terminals": {
+        "IN": [
+          -1.3,
+          1.95,
+          0.23
+        ],
+        "OUT": [
+          -0.9,
+          1.95,
+          0.23
+        ]
+      },
+      "description": "Proposed two-terminal DC switch. Physical terminal arrangement and motor switching rating are unknown; suppress inductive turnoff.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "acs712",
+      "name": "ACS712 · proposed 30 A variant",
+      "shortName": "ACS712 sensor",
+      "prefix": "ACS712_",
+      "center": [
+        0.2,
+        2.4
+      ],
+      "terminals": {
+        "IP+": [
+          -0.08,
+          1.88,
+          0.23
+        ],
+        "IP-": [
+          0.48,
+          1.88,
+          0.23
+        ],
+        "VCC": [
+          -0.1,
+          2.95,
+          0.23
+        ],
+        "GND": [
+          0.2,
+          2.95,
+          0.23
+        ],
+        "OUT": [
+          0.5,
+          2.95,
+          0.23
+        ]
+      },
+      "description": "Measures total current in the switched discharge path, including electronics. 30 A is the IC range, not an approved module current. Symbolic ports; inspect the breakout.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "bus",
+      "name": "J1 · positive load distribution",
+      "shortName": "J1 load bus",
+      "prefix": "LoadBus_",
+      "center": [
+        1.35,
+        2.4
+      ],
+      "terminals": {
+        "+": [
+          1.35,
+          2.0,
+          0.23
+        ]
+      },
+      "description": "Rated common positive distribution junction after ACS712. All branches shown share this junction. F2 must be at this takeoff.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "motor",
+      "name": "M1 · DC motor, ratings unknown",
+      "shortName": "DC motor",
+      "prefix": "DC_Motor",
+      "center": [
+        3.15,
+        2.3
+      ],
+      "terminals": {
+        "+": [
+          2.95,
+          1.78,
+          0.23
+        ],
+        "-": [
+          3.35,
+          1.78,
+          0.23
+        ]
+      },
+      "description": "Unverified motor. Diagram assumes a simple unidirectional brushed motor. Current cannot establish rotation; no approved inrush/stall rating.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "fuse2",
+      "name": "F2 · branch fuse, rating TBD",
+      "shortName": "F2 · rating TBD",
+      "prefix": "BranchFuse_",
+      "center": [
+        1.3,
+        0.9
+      ],
+      "terminals": {
+        "IN": [
+          1.1,
+          0.53,
+          0.23
+        ],
+        "OUT": [
+          1.5,
+          0.53,
+          0.23
+        ]
+      },
+      "description": "Protects buck and sense branch. 1–2 A in the audit was not a verified selection; rating needs inrush and wire coordination.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "lm2596",
+      "name": "LM2596 · set output to 5.00 V",
+      "shortName": "LM2596 buck",
+      "prefix": "LM2596_",
+      "center": [
+        2.5,
+        0.2
+      ],
+      "terminals": {
+        "IN+": [
+          2.08,
+          -0.4,
+          0.23
+        ],
+        "IN-": [
+          2.36,
+          -0.4,
+          0.23
+        ],
+        "OUT+": [
+          2.64,
+          -0.4,
+          0.23
+        ],
+        "OUT-": [
+          2.92,
+          -0.4,
+          0.23
+        ]
+      },
+      "description": "Meter-set to 5.00 V unloaded and loaded before connecting electronics. Module pin positions, ground continuity and thermal performance remain conditional.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "esp32",
+      "name": "Classic ESP32 development board",
+      "shortName": "ESP32 board",
+      "prefix": "ESP32_",
+      "center": [
+        -0.4,
+        -0.8
+      ],
+      "terminals": {
+        "5V": [
+          -1.1,
+          -1.3,
+          0.23
+        ],
+        "GND": [
+          -0.9,
+          -1.3,
+          0.23
+        ],
+        "3V3": [
+          -0.7,
+          -1.3,
+          0.23
+        ],
+        "GPIO34": [
+          -0.5,
+          -1.3,
+          0.23
+        ],
+        "GPIO35": [
+          -0.3,
+          -1.3,
+          0.23
+        ],
+        "GPIO21": [
+          -0.1,
+          -1.3,
+          0.23
+        ],
+        "GPIO22": [
+          0.1,
+          -1.3,
+          0.23
+        ],
+        "GPIO4": [
+          0.3,
+          -1.3,
+          0.23
+        ]
+      },
+      "description": "GPIO34/35 are ADC1 inputs on classic ESP32. Reference ports are NOT the physical header order. Identify the actual board and documented 5V input; only one supply source.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "oled",
+      "name": "0.96-inch OLED · proposed I²C",
+      "shortName": "OLED display",
+      "prefix": "OLED_",
+      "center": [
+        1.6,
+        -1.55
+      ],
+      "terminals": {
+        "VCC": [
+          1.27,
+          -2.03,
+          0.23
+        ],
+        "GND": [
+          1.49,
+          -2.03,
+          0.23
+        ],
+        "SDA": [
+          1.71,
+          -2.03,
+          0.23
+        ],
+        "SCL": [
+          1.93,
+          -2.03,
+          0.23
+        ]
+      },
+      "description": "Requires a documented 3.3V-compatible module, 3.3V pullups and an address scan. Screen is labeled NO LIVE DATA. Physical pin ordering unverified.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "relay",
+      "name": "Relay module · NOT CONNECTED",
+      "shortName": "Relay · unwired",
+      "prefix": "Relay_",
+      "center": [
+        3.5,
+        -2.25
+      ],
+      "terminals": {},
+      "description": "IN / VCC / GND / COM / NO / NC and GPIO25 remain unwired. Exact module driver and DC motor contact rating unknown. No remote cutoff is implemented.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "temperature",
+      "name": "DS18B20 · proposed case probe",
+      "shortName": "DS18B20 · proposed",
+      "prefix": "Temperature_",
+      "center": [
+        -3.9,
+        0.65
+      ],
+      "terminals": {
+        "VDD": [
+          -4.2,
+          0.1,
+          0.23
+        ],
+        "GND": [
+          -3.9,
+          0.1,
+          0.23
+        ],
+        "DQ": [
+          -3.6,
+          0.1,
+          0.23
+        ]
+      },
+      "description": "Proposed addition, not confirmed present. Case-surface temperature only. Probe colors and lead order unknown; require ROM/presence, conversion completion and CRC.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "ground",
+      "name": "J2 · logic ground junction",
+      "shortName": "J2 logic ground",
+      "prefix": "LogicGround_",
+      "center": [
+        0.15,
+        0.45
+      ],
+      "terminals": {
+        "GND": [
+          0.15,
+          0.2,
+          0.23
+        ]
+      },
+      "description": "Common logic reference via buck OUT−. Separate motor return to BAT−; confirm buck IN−/OUT− continuity. Not an isolated system.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "r1",
+      "name": "R1 · 27k 1%",
+      "shortName": "R1 · 27k 1%",
+      "prefix": "Passive_R1_",
+      "center": [
+        -2.8,
+        -1.45
+      ],
+      "terminals": {
+        "A": [
+          -2.98,
+          -1.45,
+          0.23
+        ],
+        "B": [
+          -2.6199999999999997,
+          -1.45,
+          0.23
+        ]
+      },
+      "description": "Proposed passive value; verify tolerance, rating and assembly. Leads shown explicitly.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "r2",
+      "name": "R2 · 20k 1%",
+      "shortName": "R2 · 20k 1%",
+      "prefix": "Passive_R2_",
+      "center": [
+        -2.05,
+        -2.6
+      ],
+      "terminals": {
+        "A": [
+          -2.23,
+          -2.6,
+          0.23
+        ],
+        "B": [
+          -1.8699999999999999,
+          -2.6,
+          0.23
+        ]
+      },
+      "description": "Proposed passive value; verify tolerance, rating and assembly. Leads shown explicitly.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "c1",
+      "name": "C1 · 100nF",
+      "shortName": "C1 · 100nF",
+      "prefix": "Passive_C1_",
+      "center": [
+        -1.3,
+        -2.6
+      ],
+      "terminals": {
+        "A": [
+          -1.48,
+          -2.6,
+          0.23
+        ],
+        "B": [
+          -1.12,
+          -2.6,
+          0.23
+        ]
+      },
+      "description": "Proposed passive value; verify tolerance, rating and assembly. Leads shown explicitly.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "r3",
+      "name": "R3 · 68k 1%",
+      "shortName": "R3 · 68k 1%",
+      "prefix": "Passive_R3_",
+      "center": [
+        -0.45,
+        -2.6
+      ],
+      "terminals": {
+        "A": [
+          -0.63,
+          -2.6,
+          0.23
+        ],
+        "B": [
+          -0.27,
+          -2.6,
+          0.23
+        ]
+      },
+      "description": "Proposed passive value; verify tolerance, rating and assembly. Leads shown explicitly.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "r4",
+      "name": "R4 · 10k 1%",
+      "shortName": "R4 · 10k 1%",
+      "prefix": "Passive_R4_",
+      "center": [
+        0.35,
+        -2.6
+      ],
+      "terminals": {
+        "A": [
+          0.16999999999999998,
+          -2.6,
+          0.23
+        ],
+        "B": [
+          0.53,
+          -2.6,
+          0.23
+        ]
+      },
+      "description": "Proposed passive value; verify tolerance, rating and assembly. Leads shown explicitly.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "c2",
+      "name": "C2 · 100nF",
+      "shortName": "C2 · 100nF",
+      "prefix": "Passive_C2_",
+      "center": [
+        1.15,
+        -2.6
+      ],
+      "terminals": {
+        "A": [
+          0.97,
+          -2.6,
+          0.23
+        ],
+        "B": [
+          1.3299999999999998,
+          -2.6,
+          0.23
+        ]
+      },
+      "description": "Proposed passive value; verify tolerance, rating and assembly. Leads shown explicitly.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "r5",
+      "name": "R5 · 4.7k",
+      "shortName": "R5 · 4.7k",
+      "prefix": "Passive_R5_",
+      "center": [
+        -3.6,
+        -1.5
+      ],
+      "terminals": {
+        "A": [
+          -3.7800000000000002,
+          -1.5,
+          0.23
+        ],
+        "B": [
+          -3.42,
+          -1.5,
+          0.23
+        ]
+      },
+      "description": "Proposed passive value; verify tolerance, rating and assembly. Leads shown explicitly.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "c3",
+      "name": "C3 · 100nF ≥50V",
+      "shortName": "C3 · 100nF ≥50V",
+      "prefix": "Passive_C3_",
+      "center": [
+        3.75,
+        1.2
+      ],
+      "terminals": {
+        "A": [
+          3.57,
+          1.2,
+          0.23
+        ],
+        "B": [
+          3.93,
+          1.2,
+          0.23
+        ]
+      },
+      "description": "Proposed brush-noise capacitor, not a turnoff energy clamp. Place at actual motor terminals with very short leads; scene spacing is illustrative.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "d1",
+      "name": "D1 · diode TBD",
+      "shortName": "D1 · diode TBD",
+      "prefix": "Passive_D1_",
+      "center": [
+        4.3,
+        2.35
+      ],
+      "terminals": {
+        "K": [
+          4.12,
+          2.35,
+          0.23
+        ],
+        "A": [
+          4.4799999999999995,
+          2.35,
+          0.23
+        ]
+      },
+      "description": "Conditional flyback for a simple unidirectional brushed motor: cathode K to M+, anode A to M−. Part, energy and surge ratings TBD; do not use with reversal without redesign.",
+      "color": "#d0b87b"
+    },
+    {
+      "id": "nodea",
+      "name": "JA · current ADC node",
+      "shortName": "JA",
+      "prefix": "Junction_nodea_",
+      "center": [
+        -2.05,
+        -1.45
+      ],
+      "terminals": {
+        "NODE": [
+          -2.05,
+          -1.45,
+          0.23
+        ]
+      },
+      "description": "Explicit common junction. All attached leads share this node; crossings elsewhere do not connect.",
+      "color": "#66c8bd"
+    },
+    {
+      "id": "nodeb",
+      "name": "JB · voltage ADC node",
+      "shortName": "JB",
+      "prefix": "Junction_nodeb_",
+      "center": [
+        -0.45,
+        -1.9
+      ],
+      "terminals": {
+        "NODE": [
+          -0.45,
+          -1.9,
+          0.23
+        ]
+      },
+      "description": "Explicit common junction. All attached leads share this node; crossings elsewhere do not connect.",
+      "color": "#66c8bd"
+    }
+  ],
+  "groups": {
+    "battery": [
+      "#dd5555",
+      "Battery +",
+      0.025
+    ],
+    "motor": [
+      "#de9252",
+      "Motor + / suppression",
+      0.025
+    ],
+    "return": [
+      "#6b7986",
+      "Motor return",
+      0.025
+    ],
+    "branch": [
+      "#d8a35b",
+      "Protected branch",
+      0.015
+    ],
+    "5v": [
+      "#f2b555",
+      "5 V",
+      0.012
+    ],
+    "3v3": [
+      "#e48db3",
+      "3.3 V",
+      0.01
+    ],
+    "ground": [
+      "#66a98c",
+      "Logic ground",
+      0.012
+    ],
+    "analog": [
+      "#b49be5",
+      "ADC / filter",
+      0.01
+    ],
+    "sense": [
+      "#c598c7",
+      "Bus sense",
+      0.01
+    ],
+    "i2c": [
+      "#6faef0",
+      "I²C",
+      0.01
+    ],
+    "onewire": [
+      "#ded176",
+      "1-Wire",
+      0.01
+    ]
+  },
+  "caveat": "Conditional circuit reference. Dashed = provisional. Ports are logical, NOT physical header positions.",
+  "omitted": [
+    {
+      "id": "W32",
+      "reason": "Mechanical case attachment only; not an electrical wire"
+    },
+    {
+      "id": "W33",
+      "reason": "Optional TVS omitted: part and coordination unresolved"
+    },
+    {
+      "id": "W34–W36",
+      "reason": "Relay and GPIO25 reserved, no routed leads"
+    }
+  ],
+  "connections": [
+    {
+      "id": "W01",
+      "source_component": "battery",
+      "source_terminal": "BAT+",
+      "destination_component": "fuse",
+      "destination_terminal": "IN",
+      "wire_group": "battery",
+      "status": "CONDITIONAL",
+      "evidence": "U10/U15: polarity, F1 and terminal ratings TBD",
+      "original_row": "W01",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W02",
+      "source_component": "fuse",
+      "source_terminal": "OUT",
+      "destination_component": "switch",
+      "destination_terminal": "IN",
+      "wire_group": "battery",
+      "status": "CONDITIONAL",
+      "evidence": "U10: DC switch and fuse coordination",
+      "original_row": "W02",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W03",
+      "source_component": "switch",
+      "source_terminal": "OUT",
+      "destination_component": "acs712",
+      "destination_terminal": "IP+",
+      "wire_group": "battery",
+      "status": "CONDITIONAL",
+      "evidence": "U05/U10: logical positive current direction",
+      "original_row": "W03",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W04",
+      "source_component": "acs712",
+      "source_terminal": "IP-",
+      "destination_component": "bus",
+      "destination_terminal": "+",
+      "wire_group": "battery",
+      "status": "CONDITIONAL",
+      "evidence": "U05: module current path unknown",
+      "original_row": "W04",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W05",
+      "source_component": "bus",
+      "source_terminal": "+",
+      "destination_component": "motor",
+      "destination_terminal": "+",
+      "wire_group": "motor",
+      "status": "UNVERIFIED",
+      "evidence": "U12: motor identity/current unknown",
+      "original_row": "W05",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W06",
+      "source_component": "motor",
+      "source_terminal": "-",
+      "destination_component": "battery",
+      "destination_terminal": "BAT-",
+      "wire_group": "return",
+      "status": "UNVERIFIED",
+      "evidence": "U12/U16: independent heavy return",
+      "original_row": "W06",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W07a",
+      "source_component": "motor",
+      "source_terminal": "+",
+      "destination_component": "c3",
+      "destination_terminal": "A",
+      "wire_group": "motor",
+      "status": "CONDITIONAL",
+      "evidence": "U13: brush-noise proposal",
+      "original_row": "W07",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W07b",
+      "source_component": "c3",
+      "source_terminal": "B",
+      "destination_component": "motor",
+      "destination_terminal": "-",
+      "wire_group": "return",
+      "status": "CONDITIONAL",
+      "evidence": "U13: explicit second capacitor lead",
+      "original_row": "W07",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W08",
+      "source_component": "bus",
+      "source_terminal": "+",
+      "destination_component": "fuse2",
+      "destination_terminal": "IN",
+      "wire_group": "branch",
+      "status": "CONDITIONAL",
+      "evidence": "U10: F2 at takeoff; rating remains TBD",
+      "original_row": "W08",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W09",
+      "source_component": "fuse2",
+      "source_terminal": "OUT",
+      "destination_component": "lm2596",
+      "destination_terminal": "IN+",
+      "wire_group": "branch",
+      "status": "CONDITIONAL",
+      "evidence": "U07: verify input polarity and component limits",
+      "original_row": "W09",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W10",
+      "source_component": "battery",
+      "source_terminal": "BAT-",
+      "destination_component": "lm2596",
+      "destination_terminal": "IN-",
+      "wire_group": "ground",
+      "status": "CONDITIONAL",
+      "evidence": "U16: separate low-current return",
+      "original_row": "W10",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W11",
+      "source_component": "lm2596",
+      "source_terminal": "OUT+",
+      "destination_component": "esp32",
+      "destination_terminal": "5V",
+      "wire_group": "5v",
+      "status": "CONDITIONAL",
+      "evidence": "U07/U08: measured output and exact board input required",
+      "original_row": "W11",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W12",
+      "source_component": "lm2596",
+      "source_terminal": "OUT-",
+      "destination_component": "ground",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "CONDITIONAL",
+      "evidence": "U16: common-ground module assumption",
+      "original_row": "W12",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W12b",
+      "source_component": "ground",
+      "source_terminal": "GND",
+      "destination_component": "esp32",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "CONDITIONAL",
+      "evidence": "U16: explicit logic junction",
+      "original_row": "W12",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W13",
+      "source_component": "lm2596",
+      "source_terminal": "OUT+",
+      "destination_component": "acs712",
+      "destination_terminal": "VCC",
+      "wire_group": "5v",
+      "status": "CONDITIONAL",
+      "evidence": "U05/U07: 4.5–5.5V sensor supply",
+      "original_row": "W13",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W14",
+      "source_component": "ground",
+      "source_terminal": "GND",
+      "destination_component": "acs712",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "CONDITIONAL",
+      "evidence": "U05/U16: sensor reference",
+      "original_row": "W14",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W15",
+      "source_component": "acs712",
+      "source_terminal": "OUT",
+      "destination_component": "r1",
+      "destination_terminal": "A",
+      "wire_group": "analog",
+      "status": "CONDITIONAL",
+      "evidence": "U04/U05: inspect existing output conditioning",
+      "original_row": "W15",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W16a",
+      "source_component": "r1",
+      "source_terminal": "B",
+      "destination_component": "nodea",
+      "destination_terminal": "NODE",
+      "wire_group": "analog",
+      "status": "CALCULATED",
+      "evidence": "U04: explicit current-divider junction",
+      "original_row": "W16",
+      "depiction": "solid"
+    },
+    {
+      "id": "W16b",
+      "source_component": "nodea",
+      "source_terminal": "NODE",
+      "destination_component": "esp32",
+      "destination_terminal": "GPIO34",
+      "wire_group": "analog",
+      "status": "CONDITIONAL",
+      "evidence": "U02/U04: ADC1_CH6; actual header unverified",
+      "original_row": "W16",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W17",
+      "source_component": "nodea",
+      "source_terminal": "NODE",
+      "destination_component": "r2",
+      "destination_terminal": "A",
+      "wire_group": "analog",
+      "status": "CALCULATED",
+      "evidence": "U04: 27k/20k calculated divider",
+      "original_row": "W17",
+      "depiction": "solid"
+    },
+    {
+      "id": "W18",
+      "source_component": "r2",
+      "source_terminal": "B",
+      "destination_component": "ground",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "CALCULATED",
+      "evidence": "U04: shunt return",
+      "original_row": "W18",
+      "depiction": "solid"
+    },
+    {
+      "id": "W19",
+      "source_component": "nodea",
+      "source_terminal": "NODE",
+      "destination_component": "c1",
+      "destination_terminal": "A",
+      "wire_group": "analog",
+      "status": "CALCULATED",
+      "evidence": "U04: 100nF node filter",
+      "original_row": "W19",
+      "depiction": "solid"
+    },
+    {
+      "id": "W19b",
+      "source_component": "c1",
+      "source_terminal": "B",
+      "destination_component": "ground",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "CALCULATED",
+      "evidence": "U19: omitted in supplied CSV; required filter return",
+      "original_row": "new",
+      "depiction": "solid"
+    },
+    {
+      "id": "W20",
+      "source_component": "fuse2",
+      "source_terminal": "OUT",
+      "destination_component": "r3",
+      "destination_terminal": "A",
+      "wire_group": "sense",
+      "status": "CONDITIONAL",
+      "evidence": "U03/U11: protected voltage tap moved after F2",
+      "original_row": "W20",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W21a",
+      "source_component": "r3",
+      "source_terminal": "B",
+      "destination_component": "nodeb",
+      "destination_terminal": "NODE",
+      "wire_group": "analog",
+      "status": "CALCULATED",
+      "evidence": "U03: 68k/10k 1% divider",
+      "original_row": "W21",
+      "depiction": "solid"
+    },
+    {
+      "id": "W21b",
+      "source_component": "nodeb",
+      "source_terminal": "NODE",
+      "destination_component": "esp32",
+      "destination_terminal": "GPIO35",
+      "wire_group": "analog",
+      "status": "CONDITIONAL",
+      "evidence": "U02/U03: ADC1_CH7; actual header unverified",
+      "original_row": "W21",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W22",
+      "source_component": "nodeb",
+      "source_terminal": "NODE",
+      "destination_component": "r4",
+      "destination_terminal": "A",
+      "wire_group": "analog",
+      "status": "CALCULATED",
+      "evidence": "U03: shunt resistor to reference",
+      "original_row": "W22",
+      "depiction": "solid"
+    },
+    {
+      "id": "W23",
+      "source_component": "r4",
+      "source_terminal": "B",
+      "destination_component": "ground",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "CALCULATED",
+      "evidence": "U03: shunt return",
+      "original_row": "W23",
+      "depiction": "solid"
+    },
+    {
+      "id": "W24",
+      "source_component": "nodeb",
+      "source_terminal": "NODE",
+      "destination_component": "c2",
+      "destination_terminal": "A",
+      "wire_group": "analog",
+      "status": "CALCULATED",
+      "evidence": "U03: 100nF node filter",
+      "original_row": "W24",
+      "depiction": "solid"
+    },
+    {
+      "id": "W24b",
+      "source_component": "c2",
+      "source_terminal": "B",
+      "destination_component": "ground",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "CALCULATED",
+      "evidence": "U19: omitted in supplied CSV; required filter return",
+      "original_row": "new",
+      "depiction": "solid"
+    },
+    {
+      "id": "W25",
+      "source_component": "esp32",
+      "source_terminal": "3V3",
+      "destination_component": "oled",
+      "destination_terminal": "VCC",
+      "wire_group": "3v3",
+      "status": "CONDITIONAL",
+      "evidence": "U09: only documented 3.3V-compatible module",
+      "original_row": "W25",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W26",
+      "source_component": "esp32",
+      "source_terminal": "GPIO21",
+      "destination_component": "oled",
+      "destination_terminal": "SDA",
+      "wire_group": "i2c",
+      "status": "CONDITIONAL",
+      "evidence": "U09: 3.3V pullups and address scan",
+      "original_row": "W26",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W27",
+      "source_component": "esp32",
+      "source_terminal": "GPIO22",
+      "destination_component": "oled",
+      "destination_terminal": "SCL",
+      "wire_group": "i2c",
+      "status": "CONDITIONAL",
+      "evidence": "U09: 3.3V pullups and address scan",
+      "original_row": "W27",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W28",
+      "source_component": "ground",
+      "source_terminal": "GND",
+      "destination_component": "oled",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "CONDITIONAL",
+      "evidence": "U09/U16: common reference",
+      "original_row": "W28",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W29",
+      "source_component": "esp32",
+      "source_terminal": "3V3",
+      "destination_component": "temperature",
+      "destination_terminal": "VDD",
+      "wire_group": "3v3",
+      "status": "UNVERIFIED",
+      "evidence": "U17: proposed probe not confirmed present",
+      "original_row": "W29",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W30",
+      "source_component": "ground",
+      "source_terminal": "GND",
+      "destination_component": "temperature",
+      "destination_terminal": "GND",
+      "wire_group": "ground",
+      "status": "UNVERIFIED",
+      "evidence": "U17: no probe wire-color assumption",
+      "original_row": "W30",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W31",
+      "source_component": "esp32",
+      "source_terminal": "GPIO4",
+      "destination_component": "temperature",
+      "destination_terminal": "DQ",
+      "wire_group": "onewire",
+      "status": "UNVERIFIED",
+      "evidence": "U17: probe presence/pinout/CRC unverified",
+      "original_row": "W31",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W37",
+      "source_component": "esp32",
+      "source_terminal": "3V3",
+      "destination_component": "r5",
+      "destination_terminal": "A",
+      "wire_group": "3v3",
+      "status": "CONDITIONAL",
+      "evidence": "U17/U19: explicit pullup supply lead",
+      "original_row": "new",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W38",
+      "source_component": "r5",
+      "source_terminal": "B",
+      "destination_component": "temperature",
+      "destination_terminal": "DQ",
+      "wire_group": "onewire",
+      "status": "UNVERIFIED",
+      "evidence": "U17/U19: explicit 4.7k pullup to DQ",
+      "original_row": "new",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W39",
+      "source_component": "motor",
+      "source_terminal": "+",
+      "destination_component": "d1",
+      "destination_terminal": "K",
+      "wire_group": "motor",
+      "status": "CONDITIONAL",
+      "evidence": "U13: cathode toward positive; simple unidirectional motor only",
+      "original_row": "new",
+      "depiction": "dashed"
+    },
+    {
+      "id": "W40",
+      "source_component": "d1",
+      "source_terminal": "A",
+      "destination_component": "motor",
+      "destination_terminal": "-",
+      "wire_group": "return",
+      "status": "CONDITIONAL",
+      "evidence": "U13: flyback anode; diode rating TBD",
+      "original_row": "new",
+      "depiction": "dashed"
+    }
+  ],
+  "csv_sha256": "cf3cd78210bf9ab4b01c97c6b9ebb1e4ed5bb460fb5b82ba2d90bc476c2c5820"
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-03",
+  "calculation_exit_code": 0,
+  "calculation_stdout": "Calculation check succeeded. Wrote: [isolated temporary directory]\\calculation_results.json",
+  "calculation_stderr": "",
+  "generated_results_equal_authoritative_json": true,
+  "consistency_exit_code": 0,
+  "consistency_stdout": "PACKAGE CONSISTENCY VERIFIED: 42 BOM items, 60 netlist wires, 0 unresolved endpoints.",
+  "consistency_stderr": "",
+  "authoritative_file_count": 36,
+  "authoritative_hash_mismatches_after_run": [],
+  "method": "Calculation script copied and executed in an isolated temporary directory because it writes calculation_results.json. Package consistency verifier inspected first and run read-only. Original package was not modified.",
+  "hardware_tested": false,
+  "firebase_account_tested": false
+}

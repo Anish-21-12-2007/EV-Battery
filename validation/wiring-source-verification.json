@@ -1,0 +1,232 @@
+{
+  "date": "2026-11-03",
+  "authority": "Original FINAL_EV_EMS_ENGINEERING_PACKAGE.zip read directly",
+  "archive_path": "C:\\Users\\uppal\\AppData\\Local\\Temp\\EV_EMS_precleanup_20261102\\FINAL_EV_EMS_ENGINEERING_PACKAGE.zip",
+  "archive_sha256": "5e36bc39d0ded9180b38993616e8d5600853ac71a4a6186500c63528b1aa4941",
+  "files_compared": 36,
+  "all_files_match": true,
+  "wire_rows": 60,
+  "wired_components": 33,
+  "logical_terminals": 87,
+  "files": [
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/CHANGELOG_AND_CORRECTION_REGISTER.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/CHANGELOG_AND_CORRECTION_REGISTER.md",
+      "sha256": "9ae63c558f676082cfacc21d518f19676c05bcd26898b9a54c382dd027782cb4",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/INDEPENDENT_AUDIT_REPORT.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/INDEPENDENT_AUDIT_REPORT.md",
+      "sha256": "0cb833d10efa84f5a40b76b2b874a482b404a7b029487b58288eac01af83f95c",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/README.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/README.md",
+      "sha256": "bb57d3c8ec5bb8f8c5bb65f395a63ba9970fa56dc0b28af372161d5c1ba559f9",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/circuit_block_diagram.png",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/circuit_block_diagram.png",
+      "sha256": "4291013a7016d6ea81539b4f3372a4446a7d7fb09371d292bdcc87c91449b6ac",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/circuit_block_diagram.svg",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/circuit_block_diagram.svg",
+      "sha256": "c0b8ebd924db0941f6829cc5a97c62ab535d3392e9e8a73d7be67e62cb3e261d",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/signal_and_power_flow.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/signal_and_power_flow.md",
+      "sha256": "57bbb52f8e783f979b539c5cd371f0a112ae9dd82b0e9cc74355d27e59f6a6de",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/system_architecture.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/01_System_Overview/system_architecture.md",
+      "sha256": "f7e3b78426c64618b2ac4bb63df05c39cdbeee4e4d4ef860297f0dce68767c25",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/component_list.csv",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/component_list.csv",
+      "sha256": "d1949d277a9c7c289f0e2867c65d7ea0c329308475c61544d3d9232cf4a9f4fe",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/component_specifications.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/component_specifications.md",
+      "sha256": "3811c53acbc71e2ab1775c1da30db8e8958171b6f22fd27c8b5f7be5cbee2f47",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/datasheets_and_source_links.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/datasheets_and_source_links.md",
+      "sha256": "0607ebb73bf97bdd2d4fc40f58128152a1863ecde47ac3a5ad60acb0dd385ecf",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/unresolved_component_identification.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/02_Component_Details/unresolved_component_identification.md",
+      "sha256": "0f1d50c67946adf3ba3f1095b2724d97573419e0510acfa04dd8f18e16d4cddf",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/2D_circuit_schematic.png",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/2D_circuit_schematic.png",
+      "sha256": "3a24c16ab5474d0224b85006cae3acc9c3790ce07897d2e306fa90d9f85a5b6c",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/2D_circuit_schematic.svg",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/2D_circuit_schematic.svg",
+      "sha256": "9870c1fa7c19f2d506107702356dd67c6a82e3b02a7577dcbe6f224a46e6663e",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/complete_circuit_explanation.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/complete_circuit_explanation.md",
+      "sha256": "4f31625718492db0a16ae393e8ab005b0e839ba0aeb5c7370415d6dd8a3262f6",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/pin_mapping.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/pin_mapping.md",
+      "sha256": "95138cf2a714ed03fcd17135a6dd3f301f6dc3152c7e6377820aa0162a5893b6",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/polarity_and_grounding.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/polarity_and_grounding.md",
+      "sha256": "ccdeccabc2dd4e609221557b392673617a864be9a66ee18dab7221f2efb96f4c",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/wiring_connections.csv",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/03_Circuit_Design/wiring_connections.csv",
+      "sha256": "17573a8bd105298573659feda8d5f175948eb8d598ccd1dea2aa894e9d4247c3",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/calibration_requirements.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/calibration_requirements.md",
+      "sha256": "84ccaf891db712a8dc5e73883764350c9be1b090523d15a1c7d12dcd04e0150c",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/current_measurement.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/current_measurement.md",
+      "sha256": "27ad04afe257bda5fc5be0def682a54c761689730839e70bc6b706c5478417cb",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/power_energy_and_cost.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/power_energy_and_cost.md",
+      "sha256": "3e6a8f14bf1ebc356575d058d48542fb6899ee9fbf6ce6894a2ab531f9d5bccf",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/voltage_measurement.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/voltage_measurement.md",
+      "sha256": "3bc0e5f1dfa4f33be685a8bfa17992b6de10ff8297b29f1a3d08750b63b1d298",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/worked_calculation_examples.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/04_Measurement_and_Calculations/worked_calculation_examples.md",
+      "sha256": "cdfd42dda1a2ea71546ed3950238717c594c95d77601e739939205a180e8432a",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/fuse_and_protection_requirements.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/fuse_and_protection_requirements.md",
+      "sha256": "55fd9b4274a5d53befa1e873d5d30828aee824558e8c371051cb34b9b5647397",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/motor_and_inductive_load_protection.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/motor_and_inductive_load_protection.md",
+      "sha256": "e88555b8dd686d150e16c50eba81ba9c09162a95a2fd42e94f8503ea39b03b3e",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/reverse_polarity_and_transient_protection.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/reverse_polarity_and_transient_protection.md",
+      "sha256": "9d378b1f389194d81eb664d2c244a45aab8e4d6c1cfe846e0cf0314f0f8b10dd",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/student_lab_safety_checklist.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/student_lab_safety_checklist.md",
+      "sha256": "a3a8eb434a5406491cb36db1c7747e5d1cdb6949b03e5dcc45a795a24f2e2718",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/unresolved_safety_decisions.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/05_Protection_and_Safety/unresolved_safety_decisions.md",
+      "sha256": "1ac6b6cf2fbe4a67c8e7e69a43f6952590023b7944cb217889f5a1b132597fe0",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/calculation_checks.py",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/calculation_checks.py",
+      "sha256": "c6f8e26a3cf0592d481e7ebfdd219476f37b993515115f165359e526d62cd000",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/calculation_results.json",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/calculation_results.json",
+      "sha256": "478f4541650f61c5104df8db7b46d6d6b7c99d631245203665352cca9892b8a4",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/engineering_calculation_checks.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/engineering_calculation_checks.md",
+      "sha256": "5e171a75ee8947c97c98c8fc5dcd35bb1d3df23b9582e217c329517da74e6197",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/known_errors_and_conflicts.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/known_errors_and_conflicts.md",
+      "sha256": "5111d1507f73e4021278ce7af8c3c74e24db61fb003a6ce28f65006cf58f218f",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/package_consistency_verifier.py",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/package_consistency_verifier.py",
+      "sha256": "89a76b4989a69c072e627d0cf5e14f4197eeeabf37ac01c7a9992666de7f678c",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/simulation_and_test_plan.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/simulation_and_test_plan.md",
+      "sha256": "942d85aca769d66d712051c69214426f8907ce88531d172072a9d0a0e19b5b8d",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/verification_status.csv",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/06_Validation/verification_status.csv",
+      "sha256": "1b77155bc7e8376826360b02ffa34992c5cf528498ecf0c138ca81cfbe46588d",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/07_References/reference_material.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/07_References/reference_material.md",
+      "sha256": "a14d614624667af0d627a3447bcfd99297dfb52085429847e5c15f0da8c58f1f",
+      "matches_original": true
+    },
+    {
+      "path": "FINAL_EV_EMS_ENGINEERING_PACKAGE/07_References/source_register.md",
+      "archive_entry": "FINAL_EV_EMS_ENGINEERING_PACKAGE/07_References/source_register.md",
+      "sha256": "5b8fc44d4708b7cce1aa857e9da0856272522558648d3aac077a31d6634d33dd",
+      "matches_original": true
+    }
+  ],
+  "hardware_tested": false,
+  "physical_pin_positions_verified": false,
+  "scope": "Only logical endpoints and original source bytes are verified. No installed board footprint is established."
+}

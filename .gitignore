@@ -1,0 +1,15 @@
+node_modules/
+test-results/
+playwright-report/
+*.blend1
+__pycache__/
+EV_EMS_AAA_FINAL_PROJECT.zip
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+coverage/

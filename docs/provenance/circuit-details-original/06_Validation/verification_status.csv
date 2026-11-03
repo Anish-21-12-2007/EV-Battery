@@ -1,0 +1,22 @@
+﻿ID,Finding,Status,Evidence type,Current result / required action
+C1,Current 68k/10k and 27k/20k divider arithmetic,CONFIRMED CORRECT,CALCULATED AND CROSS-CHECKED,"Valid only under 18 V DC, 1% resistor, classic ESP32 range and direct ACS output assumptions"
+C2,"P=VI, energy integration, nominal Wh multiplication",CONFIRMED CORRECT,CALCULATED AND CROSS-CHECKED,"Identity/product only; does not validate sensors, battery usability or range"
+C3,"ACS712 5V, suffix sensitivity, IP+ to IP− polarity, automotive disclaimer",CONFIRMED CORRECT,VERIFIED BY MANUFACTURER SOURCE,IC only; board/terminal ratings unverified
+C4,LM2596 4.5–40 V input and 3A conditional rating,CONFIRMED CORRECT,VERIFIED BY MANUFACTURER SOURCE,IC only; module not qualified
+I1,Legacy 120k/22k divider at 18V,INCORRECT,CALCULATED AND CROSS-CHECKED,2.789V nominal / 2.836V worst; supersede or label historical
+I2,Legacy 15k/20k current scaler at +30A,INCORRECT,CALCULATED AND CROSS-CHECKED,2.560V ADC node; use revised ratio only after module identification
+I3,Legacy fused electronics branch / motor-only ACS claim,INCORRECT,FOUND IN EXISTING PROJECT FILE,Old drawing omits F2 and sensor excludes electronics; reconcile prose/netlist
+I4,EV_W10 and EV_W11 endpoint types,INCORRECT,FOUND IN EXISTING PROJECT FILE,LV power→CAN_H and coolant→HV_MINUS; remove/leave disconnected
+I5,EV full-throttle draw at speed cap,INCORRECT,CALCULATED AND CROSS-CHECKED,21.685kW at cap despite road load supporting about 7.441kW
+I6,EV deterministic/28% regen wording,INCORRECT,FOUND IN EXISTING PROJECT FILE + calculation,Frame-gap time drop; effective regen multiplier 23.436%
+I7,Five-device simulation exists,INCORRECT,FOUND IN EXISTING PROJECT FILE,One aggregate auxiliary slider; no five device profiles
+I8,Petrol baseline CO2 factor / cost claim,INCORRECT,FOUND IN EXISTING PROJECT FILE + independent source,2.31kg/L is below EPA US baseline 2.3477kg/L; neither is universal; no prices
+R1,"Fuse, wire, switch, connector, fault current and motor ratings",REQUIRES ADDITIONAL INFORMATION,NOT FOUND,No current ratings approved; obtain part IDs and load/fault data
+R2,Exact converter/sensors/ESP32/OLED/probe and pinout,REQUIRES ADDITIONAL INFORMATION,PARTS NOT IDENTIFIED,Datasheet facts do not qualify generic boards
+R3,"Battery usable capacity, charge/discharge limits and SOC/range model",REQUIRES ADDITIONAL INFORMATION,PART-SPECIFIC DATA UNAVAILABLE,Nominal products only; EV proxy inputs remain assumptions
+R4,"Five-device scenario, tariff, charge loss and fuel basis",REQUIRES ADDITIONAL INFORMATION,INPUTS ABSENT,Define each device and economic boundary
+U1,"Physical wiring, installed identity, calibration and live telemetry provenance",UNVERIFIED,NO PHYSICAL EVIDENCE,Do not claim assembled/tested/accurate
+U2,Transient/reverse protection and powered-off ADC safety,UNVERIFIED,NO RATED IMPLEMENTATION,"No clamp, reverse protection or sequencing proof found"
+U3,Independent Wokwi re-run / physical validation,UNVERIFIED,NOT PERFORMED,Existing report is partial prior-run history only
+I9,EV energy used accumulator is signed net pack energy,INCORRECT,FOUND IN EXISTING PROJECT FILE,Regeneration subtracts from the displayed energy; label net or track gross draw and recovery separately
+A1,12V two-load Light+Motor schematic,REQUIRES ADDITIONAL INFORMATION,CONDITIONAL NEW CONCEPT,"Not installed or approved; load ratings and hardware compatibility remain unresolved"

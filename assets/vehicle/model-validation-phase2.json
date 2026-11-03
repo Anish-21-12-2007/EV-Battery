@@ -1,0 +1,96 @@
+{
+  "blender": "5.2.3 LTS",
+  "checks": {
+    "Seat_FL_cabin_width": true,
+    "Seat_FL_roof_clearance": true,
+    "Seat_FL_floor_alignment": true,
+    "Seat_FR_cabin_width": true,
+    "Seat_FR_roof_clearance": true,
+    "Seat_FR_floor_alignment": true,
+    "Seat_RL_cabin_width": true,
+    "Seat_RL_roof_clearance": true,
+    "Seat_RL_floor_alignment": true,
+    "Seat_RR_cabin_width": true,
+    "Seat_RR_roof_clearance": true,
+    "Seat_RR_floor_alignment": true,
+    "Screen_Cluster_visible_from_cabin": true,
+    "Screen_Cluster_uv0": true,
+    "Screen_Cluster_forward_normal": true,
+    "Screen_Infotainment_visible_from_cabin": true,
+    "Screen_Infotainment_uv0": true,
+    "Screen_Infotainment_forward_normal": true,
+    "visible_wheel_angle": true,
+    "disc_sync_FL": true,
+    "fixed_caliper_FL": true,
+    "fixed_suspension_FL": true,
+    "disc_sync_FR": true,
+    "fixed_caliper_FR": true,
+    "fixed_suspension_FR": true,
+    "disc_sync_RL": true,
+    "fixed_caliper_RL": true,
+    "fixed_suspension_RL": true,
+    "disc_sync_RR": true,
+    "fixed_caliper_RR": true,
+    "fixed_suspension_RR": true,
+    "motor_ratio": true,
+    "intermediate_ratio": true,
+    "no_coplanar_hood_trim": true,
+    "rotation_index_marks": true
+  },
+  "detail": {
+    "Seat_FL": {
+      "min": [
+        -0.2669999897480011,
+        0.09799998998641968,
+        0.5609999895095825
+      ],
+      "max": [
+        0.43665045499801636,
+        0.5683333277702332,
+        1.1950000524520874
+      ]
+    },
+    "Seat_FR": {
+      "min": [
+        -0.2669999897480011,
+        -0.5683333277702332,
+        0.5609999895095825
+      ],
+      "max": [
+        0.43665045499801636,
+        -0.09799998998641968,
+        1.1950000524520874
+      ]
+    },
+    "Seat_RL": {
+      "min": [
+        0.43004000186920166,
+        0.11834000051021576,
+        0.5609999895095825
+      ],
+      "max": [
+        0.9788873791694641,
+        0.5477833151817322,
+        0.9763000011444092
+      ]
+    },
+    "Seat_RR": {
+      "min": [
+        0.43004000186920166,
+        -0.5477833151817322,
+        0.5609999895095825
+      ],
+      "max": [
+        0.9788873791694641,
+        -0.11834000051021576,
+        0.9763000011444092
+      ]
+    },
+    "cabin_screen_ray_hits": {
+      "Screen_Cluster": "Screen_Cluster",
+      "Screen_Infotainment": "Screen_Infotainment"
+    }
+  },
+  "all_passed": true,
+  "scope": "Software geometry, UV, hierarchy and kinematic checks only. No physical component qualification."
+}

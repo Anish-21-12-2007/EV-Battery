@@ -1,0 +1,135 @@
+{
+  "method": "Python binary floating point formulas independently cross-checked by exact Fraction divider ratios and direct-formula multiplication; no physical measurements or simulations.",
+  "assumptions": {
+    "divider_resistors_ohm": {
+      "current": [
+        27000,
+        20000
+      ],
+      "voltage_each_branch": [
+        68000,
+        10000
+      ]
+    },
+    "resistor_tolerance_fraction": 0.01,
+    "capacitor_f": 1e-07,
+    "assumed_maximum_dc_sense_voltage_v": 18.0,
+    "classic_esp32_adc_characterized_upper_range_v": 2.45,
+    "acs712_30a_nominal_zero_v_at_vcc_5v": 2.5,
+    "acs712_30a_typical_sensitivity_v_per_a": 0.066,
+    "acs_output_bound_for_scaler_only_v": 5.5,
+    "ev_defaults": {
+      "mass_kg": 720,
+      "wheel_radius_m": 0.31,
+      "max_motor_power_w": 18000,
+      "max_speed_m_s": 22,
+      "aux_w": 180,
+      "Cd": 0.34,
+      "frontal_area_m2": 1.9,
+      "Crr": 0.012,
+      "motor_efficiency": 0.9,
+      "inverter_efficiency": 0.93,
+      "regen_fraction": 0.28,
+      "pack_v_nominal": 96,
+      "pack_ah": 150,
+      "R_internal_ohm": 0.035
+    },
+    "cost_example": {
+      "voltage_v": 12,
+      "light_current_a": 0.5,
+      "light_hours": 2,
+      "motor_current_a": 4,
+      "motor_hours": 0.25,
+      "tariff_inr_per_kwh": 8
+    }
+  },
+  "current_divider": {
+    "ratio_fraction": "20/47",
+    "ratio": 0.425531914893617,
+    "ratio_min_1pct": 0.42065009560229444,
+    "ratio_max_1pct": 0.43042829746430855,
+    "thevenin_ohm": 11489.36170212766,
+    "rc_cutoff_100nf_hz": 138.52374676516814,
+    "independent_ratio_crosscheck_abs_error": 0.0,
+    "zero_adc_node_v_at_5v_vcc": 1.0638297872340425,
+    "plus_30a_nominal_adc_node_v": 1.9063829787234043,
+    "minus_30a_nominal_adc_node_v": 0.22127659574468087,
+    "adc_sensitivity_v_per_a": 0.028085106382978724,
+    "adc_sensitivity_mv_per_a": 28.085106382978722,
+    "adc_node_with_5p5v_sensor_rail_worst_v": 2.367355636053697,
+    "equivalent_current_for_60mv_adc_error_a": 2.1363636363636362
+  },
+  "voltage_divider_per_load": {
+    "ratio_fraction": "5/39",
+    "ratio": 0.1282051282051282,
+    "ratio_min_1pct": 0.1259862560447951,
+    "ratio_max_1pct": 0.1304572461896151,
+    "thevenin_ohm": 8717.948717948719,
+    "rc_cutoff_100nf_hz": 182.56008178187994,
+    "independent_ratio_crosscheck_abs_error": 0.0,
+    "node_at_18v_nominal_v": 2.3076923076923075,
+    "node_at_18v_worst_v": 2.348230431413072,
+    "input_for_2p45v_worst_v": 18.78009900990099,
+    "divider_current_at_18v_a": 0.00023076923076923076,
+    "total_resistor_power_at_18v_w": 0.004153846153846154,
+    "top_resistor_power_at_18v_w": 0.0036213017751479284,
+    "bottom_resistor_power_at_18v_w": 0.0005325443786982248
+  },
+  "legacy_120k_22k_voltage_divider": {
+    "ratio": 0.15492957746478872,
+    "node_at_18v_v": 2.788732394366197,
+    "node_at_18v_1pct_worst_v": 2.8361934477379096,
+    "input_for_2p45v_nominal_v": 15.813636363636366,
+    "input_for_2p45v_worst_v": 15.5490099009901
+  },
+  "legacy_15k_20k_current_divider": {
+    "ratio": 0.5714285714285714,
+    "positive_30a_adc_node_v": 2.56,
+    "positive_current_at_2p45v_a": 27.08333333333334
+  },
+  "buck_example_input_a": 0.39095238095238094,
+  "nominal_energy_12v_7p6ah_wh": 91.2,
+  "nominal_energy_96v_150ah_wh": 14400,
+  "ev_ocv_curve_outputs_v": {
+    "soc_0": 83.76211799953526,
+    "soc_50": 96.0,
+    "soc_100": 108.23788200046474
+  },
+  "ev_road_load_at_22m_s": {
+    "drag_coefficient_n_per_mps2": 0.395675,
+    "drag_n": 191.5067,
+    "rolling_n": 84.75840000000001,
+    "road_load_n": 276.2651,
+    "wheel_power_w": 6077.832200000001,
+    "combined_motor_inverter_efficiency": 0.8370000000000001,
+    "battery_power_steady_w": 7441.448267622462,
+    "steady_wh_per_km": 93.95768014674825,
+    "full_throttle_model_mechanical_power_w": 18000,
+    "full_throttle_model_force_at_22m_s_n": 818.1818181818181,
+    "full_throttle_model_battery_power_w": 21685.37634408602,
+    "full_throttle_model_wh_per_km": 273.80525686977296,
+    "nominal_pack_range_arithmetic_steady_km": 153.26048895108192,
+    "nominal_pack_range_arithmetic_full_throttle_km": 52.592123922766454,
+    "half_nominal_energy_range_arithmetic_steady_km": 76.63024447554096,
+    "half_nominal_energy_range_arithmetic_full_throttle_km": 26.296061961383227,
+    "regen_effective_fraction_before_caps": 0.23436000000000004,
+    "nominal_11kw_charger_current_at_96v_a": 114.58333333333333,
+    "dcdc_180w_input_at_88pct_w": 204.54545454545453
+  },
+  "petrol_factors": {
+    "EPA_CO2_kg_per_litre": 2.347697029306865,
+    "old_2p31_kg_per_l_at_7p2_l_100km_kg_per_100km": 16.632,
+    "EPA_factor_at_7p2_l_100km_kg_per_100km": 16.903418611009428,
+    "DOE_gasoline_E10_LHV_kwh_per_litre_range": [
+      8.679998852663791,
+      8.987825488393419
+    ]
+  },
+  "synthetic_cost_example": {
+    "light_wh": 12.0,
+    "motor_wh": 12.0,
+    "total_wh": 24.0,
+    "total_kwh": 0.024,
+    "cost_inr_at_assumed_tariff": 0.192
+  }
+}

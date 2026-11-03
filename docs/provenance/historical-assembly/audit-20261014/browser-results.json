@@ -1,0 +1,282 @@
+{
+  "date": "2026-10-14",
+  "results": [
+    {
+      "name": "Initial dashboard contains no telemetry",
+      "pass": true
+    },
+    {
+      "name": "Real Firebase auth UI (no credentials submitted)",
+      "state": "Signed out. Sign in with an authorized Firebase account."
+    },
+    {
+      "name": "ECS model contains 24 parts and 41 wires",
+      "pass": true
+    },
+    {
+      "name": "Initial hardware panel has no selection",
+      "pass": true
+    },
+    {
+      "name": "Native mouse hover identifies ESP32",
+      "pass": true
+    },
+    {
+      "name": "Native click selects ESP32",
+      "pass": true
+    },
+    {
+      "name": "ACS712 hover leaves ESP32 selected",
+      "pass": true
+    },
+    {
+      "name": "Inspector content does not overlap the parts list",
+      "pass": true
+    },
+    {
+      "name": "Pointer leave hides hover and preserves details",
+      "pass": true
+    },
+    {
+      "name": "Second click changes selected part",
+      "pass": true
+    },
+    {
+      "name": "Hidden wires cannot be picked",
+      "pass": true
+    },
+    {
+      "name": "Isolate shows one component",
+      "pass": true
+    },
+    {
+      "name": "Full assembly restores geometry, wires and selection",
+      "pass": true
+    },
+    {
+      "name": "Navigation clears tooltip",
+      "pass": true
+    },
+    {
+      "name": "Selection works after returning",
+      "pass": true
+    },
+    {
+      "name": "Native orbit drag moves camera",
+      "pass": true
+    },
+    {
+      "name": "Actual EV GLB loaded",
+      "pass": true
+    },
+    {
+      "name": "EV selection opens component details",
+      "pass": true
+    },
+    {
+      "name": "EV isolation",
+      "pass": true
+    },
+    {
+      "name": "EV restore recovers transforms",
+      "pass": true
+    },
+    {
+      "name": "EV restore resets explode control",
+      "pass": true
+    },
+    {
+      "name": "EV drive and power coherence",
+      "pass": true
+    },
+    {
+      "name": "Wheel animation has local axle pivot",
+      "pass": true
+    },
+    {
+      "name": "Stop resets throttle UI and electrical draw",
+      "pass": true
+    },
+    {
+      "name": "Simulation reset preserves disconnected-wire fault",
+      "pass": true
+    },
+    {
+      "name": "Restore clears logical circuit fault",
+      "pass": true
+    },
+    {
+      "name": "Simulation never fills live dashboard",
+      "pass": true
+    },
+    {
+      "name": "1600px light dashboard: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px light connect: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px light model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px light ev-model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px light ev-sim: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px dark dashboard: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px dark connect: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px dark model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px dark ev-model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "1600px dark ev-sim: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px light dashboard: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px light connect: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px light model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px light ev-model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px light ev-sim: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px dark dashboard: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px dark connect: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px dark model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px dark ev-model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "800px dark ev-sim: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px light dashboard: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px light connect: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px light model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px light ev-model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px light ev-sim: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px dark dashboard: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px dark connect: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px dark model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px dark ev-model: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "390px dark ev-sim: no overflow or patterned background",
+      "pass": true
+    },
+    {
+      "name": "Mobile inspector stacks below usable viewer",
+      "pass": true
+    },
+    {
+      "name": "Native touch tap selects ESP32 without sticky hover",
+      "pass": true
+    },
+    {
+      "name": "Mock auth creates exactly one reading and one connectivity listener",
+      "pass": true
+    },
+    {
+      "name": "Mock repeat auth does not duplicate listeners; absent data stays blank",
+      "pass": true
+    },
+    {
+      "name": "Local schema fixture renders accepted telemetry",
+      "pass": true
+    },
+    {
+      "name": "Historical record is labeled stale",
+      "pass": true
+    },
+    {
+      "name": "Simulation source rejected by real telemetry validator",
+      "pass": true
+    },
+    {
+      "name": "Malformed/missing/nonfinite/out-of-range records rejected",
+      "pass": true
+    },
+    {
+      "name": "Database disconnect cannot claim fresh device",
+      "pass": true
+    },
+    {
+      "name": "Permission failure has explicit UI",
+      "pass": true
+    },
+    {
+      "name": "Sign-out detaches listeners, clears readings and ignores late callbacks",
+      "pass": true
+    },
+    {
+      "name": "Normal browser console errors",
+      "count": 0
+    }
+  ],
+  "errors": []
+}

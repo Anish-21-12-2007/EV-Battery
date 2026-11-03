@@ -1,0 +1,42 @@
+id,source_component,source_terminal,destination_component,destination_terminal,wire_group,status,evidence,original_row,depiction
+W01,battery,BAT+,fuse,IN,battery,CONDITIONAL,"U10/U15: polarity, F1 and terminal ratings TBD",W01,dashed
+W02,fuse,OUT,switch,IN,battery,CONDITIONAL,U10: DC switch and fuse coordination,W02,dashed
+W03,switch,OUT,acs712,IP+,battery,CONDITIONAL,U05/U10: logical positive current direction,W03,dashed
+W04,acs712,IP-,bus,+,battery,CONDITIONAL,U05: module current path unknown,W04,dashed
+W05,bus,+,motor,+,motor,UNVERIFIED,U12: motor identity/current unknown,W05,dashed
+W06,motor,-,battery,BAT-,return,UNVERIFIED,U12/U16: independent heavy return,W06,dashed
+W07a,motor,+,c3,A,motor,CONDITIONAL,U13: brush-noise proposal,W07,dashed
+W07b,c3,B,motor,-,return,CONDITIONAL,U13: explicit second capacitor lead,W07,dashed
+W08,bus,+,fuse2,IN,branch,CONDITIONAL,U10: F2 at takeoff; rating remains TBD,W08,dashed
+W09,fuse2,OUT,lm2596,IN+,branch,CONDITIONAL,U07: verify input polarity and component limits,W09,dashed
+W10,battery,BAT-,lm2596,IN-,ground,CONDITIONAL,U16: separate low-current return,W10,dashed
+W11,lm2596,OUT+,esp32,5V,5v,CONDITIONAL,U07/U08: measured output and exact board input required,W11,dashed
+W12,lm2596,OUT-,ground,GND,ground,CONDITIONAL,U16: common-ground module assumption,W12,dashed
+W12b,ground,GND,esp32,GND,ground,CONDITIONAL,U16: explicit logic junction,W12,dashed
+W13,lm2596,OUT+,acs712,VCC,5v,CONDITIONAL,U05/U07: 4.5–5.5V sensor supply,W13,dashed
+W14,ground,GND,acs712,GND,ground,CONDITIONAL,U05/U16: sensor reference,W14,dashed
+W15,acs712,OUT,r1,A,analog,CONDITIONAL,U04/U05: inspect existing output conditioning,W15,dashed
+W16a,r1,B,nodea,NODE,analog,CALCULATED,U04: explicit current-divider junction,W16,solid
+W16b,nodea,NODE,esp32,GPIO34,analog,CONDITIONAL,U02/U04: ADC1_CH6; actual header unverified,W16,dashed
+W17,nodea,NODE,r2,A,analog,CALCULATED,U04: 27k/20k calculated divider,W17,solid
+W18,r2,B,ground,GND,ground,CALCULATED,U04: shunt return,W18,solid
+W19,nodea,NODE,c1,A,analog,CALCULATED,U04: 100nF node filter,W19,solid
+W19b,c1,B,ground,GND,ground,CALCULATED,U19: omitted in supplied CSV; required filter return,new,solid
+W20,fuse2,OUT,r3,A,sense,CONDITIONAL,U03/U11: protected voltage tap moved after F2,W20,dashed
+W21a,r3,B,nodeb,NODE,analog,CALCULATED,U03: 68k/10k 1% divider,W21,solid
+W21b,nodeb,NODE,esp32,GPIO35,analog,CONDITIONAL,U02/U03: ADC1_CH7; actual header unverified,W21,dashed
+W22,nodeb,NODE,r4,A,analog,CALCULATED,U03: shunt resistor to reference,W22,solid
+W23,r4,B,ground,GND,ground,CALCULATED,U03: shunt return,W23,solid
+W24,nodeb,NODE,c2,A,analog,CALCULATED,U03: 100nF node filter,W24,solid
+W24b,c2,B,ground,GND,ground,CALCULATED,U19: omitted in supplied CSV; required filter return,new,solid
+W25,esp32,3V3,oled,VCC,3v3,CONDITIONAL,U09: only documented 3.3V-compatible module,W25,dashed
+W26,esp32,GPIO21,oled,SDA,i2c,CONDITIONAL,U09: 3.3V pullups and address scan,W26,dashed
+W27,esp32,GPIO22,oled,SCL,i2c,CONDITIONAL,U09: 3.3V pullups and address scan,W27,dashed
+W28,ground,GND,oled,GND,ground,CONDITIONAL,U09/U16: common reference,W28,dashed
+W29,esp32,3V3,temperature,VDD,3v3,UNVERIFIED,U17: proposed probe not confirmed present,W29,dashed
+W30,ground,GND,temperature,GND,ground,UNVERIFIED,U17: no probe wire-color assumption,W30,dashed
+W31,esp32,GPIO4,temperature,DQ,onewire,UNVERIFIED,U17: probe presence/pinout/CRC unverified,W31,dashed
+W37,esp32,3V3,r5,A,3v3,CONDITIONAL,U17/U19: explicit pullup supply lead,new,dashed
+W38,r5,B,temperature,DQ,onewire,UNVERIFIED,U17/U19: explicit 4.7k pullup to DQ,new,dashed
+W39,motor,+,d1,K,motor,CONDITIONAL,U13: cathode toward positive; simple unidirectional motor only,new,dashed
+W40,d1,A,motor,-,return,CONDITIONAL,U13: flyback anode; diode rating TBD,new,dashed

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "ECS Battery Monitoring (logic-only test)",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "board-ssd1306", "id": "oled", "top": -25, "left": 345, "attrs": { "i2cAddress": "0x3c" } },
+    { "type": "wokwi-potentiometer", "id": "potCurrent", "top": 180, "left": 335, "attrs": { "value": "500" } },
+    { "type": "wokwi-potentiometer", "id": "potVoltage", "top": 330, "left": 335, "attrs": { "value": "700" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:21", "oled:SDA", "blue", [] ],
+    [ "esp:22", "oled:SCL", "blue", [] ],
+    [ "esp:3V3", "oled:VCC", "red", [] ],
+    [ "esp:GND.1", "oled:GND", "black", [] ],
+    [ "esp:34", "potCurrent:SIG", "purple", [] ],
+    [ "esp:35", "potVoltage:SIG", "purple", [] ],
+    [ "esp:3V3", "potCurrent:VCC", "red", [] ],
+    [ "esp:GND.1", "potCurrent:GND", "black", [] ],
+    [ "esp:3V3", "potVoltage:VCC", "red", [] ],
+    [ "esp:GND.1", "potVoltage:GND", "black", [] ]
+  ],
+  "dependencies": {}
+}

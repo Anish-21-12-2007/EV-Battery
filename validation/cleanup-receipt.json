@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-03",
+  "externalSafetyCopy": "C:\\Users\\uppal\\AppData\\Local\\Temp\\EV_EMS_precleanup_20261102",
+  "externalSafetyCopyRemoved": false,
+  "emptyCacheDirectory": "blender-workflow/scripts/__pycache__",
+  "status": "Automatic approval review rejected directory deletion: blocked by policy.",
+  "uniqueEvidenceIndependentlyVerifiedBeforeRemovalAttempt": 43,
+  "archiveVerifiedBeforeRemovalAttempt": true,
+  "projectBackupDirectories": 0,
+  "zipExcludesSafetyCopyAndCaches": true,
+  "removedTransientFiles": ["validation/first-studio.png", "validation/studio-final-preview.png", "generated Python cache files"],
+  "originalEngineeringFilesUnchanged": 36
+}
